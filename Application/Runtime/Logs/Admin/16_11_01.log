@@ -1,0 +1,243 @@
+[ 2016-11-01T11:15:41+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-01T11:15:41+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-11-01T13:37:39+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-01T13:37:39+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-01T13:37:44+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+
+[ 2016-11-01T13:37:44+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-11-01T13:37:45+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-11-01T13:37:46+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+
+[ 2016-11-01T13:37:48+08:00 ] ::1 /think_blog/index.php/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-01T13:37:49+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-11-01T13:37:50+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2016-11-01T13:42:18+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-11-01T13:42:20+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-11-01T13:42:20+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-11-01T13:42:22+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-11-01T13:42:31+08:00 ] ::1 /think_blog/index.php/Admin/Member/Admin/Member/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+ERR: 非法操作:Admin
+
+[ 2016-11-01T13:44:29+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-11-01T13:44:29+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-11-01T13:44:31+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-11-01T13:44:37+08:00 ] ::1 /think_blog/index.php/Admin/Member/Admin/Member/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+ERR: 非法操作:Admin
+
+[ 2016-11-01T13:46:33+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-11-01T13:46:34+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-11-01T13:46:36+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2016-11-01T13:46:36+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-11-01T13:46:41+08:00 ] ::1 /think_blog/Admin/Member/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0154s ]
+SQL: UPDATE `member` SET `is_freeze`='1' WHERE `id` IN ('42','43','44') [ RunTime:0.2169s ]
+
+[ 2016-11-01T13:46:42+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0005s ]
+
+[ 2016-11-01T14:15:57+08:00 ] ::1 /think_blog/index.php/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-11-01T14:16:25+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-01T14:16:25+08:00 ] ::1 /think_blog/Admin/PhotoImg/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+NOTIC: [2048] Declaration of Admin\Model\PhotoImgModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\PhotoImgModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `photo_img` WHERE `id` = '2'  [ RunTime:0.0003s ]
+
+[ 2016-11-01T14:16:25+08:00 ] ::1 /think_blog/index.php/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+NOTIC: [2048] Declaration of Admin\Model\PhotoModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\PhotoModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-11-01T14:18:07+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-11-01T14:18:07+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-11-01T14:18:10+08:00 ] ::1 /think_blog/index.php/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-11-01T14:18:11+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-11-01T14:18:12+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-11-01T14:18:15+08:00 ] ::1 /think_blog/index.php/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-11-01T14:20:16+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-11-01T14:20:17+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-11-01T14:20:25+08:00 ] ::1 /think_blog/index.php/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-01T14:20:28+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [2048] Declaration of Admin\Model\PhotoImgModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\PhotoImgModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT count(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0002s ]
+

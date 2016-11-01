@@ -1,0 +1,106 @@
+#获取用户粉丝用户是否相互关注
+SELECT
+	m.id,
+	m.member_name,
+	m.sex,
+	m.head_pic,
+	COUNT(f.id) as isEach
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.member_id AND f.fans_id=41
+WHERE
+	m.id IN (SELECT f.fans_id FROM friends f WHERE f.member_id=41)
+GROUP BY
+	m.id;
+#获取用户粉丝用户的粉丝数量
+SELECT
+	m.id,
+	m.member_name,
+	m.sex,
+	m.head_pic,
+	COUNT(f.id) as fans_count
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.member_id
+WHERE
+	m.id IN (SELECT f.fans_id FROM friends f WHERE f.member_id=41)
+GROUP BY
+	m.id;
+
+#获取用户粉丝用户的关注数量
+SELECT
+	m.id,
+	m.member_name,
+	m.sex,
+	m.head_pic,
+	COUNT(f.id) as focus_count
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.fans_id
+WHERE
+	m.id IN (SELECT f.fans_id FROM friends f WHERE f.member_id=41)
+GROUP BY
+	m.id;
+##################################################################################
+#获取用户关注用户是否相互关注
+SELECT
+	m.id as member_id,
+	m.member_name as member_name,
+	m.sex as sex,
+	m.head_pic as head_pic,
+	m.hitnum as hitnum,
+	COUNT(f.id) as isEach
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.fans_id AND f.member_id=41
+WHERE
+	m.id IN (SELECT f.member_id FROM friends f WHERE f.fans_id=41)
+GROUP BY
+	m.id;
+
+#获取用户关注用户的粉丝数量
+SELECT
+	m.id,
+	m.member_name,
+	m.sex,
+	m.head_pic,
+	COUNT(f.id) as fans_count
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.member_id
+WHERE
+	m.id IN (SELECT f.member_id FROM friends f WHERE f.fans_id=41)
+GROUP BY
+	m.id;
+
+#获取用户关注用户的关注数量
+SELECT
+	m.id,
+	m.member_name,
+	m.sex,
+	m.head_pic,
+	COUNT(f.id) as focus_count
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.fans_id
+WHERE
+	m.id IN (SELECT f.member_id FROM friends f WHERE f.fans_id=41)
+GROUP BY
+	m.id;
+
+###################################################################################
+#获取搜索用户和当前用户是否已关注
+SELECT
+	m.id as member_id,
+	m.member_name as member_name,
+	m.sex as sex,
+	m.head_pic as head_pic,
+	m.hitnum as hitnum,
+	COUNT(f.id) as isFocus
+FROM
+	member m
+LEFT JOIN friends f ON m.id=f.member_id AND f.fans_id=29
+WHERE
+	m.member_name LIKE "%username1%" AND m.id<>29
+GROUP BY
+	m.id;

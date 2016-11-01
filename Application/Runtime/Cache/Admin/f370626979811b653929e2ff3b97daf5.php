@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>INSERT INTO `user` (`loginName`,`passwd`,`trueName`,`question`,`answer`,`lastIp`,`lastTime`) VALUES ('username1','123456','username','question','answer','0.0.0.0','2016-09-20 05:19:27')

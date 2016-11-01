@@ -1,0 +1,202 @@
+[ 2016-10-22T20:12:08+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-10-22T20:12:54+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-10-22T20:13:55+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+
+[ 2016-10-22T20:14:17+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2016-10-22T20:14:19+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-10-22T20:14:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-10-22T20:14:48+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+
+[ 2016-10-22T20:15:25+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-10-22T20:16:26+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-10-22T20:16:30+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-10-22T20:16:53+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-10-22T20:17:16+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2016-10-22T20:19:26+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-10-22T20:19:49+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-10-22T20:19:54+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-22T20:19:56+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-10-22T20:23:15+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-10-22T20:24:32+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-10-22T20:39:24+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-10-22T20:39:25+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-10-22T20:39:28+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-10-22T20:39:30+08:00 ] ::1 /think_blog/index.php/Admin/ArticleComment/index?article_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-10-22T20:39:38+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-10-22T20:57:29+08:00 ] ::1 /think_blog/Admin/ArticleComment/index/article_id/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-10-22T21:39:29+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0037s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT count(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0003s ]
+
+[ 2016-10-22T22:38:54+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-22T22:39:17+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-22T22:42:38+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-22T22:43:13+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0004s ]
+
+[ 2016-10-22T22:43:31+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0004s ]
+
+[ 2016-10-22T22:43:55+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-22T22:44:04+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+

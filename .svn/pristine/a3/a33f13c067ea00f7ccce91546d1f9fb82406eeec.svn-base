@@ -1,0 +1,55 @@
+.main_div{width:1300px;margin:10px auto;}
+.left_div{width:150px;float:left;}
+.left_menu{width:150px;background:#999;border-radius:5px;color: #fff;padding:5px 0 5px 0;}
+.left_menu ul{width:150px;margin-left:-35px;}
+.left_menu ul li{width:140px;list-style: none;line-height: 30px;text-align: center;}
+.left_menu ul li:hover{background: #fff;border-radius:5px;cursor: pointer;}
+.left_menu ul li:hover a{color:#999;}
+.left_menu ul li a{color:#fff;font-size: 16px;vertical-align: middle;text-align: center;}
+
+.right_div{width:1138px;float: left;margin-left:10px;border:solid 1px #999;border-radius: 5px;}
+.main_area{width:100%;height:500px;border:none;}
+
+.main_form{width:100%;}
+.toolbar{height:30px;background: #f99;border-radius: 5px;padding:7px 10px 0 10px;position:fixed;width:1100px;}
+.toolbar input:hover{cursor: pointer;}
+
+.list_table_div{position: absolute;width:1130px;height:400px;margin-top: 50px;overflow:auto;}
+.list_table{width:1500px;border-collapse: collapse;}
+.list_table th{background:#666;color:#fff;}
+.list_table tr.sel{background: #999;color:#fff;cursor:pointer;}
+.list_table tr.sel a{color:#fff;text-decoration: underline;}
+.list_table tr:hover{background: #999;color:#fff;cursor:pointer;}
+.list_table tr:hover a{color:#fff;text-decoration: underline;}
+.list_table tr a:hover{}
+.list_table th,.list_table td{border:solid 1px #000;text-align: center;}
+.add_div,.edit_div{position: absolute;display: none;}
+.info_table{width:520px;height:400px;border:solid #999 1px;border-radius: 5px;box-shadow: #999 3px 3px;}
+/*
+.list_table{position: absolute;width:1130px;height:400px;margin-top: 50px;overflow:auto;}
+.member_list_table{width:1500px;border-collapse: collapse;}
+.member_list_table th{background:#666;color:#fff;}
+.member_list_table tr:hover{background: #999;color:#fff;cursor:pointer;}
+.member_list_table tr:hover a{color:#fff;text-decoration: underline;}
+.member_list_table tr a:hover{}
+.member_list_table th,.member_list_table td{border:solid 1px #000;text-align: center;}
+.add_div,.edit_div{position: absolute;display: none;}
+.member_add_table{width:520px;height:400px;border:solid #999 1px;border-radius: 5px;}
+*/
+.close{width:30px;height:30px;background:#999;border-radius: 5px;vertical-align: middle;text-align: center;
+    font-size:20px;color:#fff;position:relative;left:480px;top:38px;cursor: pointer;}
+
+.page_div{position:fixed;width:1100px;margin:0 auto;bottom:5px;text-align: center;}
+.page_div span{margin:0 5px;}
+.page_div span.page{padding:5px 10px;border:solid #999 1px;cursor: pointer;border-radius: 5px;}
+.page_div span.hov:hover{border-radius: 0;}
+.page_div span.hov{background:#999;color:#fff;border:none;}
+.page_div span.hov a{color:#fff;}
+.page_div span.hov:hover{background:#333;color:#fff;}
+.page_div label{font-size: 18px;}
+.page_div select{height: 30px;}
+.page_text{width:30px;height:30px;font-size:18px;}
+
+.error{color: #ff3300;}
+.loading{position:fixed;width:1130px;text-align: center; margin:10px auto;}
+.loading img{width:100px;}

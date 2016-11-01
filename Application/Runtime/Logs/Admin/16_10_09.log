@@ -1,0 +1,149 @@
+[ 2016-10-09T10:42:50+08:00 ] ::1 /think_blog/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014501s ]
+
+[ 2016-10-09T10:42:51+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-10-09T10:50:35+08:00 ] ::1 /think_blog/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+
+[ 2016-10-09T10:50:35+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-10-09T10:50:44+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0085s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-09T10:50:44+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 29  [ RunTime:0.0157s ]
+
+[ 2016-10-09T11:36:47+08:00 ] ::1 /think_blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-10-09T11:36:48+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/Article/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `article` WHERE `id` = '5'  [ RunTime:0.0403s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0002s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0004s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0003s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0003s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0003s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0003s ]
+
+[ 2016-10-09T11:36:52+08:00 ] ::1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\wamp\www\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0003s ]
+

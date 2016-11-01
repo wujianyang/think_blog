@@ -1,0 +1,5 @@
+[ 2016-10-26T17:46:10+08:00 ] ::1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+

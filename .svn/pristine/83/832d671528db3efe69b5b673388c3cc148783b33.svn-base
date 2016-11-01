@@ -1,0 +1,11 @@
+body,div,p,span,ul,li,a,h1,h2,h3,h4,h5,h6{
+    font-family:微软雅黑;
+    font-size:14px;}
+a{text-decoration:none;color:#999;}
+.lfloat{float: left;}
+.rfloat{float: right;}
+.mar_t20{margin-top:20px;}
+.clear{clear:both;}
+
+.header{height:100px;background:#666;}
+.footer{height:100px;background:#666;}

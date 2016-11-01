@@ -1,0 +1,61 @@
+[ 2016-10-13T15:28:24+08:00 ] ::1 /think_blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-10-13T15:28:25+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+
+[ 2016-10-13T15:28:27+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002648s ]
+
+[ 2016-10-13T15:28:31+08:00 ] ::1 /think_blog/index.php/Admin/Member/resetPasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0082s ]
+SQL: UPDATE `member` SET `passwd`='8cef992a5af6b216dd3c62ae39f4a13b' WHERE `id` IN ('29') [ RunTime:0.1030s ]
+
+[ 2016-10-13T15:28:32+08:00 ] ::1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-10-13T22:29:49+08:00 ] 127.0.0.1 /think_blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-13T22:29:49+08:00 ] 127.0.0.1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-13T22:29:51+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T22:29:52+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `member` WHERE `id` = '29'  [ RunTime:0.0010s ]
+

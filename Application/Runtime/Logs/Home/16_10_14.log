@@ -1,0 +1,1149 @@
+[ 2016-10-14T09:08:56+08:00 ] ::1 /think_blog/Home/Member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-10-14T09:08:56+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-10-14T09:08:56+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-10-14T09:09:14+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-10-14T09:09:14+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+
+[ 2016-10-14T09:11:17+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-10-14T09:21:48+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-10-14T09:23:41+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-10-14T09:23:53+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-10-14T09:24:04+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-10-14T09:41:04+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+ERR: 1054:Champ 'p.id' inconnu dans field list
+ [ SQL语句 ] : SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` WHERE p.member_id = '29' GROUP BY p.id LIMIT 10  
+
+[ 2016-10-14T09:43:52+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-10-14T09:44:33+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-10-14T09:48:05+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-10-14T09:49:07+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+ERR: XML标签语法错误 : name="photo" id="photo" offset="0" length="10" empty="<div class='noData'
+
+[ 2016-10-14T09:50:10+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-10-14T09:50:41+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+
+[ 2016-10-14T09:50:41+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-10-14T09:50:41+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-10-14T09:50:53+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-10-14T09:50:54+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-10-14T09:51:06+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-10-14T09:51:06+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-10-14T09:52:04+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-10-14T09:53:43+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-10-14T09:54:23+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-10-14T09:57:55+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12446
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+
+[ 2016-10-14T09:58:17+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-10-14T09:58:48+08:00 ] ::1 /think_blog/Home/Member/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001629s ]
+ERR: 非法操作:member_id
+
+[ 2016-10-14T10:07:10+08:00 ] ::1 /think_blog/Home/Member/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+ERR: 非法操作:member_id
+
+[ 2016-10-14T10:07:16+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+
+[ 2016-10-14T10:07:36+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-10-14T10:08:27+08:00 ] ::1 /think_blog/Home/Member/index/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+
+[ 2016-10-14T10:08:44+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-10-14T10:10:22+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-10-14T10:10:24+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-10-14T10:24:25+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-10-14T10:24:34+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-10-14T10:24:40+08:00 ] ::1 /think_blog/Home/Member/index/member_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-10-14T10:26:00+08:00 ] ::1 /think_blog/Home/Member/index/member_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-10-14T10:26:34+08:00 ] ::1 /think_blog/Home/Member/index/member_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-10-14T10:28:03+08:00 ] ::1 /think_blog/Home/Member/index/member_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-10-14T10:28:11+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-10-14T10:36:51+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-10-14T10:36:54+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+
+[ 2016-10-14T10:36:58+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+
+[ 2016-10-14T10:37:01+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-10-14T10:37:04+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001123s ]
+
+[ 2016-10-14T10:37:08+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+
+[ 2016-10-14T10:37:11+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001596s ]
+
+[ 2016-10-14T10:37:15+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+
+[ 2016-10-14T10:37:19+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+
+[ 2016-10-14T10:37:21+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-10-14T10:37:24+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-10-14T10:37:27+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/Member/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-10-14T10:37:38+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-10-14T10:37:41+08:00 ] ::1 /think_blog/Home/Member/index/member_id/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+
+[ 2016-10-14T10:37:55+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-10-14T10:39:29+08:00 ] ::1 /think_blog/Home/Member/index/member_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-10-14T10:39:33+08:00 ] ::1 /think_blog//Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-10-14T10:39:33+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-10-14T10:40:12+08:00 ] ::1 /think_blog/Home/Member/index/member_id/412.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002006s ]
+
+[ 2016-10-14T10:40:15+08:00 ] ::1 /think_blog//Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-10-14T10:40:16+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+
+[ 2016-10-14T10:41:40+08:00 ] ::1 /think_blog/Home/Member/index/member_id/142.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+
+[ 2016-10-14T10:41:44+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002570s ]
+
+[ 2016-10-14T10:41:44+08:00 ] ::1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-10-14T10:41:57+08:00 ] ::1 /think_blog/Home/Member/index/member_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-10-14T10:42:01+08:00 ] ::1 /think_blog/Home/Member/index/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001616s ]
+
+[ 2016-10-14T10:42:11+08:00 ] ::1 /think_blog/Home/Member/index/member_id.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003277s ]
+
+[ 2016-10-14T10:42:18+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+
+[ 2016-10-14T11:21:58+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+ERR: Think\Model:getPhotoByMemberId方法不存在！
+
+[ 2016-10-14T11:22:34+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 1054:Champ 'ms.messer_id' inconnu dans field list
+ [ SQL语句 ] : SELECT ms.messer_id AS `messer_id`,m.member_name AS `member_name`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM `mess` INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '41' LIMIT 10  
+
+[ 2016-10-14T11:23:47+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-10-14T11:26:12+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-10-14T11:27:35+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-10-14T11:28:40+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-10-14T11:31:17+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-10-14T11:31:42+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-10-14T11:32:35+08:00 ] ::1 /think_blog/Home/Member/index/member_id/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-10-14T11:33:44+08:00 ] ::1 /think_blog/Home/Member/index/member_id/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-10-14T11:58:04+08:00 ] ::1 /think_blog/Home/Member/index/member_id/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-10-14T11:58:16+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-10-14T11:58:29+08:00 ] ::1 /think_blog/Home/Member/index/.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-10-14T11:58:32+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-10-14T11:58:54+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-10-14T11:59:04+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-10-14T11:59:16+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-10-14T13:54:23+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-10-14T13:55:40+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-10-14T13:56:43+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-10-14T13:59:13+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-10-14T14:06:35+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+
+[ 2016-10-14T14:06:54+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-10-14T14:19:32+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-10-14T14:19:52+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-10-14T14:20:34+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-10-14T14:21:11+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-10-14T14:21:35+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-10-14T14:21:54+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-10-14T14:22:01+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-10-14T14:23:07+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-10-14T14:23:47+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-10-14T14:24:30+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-10-14T14:25:05+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-10-14T14:25:17+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-10-14T14:29:13+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-10-14T14:31:53+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-10-14T14:32:04+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-10-14T14:33:12+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-10-14T14:40:10+08:00 ] ::1 /think_blog/Home/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-10-14T14:44:52+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-10-14T14:45:55+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-10-14T14:46:05+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-10-14T14:46:08+08:00 ] ::1 /think_blog/Home/Article/index/article_id/%24article.article_id.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+
+[ 2016-10-14T14:46:45+08:00 ] ::1 /think_blog/Home/Article/index/article_id/%24article.article_id.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-10-14T14:46:57+08:00 ] ::1 /think_blog/Home/Article/index/article_id/%24article.article_id.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-10-14T14:47:03+08:00 ] ::1 /think_blog/Home/Article/index/article_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-10-14T14:50:27+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-10-14T14:51:15+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+
+[ 2016-10-14T14:51:26+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-10-14T14:51:47+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-10-14T14:57:35+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2016-10-14T14:58:41+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-10-14T14:59:57+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-10-14T15:00:45+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-10-14T15:58:16+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-10-14T16:29:59+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-10-14T16:30:22+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-10-14T16:30:43+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-10-14T16:31:36+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-10-14T16:31:58+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-10-14T16:32:22+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-10-14T16:33:10+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-10-14T16:33:14+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-10-14T16:33:27+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-10-14T16:33:31+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-10-14T16:35:10+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-10-14T16:57:05+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T16:59:29+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T16:59:31+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T17:08:18+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T17:08:21+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T17:08:30+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T17:10:06+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11971
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-10-14T17:11:08+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-10-14T17:14:51+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+ERR: Think\Model:getArticleCommentByArticleId方法不存在！
+
+[ 2016-10-14T17:19:01+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-10-14T17:19:05+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+ERR: 1054:Champ 'ac.member_id' inconnu dans field list
+ [ SQL语句 ] : SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM `article_comment` INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 0,10  
+
+[ 2016-10-14T17:22:12+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-10-14T17:25:56+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-10-14T17:28:13+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-10-14T17:28:41+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-10-14T17:29:47+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+
+[ 2016-10-14T17:29:59+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-10-14T17:30:35+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-10-14T17:31:16+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-10-14T17:31:55+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-10-14T17:32:01+08:00 ] ::1 /think_blog/Home/Member/index/member_id/50.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-10-14T17:32:39+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-10-14T17:32:41+08:00 ] ::1 /think_blog/Home/Member/index/member_id/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-10-14T17:32:48+08:00 ] ::1 /think_blog/Home/Member/index/member_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-10-14T17:33:59+08:00 ] ::1 /think_blog/Home/Member/index/member_id/54.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-10-14T17:34:04+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-10-14T17:36:16+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-10-14T17:37:34+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: XML标签语法错误 : condition="$pageCount
+
+[ 2016-10-14T17:38:24+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: XML标签语法错误 : condition="{$pageCount}
+
+[ 2016-10-14T17:38:39+08:00 ] ::1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-10-14T17:38:47+08:00 ] ::1 /think_blog/Home/Member/index/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-10-14T17:38:52+08:00 ] ::1 /think_blog/Home/Article/index/article_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-10-14T17:41:29+08:00 ] ::1 /think_blog/Home/Article/index/article_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-10-14T22:01:14+08:00 ] 127.0.0.1 /think_blog/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045003s ]
+
+[ 2016-10-14T22:01:15+08:00 ] 127.0.0.1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T22:01:19+08:00 ] 127.0.0.1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T22:01:26+08:00 ] 127.0.0.1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T22:01:26+08:00 ] 127.0.0.1 /think_blog/Home/Member/getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:01:35+08:00 ] 127.0.0.1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:01:36+08:00 ] 127.0.0.1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:01:55+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+ERR: 1140:Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.id = '3' 
+
+[ 2016-10-14T22:02:01+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1140:Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.id = '9' 
+
+[ 2016-10-14T22:03:08+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037002s ]
+ERR: 1140:Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.id = '3' 
+
+[ 2016-10-14T22:04:38+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+ERR: 1140:Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.id = '3' 
+
+[ 2016-10-14T22:04:48+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 1140:Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GROUP BY clause
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.id = '3' 
+
+[ 2016-10-14T22:08:57+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:09:04+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:09:21+08:00 ] 127.0.0.1 /think_blog/Home/Member/index/member_id/59.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T22:16:14+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T23:00:48+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T23:03:38+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:03:43+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+ERR: 无法加载控制器:ArticleComment
+
+[ 2016-10-14T23:05:22+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:05:25+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:ArticleComment
+
+[ 2016-10-14T23:05:45+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T23:05:48+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:ArticleComment
+
+[ 2016-10-14T23:07:40+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:07:43+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0010s ]
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT count(id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' 
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT count(id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' 
+
+[ 2016-10-14T23:08:54+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T23:08:59+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0640s ]
+
+[ 2016-10-14T23:10:44+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-14T23:10:48+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0030s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0000s ]
+
+[ 2016-10-14T23:11:07+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:11:09+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0000s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0010s ]
+
+[ 2016-10-14T23:12:45+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:12:50+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0000s ]
+
+[ 2016-10-14T23:19:27+08:00 ] 127.0.0.1 /think_blog/Home/Article/index/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T23:19:30+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0080s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0020s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0010s ]
+
+[ 2016-10-14T23:19:38+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0010s ]
+
+[ 2016-10-14T23:19:39+08:00 ] 127.0.0.1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0220s ]
+SQL: SELECT ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0020s ]
+SQL: SELECT count(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0010s ]
+

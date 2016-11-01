@@ -1,0 +1,328 @@
+[ 2016-10-06T17:01:13+08:00 ] 127.0.0.1 /think_blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.067003s ]
+
+[ 2016-10-06T17:01:14+08:00 ] 127.0.0.1 /think_blog/index.php/admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-06T17:01:24+08:00 ] 127.0.0.1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0380s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 10,10   [ RunTime:0.0030s ]
+SQL: SELECT count(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:01:26+08:00 ] 127.0.0.1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT count(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:05:40+08:00 ] 127.0.0.1 /think_blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-06T17:05:40+08:00 ] 127.0.0.1 /think_blog/index.php/admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-06T17:06:29+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-06T17:06:33+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\PhotoModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\PhotoModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0030s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT count(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:34+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\PhotoModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\PhotoModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0040s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT count(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:44+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-10-06T17:06:46+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT count(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article` WHERE `id` = '18'  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:48+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 43  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:57+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/hander/FroalaHandler.ashx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:hander
+
+[ 2016-10-06T17:06:58+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:58+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `article` WHERE `id` = '21'  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:58+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:06:59+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/ArticleType/getArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleTypeModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleTypeModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`article_type_name` FROM `article_type` WHERE `member_id` = 42  [ RunTime:0.0000s ]
+
+[ 2016-10-06T17:07:00+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/hander/FroalaHandler.ashx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:hander
+
+[ 2016-10-06T17:07:02+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/hander/FroalaHandler.ashx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:hander
+
+[ 2016-10-06T17:10:39+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT count(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0010s ]
+
+[ 2016-10-06T17:10:40+08:00 ] 127.0.0.1 /think_blog/index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Model\ArticleModel::index() should be compatible with Admin\Model\CommonModel::index($f = '') D:\Zend Studio\workspace\think_blog\Application\Admin\Model\ArticleModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0050s ]
+SQL: SELECT count(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0110s ]
+

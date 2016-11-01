@@ -1,0 +1,144 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+
+class MemberController extends \Think\Controller {
+    public function index(){
+        $member=A('Common');
+        $member->index('Member');
+    }
+
+    public function info(){
+        $member=A('Common');
+        $member->info('Member');
+    }
+
+    public function del(){
+        $member=A('Common');
+        $member->del('Member');
+    }
+
+    /*public function index(){
+        $data=array();
+        $status=0;
+        $member=D('Member');
+        $member->page = isset($_POST['page']) ? I('post.page') : 1;
+        $member->pageSize = isset($_POST['page_size']) ? I('post.page_size') : 10;
+        $member->keyItem = isset($_POST['keyItem']) ? I('post.keyItem') : 'id' ;
+        $member->com = isset($_POST['com']) ? I('post.com') : 'eq' ;
+        if($member->com=='like'){
+            $member->key = isset($_POST['key']) ? '%'.I('post.key').'%' : '' ;
+        }else{
+            $member->key = isset($_POST['key']) ? I('post.key') : '' ;
+        }
+
+        $result=$member->index();
+        $resultCount=$member->getCount();
+        unset($member);
+
+        if($result!==false){
+            $data['rows']=$result;
+            $data['count']=$resultCount[0]['count'];
+            $data['pageCount']=ceil((int)$resultCount[0]['count']/10);
+            $status=1;
+        }else{
+            $data['rows']=array();
+        }
+        $data['status']=$status;
+        if(IS_AJAX){
+            $this->ajaxReturn($data);
+        }else{
+            $this->assign('data',$data);
+            $this->display();
+        }
+    }*/
+    public function add(){
+        if(isset($_POST['member_name']) && !empty($_POST['member_name'])) {
+            $member=D('Member');
+            $member->member_name=I('post.member_name');
+            $member->passwd=I('post.passwd');
+            $member->sex=I('post.sex');
+            $member->email=I('post.email');
+            $member->tel=I('post.tel');
+            $member->address=I('post.address');
+            $member->question=I('post.question');
+            $member->answer=I('post.answer');
+            if (isset($_FILES['head_pic']) && !empty($_FILES['head_pic'])) {
+                $member->head_pic = $_FILES['head_pic'];
+            }
+            $result=$member->addData();
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }
+    /*public function info(){
+        if(isset($_POST['id']) && !empty($_POST['id'])) {
+            $member=D('member');
+            $member->id=I('post.id');
+            $result=$member->infoData();
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }*/
+    public function edit(){
+        if(isset($_POST['member']) && !empty($_POST['member'])) {
+            $member=D('member');
+            $member->id=I('post.member')['id'];
+            $member->member_name=I('post.member')['member_name'];
+            $member->sex=I('post.member')['sex'];
+            $member->email=I('post.member')['email'];
+            $member->tel=I('post.member')['tel'];
+            $member->address=I('post.member')['address'];
+            $member->question=I('post.member')['question'];
+            $member->answer=I('post.member')['answer'];
+            if (isset($_FILES['head_pic']) && !empty($_FILES['head_pic'])) {
+                $member->head_pic=I('post.member')['head_pic'];
+            }
+            $result=$member->editData();
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }
+
+    /*public function del(){
+        if(isset($_POST['id']) && !empty($_POST['id'])) {
+            $member=D('member');
+            $member->id=I('post.id');
+            $result=$member->delData();
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }*/
+
+    public function freeze(){
+        if(isset($_POST['id']) && !empty($_POST['id']) && $_POST['is_f']!='') {
+            $member=D('member');
+            $member->id=I('post.id');
+            $result=$member->freezeUser( I('post.is_f') );
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }
+
+    public function resetPasswd(){
+        if(isset($_POST['id']) && !empty($_POST['id'])) {
+            $member=D('member');
+            $member->id=I('post.id');
+            $result=$member->resetPasswdUser();
+            unset($member);
+            $this->ajaxReturn($result);
+        }else{
+            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
+        }
+    }
+}

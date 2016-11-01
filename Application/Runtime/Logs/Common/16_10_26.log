@@ -1,0 +1,36 @@
+[ 2016-10-26T11:30:49+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-26T11:30:54+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-26T11:30:55+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-26T11:31:15+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-26T11:31:20+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-26T11:31:21+08:00 ] ::1 /think_blog/Public/js/home/friends.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006206s ]
+ERR: 无法加载模块:Public
+

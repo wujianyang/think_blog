@@ -1,0 +1,31 @@
+//article
+SELECT 
+	a.id AS `article_id`,
+	a.title AS `title`,
+	a.content AS `content`,
+	a.hitnum AS `hitnum`,
+	a.create_time AS `create_time`,
+	a.member_id AS `member_id`,
+	m.member_name AS `member_name`,
+	a.article_type_id AS `article_type_id`,
+	at.article_type_name AS `article_type_name`,
+	COUNT(ac.id) AS `article_comment_count` 
+FROM 
+	`member` `m` 
+LEFT JOIN article a ON a.member_id=m.id 
+LEFT JOIN article_type at ON a.article_type_id=at.id 
+LEFT JOIN article_comment ac ON a.id=ac.article_id 
+WHERE m.id = '29' 
+GROUP BY a.id 
+LIMIT 5
+
+//article_type
+SELECT
+	at.id AS article_type_id,
+	at.article_type_name AS article_type_name,
+	COUNT(a.id) AS article_count
+FROM
+	article a
+RIGHT JOIN article_type at ON a.article_type_id=at.id
+WHERE at.member_id=29
+GROUP BY at.id

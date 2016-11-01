@@ -1,0 +1,25 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class ArticleTypeController extends Controller{
+    public function index(){
+        $articleType=A('Common');
+        $articleType->index('ArticleType');
+    }
+
+    public function add(){
+
+    }
+
+    public function info(){
+
+    }
+
+    public function edit(){
+
+    }
+
+    public function del(){
+
+    }
+}

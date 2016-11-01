@@ -1,0 +1,60 @@
+$(document).ready(function(){
+    //关闭添加用户窗口
+    $('#close_div').click(function(){
+        $('#list_div').show();
+        $('#add_div').hide();
+    });
+    //关闭编辑用户窗口
+    $('#close_edit_div').click(function(){
+        $('#list_div').show();
+        $('#edit_div').hide();
+    });
+
+
+    //点击全选
+    $('#all_id').click(function(){
+
+        if($(this).attr('checked')=='checked'){
+            $('.id').attr('checked',true);
+        }else{
+            $('.id').attr('checked',false);
+        }
+    });
+    //判断是否全部选中
+    $('.id').on('click',function(){
+        //选中添加背景色
+        if($(this).attr('checked')){
+            $(this).parents('.tr_line').addClass('sel');
+        }else{
+            $(this).parents('.tr_line').removeClass('sel');
+        }
+        var id_len=$('.id').length;
+        var id_check_len=$(".id:checked").length;
+        if(id_len == id_check_len){
+            $('#all_id').attr('checked',true);
+        }else{
+            $('#all_id').attr('checked',false);
+        }
+    });
+});
+
+//获取多选框选中用户
+function radio_cheched(){
+    var r=$('.id');
+    var arr_r=new Array();
+    for(var i=0;i<r.length;i++){
+        if(r[i].checked){
+            arr_r.push(r[i].value);
+        }
+    }
+    return arr_r;
+}
+
+//标题指定长度截取
+function str_sub(str,len){
+    if(str.length>len){
+        return str.substr(0,len)+'...';
+    }else{
+        return str;
+    }
+}

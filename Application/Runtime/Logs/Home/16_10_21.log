@@ -1,0 +1,1196 @@
+[ 2016-10-21T09:17:19+08:00 ] ::1 /think_blog/Home/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-10-21T09:17:19+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-10-21T09:17:19+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-10-21T09:17:43+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-10-21T09:17:43+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-10-21T09:17:49+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-10-21T09:17:50+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-10-21T09:19:31+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-10-21T09:19:36+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-10-21T13:42:28+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-10-21T13:42:35+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-21T13:44:02+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-10-21T13:44:02+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-10-21T13:44:46+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-10-21T13:44:46+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+
+[ 2016-10-21T13:48:09+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-10-21T14:18:59+08:00 ] ::1 /think_blog/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-10-21T14:19:00+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+
+[ 2016-10-21T14:35:14+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-10-21T14:35:27+08:00 ] ::1 /think_blog/Home/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+
+[ 2016-10-21T14:35:28+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+
+[ 2016-10-21T14:35:34+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-21T14:35:34+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-10-21T14:36:09+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-10-21T14:36:09+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-10-21T14:43:46+08:00 ] ::1 /think_blog/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-10-21T14:43:46+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-10-21T14:44:18+08:00 ] ::1 /think_blog/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-10-21T14:44:18+08:00 ] ::1 /think_blog/home/member/getverify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-10-21T14:44:20+08:00 ] ::1 /think_blog/Home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-10-21T14:44:20+08:00 ] ::1 /think_blog/home/member/getverify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-10-21T14:44:47+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-10-21T14:44:51+08:00 ] ::1 /think_blog/home/member/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-10-21T14:44:51+08:00 ] ::1 /think_blog/home/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-10-21T14:44:51+08:00 ] ::1 /think_blog/home/member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2016-10-21T14:44:52+08:00 ] ::1 /think_blog/home/member/getverify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-10-21T14:44:56+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-10-21T14:47:42+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:47:58+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:49:10+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:49:11+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:49:16+08:00 ] ::1 /think_blog/Home/member/member_41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:49:34+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T14:50:43+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载控制器:MemberId
+
+[ 2016-10-21T14:51:02+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T14:51:04+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T14:51:21+08:00 ] ::1 /think_blog/Home/member/member_41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T14:56:52+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载控制器:MemberId
+
+[ 2016-10-21T14:56:54+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载控制器:MemberId
+
+[ 2016-10-21T14:57:38+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载控制器:MemberId
+
+[ 2016-10-21T14:58:01+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T14:58:03+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T14:58:04+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T14:58:15+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-10-21T15:00:57+08:00 ] ::1 /think_blog/Home/member/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-10-21T15:01:14+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:01:27+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:01:29+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:03:29+08:00 ] ::1 /think_blog/Home/member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-10-21T15:03:43+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-10-21T15:04:14+08:00 ] ::1 /think_blog/Home/member41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 无法加载控制器:Member41
+
+[ 2016-10-21T15:04:21+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T15:07:01+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T15:07:03+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T15:07:59+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-10-21T15:07:59+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-10-21T15:07:59+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-10-21T15:08:02+08:00 ] ::1 /think_blog/Home/member41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载控制器:Member41
+
+[ 2016-10-21T15:08:07+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-10-21T15:08:07+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+
+[ 2016-10-21T15:08:07+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-10-21T15:08:23+08:00 ] ::1 /think_blog/Home/member41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+ERR: 无法加载控制器:Member41
+
+[ 2016-10-21T15:08:29+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-10-21T15:08:29+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-10-21T15:08:29+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-10-21T15:08:56+08:00 ] ::1 /think_blog/Home/member41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+ERR: 无法加载控制器:Member41
+
+[ 2016-10-21T15:09:07+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:09:16+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-10-21T15:09:16+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-10-21T15:09:16+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-10-21T15:09:23+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-10-21T15:09:25+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-10-21T15:10:30+08:00 ] ::1 /think_blog/Home/member41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+ERR: 无法加载控制器:Member41
+
+[ 2016-10-21T15:10:34+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:11:12+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:11:14+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:11:21+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-10-21T15:11:21+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2016-10-21T15:11:21+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-10-21T15:11:25+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:11:38+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-10-21T15:11:53+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-10-21T15:11:53+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-10-21T15:11:53+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-10-21T15:11:55+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:12:02+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:14:19+08:00 ] ::1 /think_blog/Home/m/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-10-21T15:14:19+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-10-21T15:14:19+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2016-10-21T15:15:36+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:15:40+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:15:42+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:16:47+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+
+[ 2016-10-21T15:16:47+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-10-21T15:16:47+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-10-21T15:16:49+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:16:53+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-10-21T15:16:53+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-10-21T15:16:53+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-10-21T15:17:09+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:17:15+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12646
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-10-21T15:18:35+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-10-21T15:18:38+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-10-21T15:19:02+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+
+[ 2016-10-21T15:21:48+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-10-21T15:21:57+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-10-21T15:22:01+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-10-21T15:22:01+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-10-21T15:22:08+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+ERR: 非法操作:member_41
+
+[ 2016-10-21T15:22:08+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+
+[ 2016-10-21T15:22:08+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+
+[ 2016-10-21T15:22:15+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12932
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001257s ]
+
+[ 2016-10-21T15:22:48+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-10-21T15:22:48+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-10-21T15:22:48+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+
+[ 2016-10-21T15:22:56+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11206
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-10-21T15:23:54+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+
+[ 2016-10-21T15:27:16+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:43:01+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002383s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:44:15+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-10-21T15:44:19+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-10-21T15:44:19+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-10-21T15:44:21+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11293
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-10-21T15:44:56+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-10-21T15:45:00+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=14322
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-10-21T15:45:13+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-10-21T15:50:41+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:51:13+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+
+[ 2016-10-21T15:51:16+08:00 ] ::1 /think_blog/Home/Member/Index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001648s ]
+
+[ 2016-10-21T15:51:46+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T15:51:57+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001613s ]
+ERR: 非法操作:41
+
+[ 2016-10-21T15:52:06+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T15:52:19+08:00 ] ::1 /think_blog/Home/member/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001980s ]
+
+[ 2016-10-21T15:52:27+08:00 ] ::1 /think_blog/Home/Member/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+
+[ 2016-10-21T15:53:09+08:00 ] ::1 /think_blog/Home/member/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-10-21T15:54:51+08:00 ] ::1 /think_blog/Home/Article/index/article_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-10-21T15:55:03+08:00 ] ::1 /think_blog/Home/article/article_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+
+[ 2016-10-21T15:55:07+08:00 ] ::1 /think_blog/Home/article/article_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001537s ]
+
+[ 2016-10-21T15:58:14+08:00 ] ::1 /think_blog/Home/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-10-21T15:58:58+08:00 ] ::1 /think_blog/Home/article_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-10-21T16:06:23+08:00 ] ::1 /think_blog/Home/articleList/article_type_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002525s ]
+ERR: 无法加载控制器:ArticleList
+
+[ 2016-10-21T16:07:20+08:00 ] ::1 /think_blog/Home/articleList/article_type_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+ERR: 无法加载控制器:ArticleList
+
+[ 2016-10-21T16:07:51+08:00 ] ::1 /think_blog/Home/Article/articleList/article_type_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+
+[ 2016-10-21T16:07:58+08:00 ] ::1 /think_blog/Home/Article/articleList/article_type_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+
+[ 2016-10-21T16:08:05+08:00 ] ::1 /think_blog/Home/articleList/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+ERR: 无法加载控制器:ArticleList
+
+[ 2016-10-21T16:10:23+08:00 ] ::1 /think_blog/Home/list/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-10-21T16:10:38+08:00 ] ::1 /think_blog/Home/list/article_type_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-10-21T16:10:44+08:00 ] ::1 /think_blog/Home/list/article_type_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-10-21T16:11:32+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=16709
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-10-21T16:13:08+08:00 ] ::1 /think_blog/Home/list/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-10-21T16:13:24+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=19968
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-10-21T16:13:43+08:00 ] ::1 /think_blog/Home/list/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-10-21T16:13:49+08:00 ] ::1 /think_blog/Home/list/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-10-21T16:13:54+08:00 ] ::1 /think_blog/Home/list/article_type_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-10-21T16:14:01+08:00 ] ::1 /think_blog/Home/list/article_type_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+
+[ 2016-10-21T16:14:05+08:00 ] ::1 /think_blog/Home/list/article_type_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-10-21T16:14:17+08:00 ] ::1 /think_blog/Home/list/article_type_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-10-21T16:14:42+08:00 ] ::1 /think_blog/Home/list/article_type_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+
+[ 2016-10-21T16:15:18+08:00 ] ::1 /think_blog/Home/list/article_type_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-10-21T16:15:34+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+
+[ 2016-10-21T16:15:42+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12952
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-10-21T16:16:18+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-10-21T16:16:21+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=16702
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2016-10-21T16:16:41+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+
+[ 2016-10-21T16:16:46+08:00 ] ::1 /think_blog/Home/list/article_type_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001683s ]
+
+[ 2016-10-21T16:16:49+08:00 ] ::1 /think_blog/Home/article_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001755s ]
+
+[ 2016-10-21T16:16:52+08:00 ] ::1 /think_blog/Home/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001749s ]
+
+[ 2016-10-21T16:16:55+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+
+[ 2016-10-21T16:17:55+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=15831
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+
+[ 2016-10-21T16:28:51+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-10-21T16:28:51+08:00 ] ::1 /think_blog/Home/list/article_type_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+
+[ 2016-10-21T16:28:55+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11940
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-10-21T16:29:15+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-10-21T16:29:17+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17286
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+
+[ 2016-10-21T16:29:24+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17653
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-10-21T16:29:53+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-10-21T16:30:32+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+
+[ 2016-10-21T16:37:09+08:00 ] ::1 /think_blog/Home/hotlist/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+ERR: 无法加载控制器:Hotlist
+
+[ 2016-10-21T16:37:20+08:00 ] ::1 /think_blog/Home/hotList/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 非法操作:hotArticle
+
+[ 2016-10-21T16:38:31+08:00 ] ::1 /think_blog/Home/Article/hotArticleList/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-10-21T16:38:41+08:00 ] ::1 /think_blog/Home/hotList/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-10-21T16:39:05+08:00 ] ::1 /think_blog/Home/hotList/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-10-21T16:39:07+08:00 ] ::1 /think_blog/Home/hotList/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-10-21T16:39:19+08:00 ] ::1 /think_blog/Home/list/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-10-21T16:39:22+08:00 ] ::1 /think_blog/Home/list/article_type_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-10-21T17:13:21+08:00 ] ::1 /think_blog/Home/Photo/index/member_id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-10-21T17:13:29+08:00 ] ::1 /think_blog/Home/Photo/index/photo_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-10-21T17:13:31+08:00 ] ::1 /think_blog/Home/Photo/index/photo_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001759s ]
+
+[ 2016-10-21T17:16:45+08:00 ] ::1 /think_blog/Home/photo/photo_14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+
+[ 2016-10-21T17:16:52+08:00 ] ::1 /think_blog/Home/photo/photo_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-10-21T17:18:58+08:00 ] ::1 /think_blog/Home/photo/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-10-21T17:22:52+08:00 ] ::1 /think_blog/Home/Mess/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 非法操作:member_id
+
+[ 2016-10-21T17:23:03+08:00 ] ::1 /think_blog/Home/Mess/mess/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-10-21T17:25:10+08:00 ] ::1 /think_blog/Home/member_41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002260s ]
+
+[ 2016-10-21T17:34:29+08:00 ] ::1 /think_blog/Home/Mess/mess/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-10-21T17:34:57+08:00 ] ::1 /think_blog/Home/Mess/index/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-10-21T17:36:43+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+ERR: 非法操作:member_29
+
+[ 2016-10-21T17:37:06+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T17:37:08+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T17:38:39+08:00 ] ::1 /think_blog/Home/Mess/index/member_id/29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-10-21T17:39:48+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T17:39:50+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+ERR: 无法加载控制器:Member_id
+
+[ 2016-10-21T17:40:07+08:00 ] ::1 /think_blog/Home/mess/member_29.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-10-21T17:40:10+08:00 ] ::1 /think_blog/Home/Mess/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0047s ]
+SQL: SELECT ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) as count FROM `mess` WHERE `messed_id` = 29  [ RunTime:0.0002s ]
+
+[ 2016-10-21T17:40:12+08:00 ] ::1 /think_blog/Home/Mess/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0044s ]
+SQL: SELECT ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) as count FROM `mess` WHERE `messed_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-10-21T17:41:20+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-10-21T17:41:20+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-10-21T17:41:40+08:00 ] ::1 /think_blog/Home/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-10-21T17:42:02+08:00 ] ::1 /think_blog/Home/forgetPasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-10-21T17:42:52+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-10-21T17:42:52+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-10-21T17:43:03+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-10-21T17:43:03+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-10-21T17:43:07+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-10-21T17:43:23+08:00 ] ::1 /think_blog/Home/Member/Article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 非法操作:Article
+

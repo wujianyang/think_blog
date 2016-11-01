@@ -1,0 +1,18 @@
+<div class="info_area">
+    <div class="info_img">
+        <img src="{$Think.config.UPLOAD}{$member.head_pic}" width="100" height="100" />
+    </div>
+    <input type="hidden" value="{$member.id}" id="member_id" />
+    <div class="person_info">
+        <p>{$member.member_name}</p>
+        <p>
+            <a href="{:U('Member/friends',array('member_id'=>$member['id'],'f'=>'focus'))}">关注 {$focus_count}</a> |
+            <a href="{:U('Member/friends',array('member_id'=>$member['id'],'f'=>'fans'))}">粉丝 {$fans_count}</a>
+        </p>
+        <p><a href="#">访问量 {$member.hitnum}</a></p>
+    </div>
+    <div class="weather_area">
+
+    </div>
+    <div class="clear"></div>
+</div>
