@@ -23,6 +23,7 @@ return array(
     'UPLOAD_PATH'=>'think_blog/Upload/',
     'DEFAULT_HEAD_PIC'=>'10000000',
     'USER_PASSWORD_DEFAULT'=>md5('blog123456'),
+    'ADMIN_PASSWORD_DEFAULT'=>md5('admin123456'),
     'NODATA'    =>  '<p class="noData">没有数据</p>',
     'TITLE'     =>  '博客系统',
 

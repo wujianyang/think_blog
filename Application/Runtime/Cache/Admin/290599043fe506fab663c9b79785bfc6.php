@@ -1,29 +1,30 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
-    <title>用户管理_{$Think.config.TITLE}</title>
-    <link rel="stylesheet" type="text/css" href="{$Think.config.CSS}main.css" />
-    <link rel="stylesheet" type="text/css" href="{$Think.config.CSS}admin.css" />
-    <script language="JavaScript" src="{$Think.config.JS}jquery-1.8.3.min.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}jquery.validate.min.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}jquery.form.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}messages_zh.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}ajax.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}admin/common.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}admin/page.js"></script>
-    <script language="JavaScript" src="{$Think.config.JS}admin/memberAdmin.js"></script>
+    <title>管理员管理_<?php echo (C("TITLE")); ?></title>
+    <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>admin.css" />
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery-1.8.3.min.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.validate.min.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.form.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>messages_zh.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>ajax.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/common.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/page.js"></script>
+    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/admin.js"></script>
     <script type="text/javaScript">
 
     </script>
     <style type="text/css">
         .page_div{display: block;}
+        .list_table{width:600px;margin:0 auto;}
     </style>
 </head>
 <body>
 <div class="main_form">
-    <input type="hidden" value="{$Think.config.HOST_DIR}" id="host_dir" />
-    <input type="hidden" value="{$Think.config.UPLOAD}" id="upload" />
-    <input type="hidden" value="{$Think.config.UPLOAD_PATH}" id="upload_path" />
-    <input type="hidden" value="{$Think.config.URL_HTML_SUFFIX}" id="suffix" />
+    <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+    <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+    <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+    <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -36,15 +37,7 @@
             <div class="rfloat">
                 <select id="keyItem">
                     <option value="id+eq">ID</option>
-                    <option value="member_name+like">用户名</option>
-                    <option value="email+eq">邮箱</option>
-                    <option value="tel+eq">电话</option>
-                    <option value="address+like">地址</option>
-                    <option value="question+like">密码问题</option>
-                    <option value="answer+like">密码答案</option>
-                    <option value="hitnum+eq">访问量</option>
-                    <option value="last_ip+eq">上次登录IP</option>
-                    <option value="last_time+like">上次登录时间</option>
+                    <option value="member_name+like">管理员名称</option>
                 </select>
                 <input name="key" id="key" value="" placeholder="请输入关键字" required />
                 <input type="button" value="搜索" id="search" />
@@ -55,63 +48,36 @@
                 <tr>
                     <th><input type="checkbox" name="" id="all_id" /></th>
                     <th width="50" class="order" rel="id" value="0">ID</th>
-                    <th width="151" class="order" rel="member_name" value="0">用户名</th>
-                    <th width="50" class="order" rel="sex" value="0">性别</th>
-                    <th width="154" class="order" rel="email" value="0">邮箱</th>
-                    <th width="152" class="order" rel="tel" value="0">电话</th>
-                    <th width="200" class="order" rel="address" value="0">地址</th>
-                    <th width="150" class="order" rel="question" value="0">密码问题</th>
-                    <th width="150" class="order" rel="answer" value="0">密码答案</th>
-                    <th width="50" class="order" rel="hitnum" value="0">访问量</th>
+                    <th width="150" class="order" rel="member_name" value="0">管理员名称</th>
                     <th width="150" class="order" rel="last_ip" value="0">上次登录IP</th>
                     <th width="150" class="order" rel="last_time" value="0">上次登录时间</th>
                     <th width="100" class="order" rel="is_freeze" value="0">是否冻结</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                    <volist name="data.rows" id="rows" offset="0" length="10">
-                    <tr class="tr_line">
-                        <td><input type="checkbox" class="id" name="id[]" value="{$rows.id}" /></td>
-                        <td width="50">{$rows.id}</td>
-                        <td width="150"><a class="info" href="javascript:void(0);" value="{$rows.id}">{$rows.member_name}</a></td>
-                        <if condition="$rows.sex eq 1">
-                            <td width="50">男</td>
-                            <else />
-                            <td width="50">女</td>
-                        </if>
-                        <td width="150">{$rows.email}</td>
-                        <td width="150">{$rows.tel}</td>
-                        <td width="150">{$rows.address}</td>
-                        <td width="150">{$rows.question}</td>
-                        <td width="150">{$rows.answer}</td>
-                        <td width="150">{$rows.hitnum}</td>
-                        <td width="150">{$rows.last_ip}</td>
-                        <td width="150">{$rows.last_time}</td>
-                        <if condition="$rows.is_freeze eq 1">
-                            <td width="100">已冻结</td>
-                            <else />
-                            <td width="100">已激活</td>
-                        </if>
-                    </tr>
-                    </volist>
-                    <if condition="$data.count eq 0">
-                        <div class="error">没有数据</div>
-                    </if>
+                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
+                        <td><input type="checkbox" class="id" name="id[]" value="<?php echo ($rows["id"]); ?>" /></td>
+                        <td width="50"><?php echo ($rows["id"]); ?></td>
+                        <td width="150"><a class="info" href="javascript:void(0);" value="<?php echo ($rows["id"]); ?>"><?php echo ($rows["admin_name"]); ?></a></td>
+                        <td width="150"><?php echo ($rows["last_ip"]); ?></td>
+                        <td width="150"><?php echo ($rows["last_time"]); ?></td>
+                        <?php if($rows["is_freeze"] == 1): ?><td width="100">已冻结</td>
+                            <?php else: ?>
+                            <td width="100">已激活</td><?php endif; ?>
+                    </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
+                <?php if($data["count"] == 0): ?><div class="error">没有数据</div><?php endif; ?>
                 </tbody>
             </table>
         </div>
-        <if condition="$data.count gt 0">
-            <div class="page_div" id="page_div">
+        <?php if($data["count"] > 0): ?><div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>
                 <span class="page"><a href="javascript:void(0);">上一页</a></span>
                 <label id="curpage">1</label> /
-                <label id="page_count">{$data.pageCount}</label>
-                <if condition="$data.pageCount eq 1">
-                    <span class="page"><a href="javascript:void(0);">下一页</a></span>
+                <label id="page_count"><?php echo ($data["pageCount"]); ?></label>
+                <?php if($data["pageCount"] == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
                     <span class="page"><a href="javascript:void(0);">末页</a></span>
-                    <else />
+                    <?php else: ?>
                     <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                    <span class="page hov"><a href="javascript:void(0);" rel="{$data.pageCount}">末页</a></span>
-                </if>
+                    <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
                         <option value="10">10</option>
@@ -125,16 +91,15 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-                <span>共{$data.count}条数据</span>
-            </div>
-        </if>
+                <span>共<?php echo ($data["count"]); ?>条数据</span>
+            </div><?php endif; ?>
     </div>
     <div class="add_div" id="add_div">
-        <form id="add_form" name="add_form" method="post" enctype="multipart/form-data">
+        <form id="add_form" name="add_form" method="post">
             <table class="info_table" cellspacing="1" cellpadding="0">
                 <tr>
-                    <th width="50">用户名：</th>
-                    <td width="300"><input type="text" name='member_name' id="member_name" required /></td>
+                    <th width="50">管理员名称：</th>
+                    <td width="300"><input type="text" name='admin_name' id="admin_name" required /></td>
                     <td></td>
                 </tr>
                 <tr>
@@ -145,46 +110,6 @@
                 <tr>
                     <th>确认密码：</th>
                     <td><input type="password" name='passwd2' id="password2" required /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>性别：</th>
-                    <td>
-                        <select name='sex'>
-                            <option value="1" selected="selected">男</option>
-                            <option value="0">女</option>
-                        </select>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>邮箱：</th>
-                    <td><input type="email" name="email" id="email" required /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>电话：</th>
-                    <td><input type="tel" name="tel" id="tel" required pattern="(\d{3,4}-\d{7,8})|(\d{11})" /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>地址：</th>
-                    <td><input type="text" name="address" id="address" required minlength="10" /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>密码问题：</th>
-                    <td><input type="text" name="question" id="question" required minlength="10" /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>密码答案：</th>
-                    <td><input type="text" name="answer" id="answer" required minlength="10" /></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>头像：</th>
-                    <td><input type="file" name="head_pic" id="head_pic" /></td>
                     <td></td>
                 </tr>
                 <tr>

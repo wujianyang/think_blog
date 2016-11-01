@@ -241,3 +241,999 @@ SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
 SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,20   [ RunTime:0.0004s ]
 SQL: SELECT count(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0002s ]
 
+[ 2016-11-01T15:25:52+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+
+[ 2016-11-01T15:25:52+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-11-01T15:25:54+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-11-01T15:37:24+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-11-01T15:37:46+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-11-01T15:37:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-11-01T15:37:47+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-11-01T15:43:55+08:00 ] ::1 /think_blog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-11-01T15:43:55+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-01T15:43:57+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-11-01T15:44:00+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin` LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0002s ]
+
+[ 2016-11-01T15:44:05+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0005s ]
+
+[ 2016-11-01T15:44:07+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `admin` LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0006s ]
+
+[ 2016-11-01T15:54:45+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-11-01T15:54:45+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-11-01T15:54:46+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-11-01T15:55:03+08:00 ] ::1 /think_blog/Admin/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-11-01T15:55:34+08:00 ] ::1 /think_blog/Admin/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'rootroot'  [ RunTime:0.0010s ]
+SQL: INSERT INTO `admin` (`admin_name`,`passwd`,`is_freeze`,`last_ip`,`last_time`) VALUES ('rootroot','e10adc3949ba59abbe56e057f20f883e','0','0.0.0.0','2016-11-01 03:55:34') [ RunTime:0.0960s ]
+
+[ 2016-11-01T15:55:36+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0005s ]
+
+[ 2016-11-01T15:56:22+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-11-01T15:56:22+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-01T15:56:23+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-11-01T15:56:34+08:00 ] ::1 /think_blog/Admin/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'administrator'  [ RunTime:0.0010s ]
+SQL: INSERT INTO `admin` (`admin_name`,`passwd`,`is_freeze`,`last_ip`,`last_time`) VALUES ('administrator','e10adc3949ba59abbe56e057f20f883e','0','0.0.0.0','2016-11-01 03:56:34') [ RunTime:0.0769s ]
+
+[ 2016-11-01T15:56:36+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0006s ]
+
+[ 2016-11-01T15:56:41+08:00 ] ::1 /think_blog/Admin/Admin/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0226s ]
+SQL: DELETE FROM `admin` WHERE `id` IN ('1','3') [ RunTime:0.0705s ]
+
+[ 2016-11-01T15:56:42+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0006s ]
+
+[ 2016-11-01T15:59:30+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-11-01T15:59:30+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-11-01T15:59:32+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-11-01T15:59:38+08:00 ] ::1 /think_blog/Admin/Admin/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0111s ]
+SQL: UPDATE `admin` SET `is_freeze`='1' WHERE `id` IN ('4') [ RunTime:0.1211s ]
+
+[ 2016-11-01T15:59:39+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0008s ]
+
+[ 2016-11-01T16:00:04+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-11-01T16:00:04+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-11-01T16:00:05+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-11-01T16:00:08+08:00 ] ::1 /think_blog/Admin/Admin/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0147s ]
+SQL: UPDATE `admin` SET `is_freeze`='0' WHERE `id` IN ('4') [ RunTime:0.0805s ]
+
+[ 2016-11-01T16:00:10+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0007s ]
+
+[ 2016-11-01T16:01:53+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-11-01T16:01:53+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-11-01T16:01:55+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+
+[ 2016-11-01T16:01:58+08:00 ] ::1 /think_blog/Admin/Member/resetPasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0129s ]
+SQL: UPDATE `member` SET `passwd`='8cef992a5af6b216dd3c62ae39f4a13b' WHERE `id` IN ('4') [ RunTime:0.0348s ]
+
+[ 2016-11-01T16:01:59+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0009s ]
+
+[ 2016-11-01T16:02:19+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0005s ]
+
+[ 2016-11-01T16:02:23+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `admin` WHERE `id` = '3' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `id` = '3'  [ RunTime:0.0002s ]
+
+[ 2016-11-01T16:02:25+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin` WHERE `id` = '4' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `id` = '4'  [ RunTime:0.0002s ]
+
+[ 2016-11-01T16:20:41+08:00 ] ::1 /think_blog/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-11-01T16:21:23+08:00 ] ::1 /think_blog/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-11-01T16:21:24+08:00 ] ::1 /think_blog/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-11-01T16:21:38+08:00 ] ::1 /think_blog/Admin/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2016-11-01T16:21:56+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2016-11-01T16:22:23+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+ERR: 模板不存在:./Application/Admin/View/./Admin/login.html
+
+[ 2016-11-01T16:22:36+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2016-11-01T16:22:46+08:00 ] ::1 /think_blog/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-11-01T16:22:49+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2016-11-01T16:22:59+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 模板不存在:./Application/Admin/View/Admin/login.html
+
+[ 2016-11-01T16:23:04+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-11-01T16:23:04+08:00 ] ::1 /think_blog/Admin/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 非法操作:getVerify
+
+[ 2016-11-01T16:23:50+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-11-01T16:53:24+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-11-01T16:53:24+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-11-01T16:53:39+08:00 ] ::1 /think_blog/Admin/Member/resetPasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0179s ]
+SQL: UPDATE `member` SET `passwd`='8cef992a5af6b216dd3c62ae39f4a13b' WHERE `id` IN ('4') [ RunTime:0.0012s ]
+
+[ 2016-11-01T16:53:41+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0005s ]
+
+[ 2016-11-01T16:53:51+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-11-01T16:53:57+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-11-01T16:53:57+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-11-01T16:54:16+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-01T16:54:16+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-11-01T17:06:34+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-11-01T17:06:35+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+
+[ 2016-11-01T17:07:53+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001211s ]
+
+[ 2016-11-01T17:09:00+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-11-01T17:09:08+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+
+[ 2016-11-01T17:09:08+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-11-01T17:09:20+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-11-01T17:09:21+08:00 ] ::1 /think_blog/Admin/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-11-01T17:11:03+08:00 ] ::1 /think_blog/Admin/Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002225s ]
+
+[ 2016-11-01T17:11:03+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+
+[ 2016-11-01T17:13:17+08:00 ] ::1 /think_blog/Admin/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+
+[ 2016-11-01T17:13:17+08:00 ] ::1 /think_blog/Admin/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-11-01T17:19:58+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001887s ]
+
+[ 2016-11-01T17:19:58+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+
+[ 2016-11-01T17:20:55+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001564s ]
+
+[ 2016-11-01T17:20:56+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+
+[ 2016-11-01T17:21:31+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-11-01T17:21:32+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002013s ]
+
+[ 2016-11-01T17:22:41+08:00 ] ::1 /think_blog/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-11-01T17:22:42+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002250s ]
+
+[ 2016-11-01T17:22:47+08:00 ] ::1 /think_blog/Admin/Admin/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001811s ]
+
+[ 2016-11-01T17:22:48+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-11-01T17:22:48+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-11-01T17:23:02+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+
+[ 2016-11-01T17:23:03+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+
+[ 2016-11-01T17:23:14+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+
+[ 2016-11-01T17:23:14+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-11-01T17:23:14+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+
+[ 2016-11-01T17:23:42+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-11-01T17:23:43+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+
+[ 2016-11-01T17:23:55+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+
+[ 2016-11-01T17:23:55+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-11-01T17:24:05+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001651s ]
+
+[ 2016-11-01T17:24:06+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+
+[ 2016-11-01T17:24:45+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+
+[ 2016-11-01T17:24:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+
+[ 2016-11-01T17:25:07+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-11-01T17:25:08+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+
+[ 2016-11-01T17:25:16+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002449s ]
+
+[ 2016-11-01T17:25:16+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002035s ]
+
+[ 2016-11-01T17:25:23+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-11-01T17:25:24+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+
+[ 2016-11-01T17:25:31+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+
+[ 2016-11-01T17:25:31+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-11-01T17:25:51+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-11-01T17:25:52+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002249s ]
+
+[ 2016-11-01T17:26:01+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001436s ]
+
+[ 2016-11-01T17:26:01+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+
+[ 2016-11-01T17:26:25+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002031s ]
+
+[ 2016-11-01T17:26:26+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-11-01T17:26:32+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+
+[ 2016-11-01T17:26:33+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+
+[ 2016-11-01T17:26:49+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-11-01T17:26:50+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+
+[ 2016-11-01T17:26:57+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-11-01T17:26:57+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+
+[ 2016-11-01T17:27:03+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-11-01T17:27:03+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+
+[ 2016-11-01T17:27:09+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-11-01T17:27:09+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+
+[ 2016-11-01T17:27:14+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+
+[ 2016-11-01T17:27:15+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+
+[ 2016-11-01T17:27:21+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+
+[ 2016-11-01T17:27:22+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001897s ]
+
+[ 2016-11-01T17:27:29+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-11-01T17:27:29+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001365s ]
+
+[ 2016-11-01T17:27:45+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001682s ]
+
+[ 2016-11-01T17:27:45+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-11-01T17:28:06+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-11-01T17:28:06+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+
+[ 2016-11-01T17:34:57+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+
+[ 2016-11-01T17:34:58+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+
+[ 2016-11-01T17:35:01+08:00 ] ::1 /think_blog/Admin/Admin/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-01T17:35:01+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+
+[ 2016-11-01T17:35:02+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+
+[ 2016-11-01T17:35:04+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002186s ]
+
+[ 2016-11-01T17:35:05+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-11-01T17:35:15+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-11-01T17:35:16+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001543s ]
+
+[ 2016-11-01T17:35:17+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+
+[ 2016-11-01T17:38:36+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-11-01T17:38:37+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+
+[ 2016-11-01T17:38:38+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: Think\Model:updatePasswd方法不存在！
+
+[ 2016-11-01T17:41:10+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-11-01T17:41:10+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+
+[ 2016-11-01T17:41:12+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-11-01T17:41:24+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-11-01T17:41:25+08:00 ] ::1 /think_blog/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+ERR: 无法加载控制器:Login
+
+[ 2016-11-01T17:42:03+08:00 ] ::1 /think_blog/Admin/Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-11-01T17:42:03+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-01T17:42:15+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-11-01T17:42:16+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001431s ]
+
+[ 2016-11-01T17:42:16+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-11-01T17:44:20+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-11-01T17:44:20+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+
+[ 2016-11-01T17:44:22+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+
+[ 2016-11-01T17:44:32+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+
+[ 2016-11-01T17:44:33+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-11-01T17:45:17+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-11-01T17:45:18+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-11-01T17:45:30+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-11-01T17:45:30+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+
+[ 2016-11-01T17:45:30+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+
+[ 2016-11-01T17:45:32+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001966s ]
+
+[ 2016-11-01T17:45:40+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+
+[ 2016-11-01T17:45:41+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-11-01T17:45:41+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+

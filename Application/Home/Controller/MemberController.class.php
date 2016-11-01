@@ -211,7 +211,7 @@ class MemberController extends Controller{
                         session('MEMBER',null);
                         $this->redirect('login');
                     }
-                    $this->assign('msg',$result['msg'].I('post.old_passwd'));
+                    $this->assign('msg',$result['msg']);
                 }else{
                     $this->assign('msg','新密码不一致');
                 }

@@ -330,6 +330,7 @@ class MemberModel extends Model{
         $data['msg']='';
 
         if($newPasswd!=''){
+            //验证旧密码是否正确
             $result=$this->field('id')->where(array('id'=>$this->id,'passwd'=>md5($this->passwd)))->select();
 
             if(count($result)>0){

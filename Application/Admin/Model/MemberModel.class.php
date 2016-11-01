@@ -18,27 +18,6 @@ class MemberModel extends CommonModel{
     public $com='eq';
     public $sql='';
 
-    /*//条件搜索显示列表
-    public function index($f=''){
-        $arr_where=array();
-        if($this->key){
-            $arr_where[$this->keyItem]=array($this->com,$this->key);
-        }
-        $result=$this->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
-
-        return $result;
-    }
-
-    //条件搜索显示记录数
-    public function getCount(){
-        $arr_where=array();
-        if($this->key){
-            $arr_where[$this->keyItem]=array($this->com,$this->key);
-        }
-        $resultCount=$this->field(array('count(id)'=>'count'))->where($arr_where)->select();
-
-        return $resultCount;
-    }*/
 
     //添加用户
     public function addData(){

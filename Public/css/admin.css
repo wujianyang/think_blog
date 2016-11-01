@@ -1,10 +1,11 @@
 .main_div{width:1300px;margin:10px auto;}
 .left_div{width:150px;float:left;}
 .left_menu{width:150px;background:#999;border-radius:5px;color: #fff;padding:5px 0 5px 0;}
+.left_menu p{width:140px;margin-top:-15px;text-align: center;font-size:18px;background:#fff;color:#999;border-radius: 5px;}
 .left_menu ul{width:150px;margin-left:-35px;}
-.left_menu ul li{width:140px;list-style: none;line-height: 30px;text-align: center;color:#fff;}
+.left_menu ul li{width:140px;list-style: none;line-height: 24px;font-size: 16px;text-align: center;color:#fff;}
 .left_menu ul li:hover{background: #fff;color:#999;border-radius:5px;cursor: pointer;}
-.left_menu ul li a{color:#fff;font-size: 16px;vertical-align: middle;text-align: center;}
+.left_menu ul li a{color:#fff;vertical-align: middle;text-align: center;}
 
 .right_div{width:1138px;float: left;margin-left:10px;border:solid 1px #999;border-radius: 5px;}
 .main_area{width:100%;height:600px;border:none;}

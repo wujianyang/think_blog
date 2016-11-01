@@ -3,6 +3,10 @@ namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller{
     public function Index(){
-        $this->display('./index');
+        if(I('session.ADMIN')!=null){
+            $this->display('./index');
+        }else{
+            $this->display('./login');
+        }
     }
 }
