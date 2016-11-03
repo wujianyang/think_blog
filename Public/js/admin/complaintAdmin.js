@@ -1,24 +1,52 @@
 $(document).ready(function(){
     //批量通过审核用户
-    $('#del').click(function(){
+    $('#pass').click(function(){
+        var del=$('.id');
+        var arr=radio_cheched();
+        if(arr.length==0){
+            alert('请选择要操作的用户');
+        }else{
+            if(confirm('确定通过？')){
+                var host_dir=$('#host_dir').val();
+                $.ajax({
+                    url:host_dir+"Admin/Complaint/pass",
+                    type:"post",
+                    dataType:"json",
+                    data:{id:arr},
+                    success:function(data){
+                        alert(data.msg);
+                        if(data.status=='1'){
+                            showList(1,10,'','','eq');
+                        }
+                    },
+                    error:function(data){
+                        console.log('del>error');
+                        console.log(data.responseText);
+                        showList(1,10,'','','eq');
+                    }
+                });
+            }
+        }
+    });
+
+    //批量忽略申诉记录
+    $('#ignore').click(function(){
         var del=$('.id');
         var arr=radio_cheched();
         if(arr.length==0){
             alert('请选择要删除的数据');
         }else{
-            if(confirm('同时删除该用户的相关数据，确定删除？')){
+            if(confirm('确定删除？')){
                 var host_dir=$('#host_dir').val();
                 $.ajax({
-                    url:host_dir+"Admin/Member/del",
+                    url:host_dir+"Admin/Complaint/del",
                     type:"post",
                     dataType:"json",
                     data:{id:arr},
                     success:function(data){
+                        alert(data.msg);
                         if(data.status=='1'){
-                            alert('删除成功');
                             showList(1,10,'','','eq');
-                        }else{
-                            alert('删除失败');
                         }
                     },
                     error:function(data){

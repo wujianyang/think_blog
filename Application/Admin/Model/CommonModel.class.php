@@ -14,8 +14,11 @@ class CommonModel extends Model{
     //条件搜索显示列表
     public function index($f=''){
         $arr_where=array();
-        if($this->key){
-            $arr_where[$this->keyItem]=array($this->com,$this->key);
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%".$this->key."%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
         }
         $result=$this->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
 

@@ -31,8 +31,8 @@
         <?php if($msg != ''): ?><div style="color:#f30;text-align:center;"><?php echo ($msg); ?></div><?php endif; ?>
         <div class="registerAndPasswd">
             <a href="<?php echo U('Member/register');?>">注册</a>
-            <a href="<?php echo U('Member/forgetPasswd');?>">忘记密码?</a>  
-            <a href="<?php echo U('Member/forgetPasswd');?>">账号被冻结?</a>
+            <a href="<?php echo U('Member/forgetPasswd');?>">忘记密码?</a>
+            <a href="<?php echo U('Member/complain');?>">账号被冻结?</a>
         </div>
 
     </form>

@@ -1,0 +1,80 @@
+[ 2016-11-03T10:22:07+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=10594
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024369s ]
+
+[ 2016-11-03T10:24:18+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=13113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.046201s ]
+
+[ 2016-11-03T10:24:56+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=16005
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+
+[ 2016-11-03T10:25:29+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=18536
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+
+[ 2016-11-03T10:26:45+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11928
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-11-03T10:45:17+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+
+[ 2016-11-03T10:45:18+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-11-03T10:45:19+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-11-03T10:45:19+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-03T10:45:39+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-11-03T10:45:40+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+
+[ 2016-11-03T10:46:29+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+
+[ 2016-11-03T10:46:30+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-11-03T10:46:50+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-11-03T10:46:51+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-11-03T10:51:29+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11337
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+

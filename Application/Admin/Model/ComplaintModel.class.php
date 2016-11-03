@@ -4,7 +4,7 @@ use Admin\Model;
 require_once C('ROOT').C('FUNC').'func.php';
 class ComplaintModel extends CommonModel{
     public $id;
-    public $table='complain';
+    public $table='complaint';
     public $table_alias='c';
     public $foreign_table='member';
     public $foreign_table_alias='m';
@@ -31,6 +31,11 @@ class ComplaintModel extends CommonModel{
                 $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
             }
         }
+        if($this->keyItem=='pass'){
+            $arr_where["$this->table_alias.isPass"]=array($this->com,'1');
+        }else{
+            $arr_where["$this->table_alias.isPass"]=array($this->com,'0');
+        }
 
         $arr_field=array();
         $arr_field[$this->table_alias.'.id']='id';
@@ -44,7 +49,6 @@ class ComplaintModel extends CommonModel{
         $arr_field[$this->table_alias.'.isPass']='isPass';
 
         $result=$this->alias($this->table_alias)->join(array("LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name","LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id"))->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
-        $s=$this->getLastSql();
         return $result;
     }
 
@@ -62,8 +66,31 @@ class ComplaintModel extends CommonModel{
                 $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
             }
         }
+        if($this->keyItem=='pass'){
+            $arr_where["$this->table_alias.isPass"]=array($this->com,'1');
+        }else{
+            $arr_where["$this->table_alias.isPass"]=array($this->com,'0');
+        }
 
         $result=$this->alias($this->table_alias)->join(array("LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name","LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id"))->field(array("count($this->table_alias.id)"=>'count'))->where($arr_where)->select();
         return $result;
+    }
+
+    public function pass(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+        $arr_data=array();
+        $arr_data['admin_id']=$this->admin_id;
+        $arr_data['pass_time']=$this->pass_time;
+        $arr_data['isPass']=$this->isPass;
+        $result=$this->data($arr_data)->where(array('id'=>array('IN',$this->id)))->save();
+        if($result!=false){
+            $data['status']=1;
+            $data['msg']='审核通过';
+        }else{
+            $data['msg']='审核通过失败';
+        }
+        return $data;
     }
 }

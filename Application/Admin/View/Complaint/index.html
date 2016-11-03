@@ -25,16 +25,17 @@
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
-                <input type="button" value="通过" id="add" />
-                <input type="button" value="忽略" id="del" />
+                <input type="button" value="通过" id="pass" />
+                <input type="button" value="忽略" id="ignore" />
             </div>
             <div class="rfloat">
                 <select id="keyItem">
-                    <option value="id+eq">ID</option>
+                    <option value="notpass+eq">未审核</option>
+                    <option value="pass+eq">已审核</option>
                     <option value="member_id+eq">用户ID</option>
                     <option value="member_name+like">用户名</option>
+                    <option value="admin_id+eq">审核员ID</option>
                     <option value="admin_name+like">审核员</option>
-                    <option value="admin_id+like">审核员ID</option>
                 </select>
                 <input name="key" id="key" value="" placeholder="请输入关键字" required />
                 <input type="button" value="搜索" id="search" />
@@ -64,7 +65,7 @@
                             <else />
                             <td>未审核</td>
                         </if>
-                        <if condition="$rows.pass_time neq null">
+                        <if condition="$rows.admin_name neq null">
                             <td>{$rows.pass_time}</td>
                             <else />
                             <td>未审核</td>
