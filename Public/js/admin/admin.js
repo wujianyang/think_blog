@@ -177,7 +177,7 @@ function showList(page,page_size,keyItem,key,com){
     key=key||'';
     com=com||'eq';
     var host_dir=$('#host_dir').val();
-    var sHtml_loading='<div class="loading"><img src="'+host_dir+'public/images/loading.gif" width="100px"  /></div>';
+    var sHtml_loading='<div class="loading"><img src="'+host_dir+'Public/images/loading.gif" width="100px"  /></div>';
     $('#list_table_tbody').html(sHtml_loading);
     $.ajax({
         url:host_dir+"Admin/Admin/index",

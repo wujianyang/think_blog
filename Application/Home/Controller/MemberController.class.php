@@ -256,6 +256,34 @@ class MemberController extends Controller{
         }
     }
 
+    //账号申诉
+    public function complain(){
+        if(I('session.MEMBER')!=null){
+            $this->redirect('Index');
+        }elseif(IS_POST){
+            if(isset($_POST['member_name']) && isset($_POST['complain_content']));
+            $member=D('Member');
+            $member->member_name=I('post.member_name');
+            if($member->checkVerify(I('post.vCode'))!==false){
+                if($member->isExistsMemberName()){
+                    if(!$member->isFreeze()){
+                        $complaint=D('Complaint');
+                        $complaint->member_name=I('post.member_name');
+                        $complaint->complain_content=I('post.complain_content');
+                        $result=$complaint->complain();
+                        $this->assign('msg',$result['msg']);
+                    }else{
+                        $this->assign('msg','用户未冻结，可以正常登录');
+                    }
+                }else{
+                    $this->assign('msg','用户名不存在');
+                }
+            }
+        }
+        $this->display();
+    }
+
+
     //访问用户好友列表(关注/粉丝页面)
     public function friends(){
         if(isset($_GET['f']) && !empty($_GET['f'])){

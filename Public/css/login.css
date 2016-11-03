@@ -35,7 +35,7 @@ h1{
     font-size: 2em;
     margin: 0.67em 0;
 }
-input{
+input,textarea{
     width: 288px;
     height: 30px;
     margin-bottom: 10px;

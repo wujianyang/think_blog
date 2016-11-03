@@ -158,9 +158,10 @@ function showList(page,page_size,keyItem,key,com){
     keyItem=keyItem||'id';
     key=key||'';
     com=com||'eq';
-    var sHtml_loading='<div class="loading"><img src="/think_blog/Public/images/loading.gif" width="100px"  /></div>';
-    $('#list_table_tbody').html(sHtml_loading);
     var host_dir=$('#host_dir').val();
+    var sHtml_loading='<div class="loading"><img src="'+host_dir+'Public/images/loading.gif" width="100px"  /></div>';
+    $('#list_table_tbody').html(sHtml_loading);
+
     $.ajax({
         url:host_dir+"Admin/ArticleType/index",
         type:"post",

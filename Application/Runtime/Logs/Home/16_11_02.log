@@ -1,0 +1,211 @@
+[ 2016-11-02T10:43:43+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.124684s ]
+
+[ 2016-11-02T10:43:44+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+
+[ 2016-11-02T10:43:49+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2016-11-02T10:43:50+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041152s ]
+
+[ 2016-11-02T10:44:14+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-11-02T10:44:16+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004783s ]
+
+[ 2016-11-02T10:44:26+08:00 ] ::1 /think_blog/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+
+[ 2016-11-02T10:44:28+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012142s ]
+
+[ 2016-11-02T10:52:36+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000520s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009660s ]
+
+[ 2016-11-02T10:52:36+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-11-02T10:54:00+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+
+[ 2016-11-02T10:54:01+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-11-02T10:54:22+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-11-02T10:54:23+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2016-11-02T10:55:43+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+
+[ 2016-11-02T10:55:44+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-11-02T10:56:04+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-11-02T10:56:04+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-11-02T10:56:13+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-11-02T10:56:13+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-11-02T10:56:19+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-11-02T10:56:19+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-02T10:56:30+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+
+[ 2016-11-02T10:56:30+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-11-02T10:57:26+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-02T10:57:26+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-11-02T10:57:38+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-11-02T10:57:38+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-11-02T10:57:53+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2016-11-02T10:57:55+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.101202s ]
+
+[ 2016-11-02T10:58:12+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+
+[ 2016-11-02T10:58:13+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-11-02T11:18:29+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-11-02T11:18:30+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-11-02T11:20:54+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+ERR: Think\Model:complain方法不存在！
+
+[ 2016-11-02T11:26:24+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+
+[ 2016-11-02T11:26:29+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-11-02T11:26:29+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-11-02T11:28:57+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-02T11:28:57+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-11-02T14:08:36+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17535
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002175s ]
+
+[ 2016-11-02T16:41:58+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=13957
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+

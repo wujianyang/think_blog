@@ -218,7 +218,7 @@ class MemberModel extends CommonModel{
             $this->hitnum=0;
             $this->is_freeze=0;
         }
-        $this->last_ip=getIPaddress();
+        $this->last_ip=get_client_ip();
         $this->last_time=date("Y-m-d h:i:s",time());
 
         return true;

@@ -38,10 +38,11 @@ function showList(page,page_size,keyItem,key,com){
     key=key||'';
     com=com||'eq';
     var article_id=$('#article_id').val();
+    var host_dir=$('#host_dir').val();
     if(article_id!=''){
-        var sHtml_loading='<div class="loading"><img src="/think_blog/Public/images/loading.gif" width="100px" /></div>';
+        var sHtml_loading='<div class="loading"><img src="'+host_dir+'Public/images/loading.gif" width="100px" /></div>';
         $('#list_table_tbody').html(sHtml_loading);
-        var host_dir=$('#host_dir').val();
+
         $.ajax({
             url:host_dir+"Admin/ArticleComment/index?article_id="+article_id,
             type:"post",
