@@ -33,11 +33,9 @@ $(document).ready(function(){
                     dataType:"json",
                     data:{id:arr},
                     success:function(data){
+                        alert(data.msg);
                         if(data.status=='1'){
-                            alert('删除成功');
                             showList(1,10,'','','eq');
-                        }else{
-                            alert('删除失败');
                         }
                     },
                     error:function(data){
@@ -208,21 +206,35 @@ function showList(page,page_size,keyItem,key,com){
                         sHtml += '<tr class="tr_line">';
                         sHtml += '<td><input type="checkbox" class="id" name="id[]" value="' + rows[i]["id"] + '" /></td>';
                         sHtml += '<td width="50">' + rows[i]["id"] + '</td>';
-                        sHtml += '<td width="200"><a class="info" href="javascript:void(0);" value="' + rows[i]["id"] + '">' + str_sub(rows[i]["title"],32) + '</a></td>';
+                        sHtml += '<td width="200"><a class="info" href="javascript:void(0);" value="' + rows[i]["id"] + '">' + str_sub(rows[i]["title"],30) + '</a></td>';
                         sHtml += '<td width="150">' + rows[i]["member_name"] + '</td>';
                         sHtml += '<td width="150">' + rows[i]["article_type_name"] + '</td>';
                         sHtml += '<td width="50">' + rows[i]["hitnum"] + '</td>';
                         sHtml += '<td width="150">' + rows[i]["create_time"] + '</td>';
+                        sHtml += '<td width="100"><a href="'+host_dir+'Admin/ArticleComment/index?article_id='+rows[i]['id']+'">查看评论</a></td>';
                         sHtml += '</tr>';
                     }
+                    $('.list_table_div .error').remove();
                     $('#list_table_tbody').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
                 }else{
-                    $('#list_table_tbody').html('<tr><td colspan="7" salign="center">没有数据</td></tr>');
+                    $('#list_table_tbody').html('');
+                    $('.page_div').html('');
+                    if($('.list_table_div .error').length>0){
+                        $('.list_table .error').html('没有数据');
+                    }else{
+                        $('.list_table').after('<p class="error">没有数据</p>');
+                    }
                 }
             }else{
-                $('#list_table_tbody').html('<tr><td colspan="7" salign="center">没有数据</td></tr>');
+                $('#list_table_tbody').html('');
+                $('.page_div').html('');
+                if($('.list_table_div .error').length>0){
+                    $('.list_table .error').html('没有数据');
+                }else{
+                    $('.list_table').after('<p class="error">没有数据</p>');
+                }
             }
         },
         error:function(data){

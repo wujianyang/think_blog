@@ -659,3 +659,2876 @@ SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0150s ]
 SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0005s ]
 SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0003s ]
 
+[ 2016-11-03T11:05:21+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+
+[ 2016-11-03T11:05:22+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001891s ]
+
+[ 2016-11-03T11:05:24+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001943s ]
+
+[ 2016-11-03T11:05:25+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+
+[ 2016-11-03T11:05:29+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0063s ]
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '2' LIMIT 0,10  
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '2' LIMIT 0,10  
+
+[ 2016-11-03T11:05:44+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0069s ]
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '4' LIMIT 0,10  
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '4' LIMIT 0,10  
+
+[ 2016-11-03T11:05:51+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0723s ]
+ERR: 1054:Champ 'a.member_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.member_name LIKE '%%adminis%%' LIMIT 0,10  
+ERR: 1054:Champ 'a.member_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.member_name LIKE '%%adminis%%' LIMIT 0,10  
+
+[ 2016-11-03T11:08:12+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0127s ]
+
+[ 2016-11-03T11:08:15+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-11-03T11:08:15+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+
+[ 2016-11-03T11:08:17+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-11-03T11:08:23+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0156s ]
+ERR: 1054:Champ 'a.admin_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.admin_name LIKE '%%ad%%' LIMIT 0,10  
+ERR: 1054:Champ 'a.admin_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.admin_name LIKE '%%ad%%' LIMIT 0,10  
+
+[ 2016-11-03T11:10:08+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-11-03T11:10:08+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-11-03T11:10:10+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-11-03T11:10:13+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0133s ]
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '2' LIMIT 0,10  
+ERR: 1054:Champ 'a.id' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.id = '2' LIMIT 0,10  
+
+[ 2016-11-03T11:10:24+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0147s ]
+ERR: 1054:Champ 'a.admin_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.admin_name LIKE '%ad%' LIMIT 0,10  
+ERR: 1054:Champ 'a.admin_name' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `admin` WHERE a.admin_name LIKE '%ad%' LIMIT 0,10  
+
+[ 2016-11-03T11:12:28+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-11-03T11:12:29+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+
+[ 2016-11-03T11:12:30+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-11-03T11:12:33+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `admin` WHERE `id` = '2' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `id` = '2'  [ RunTime:0.0365s ]
+
+[ 2016-11-03T11:12:37+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` LIKE '%ad%' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `admin_name` LIKE '%%ad%%'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T11:54:42+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-11-03T11:54:42+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001419s ]
+
+[ 2016-11-03T11:54:56+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-11-03T11:54:57+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-11-03T11:55:01+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+
+[ 2016-11-03T11:55:03+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002041s ]
+
+[ 2016-11-03T11:55:38+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+
+[ 2016-11-03T11:57:41+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+
+[ 2016-11-03T11:57:42+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-11-03T11:57:44+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-11-03T13:12:46+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-11-03T13:12:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-11-03T13:12:50+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-11-03T13:13:09+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-11-03T13:13:09+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-11-03T13:13:49+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-11-03T13:13:49+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-11-03T13:13:50+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-03T13:16:29+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-11-03T13:16:29+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-11-03T13:16:31+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-11-03T13:19:43+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-11-03T13:19:50+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0009s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0005s ]
+
+[ 2016-11-03T13:19:50+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0010s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0008s ]
+
+[ 2016-11-03T13:19:51+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:19:52+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:19:53+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0011s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0007s ]
+
+[ 2016-11-03T13:19:53+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:19:54+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0013s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0007s ]
+
+[ 2016-11-03T13:19:55+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002525s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:21:05+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-11-03T13:26:08+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+
+[ 2016-11-03T13:26:08+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-11-03T13:26:10+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-11-03T13:30:18+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-11-03T13:30:19+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-11-03T13:30:50+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-11-03T13:30:52+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-11-03T13:32:08+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-11-03T13:32:09+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-11-03T13:32:37+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-11-03T13:32:37+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-11-03T13:32:58+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-03T13:32:58+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-03T13:33:13+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-11-03T13:33:13+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-11-03T13:33:19+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0124s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0011s ]
+
+[ 2016-11-03T13:33:20+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:33:21+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0159s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0011s ]
+
+[ 2016-11-03T13:33:22+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:33:23+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-11-03T13:33:24+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-11-03T13:37:45+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-11-03T13:37:45+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2016-11-03T13:37:50+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0115s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0011s ]
+
+[ 2016-11-03T13:38:07+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0121s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0010s ]
+
+[ 2016-11-03T13:38:09+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0047s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:38:10+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0906s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0357s ]
+
+[ 2016-11-03T13:38:15+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:38:17+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0106s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0007s ]
+
+[ 2016-11-03T13:38:37+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+
+[ 2016-11-03T13:38:38+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-11-03T13:38:39+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0141s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0016s ]
+
+[ 2016-11-03T13:38:40+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0142s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0011s ]
+
+[ 2016-11-03T13:38:59+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008520s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' LIMIT 0,10   [ RunTime:0.0206s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:39:03+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0167s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%de%' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%de%%'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T13:39:31+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-11-03T13:39:31+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-11-03T13:39:34+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0130s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'd' LIMIT 0,10   [ RunTime:0.0476s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'd'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T13:40:18+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-11-03T13:40:19+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-11-03T13:40:23+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0156s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'd' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'd'  [ RunTime:0.0008s ]
+
+[ 2016-11-03T13:41:03+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-11-03T13:41:03+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-11-03T13:41:07+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0051s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:41:36+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-11-03T13:41:36+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-11-03T13:41:38+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0091s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0081s ]
+
+[ 2016-11-03T13:42:35+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0047s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:42:35+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:42:36+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0052s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:42:36+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:42:37+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:42:38+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0045s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:42:39+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0061s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:42:39+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:42:47+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = '4' LIMIT 0,10   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = '4'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:42:55+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:43:05+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0046s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE m.member_name = 'user' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE m.member_name = 'user'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:43:07+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0054s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE m.member_name = 'username3' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE m.member_name = 'username3'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T13:43:15+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0156s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '生活日志' LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '生活日志'  [ RunTime:0.0014s ]
+
+[ 2016-11-03T13:43:23+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '工作内容' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '工作内容'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:43:37+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0136s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '前端技术' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE at.article_type_name = '前端技术'  [ RunTime:0.0008s ]
+
+[ 2016-11-03T13:46:04+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+
+[ 2016-11-03T13:46:07+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+
+[ 2016-11-03T13:46:07+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-11-03T13:46:09+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-11-03T13:46:13+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0042s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0010s ]
+
+[ 2016-11-03T13:46:36+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-11-03T13:46:36+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-11-03T13:46:38+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-11-03T13:46:39+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:46:49+08:00 ] ::1 /think_blog/Admin/Admin/updatePasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-03T13:46:51+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+
+[ 2016-11-03T13:46:51+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-11-03T13:46:53+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-11-03T13:46:56+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0126s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0005s ]
+
+[ 2016-11-03T13:47:22+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-11-03T13:47:23+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-11-03T13:47:28+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0146s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T13:47:37+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-11-03T13:47:37+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-11-03T13:47:41+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0053s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:48:51+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-11-03T13:48:51+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+
+[ 2016-11-03T13:49:37+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2016-11-03T13:49:38+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-11-03T13:50:23+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-11-03T13:50:24+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-11-03T13:50:26+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001300s ]
+
+[ 2016-11-03T13:50:27+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-11-03T13:51:33+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-11-03T13:51:33+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-03T13:51:57+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+
+[ 2016-11-03T13:51:57+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-11-03T13:51:59+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0118s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T13:52:48+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-11-03T13:52:48+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-11-03T13:52:51+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T13:53:43+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-11-03T13:53:44+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-11-03T13:53:45+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-11-03T13:53:48+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 'd' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `id` = 'd'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T13:54:06+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+
+[ 2016-11-03T13:54:06+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-11-03T13:54:08+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+
+[ 2016-11-03T13:54:10+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `admin` WHERE `id` = 'd' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT count(id) AS `count` FROM `admin` WHERE `id` = 'd'  [ RunTime:0.0010s ]
+
+[ 2016-11-03T13:58:39+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-11-03T13:58:39+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-03T13:58:41+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-11-03T13:58:43+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0077s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0005s ]
+
+[ 2016-11-03T14:06:05+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-11-03T14:06:06+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-11-03T14:06:08+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-11-03T14:06:10+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0037s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T14:06:11+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0148s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0014s ]
+
+[ 2016-11-03T14:06:12+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0152s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 10,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0009s ]
+
+[ 2016-11-03T14:11:32+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+
+[ 2016-11-03T14:11:32+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-11-03T14:11:35+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-11-03T14:11:37+08:00 ] ::1 /think_blog/Admin/ArticleComment/index?article_id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-11-03T14:18:13+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-11-03T14:18:13+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-11-03T14:18:15+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-11-03T14:18:16+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-11-03T14:18:19+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0040s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T14:18:20+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0102s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0009s ]
+
+[ 2016-11-03T14:21:07+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0130s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.photo_title LIKE '%一%' LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.photo_title LIKE '%%一%%'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T14:21:11+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0158s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.photo_title LIKE '%de%' LIMIT 0,10   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.photo_title LIKE '%%de%%'  [ RunTime:0.0010s ]
+
+[ 2016-11-03T14:21:16+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0161s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.member_id = '29' LIMIT 0,10   [ RunTime:0.0851s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE p.member_id = '29'  [ RunTime:0.0010s ]
+
+[ 2016-11-03T14:22:42+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0144s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE m.member_name = 'user' LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE m.member_name = 'user'  [ RunTime:0.0311s ]
+
+[ 2016-11-03T14:22:44+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0152s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE m.member_name = 'username3' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id  WHERE m.member_name = 'username3'  [ RunTime:0.0011s ]
+
+[ 2016-11-03T14:29:42+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-11-03T14:29:42+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-03T14:29:44+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-11-03T14:29:46+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0125s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 10,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0206s ]
+
+[ 2016-11-03T14:29:47+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0169s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0009s ]
+
+[ 2016-11-03T14:38:54+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-11-03T14:38:54+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-11-03T14:38:56+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-11-03T14:38:59+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0134s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,c.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T14:39:02+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0040s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,c.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T14:39:12+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0101s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,c.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_name=m.member_name LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1'  [ RunTime:0.0006s ]
+
+[ 2016-11-03T14:43:46+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-11-03T14:43:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-11-03T14:43:53+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0130s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T14:43:56+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0051s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = '1' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:06:57+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-11-03T16:06:58+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-11-03T16:07:03+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0137s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0012s ]
+
+[ 2016-11-03T16:07:04+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0152s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T16:07:05+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0088s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T16:07:13+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-11-03T16:07:14+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-03T16:07:16+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0119s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T16:07:17+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0097s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T16:07:18+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0052s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:08:00+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-11-03T16:08:01+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-11-03T16:08:13+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-11-03T16:08:14+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-11-03T16:08:16+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:08:17+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0163s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0005s ]
+
+[ 2016-11-03T16:08:17+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:21:40+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-11-03T16:21:40+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-11-03T16:21:43+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:21:52+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0120s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0007s ]
+
+[ 2016-11-03T16:21:53+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0045s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:21:53+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0126s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0008s ]
+
+[ 2016-11-03T16:21:53+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T16:22:03+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-11-03T16:22:04+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2016-11-03T16:22:07+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0129s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T16:22:08+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0145s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0005s ]
+
+[ 2016-11-03T16:22:08+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0069s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T16:22:36+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-11-03T16:22:36+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-03T16:22:39+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:22:41+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:22:41+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:23:30+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0162s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0011s ]
+
+[ 2016-11-03T16:23:30+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:24:46+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-11-03T16:24:46+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-11-03T16:24:49+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0136s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0009s ]
+
+[ 2016-11-03T16:24:50+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:24:50+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0045s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:24:51+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0042s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:24:51+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0042s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0261s ]
+
+[ 2016-11-03T16:24:52+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:24:58+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0039s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%'  [ RunTime:0.0004s ]
+
+[ 2016-11-03T16:25:13+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-11-03T16:25:14+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+
+[ 2016-11-03T16:25:16+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:25:19+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0127s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0010s ]
+
+[ 2016-11-03T16:25:19+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.id = 'f'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T16:25:25+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0160s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' LIMIT 0,10   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%'  [ RunTime:0.0013s ]
+
+[ 2016-11-03T16:48:10+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-11-03T16:48:10+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-03T16:48:12+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+
+[ 2016-11-03T16:48:31+08:00 ] ::1 /think_blog/Admin/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `admin` WHERE `admin_name` = 'rootroot'  [ RunTime:0.0010s ]
+SQL: INSERT INTO `admin` (`admin_name`,`passwd`,`is_freeze`,`last_ip`,`last_time`) VALUES ('rootroot','e10adc3949ba59abbe56e057f20f883e','0','0.0.0.0','2016-11-03 04:48:31') [ RunTime:0.0898s ]
+
+[ 2016-11-03T16:48:32+08:00 ] ::1 /think_blog/Admin/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `admin` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT count(id) AS `count` FROM `admin`  [ RunTime:0.0001s ]
+
+[ 2016-11-03T16:55:36+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-11-03T16:55:41+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0009s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0006s ]
+
+[ 2016-11-03T16:56:22+08:00 ] ::1 /think_blog/Admin/Member/freeze
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0121s ]
+SQL: UPDATE `member` SET `is_freeze`='0' WHERE `id` IN ('79') [ RunTime:0.1362s ]
+
+[ 2016-11-03T16:56:23+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T16:56:45+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:08:52+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-11-03T17:08:54+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0054s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:08:57+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+
+[ 2016-11-03T17:08:58+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2016-11-03T17:09:00+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0040s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:09:04+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2016-11-03T17:09:06+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0047s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:09:08+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0047s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:09:12+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-11-03T17:09:13+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:14+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0003s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:21+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-11-03T17:09:22+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:24+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:28+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0076s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('79')  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0039s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('79') [ RunTime:0.1100s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('79') [ RunTime:0.0009s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('79') [ RunTime:0.0007s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('79') [ RunTime:0.0009s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('79') [ RunTime:0.0268s ]
+
+[ 2016-11-03T17:09:30+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.1462s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0009s ]
+
+[ 2016-11-03T17:09:31+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2016-11-03T17:09:33+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0404s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:09:35+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-11-03T17:09:37+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0037s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 10,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:38+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-11-03T17:09:40+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0039s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:09:42+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-11-03T17:09:43+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0054s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:16:23+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+
+[ 2016-11-03T17:16:27+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-11-03T17:16:32+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0046s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0005s ]
+
+[ 2016-11-03T17:16:34+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:16:36+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-11-03T17:16:43+08:00 ] ::1 /think_blog/Admin/ArticleType/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0058s ]
+SQL: DELETE FROM `article` WHERE `article_type_id` IN ('11') [ RunTime:0.0003s ]
+SQL: DELETE FROM `article_type` WHERE `id` IN ('11') [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:16:44+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `id`,a.article_type_name AS `article_type_name`,a.member_id AS `member_id`,m.member_name AS `member_name` FROM article_type a INNER JOIN member m ON a.member_id=m.id  LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article_type a INNER JOIN member m ON a.member_id=m.id   [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:16:46+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-03T17:16:48+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT a.id AS `id`,a.title AS `title`,a.content AS `content`,m.member_name AS `member_name`,at.article_type_name AS `article_type_name`,a.hitnum AS `hitnum`,a.create_time AS `create_time` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id  LIMIT 20,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a INNER JOIN member m ON a.member_id=m.id INNER JOIN article_type at ON a.article_type_id=at.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:21:22+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-11-03T17:21:23+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0007s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:21:27+08:00 ] ::1 /think_blog/Admin/Member/resetPasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0044s ]
+SQL: UPDATE `member` SET `passwd`='8cef992a5af6b216dd3c62ae39f4a13b' WHERE `id` IN ('75') [ RunTime:0.0991s ]
+
+[ 2016-11-03T17:21:28+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:23:06+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:23:07+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `member` LIMIT 20,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:23:13+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:23:21+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0039s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0045s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `id` IN ('75')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0044s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('75') [ RunTime:0.0002s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('75') [ RunTime:0.0002s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('75') [ RunTime:0.0454s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('75') [ RunTime:0.1893s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('75') [ RunTime:0.0255s ]
+
+[ 2016-11-03T17:24:40+08:00 ] ::1 /think_blog/Admin/Member/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `member` WHERE `id` = '75'  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:24:44+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-11-03T17:24:46+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:26:16+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0061s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0179s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `id` IN ('75')  [ RunTime:0.0013s ]
+
+[ 2016-11-03T17:26:42+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0114s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0008s ]
+
+[ 2016-11-03T17:26:53+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0094s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0087s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0006s ]
+
+[ 2016-11-03T17:26:59+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-11-03T17:27:00+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:30:07+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0141s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0150s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0012s ]
+
+[ 2016-11-03T17:30:46+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+
+[ 2016-11-03T17:30:47+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+
+[ 2016-11-03T17:30:48+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-11-03T17:30:49+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:31:23+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2016-11-03T17:31:23+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+
+[ 2016-11-03T17:31:24+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-03T17:31:26+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:31:33+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0640s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0566s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0071s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('75') [ RunTime:0.0004s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('75') [ RunTime:0.0003s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('75') [ RunTime:0.0004s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('75') [ RunTime:0.1646s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('75') [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:31:38+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+
+[ 2016-11-03T17:31:38+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-11-03T17:31:39+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0006s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:33:00+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0185s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0177s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('75') [ RunTime:0.0013s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('75') [ RunTime:0.0019s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('75') [ RunTime:0.0018s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('75') [ RunTime:0.0007s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('75') [ RunTime:0.0354s ]
+
+[ 2016-11-03T17:34:27+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0044s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0131s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0168s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('75') [ RunTime:0.0004s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('75') [ RunTime:0.0009s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('75') [ RunTime:0.0453s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('75') [ RunTime:0.0809s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('75') [ RunTime:0.0017s ]
+
+[ 2016-11-03T17:34:59+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-11-03T17:34:59+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-11-03T17:35:01+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2016-11-03T17:35:03+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:35:12+08:00 ] ::1 /think_blog/Admin/Member/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0048s ]
+SQL: SELECT `head_pic` FROM `member` WHERE `id` IN ('75')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0094s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `member_id` IN ('75')  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0084s ]
+SQL: DELETE FROM `article` WHERE `member_id` IN ('75') [ RunTime:0.0003s ]
+SQL: DELETE FROM `article_type` WHERE `member_id` IN ('75') [ RunTime:0.0002s ]
+SQL: DELETE FROM `photo_img` WHERE `member_id` IN ('75') [ RunTime:0.0002s ]
+SQL: DELETE FROM `photo` WHERE `member_id` IN ('75') [ RunTime:0.1579s ]
+SQL: DELETE FROM `mess` WHERE `messer_id` IN ('75') [ RunTime:0.0008s ]
+SQL: DELETE FROM `mess` WHERE `messed_id` IN ('75') [ RunTime:0.0006s ]
+SQL: DELETE FROM `member` WHERE `id` IN ('75') [ RunTime:0.0008s ]
+
+[ 2016-11-03T17:35:14+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `member` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0005s ]
+
+[ 2016-11-03T17:35:16+08:00 ] ::1 /think_blog/Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `member` LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT count(id) AS `count` FROM `member`  [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:46:26+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-11-03T17:46:27+08:00 ] ::1 /think_blog/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:46:28+08:00 ] ::1 /think_blog/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0005s ]
+
+[ 2016-11-03T17:46:40+08:00 ] ::1 /think_blog/Admin/PhotoImg/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0047s ]
+SQL: SELECT count(id) AS `count` FROM `member` WHERE `id` = 29  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0038s ]
+SQL: SELECT count(id) AS `count` FROM `photo` WHERE `id` = 1  [ RunTime:0.0002s ]
+SQL: INSERT INTO `photo_img` (`img_title`,`member_id`,`photo_id`,`img_src`) VALUES ('测试测试一','29','1','photo_img/photo_img_1478166400.png') [ RunTime:0.0954s ]
+
+[ 2016-11-03T17:46:41+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0064s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0004s ]
+
+[ 2016-11-03T17:46:44+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0096s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 10,10   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0007s ]
+
+[ 2016-11-03T17:47:01+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0076s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0005s ]
+
+[ 2016-11-03T17:48:59+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+
+[ 2016-11-03T17:48:59+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-11-03T17:49:15+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-11-03T17:49:18+08:00 ] ::1 /think_blog/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0192s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:49:18+08:00 ] ::1 /think_blog/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:49:39+08:00 ] ::1 /think_blog/Admin/PhotoImg/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0208s ]
+SQL: SELECT count(id) AS `count` FROM `member` WHERE `id` = 29  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0076s ]
+SQL: SELECT count(id) AS `count` FROM `photo` WHERE `id` = 11  [ RunTime:0.0003s ]
+SQL: INSERT INTO `photo_img` (`img_title`,`member_id`,`photo_id`,`img_src`) VALUES ('测试测试一','29','11','photo_img/photo_img_1478166578.png') [ RunTime:0.7764s ]
+
+[ 2016-11-03T17:49:40+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0105s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src`,pi.member_id AS `member_id`,pi.photo_id AS `photo_id`,m.member_name AS `member_name`,p.photo_title AS `photo_title` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id  LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi INNER JOIN member m ON pi.member_id=m.id INNER JOIN photo p ON pi.photo_id=p.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:49:43+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-11-03T17:49:44+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-11-03T17:49:53+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0180s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0003s ]
+
+[ 2016-11-03T17:50:01+08:00 ] ::1 /think_blog/Admin/Photo/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0048s ]
+SQL: SELECT `img_src` FROM `photo_img` WHERE `photo_id` IN ('11')  [ RunTime:0.0003s ]
+SQL: DELETE FROM `photo_img` WHERE `photo_id` IN ('11') [ RunTime:0.0003s ]
+SQL: DELETE FROM `photo` WHERE `id` IN ('11') [ RunTime:0.4232s ]
+
+[ 2016-11-03T17:50:02+08:00 ] ::1 /think_blog/Admin/Photo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0044s ]
+SQL: SELECT p.id AS `id`,p.photo_title AS `photo_title`,p.member_id AS `member_id`,m.member_name AS `member_name` FROM photo p INNER JOIN member m ON p.member_id=m.id  LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p INNER JOIN member m ON p.member_id=m.id   [ RunTime:0.0002s ]
+
+[ 2016-11-03T17:50:54+08:00 ] ::1 /think_blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001452s ]
+
+[ 2016-11-03T17:50:55+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-11-03T17:50:58+08:00 ] ::1 /think_blog/Admin/ArticleType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+

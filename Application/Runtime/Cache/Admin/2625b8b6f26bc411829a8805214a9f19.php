@@ -17,12 +17,15 @@
     <style type="text/css">
         .list_table{width:550px;margin:0 auto;}
         .info_table{height:150px;}
-        .loading{width:550px;}
     </style>
 </head>
 <body>
 
 <div class="main_form">
+    <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+    <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+    <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+    <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -36,7 +39,7 @@
                     <option value="member_id+eq">用户ID</option>
                     <option value="member_name+eq">用户名</option>
                 </select>
-                <input name="key" id="key" value="" placeholder="搜索文章类别名称" required />
+                <input name="key" id="key" value="" placeholder="请输入关键字" required />
                 <input type="button" value="搜索" id="search" />
             </div>
         </div>

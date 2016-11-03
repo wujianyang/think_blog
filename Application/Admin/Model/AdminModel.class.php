@@ -40,7 +40,6 @@ class AdminModel extends CommonModel{
         $result=$this->field('id')->where(array('admin_name'=>$this->admin_name))->select();
         if(count($result) > 0){
             $result=$this->field('id')->where(array('admin_name'=>$this->admin_name,'passwd'=>md5($this->passwd)))->select();
-            $s=$this->getLastSql();
             if(count($result) > 0){
                 $data['status']=1;
                 $data['msg']='登录成功';
@@ -55,27 +54,6 @@ class AdminModel extends CommonModel{
         return $data;
     }
 
-    public function addData(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $vali_result=$this->setValidata();
-        if($vali_result===true){
-            $add_data=$this->create_Data();
-            $result=$this->data($add_data)->add();
-            if($result!==false){
-                $data['msg']='添加成功';
-                $data['status']=1;
-            }else{
-                $data['msg']='添加失败';
-                $data['status']=0;
-            }
-        }else{
-            $data['msg']=$vali_result;
-        }
-        return $data;
-    }
 
     //批量冻结或激活用户
     public function freezeUser($f=1){

@@ -39,7 +39,7 @@
                     <option value="member_id+eq">用户ID</option>
                     <option value="member_name+eq">用户名</option>
                 </select>
-                <input name="key" id="key" value="" placeholder="搜索文章类别名称" required />
+                <input name="key" id="key" value="" placeholder="请输入关键字" required />
                 <input type="button" value="搜索" id="search" />
             </div>
         </div>

@@ -1,35 +1,17 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
-    <title>articleAdmin_blog</title>
+    <title>文章评论管理_<?php echo (C("TITLE")); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>admin.css" />
-    <link href="<?php echo (C("PLUGINS")); ?>froala_editor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo (C("PLUGINS")); ?>froala_editor/css/froala_editor.min.css" rel="stylesheet" type="text/css">
 
-
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/libs/jquery-1.11.1.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/froala_editor.min.js"></script>
-    <!--[if lt IE 9]>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/froala_editor_ie8.min.js"></script>
-    <![endif]-->
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/tables.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/char_counter.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/file_upload.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/lists.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/colors.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/font_family.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/font_size.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/block_styles.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/media_manager.min.js"></script>
-    <script src="<?php echo (C("PLUGINS")); ?>froala_editor/js/plugins/video.min.js"></script>
-
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.validate.min.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.form.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>messages_zh.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>ajax.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/common.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/page.js"></script>
-    <script language="JavaScript" src="<?php echo (C("JS")); ?>admin/articleCommentAdmin.js"></script>
+    <script src="<?php echo (C("JS")); ?>jquery-1.8.3.min.js"></script>
+    <script src="<?php echo (C("JS")); ?>jquery.validate.min.js"></script>
+    <script src="<?php echo (C("JS")); ?>jquery.form.js"></script>
+    <script src="<?php echo (C("JS")); ?>messages_zh.js"></script>
+    <script src="<?php echo (C("JS")); ?>ajax.js"></script>
+    <script src="<?php echo (C("JS")); ?>admin/common.js"></script>
+    <script src="<?php echo (C("JS")); ?>admin/page.js"></script>
+    <script src="<?php echo (C("JS")); ?>admin/articleCommentAdmin.js"></script>
     <script>
         $(function(){
 
@@ -43,6 +25,10 @@
 <body>
 
 <div class="main_form">
+    <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+    <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+    <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+    <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -51,10 +37,10 @@
             <div class="rfloat">
                 <select id="keyItem">
                     <option value="id+eq">ID</option>
-                    <option value="member_name+eq">用户ID</option>
+                    <option value="member_id+eq">用户ID</option>
                     <option value="member_name+eq">用户名</option>
                 </select>
-                <input name="key" id="key" value="" placeholder="请输入关键词" />
+                <input name="key" id="key" value="" placeholder="请输入关键词" required />
                 <input type="button" value="搜索" id="search" />
             </div>
         </div>

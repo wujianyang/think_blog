@@ -16,7 +16,6 @@
     </script>
     <style type="text/css">
         .page_div{display: block;}
-        .toPage
     </style>
 </head>
 <body>
@@ -47,7 +46,7 @@
                     <option value="last_ip+eq">上次登录IP</option>
                     <option value="last_time+like">上次登录时间</option>
                 </select>
-                <input name="key" id="key" value="" placeholder="搜索用户名" required />
+                <input name="key" id="key" value="" placeholder="请输入关键字" required />
                 <input type="button" value="搜索" id="search" />
             </div>
         </div>

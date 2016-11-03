@@ -18,6 +18,10 @@ class ComplaintModel extends CommonModel{
     public $com='eq';
 
     public function index(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $arr_where=array();
         if($this->key!=''){
             if($this->com=='like'){
@@ -36,6 +40,10 @@ class ComplaintModel extends CommonModel{
         }else{
             $arr_where["$this->table_alias.isPass"]=array($this->com,'0');
         }
+
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name";
+        $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id";
 
         $arr_field=array();
         $arr_field[$this->table_alias.'.id']='id';
@@ -48,11 +56,23 @@ class ComplaintModel extends CommonModel{
         $arr_field[$this->table_alias.'.pass_time']='pass_time';
         $arr_field[$this->table_alias.'.isPass']='isPass';
 
-        $result=$this->alias($this->table_alias)->join(array("LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name","LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id"))->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
-        return $result;
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='数据获取成功';
+            $data['rows']=$result;
+        }else{
+            $data['msg']='数据获取失败';
+        }
+        unset($result);
+        return $data;
     }
 
     public function getCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $arr_where=array();
         if($this->key!=''){
             if($this->com=='like'){
@@ -72,8 +92,23 @@ class ComplaintModel extends CommonModel{
             $arr_where["$this->table_alias.isPass"]=array($this->com,'0');
         }
 
-        $result=$this->alias($this->table_alias)->join(array("LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name","LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id"))->field(array("count($this->table_alias.id)"=>'count'))->where($arr_where)->select();
-        return $result;
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name";
+        $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id";
+
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]="count";
+
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='记录数获取成功';
+            $data['count']=$result[0]['count'];
+        }else{
+            $data['msg']='记录数获取失败';
+        }
+        unset($result);
+        return $data;
     }
 
     public function pass(){

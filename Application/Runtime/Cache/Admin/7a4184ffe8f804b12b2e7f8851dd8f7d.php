@@ -46,8 +46,6 @@
                     <option value="title+like">文章标题</option>
                     <option value="member_name+eq">作者</option>
                     <option value="article_type_name+eq">文章类型</option>
-                    <option value="hitnum+eq">访问量</option>
-                    <option value="create_time+eq">撰写时间</option>
                 </select>
                 <input name="key" id="key" value="" placeholder="搜索文章标题" required />
                 <input type="button" value="搜索" id="search" />
@@ -74,9 +72,8 @@
                         <td width="150"><?php echo ($rows["article_type_name"]); ?></td>
                         <td width="50"><?php echo ($rows["hitnum"]); ?></td>
                         <td width="150"><?php echo ($rows["create_time"]); ?></td>
-                        <td width="100"><a href="/think_blog/index.php/Admin/ArticleComment/index?article_id=<?php echo ($rows["id"]); ?>">查看评论</a></td>
+                        <td width="100"><a href="<?php echo (C("HOST_DIR")); ?>Admin/ArticleComment/index?article_id=<?php echo ($rows["id"]); ?>">查看评论</a></td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                <?php if($data["count"] == 0): ?><div class="error">没有数据</div><?php endif; ?>
                 </tbody>
             </table>
         </div>

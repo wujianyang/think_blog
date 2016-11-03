@@ -10,14 +10,24 @@ class PhotoModel extends CommonModel{
     public $foreign_table_alias='m';
 
     public function index(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $arr_where=array();
         if($this->key!=''){
-            if($this->keyItem!='member_name'){
-                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
-            }else{
+            if($this->com=='like'){
+                $this->key="%".$this->key."%";
+            }
+            if($this->keyItem=='member_name'){
                 $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
             }
         }
+
+        $arr_join=array();
+        $arr_join[]="$this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
 
         $arr_field=array();
         $arr_field[$this->table_alias.'.id']='id';
@@ -25,22 +35,51 @@ class PhotoModel extends CommonModel{
         $arr_field[$this->table_alias.'.member_id']='member_id';
         $arr_field[$this->foreign_table_alias.'.member_name']='member_name';
 
-        $result=$this->alias($this->table_alias)->join("$this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id")->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
-        return $result;
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='数据获取成功';
+            $data['rows']=$result;
+        }else{
+            $data['msg']='数据获取失败';
+        }
+        unset($result);
+        return $data;
     }
 
     public function getCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $arr_where=array();
         if($this->key!=''){
-            if($this->keyItem!='member_name'){
-                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
-            }else{
+            if($this->com=='like'){
+                $this->key="%".$this->key."%";
+            }
+            if($this->keyItem=='member_name'){
                 $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
             }
         }
 
-        $result=$this->alias($this->table_alias)->join("$this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id")->field(array("count($this->table_alias.id)"=>'count'))->where($arr_where)->select();
-        return $result;
+        $arr_join=array();
+        $arr_join[]="$this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
+
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]="count";
+
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='记录数获取成功';
+            $data['count']=$result[0]['count'];
+        }else{
+            $data['msg']='记录数获取失败';
+        }
+        unset($result);
+        return $data;
     }
 
     //批量删除信息
@@ -49,6 +88,8 @@ class PhotoModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
+        //获取相片数据
+        $img_src=D('PhotoImg')->field('img_src')->where(array('photo_id'=>array('in',$this->id)))->select();
         $this->startTrans();
         $photoImg=D('PhotoImg');
         //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
@@ -56,6 +97,11 @@ class PhotoModel extends CommonModel{
         $result2=$this->where(array('id'=>array('in',$this->id)))->delete();
         if($result && $result2){
             $this->commit();
+            foreach($img_src as $img_src_arr){  //在空间中删除相片
+                if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
+                    unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
+                }
+            }
             $data['msg']='删除成功';
             $data['status']=1;
         }else{

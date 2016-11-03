@@ -30,8 +30,8 @@
             </div>
             <div class="rfloat">
                 <select id="keyItem">
-                    <option value="pass+eq">已审核</option>
                     <option value="notpass+eq">未审核</option>
+                    <option value="pass+eq">已审核</option>
                     <option value="member_id+eq">用户ID</option>
                     <option value="member_name+like">用户名</option>
                     <option value="admin_id+eq">审核员ID</option>

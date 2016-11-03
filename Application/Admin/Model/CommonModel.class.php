@@ -12,28 +12,53 @@ class CommonModel extends Model{
     public $sql='';
 
     //条件搜索显示列表
-    public function index($f=''){
+    public function index(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $arr_where=array();
         if($this->key!=''){
             if($this->com=='like'){
                 $this->key="%".$this->key."%";
             }
-            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            $arr_where["$this->keyItem"]=array($this->com,$this->key);
         }
         $result=$this->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='数据获取成功';
+            $data['rows']=$result;
+        }else{
+            $data['msg']='数据获取失败';
+        }
 
-        return $result;
+        return $data;
     }
 
     //条件搜索显示记录数
     public function getCount(){
-        $arr_where=array();
-        if($this->key){
-            $arr_where[$this->keyItem]=array($this->com,$this->key);
-        }
-        $resultCount=$this->field(array('count(id)'=>'count'))->where($arr_where)->select();
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
 
-        return $resultCount;
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%".$this->key."%";
+            }
+            $arr_where["$this->keyItem"]=array($this->com,$this->key);
+        }
+        $result=$this->field(array('count(id)'=>'count'))->where($arr_where)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='记录数获取成功';
+            $data['count']=$result[0]['count'];
+        }else{
+            $data['msg']='记录数获取失败';
+        }
+        unset($result);
+        return $data;
     }
 
     //添加信息

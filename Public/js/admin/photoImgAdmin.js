@@ -224,15 +224,27 @@ function showList(page,page_size,keyItem,key,com){
                         sHtml+='<p><span>用户名称</span>：'+rows[i]['member_name']+'</p>';
                         sHtml+='</div>';
                     }
+                    $('.list_table_div .error').remove();
                     $('#list_table_div').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
                 }else{
-                    $('#list_table_div').html('<div class="error">没有数据</div>');
+                    $('#list_table_tbody').html('');
+                    $('.page_div').html('');
+                    if($('.list_table_div .error').length>0){
+                        $('.list_table .error').html('没有数据');
+                    }else{
+                        $('.list_table').after('<p class="error">没有数据</p>');
+                    }
                 }
-
             }else{
-                $('#list_table_div').html('<div class="error">没有数据</div>');
+                $('#list_table_tbody').html('');
+                $('.page_div').html('');
+                if($('.list_table_div .error').length>0){
+                    $('.list_table .error').html('没有数据');
+                }else{
+                    $('.list_table').after('<p class="error">没有数据</p>');
+                }
             }
         },
         error:function(data){

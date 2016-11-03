@@ -83,7 +83,7 @@ class MemberController extends Controller{
                 $member->vCode=I('post.vCode');
                 if($member->checkVerify(I('post.vCode'))!==false){  //验证验证码是否正确
                     $isFreeze=$member->isFreeze();
-                    if($isFreeze['status']){    //验证是否冻结
+                    if($isFreeze['status']!=1){    //验证是否冻结
                         $result=$member->login();
                         unset($member);
                         if($result['status']==1){   //验证用户名和密码是否匹配

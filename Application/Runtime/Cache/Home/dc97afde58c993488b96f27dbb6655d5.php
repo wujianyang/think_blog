@@ -29,9 +29,11 @@
     </style>
 </head>
 <body>
-<input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
 <input type="hidden" value="<?php echo ($_GET['photo_id']); ?>" id="photo_id" />
+<input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
 <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+<input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+<input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
 <div class="main_form">
     <div id="list_div">
         <div class="toolbar">
