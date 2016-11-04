@@ -272,7 +272,7 @@ $(document).ready(function(){
                             $('#list_div').hide();
                              for(var i in data){
                                  if(i=='head_pic'){
-                                     $("#"+i+"_edit_img").attr("src",'/think_blog/Upload/'+data[i]);
+                                     $("#"+i+"_edit_img").attr("src",host_dir+'Upload/'+data[i]);
                                  }
                                  $("#"+i+"_edit").val(data[i]);
                              }

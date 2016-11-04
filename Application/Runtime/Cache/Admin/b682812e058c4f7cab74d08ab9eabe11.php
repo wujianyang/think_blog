@@ -3,6 +3,7 @@
     <title>管理员管理_<?php echo (C("TITLE")); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>admin.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>info.css" />
     <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery-1.8.3.min.js"></script>
     <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.validate.min.js"></script>
     <script language="JavaScript" src="<?php echo (C("JS")); ?>jquery.form.js"></script>
@@ -25,6 +26,9 @@
     <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
     <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
     <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
+    <div class="info_title">
+        <span>修改密码</span>
+    </div>
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">

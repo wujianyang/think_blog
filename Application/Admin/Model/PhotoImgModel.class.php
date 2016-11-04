@@ -149,7 +149,7 @@ class PhotoImgModel extends CommonModel{
         $data['msg']='';
 
         $img_src=D('PhotoImg')->field('img_src')->where(array('id'=>array('in',$this->id)))->select();   //获取相片数据
-        if(count($this->img_src)>0){
+        if(count($img_src)>0){
             $result=$this->where(array('id'=>array('in',$this->id)))->delete();
             if($result!==false){
                 foreach($img_src as $img_src_arr){  //在空间中删除相片

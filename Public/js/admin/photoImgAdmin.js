@@ -27,7 +27,7 @@ $(document).ready(function(){
         }
     });
     //单击选中相片
-    $('.photo_div').click(function(){
+    $('body').on('click','.photo_div',function(){
         if($(this).attr('class').indexOf('op')!=-1){
             $(this).removeClass('op');
         }else{
@@ -169,7 +169,7 @@ $(document).ready(function(){
                                 if(i != 'img_src'){
                                     $("#"+i+"_edit").val(data[i]);
                                 }else{
-                                    $("#"+i+"_edit").attr('src','/think_blog/Upload/'+data[i]);
+                                    $("#"+i+"_edit").attr('src',host_dir+'Upload/'+data[i]);
                                 }
                             }
                             $('#edit_div').show();
@@ -218,7 +218,7 @@ function showList(page,page_size,keyItem,key,com){
                     for (var i = 0; i < rows.length; i++) {
                         sHtml+='<div class="photo_div">';
                         sHtml+='<input type="hidden" class="id" name="id[]" value="'+rows[i]['id']+'" />';
-                        sHtml+='<div class="img_div"><img src="/think_blog/Upload/'+rows[i]['img_src']+'" width="200" height="150" /></div>';
+                        sHtml+='<div class="img_div"><img src="'+host_dir+'Upload/'+rows[i]['img_src']+'" width="200" height="150" /></div>';
                         sHtml+='<p><a class="info" href="javascript:void(0);" value="'+rows[i]['id']+'">相片名称：'+rows[i]['img_title']+'</a></p>';
                         sHtml+='<p><span>相册名称</span>：'+rows[i]['photo_title']+'</p>';
                         sHtml+='<p><span>用户名称</span>：'+rows[i]['member_name']+'</p>';

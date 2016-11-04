@@ -65,7 +65,6 @@
                     <p><span>相册名称</span>：<?php echo ($rows["photo_title"]); ?></p>
                     <p><span>用户名称</span>：<?php echo ($rows["member_name"]); ?></p>
                 </div><?php endforeach; endif; else: echo "$empty" ;endif; ?>
-            <?php if($data["count"] == 0): ?><div class="error">没有数据</div><?php endif; ?>
         </div>
         <?php if($data["count"] > 0): ?><div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>
