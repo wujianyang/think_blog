@@ -31,28 +31,6 @@ class AdminController extends Controller{
         }
     }
 
-    public function edit(){
-        if(isset($_POST['member']) && !empty($_POST['member'])) {
-            $member=D('Member');
-            $member->id=I('post.member')['id'];
-            $member->member_name=I('post.member')['member_name'];
-            $member->sex=I('post.member')['sex'];
-            $member->email=I('post.member')['email'];
-            $member->tel=I('post.member')['tel'];
-            $member->address=I('post.member')['address'];
-            $member->question=I('post.member')['question'];
-            $member->answer=I('post.member')['answer'];
-            if (isset($_FILES['head_pic']) && !empty($_FILES['head_pic'])) {
-                $member->head_pic = $_FILES['head_pic'];
-            }
-            $result=$member->editData();
-            unset($member);
-            $this->ajaxReturn($result);
-        }else{
-            $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
-        }
-    }
-
     public function freeze(){
         if(isset($_POST['id']) && !empty($_POST['id']) && $_POST['is_f']!='') {
             $admin=D('Admin');

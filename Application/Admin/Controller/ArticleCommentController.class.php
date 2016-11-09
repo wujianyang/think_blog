@@ -12,13 +12,10 @@ class ArticleCommentController extends Controller{
             $articleComment->article_id = I('get.article_id');
             $articleComment->page = isset($_POST['page']) ? I('post.page') : 1;
             $articleComment->pageSize = isset($_POST['page_size']) ? I('post.page_size') : 10;
+            $articleComment->key = isset($_POST['key']) ? trim(I('post.key')) : '';
             $articleComment->keyItem = isset($_POST['keyItem']) ? I('post.keyItem') : 'id';
             $articleComment->com = isset($_POST['com']) ? I('post.com') : 'eq';
-            if ($articleComment->com == 'like') {
-                $articleComment->key = isset($_POST['key']) ? '%' . trim(I('post.key')) . '%' : '';
-            } else {
-                $articleComment->key = isset($_POST['key']) ? I('post.key') : '';
-            }
+
             $result = $articleComment->index();
             $resultCount = $articleComment->getCount();
             $articleInfo = $articleComment->getArticleTitle();

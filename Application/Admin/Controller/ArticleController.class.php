@@ -37,7 +37,6 @@ class ArticleController extends Controller{
             $article->member_id=I('post.article')['member_id'];
             $article->article_type_id=I('post.article')['article_type_id'];
             $result=$article->editData();
-            $result['sql']=$article->getLastSql();
             unset($article);
             $this->ajaxReturn($result);
         }else{
