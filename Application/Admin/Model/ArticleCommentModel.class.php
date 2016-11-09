@@ -43,7 +43,6 @@ class ArticleCommentModel extends CommonModel{
         }else{
             $data['msg']='数据获取失败';
         }
-        unset($result);
         return $data;
     }
 

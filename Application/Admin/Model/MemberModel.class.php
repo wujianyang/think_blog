@@ -216,11 +216,18 @@ class MemberModel extends CommonModel{
             return "密码答案验证失败";
         }
         if(isset($this->head_pic) && !empty($this->head_pic)) {
-            $fileStatus=(array)upload_file($this->head_pic,'head_pic');
-            if($fileStatus['status']==1){
-                $this->head_pic='head_pic/'.$fileStatus['fileName'];
+            $uploadConfig=array('name' => 'head_pic',
+                'maxSize'   =>  1000000,
+                'exts'      =>  array('png','jpg','jpeg','gif'),
+                'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
+                'savePath'  =>  'head_pic/',
+                'saveName'  =>  'head_pic_'.time(),
+                'autoSub'   =>  false);
+            $resultUpload=$this->upload($uploadConfig);
+            if($resultUpload['status']==1 && $resultUpload['upload']['head_pic']['savename']!=''){
+                $this->head_pic=$uploadConfig['savePath'].$resultUpload['upload']['head_pic']['savename'];
             }else{
-                return $fileStatus['msg'];
+                return $resultUpload['msg'];
             }
         }elseif($f!='edit'){    //编辑时验证
             return "用户头像验证失败";

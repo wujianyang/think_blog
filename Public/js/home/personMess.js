@@ -44,9 +44,9 @@ function showList(page,page_size,keyItem,key,com){
         data:{"page":page,"page_size":page_size,"keyItem":keyItem,"key":key,"com":com},
         dataType:"json",
         success:function(data){
-            if(data.status==1 && data.mess!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var mess=data.mess;
+                var mess=data.rows;
                 if(mess.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < mess.length; i++) {

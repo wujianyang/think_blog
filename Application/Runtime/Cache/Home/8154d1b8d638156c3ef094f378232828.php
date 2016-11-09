@@ -13,6 +13,8 @@
     <script language="JavaScript" src="<?php echo (C("JS")); ?>home/info.js"></script>
 </head>
 <body>
+<input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+<input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
     <div class="info_title">
         <span>个人资料</span>
     </div>

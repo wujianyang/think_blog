@@ -65,32 +65,32 @@
                     <th width="100">查看评论</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <volist name="article" id="article" offset="0" length="10" empty="$empty">
+                <volist name="data.rows" id="rows" offset="0" length="10" empty="$empty">
                     <tr class="tr_line">
-                        <td><input type="checkbox" class="id" name="id[]" value="{$article.article_id}" /></td>
-                        <td width="50">{$article.article_id}</td>
-                        <td width="200"><a class="info" href="javascript:void(0);" title="{$article.title}" value="{$article.article_id}">{$article.title}</a></td>
-                        <td width="150">{$article.article_type_name}</td>
-                        <td width="50">{$article.hitnum}</td>
-                        <td width="150">{$article.create_time}</td>
-                        <td width="100"><a href="{$Think.config.HOST_DIR}Home/ArticleComment/getArticleComment/article_id/{$article.article_id}.{$Think.config.URL_HTML_SUFFIX}">查看评论</a></td>
+                        <td><input type="checkbox" class="id" name="id[]" value="{$rows.article_id}" /></td>
+                        <td width="50">{$rows.article_id}</td>
+                        <td width="200"><a class="info" href="javascript:void(0);" title="{$rows.title}" value="{$rows.article_id}">{$rows.title}</a></td>
+                        <td width="150">{$rows.article_type_name}</td>
+                        <td width="50">{$rows.hitnum}</td>
+                        <td width="150">{$rows.create_time}</td>
+                        <td width="100"><a href="{$Think.config.HOST_DIR}Home/Member/personArticleComment/article_id/{$rows.article_id}.{$Think.config.URL_HTML_SUFFIX}">查看评论</a></td>
                     </tr>
                 </volist>
                 </tbody>
             </table>
         </div>
-        <if condition="$pageCount gt 0">
+        <if condition="$data.pageCount gt 0">
             <div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>
                 <span class="page"><a href="javascript:void(0);">上一页</a></span>
                 <label id="curpage">1</label> /
-                <label id="page_count">{$pageCount}</label>
-                <if condition="$pageCount eq 1">
+                <label id="page_count">{$data.pageCount}</label>
+                <if condition="$data.pageCount eq 1">
                     <span class="page"><a href="javascript:void(0);">下一页</a></span>
                     <span class="page"><a href="javascript:void(0);">末页</a></span>
                     <else />
                     <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                    <span class="page hov"><a href="javascript:void(0);" rel="{$pageCount}">末页</a></span>
+                    <span class="page hov"><a href="javascript:void(0);" rel="{$data.pageCount}">末页</a></span>
                 </if>
                 <span>
                     <select id="toPageSize">
@@ -105,7 +105,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-                <span>共{$count}条数据</span>
+                <span>共{$data.count}条数据</span>
             </div>
         </if>
     </div>

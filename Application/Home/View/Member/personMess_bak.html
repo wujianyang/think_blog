@@ -52,31 +52,31 @@
                     <th width="150">评论时间</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <volist name="data.rows" id="rows" offset="0" length="10" empty="$empty">
+                <volist name="mess" id="mess" offset="0" length="10" empty="$empty">
                     <tr class="tr_line">
-                        <td><input type="checkbox" class="id" name="id[]" value="{$rows.mess_id}" /></td>
-                        <td width="50">{$rows.mess_id}</td>
-                        <td width="50">{$rows.messer_id}</td>
-                        <td width="150">{$rows.member_name}</td>
-                        <td width="700">{$rows.content}</td>
-                        <td width="150">{$rows.mess_time}</td>
+                        <td><input type="checkbox" class="id" name="id[]" value="{$mess.mess_id}" /></td>
+                        <td width="50">{$mess.mess_id}</td>
+                        <td width="50">{$mess.messer_id}</td>
+                        <td width="150">{$mess.member_name}</td>
+                        <td width="700">{$mess.content}</td>
+                        <td width="150">{$mess.mess_time}</td>
                     </tr>
                 </volist>
                 </tbody>
             </table>
         </div>
-        <if condition="$data.pageCount gt 0">
+        <if condition="$pageCount gt 0">
             <div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>
                 <span class="page"><a href="javascript:void(0);">上一页</a></span>
                 <label id="curpage">1</label> /
-                <label id="page_count">{$data.pageCount}</label>
-                <if condition="$data.pageCount eq 1">
+                <label id="page_count">{$pageCount}</label>
+                <if condition="$pageCount eq 1">
                     <span class="page"><a href="javascript:void(0);">下一页</a></span>
                     <span class="page"><a href="javascript:void(0);">末页</a></span>
                     <else />
                     <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                    <span class="page hov"><a href="javascript:void(0);" rel="{$data.pageCount}">末页</a></span>
+                    <span class="page hov"><a href="javascript:void(0);" rel="{$pageCount}">末页</a></span>
                 </if>
                 <span>
                     <select id="toPageSize">
@@ -91,7 +91,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-                <span>共{$data.count}条数据</span>
+                <span>共{$count}条数据</span>
             </div>
         </if>
     </div>

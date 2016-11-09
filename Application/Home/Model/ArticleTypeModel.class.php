@@ -35,7 +35,7 @@ class ArticleTypeModel extends Model{
 
         return $data;
     }
-    //根据用户ID获取文章分类
+    /*//根据用户ID获取文章分类
     public function getArticleTypeByMemberId(){
         $data=array();
         $data['status']=0;
@@ -55,7 +55,6 @@ class ArticleTypeModel extends Model{
         }else{
             $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
         }
-        $s=$this->getLastSql();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
@@ -69,9 +68,9 @@ class ArticleTypeModel extends Model{
             $data['msg']='获取文章分类失败';
         }
         return $data;
-    }
+    }*/
 
-    public function getArticleTypeCountByMemberId(){
+    /*public function getArticleTypeCountByMemberId(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -79,10 +78,9 @@ class ArticleTypeModel extends Model{
         $arr_where=array();
         if($this->key!=''){
             if($this->com=='like'){
-                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,"%$this->key%");
-            }else{
-                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+                $this->key="%$this->key%";
             }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
         }
         $arr_where["$this->table_alias.member_id"]=$this->member_id;
         $result=$this->alias($this->table_alias)->field("COUNT(id) AS count")->where($arr_where)->select();
@@ -100,7 +98,7 @@ class ArticleTypeModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
     public function getArticleType_op(){
         $result=$this->field('id,article_type_name')->where(array('id'=>$this->id))->select();
@@ -189,32 +187,75 @@ class ArticleTypeModel extends Model{
         return $data;
     }
 
-
-    //获取用户文章分类信息--写在ArticleModel中
-    /*public function getArticleTypeByMemberId(){
+    //个人文章分类列表
+    public function personIndex(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
 
         $arr_field=array();
-        $arr_field["$this->table_alias.id"]='article_type_id';
-        $arr_field["$this->table_alias.article_type_name"]='article_type_name';
-        $arr_field["COUNT($this->foreign_table2_alias.id)"]='article_count';
-        $arr_join=array();
-        $arr_join[]="RIGHT JOIN $this->table $this->table_alias ON $this->table_alias.id=$this->foreign_table2_alias.article_type_id";
-
-        $result=$this->table(array("$this->foreign_table2"=>$this->foreign_table2_alias))->field($arr_field)->join($arr_join)->where(array("$this->table_alias.member_id"=>$this->member_id))->group("$this->table_alias.id")->limit(10)->select();
+        $arr_field["$this->table_alias.id"]="article_type_id";
+        $arr_field["$this->table_alias.article_type_name"]="article_type_name";
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+        }
+        $arr_where["$this->table_alias.member_id"]=$this->member_id;
+        /*if($this->page==0){
+            $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->select();
+        }else{
+            $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
+        }*/
+        $result=$this->alias($this->table_alias)->field($arr_field)->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
-                $data['msg']='获取用户文章分类成功';
-                $data['article_type']=$result;
+                $data['msg']='获取文章分类成功';
+                $data['rows']=$result;
             }else{
+                $data['status']=1;
                 $data['msg']='没有数据';
             }
         }else{
-            $data['msg']='获取用户文章分类失败';
+            $data['msg']='获取文章分类失败';
         }
         return $data;
-    }*/
+    }
+
+    //个人文章分类数量
+    public function personIndexCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]="count";
+
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+        }
+        $arr_where["$this->table_alias.member_id"]=$this->member_id;
+        $result=$this->alias($this->table_alias)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='获取文章分类总记录数成功';
+                $data['count']=$result[0]['count'];
+            }else{
+                $data['status']=1;
+                $data['msg']='获取文章分类总记录没有数据';
+            }
+        }else{
+            $data['msg']='获取文章分类总记录数失败';
+        }
+
+        return $data;
+    }
 }

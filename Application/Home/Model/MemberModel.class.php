@@ -1,9 +1,9 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 use Think\Verify;
 require_once C('ROOT').C('FUNC').'func.php';
-class MemberModel extends Model{
+class MemberModel extends CommonModel{
     public $id;
     public $id_temp;
     public $member_name;
@@ -56,7 +56,6 @@ class MemberModel extends Model{
                 $data['status']=1;
             }else{
                 $data['msg']='注册失败';
-                $data['status']=0;
             }
         }else{
             $data['msg']=$vali_result;
@@ -64,7 +63,6 @@ class MemberModel extends Model{
                 unlink($this->head_pic);
             }
         }
-
         return $data;
     }
 
@@ -91,7 +89,7 @@ class MemberModel extends Model{
         return $data;
     }
 
-    //验证用户是否冻结
+    //验证用户是否冻结,根据用户名
     public function isFreeze(){
         $data=array();
         $data['status']=0;
@@ -118,8 +116,20 @@ class MemberModel extends Model{
 
     //根据ID获取用户资料
     public function getInfo(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
         $result=$this->field('id,member_name,sex,email,tel,address,head_pic,question,answer,last_ip,last_time,hitnum')->where(array('id'=>$this->id))->select();
-        return $result[0];
+
+        if($result!==false && count($result)>0){
+            $data['status']=1;
+            $data['msg']='获取用户资料成功';
+            $data['member']=$result[0];
+        }else{
+            $data['msg']='获取用户资料失败';
+        }
+        return $data;
     }
 
     //获取用户头像
@@ -430,11 +440,18 @@ class MemberModel extends Model{
             return "密码答案验证失败";
         }
         if(isset($this->head_pic) && !empty($this->head_pic)) {
-            $fileStatus=(array)upload_file($this->head_pic,'head_pic');
-            if($fileStatus['status']==1){
-                $this->head_pic='head_pic/'.$fileStatus['fileName'];
+            $uploadConfig=array('name' => 'head_pic',
+                'maxSize'   =>  1000000,
+                'exts'      =>  array('png','jpg','jpeg','gif'),
+                'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
+                'savePath'  =>  'head_pic/',
+                'saveName'  =>  'head_pic_'.time(),
+                'autoSub'   =>  false);
+            $resultUpload=$this->upload($uploadConfig);
+            if($resultUpload['status']==1 && $resultUpload['upload']['head_pic']['savename']!=''){
+                $this->head_pic=$uploadConfig['savePath'].$resultUpload['upload']['head_pic']['savename'];
             }else{
-                return $fileStatus['msg'];
+                return $resultUpload['msg'];
             }
         }elseif($f!='update'){    //编辑时验证
             return "用户头像验证失败";

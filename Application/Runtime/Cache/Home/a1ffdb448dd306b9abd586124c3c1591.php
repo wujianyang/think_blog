@@ -53,25 +53,25 @@
                     <th width="100">相片数量</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <?php if(is_array($photo)): $i = 0; $__LIST__ = array_slice($photo,0,10,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$photo): $mod = ($i % 2 );++$i;?><tr class="tr_line">
-                        <td width="50"><input type="checkbox" class="id" name="id[]" value="<?php echo ($photo["photo_id"]); ?>" /></td>
-                        <td width="50"><?php echo ($photo["photo_id"]); ?></td>
-                        <td width="200"><a class="info" href="javascript:void(0);" value="<?php echo ($photo["photo_id"]); ?>"><?php echo ($photo["photo_title"]); ?></a></td>
-                        <td width="100"><a href="<?php echo U('Member/personPhotoImg',array('photo_id'=>$photo['photo_id']));?>"><?php echo ($photo["photo_count"]); ?></a></td>
+                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
+                        <td width="50"><input type="checkbox" class="id" name="id[]" value="<?php echo ($rows["photo_id"]); ?>" /></td>
+                        <td width="50"><?php echo ($rows["photo_id"]); ?></td>
+                        <td width="200"><a class="info" href="javascript:void(0);" value="<?php echo ($rows["photo_id"]); ?>"><?php echo ($rows["photo_title"]); ?></a></td>
+                        <td width="100"><a href="<?php echo U('Member/personPhotoImg',array('photo_id'=>$rows['photo_id']));?>"><?php echo ($rows["photo_count"]); ?></a></td>
                     </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
                 </tbody>
             </table>
         </div>
-        <?php if($count > 0): ?><div class="page_div" id="page_div">
+        <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>
                 <span class="page"><a href="javascript:void(0);">上一页</a></span>
                 <label id="curpage">1</label> /
-                <label id="page_count"><?php echo ($pageCount); ?></label>
-                <?php if($pageCount == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
+                <label id="page_count"><?php echo ($data["pageCount"]); ?></label>
+                <?php if($data["pageCount"] == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
                     <span class="page"><a href="javascript:void(0);">末页</a></span>
                     <?php else: ?>
                     <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                    <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($pageCount); ?>">末页</a></span><?php endif; ?>
+                    <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
                         <option value="10">10</option>
@@ -85,7 +85,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-                <span>共<?php echo ($count); ?>条数据</span>
+                <span>共<?php echo ($data["count"]); ?>条数据</span>
             </div><?php endif; ?>
     </div>
     <div class="add_div" id="add_div">

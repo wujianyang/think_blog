@@ -140,19 +140,4 @@ class PhotoImgController extends Controller{
         $this->ajaxReturn($data);
     }
 
-    public function upload($config=array()){
-        $data=array();
-        $data['status']=1;
-        $data['msg']='';
-
-        $upload=new \Think\Upload($config);
-        $info=$upload->upload();
-        if(!$info){ //长传失败
-            $data['msg']=$upload->getError();
-        }else{  //上传成功
-            $data['status']=1;
-            $data['upload']=$info;
-        }
-        return $data;
-    }
 }

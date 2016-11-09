@@ -18,7 +18,7 @@ class ArticleCommentModel extends Model{
     public $com='eq';
 
     //获取文章评论
-    public function getArticleComment(){
+    /*public function getArticleComment(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -62,10 +62,10 @@ class ArticleCommentModel extends Model{
             $data['msg']='文章评论信息获取失败';
         }
         return $data;
-    }
+    }*/
 
     //获取文章评论列表数量
-    public function getArticleCommentCount(){
+    /*public function getArticleCommentCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -100,7 +100,7 @@ class ArticleCommentModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
 
     public function comment(){
@@ -141,4 +141,103 @@ class ArticleCommentModel extends Model{
         return $data;
     }
 
+
+    //个人文章评论列表
+    public function personIndex(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(IS_AJAX){
+            $this->article_id=I('post.article_id');
+        }else{
+            $this->article_id=I('get.article_id');
+            $result=$this->table($this->foreign_table2)->field('id as  article_id,title')->where(array('id'=>$this->article_id))->select();
+            $data['article_id']=$result[0]['article_id'];
+            $data['title']=$result[0]['title'];
+
+        }
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='member_name'){
+                $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+        }
+        $arr_where["$this->table_alias.article_id"]=$this->article_id;
+        $arr_field=array();
+        $arr_field["$this->table_alias.id"]="article_comment_id";
+        $arr_field["$this->table_alias.member_id"]="member_id";
+        $arr_field["$this->foreign_table_alias.member_name"]="member_name";
+        $arr_field["$this->foreign_table_alias.head_pic"]="head_pic";
+        $arr_field["$this->table_alias.comment_content"]="comment_content";
+        $arr_field["$this->table_alias.comment_time"]="comment_time";
+        $arr_join=array();
+        $arr_join[]="INNER JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
+
+        $result=$this->alias($this->table_alias)->field($arr_field)->join($arr_join)->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
+        if($result!==false){
+            if(count($result)>0){
+                //htmlspecialchars_decode
+                //转义字符转换
+                $result=html_decode($result,'comment_content');
+                $data['status']=1;
+                $data['msg']='文章评论信息获取成功';
+                $data['rows']=$result;
+            }else{
+                $data['status']=1;
+                $data['msg']='没有数据';
+            }
+        }else{
+            $data['msg']='文章评论信息获取失败';
+        }
+        return $data;
+    }
+
+    //个人文章评论数量
+    public function personIndexCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(IS_AJAX){
+            $this->article_id=I('post.article_id');
+        }else{
+            $this->article_id=I('get.article_id');
+        }
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='member_name'){
+                $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+        }
+        $arr_where["$this->table_alias.article_id"]=$this->article_id;
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]='count';
+        $arr_join=array();
+        $arr_join[]="INNER JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
+        $result=$this->alias($this->table_alias)->field($arr_field)->join($arr_join)->where($arr_where)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['count']=$result[0]['count'];
+            }else{
+                $data['status']=1;
+                $data['msg']='文章评论数量为零';
+            }
+        }else{
+            $data['msg']='文章评论数量获取失败';
+        }
+
+        return $data;
+    }
 }

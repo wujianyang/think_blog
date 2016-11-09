@@ -190,11 +190,18 @@ class PhotoImgModel extends CommonModel{
         }
 
         if(isset($this->img_src) && !empty($this->img_src)) {
-            $fileStatus=(array)upload_file($this->img_src,'photo_img');
-            if($fileStatus['status']==1){
-                $this->img_src='photo_img/'.$fileStatus['fileName'];
+            $uploadConfig=array('name' => 'img_src',
+                'maxSize'   =>  1000000,
+                'exts'      =>  array('png','jpg','jpeg','gif'),
+                'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
+                'savePath'  =>  'photo_img/',
+                'saveName'  =>  'photo_img_'.time(),
+                'autoSub'   =>  false);
+            $resultUpload=$this->upload($uploadConfig);
+            if($resultUpload['status']==1 && $resultUpload['upload']['img_src']['savename']!=''){
+                $this->img_src=$uploadConfig['savePath'].$resultUpload['upload']['img_src']['savename'];
             }else{
-                return $fileStatus['msg'];
+                return $resultUpload['msg'];
             }
         }elseif($f!='edit'){    //编辑时验证
             return "相片验证失败";

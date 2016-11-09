@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>忘记密码</title>
+    <title>忘记密码_<?php echo (C("TITLE")); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>login.css"/>
     <style type="text/css">
@@ -76,6 +76,10 @@
 </head>
 <body>
 <div id="login">
+    <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+    <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+    <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+    <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
     <h1>忘记密码</h1>
     <form id="info_form" id="info_form" method="post">
         <input type="text" required="required" placeholder="用户名" name="member_name" id="member_name" />

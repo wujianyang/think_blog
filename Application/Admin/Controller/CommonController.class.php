@@ -11,11 +11,13 @@ class CommonController extends Controller{
             $data['msg']='';
 
             $modelClass = D($className);
-            $modelClass->page = isset($_POST['page']) ? I('post.page') : 1;
-            $modelClass->pageSize = isset($_POST['page_size']) ? I('post.page_size') : 10;
-            $modelClass->key = isset($_POST['key']) ? trim(I('post.key')) : '';
-            $modelClass->keyItem = isset($_POST['keyItem']) ? I('post.keyItem') : 'id';
-            $modelClass->com = isset($_POST['com']) ? I('post.com') : 'eq';
+            if(IS_AJAX){
+                $modelClass->page=I('post.page');
+                $modelClass->pageSize=I('post.page_size');
+                $modelClass->key=trim(I('post.key'));
+                $modelClass->keyItem=I('post.keyItem');
+                $modelClass->com=I('post.com');
+            }
             $result = $modelClass->index();
             $this->returnResult($result,$data,'rows');
             $resultCount = $modelClass->getCount();

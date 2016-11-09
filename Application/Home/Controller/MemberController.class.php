@@ -1,6 +1,5 @@
 <?php
 namespace Home\Controller;
-use Home\Model\MemberModel;
 use Think\Controller;
 
 class MemberController extends Controller{
@@ -60,6 +59,11 @@ class MemberController extends Controller{
             $mess_result=$mess->getMessByMemberId();
             $this->assign('mess',$mess_result['mess']);
 
+            unset($member);
+            unset($friends);
+            unset($article);
+            unset($photo);
+            unset($mess);
             //没有数据提示信息
             $this->assign('empty',"<p class='noData'>没有数据</p>");
             $this->display();
@@ -67,7 +71,6 @@ class MemberController extends Controller{
             //用户ID不存在则提示错误信息并跳转到登录页面
             $this->error('该用户不存在',C('HOST_DIR').'Home/Member/login.'.C('URL_HTML_SUFFIX'),3);
         }
-
     }
 
     //访问登录页面
@@ -153,22 +156,22 @@ class MemberController extends Controller{
 
     }
 
-    //访问个人中心页面
+    //访问个人资料
     public function info(){
         if($this->isLogin()){
             $member=D('Member');
             $member->id=I('session.MEMBER')['id'];
             $result=$member->getInfo();
-
             unset($member);
-            if($result!==false && count($result)>0){
-                $this->assign('member',$result);
+            if($result['status']==1){
+                $this->assign('member',$result['member']);
                 $this->display();
             }else{
                 $this->redirect('login');
             }
+        }else{
+            $this->redirect('login');
         }
-
     }
 
     //修改个人资料
@@ -194,10 +197,10 @@ class MemberController extends Controller{
         }
     }
 
-    //修改密码
+    //访问修改密码页面以及修改密码
     public function updatePasswd(){
         if($this->isLogin()){
-            if(IS_POST){
+            if(IS_POST){    //若不存在提交请求直接输出页面
                 $newPasswd=I('post.passwd');
                 $newPasswd2=I('post.passwd2');
                 if($newPasswd==$newPasswd2){
@@ -226,9 +229,13 @@ class MemberController extends Controller{
             if(isset($_POST['member_name']) && !empty($_POST['member_name'])){
                 $member=D('Member');
                 $member->member_name=I('post.member_name');
-                $result=$member->getQuestion();
-                unset($member);
-                $this->ajaxReturn($result);
+                if($member->isExistsMemberName()){
+                    $result=$member->getQuestion();
+                    unset($member);
+                    $this->ajaxReturn($result);
+                }else{
+                    $this->ajaxReturn(array('status'=>0,'msg'=>'用户名不存在'));
+                }
             }else{
                 $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
             }
@@ -242,12 +249,16 @@ class MemberController extends Controller{
             if(I('post.passwd')==I('post.passwd2')){
                 $member=D('Member');
                 $member->member_name=I('post.member_name');
-                $member->question=I('post.question');
-                $member->answer=I('post.answer');
-                $member->passwd=I('post.passwd');
-                $result=$member->forgetUpdatePasswd();
-                unset($member);
-                $this->ajaxReturn($result);
+                if($member->isExistsMemberName()){
+                    $member->question=I('post.question');
+                    $member->answer=I('post.answer');
+                    $member->passwd=I('post.passwd');
+                    $result=$member->forgetUpdatePasswd();
+                    unset($member);
+                    $this->ajaxReturn($result);
+                }else{
+                    $this->ajaxReturn(array('status'=>0,'msg'=>'用户名不存在'));
+                }
             }else{
                 $this->ajaxReturn(array('status'=>0,'msg'=>'新密码不一致'));
             }
@@ -266,11 +277,14 @@ class MemberController extends Controller{
             $member->member_name=I('post.member_name');
             if($member->checkVerify(I('post.vCode'))!==false){
                 if($member->isExistsMemberName()){
-                    if(!$member->isFreeze()){
+                    $isFreeze=$member->isFreeze();
+                    unset($member);
+                    if($isFreeze['status']==1){
                         $complaint=D('Complaint');
                         $complaint->member_name=I('post.member_name');
                         $complaint->complain_content=I('post.complain_content');
                         $result=$complaint->complain();
+                        unset($complaint);
                         $this->assign('msg',$result['msg']);
                     }else{
                         $this->assign('msg','用户未冻结，可以正常登录');
@@ -278,6 +292,8 @@ class MemberController extends Controller{
                 }else{
                     $this->assign('msg','用户名不存在');
                 }
+            }else{
+                $this->assign('msg','验证码错误');
             }
         }
         $this->display();
@@ -325,8 +341,6 @@ class MemberController extends Controller{
             $friends->fans_id=I('get.member_id');
             $friends->member_id=I('get.member_id');
             $resultFriendsId=$friends->getFriendsId($f);
-            //$resultCount=$friends->getFocusCount();
-
             if($resultFriendsId['status']==1){
                 //获取关注用户信息
                 $member->pageSize=20;
@@ -359,14 +373,16 @@ class MemberController extends Controller{
                     }
                     //返回分页数据
                     if(!IS_AJAX){
-                        $this->assign('count',count($memberResult));
-                        $this->assign('pageCount',ceil(count($memberResult)/$member->pageSize));
+                        $this->assign('count',count($resultFriendsId['friends_id']));
+                        $this->assign('pageCount',ceil(count($resultFriendsId['friends_id'])/$member->pageSize));
                     }else{
-                        $data['count']=count($memberResult);
+                        $data['count']=count($resultFriendsId['friends_id']);
                         $this->ajaxReturn($data);
                     }
+                    unset($member);
                     $this->display();
                 }else{  //请求失败
+                    unset($member);
                     if(!IS_AJAX){
                         $this->error('请求失败');
                     }else{
@@ -374,8 +390,8 @@ class MemberController extends Controller{
                         $this->ajaxReturn($data);
                     }
                 }
-
             }else{
+                unset($member);
                 if(!IS_AJAX){
                     $this->error($resultFriendsId['msg']);
                 }else{
@@ -384,11 +400,17 @@ class MemberController extends Controller{
                 }
             }
         }else{
-            $this->error('用户不存在');
+            unset($member);
+            if(!IS_AJAX){
+                $this->error('用户不存在');
+            }else{
+                $data['msg']='用户不存在';
+                $this->ajaxReturn($data);
+            }
         }
     }
 
-    //关注好友
+    //关注或取消关注好友
     public function focusFriends(){
         $data=array();
         $data['status']=0;
@@ -404,7 +426,7 @@ class MemberController extends Controller{
             }else{  //关注好友
                 $result=$friends->focus();
             }
-
+            unset($friends);
             if($result['status']==1){
                 $data['status']=1;
             }
@@ -412,30 +434,10 @@ class MemberController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
-
+        unset($friends);
         $this->ajaxReturn($data);
     }
 
-    public function result($result=array(),$name='data',$pageSize=10,&$data){
-        if(!IS_AJAX){
-            if($result['status']==1){
-                $this->assign($name,$result[$name]);
-                if($name=='count'){
-                    $this->assign('pageCount',ceil($result[$name]/$pageSize));
-                }
-            }else{
-                $this->error($result['msg']);
-            }
-        }else{
-            if($result['status']==1){
-                $data['status']=1;
-                $data[$name]=$result[$name];
-            }else{
-                $data['msg']=$result['msg'];
-                $this->ajaxReturn($data);
-            }
-        }
-    }
 
     //访问个人中心
     public function personCenter(){
@@ -448,6 +450,9 @@ class MemberController extends Controller{
 
     //访问我的文章
     public function personArticle(){
+        $article=A('Common');
+        $article->personIndex('Article');
+        /*
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -504,12 +509,14 @@ class MemberController extends Controller{
                 $data['msg']='登录超时';
                 $this->ajaxReturn($data);
             }
-
-        }
+        }*/
     }
 
     //访问个人文章类型
     public function personArticleType(){
+        $articleType=A('Common');
+        $articleType->personIndex('ArticleType');
+        /*
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -564,12 +571,65 @@ class MemberController extends Controller{
                 $data['msg']='登录超时';
                 $this->ajaxReturn($data);
             }
+        }*/
+    }
+
+    //访问文章评论
+    public function personArticleComment(){
+        $data = array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if($this->isLogin()){
+            $articleComment = D('ArticleComment');
+            $article = D('Article');
+            $articleComment->member_id=I('session.MEMBER')['id'];
+            if(IS_AJAX){
+                $articleComment->page=I('post.page');
+                $articleComment->pageSize=I('post.page_size');
+                $articleComment->key=trim(I('post.key'));
+                $articleComment->keyItem=I('post.keyItem');
+                $articleComment->com=I('post.com');
+                $articleComment->article_id=I('post.article_id');
+                $article->id=I('post.article_id');
+                $data['article_id']=I('post.article_id');
+            }else{
+                $articleComment->article_id=I('get.article_id');
+                $article->id=I('get.article_id');
+                $data['article_id']=I('get.article_id');
+            }
+            $resultArticle = $article->getTitleByArticleId();
+            $data['title']=$resultArticle['title'];
+            $result = $articleComment->personIndex();
+            $this->returnResult($result,$data,'rows');
+            $resultCount = $articleComment->personIndexCount();
+            $this->returnResult($resultCount,$data,'count');
+            $data['pageCount'] = ceil($resultCount['count'] / $articleComment->pageSize);
+            unset($articleComment);
+
+            if (IS_AJAX) {
+                $this->ajaxReturn($data);
+            }else{
+                $this->assign('data', $data);
+                $this->assign('empty', C('NODATA'));
+                $this->display();
+            }
+        }else{
+            if(!IS_AJAX){
+                $this->redirect('Member/login');
+            }else{
+                $data['msg']='登录超时';
+                $this->ajaxReturn($data);
+            }
         }
     }
 
     //访问个人相册
     public function personPhoto(){
-        $data=array();
+        $photo=A('Common');
+        $photo->personIndex('Photo');
+
+        /*$data=array();
         $data['status']=0;
         $data['msg']='';
 
@@ -601,12 +661,15 @@ class MemberController extends Controller{
                 $data['msg']='登录超时';
                 $this->ajaxReturn($data);
             }
-        }
+        }*/
     }
 
     //访问用户相片
     public function personPhotoImg(){
-        $data=array();
+        $photoImg=A('Common');
+        $photoImg->personIndex('PhotoImg');
+
+        /*$data=array();
         $data['status']=0;
         $data['msg']='';
 
@@ -639,12 +702,15 @@ class MemberController extends Controller{
                 $data['msg']='登录超时';
                 $this->ajaxReturn($data);
             }
-        }
+        }*/
     }
 
     //访问个人留言板
     public function personMess(){
-        $data=array();
+        $photoImg=A('Common');
+        $photoImg->personIndex('Mess');
+
+        /*$data=array();
         $data['status']=0;
         $data['msg']='';
 
@@ -699,7 +765,7 @@ class MemberController extends Controller{
                 $data['msg']='登录超时';
                 $this->ajaxReturn($data);
             }
-        }
+        }*/
     }
 
     //判断是否登录
@@ -708,6 +774,41 @@ class MemberController extends Controller{
             return true;
         }else{
             $this->redirect('Member/login');
+        }
+    }
+
+    //处理返回结果，使用引用传递参数
+    public function result($result=array(),$name='data',$pageSize=10,&$data){
+        if(!IS_AJAX){
+            if($result['status']==1){
+                $this->assign($name,$result[$name]);
+                if($name=='count'){
+                    $this->assign('pageCount',ceil($result[$name]/$pageSize));
+                }
+            }else{
+                $this->error($result['msg']);
+            }
+        }else{
+            if($result['status']==1){
+                $data['status']=1;
+                $data[$name]=$result[$name];
+            }else{
+                $data['msg']=$result['msg'];
+                $this->ajaxReturn($data);
+            }
+        }
+    }
+
+    public function returnResult($arr=array(),&$data=array(),$field='result'){
+        if($arr['status']==1){
+            $data['status']=1;
+            $data['msg']=$arr['msg'];
+            $data[$field]=$arr[$field];
+        }else{
+            $data['msg']=$arr['msg'];
+            if(IS_AJAX){
+                $this->ajaxReturn($data);
+            }
         }
     }
 }

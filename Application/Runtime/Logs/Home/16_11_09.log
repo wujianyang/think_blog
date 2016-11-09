@@ -1,0 +1,2488 @@
+[ 2016-11-09T10:30:27+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=18506
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.137754s ]
+
+[ 2016-11-09T10:50:21+08:00 ] ::1 /think_blog/Home/Member/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-09T10:53:03+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:3.0670s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username333'  [ RunTime:0.5080s ]
+NOTIC: [8] Undefined index: upload D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 441 行.
+SQL: INSERT INTO `member` (`member_name`,`passwd`,`sex`,`email`,`tel`,`address`,`question`,`answer`,`head_pic`,`hitnum`,`is_freeze`,`last_ip`,`last_time`) VALUES ('username333','e10adc3949ba59abbe56e057f20f883e','1','123456@qq.com','12312341234','address road','question one','answer one','head_pic/','0','0','0.0.0.0','2016-11-09 10:53:03') [ RunTime:0.5825s ]
+
+[ 2016-11-09T10:53:05+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.1636s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username333'  [ RunTime:0.0142s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 62 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 62 行.
+
+[ 2016-11-09T10:53:05+08:00 ] ::1 /think_blog/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-11-09T10:53:08+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-11-09T10:53:58+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=13214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-11-09T10:58:07+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0734s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username331'  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: upload D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 441 行.
+SQL: INSERT INTO `member` (`member_name`,`passwd`,`sex`,`email`,`tel`,`address`,`question`,`answer`,`head_pic`,`hitnum`,`is_freeze`,`last_ip`,`last_time`) VALUES ('username331','e10adc3949ba59abbe56e057f20f883e','1','123456@qq.com','12312341234','address road','question one','answer one','head_pic/','0','0','0.0.0.0','2016-11-09 10:58:04') [ RunTime:0.0777s ]
+
+[ 2016-11-09T10:58:09+08:00 ] ::1 /think_blog/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+
+[ 2016-11-09T10:58:10+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-11-09T11:00:42+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0379s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username332'  [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\think_blog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `member` (`member_name`,`passwd`,`sex`,`email`,`tel`,`address`,`question`,`answer`,`head_pic`,`hitnum`,`is_freeze`,`last_ip`,`last_time`) VALUES ('username332','e10adc3949ba59abbe56e057f20f883e','1','123456@qq.com','12312341234','address road','question one','answer one','head_pic/head_pic_1478660441.png','0','0','0.0.0.0','2016-11-09 11:00:41') [ RunTime:0.2235s ]
+
+[ 2016-11-09T11:00:44+08:00 ] ::1 /think_blog/Home/Member/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-09T11:00:45+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-11-09T11:01:00+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=19532
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-11-09T11:02:12+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.3324s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username334'  [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\think_blog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-11-09T11:02:18+08:00 ] ::1 /think_blog/Home/Member/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0034s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username334'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: upload D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 440 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 62 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 62 行.
+
+[ 2016-11-09T11:13:29+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=13057
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-11-09T11:17:05+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17622
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-11-09T11:27:50+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-11-09T11:27:51+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T11:28:04+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-11-09T11:28:04+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-11-09T11:29:20+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-11-09T11:29:25+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-09T11:29:27+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-11-09T11:29:33+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-11-09T11:29:33+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-11-09T11:29:53+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=16213
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-11-09T11:29:56+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-11-09T11:30:28+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-11-09T11:32:41+08:00 ] ::1 /think_blog/Home/Member/undefinedHome/Member/updateInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+ERR: 非法操作:undefinedHome
+
+[ 2016-11-09T11:34:40+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-11-09T11:34:41+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-11-09T11:34:50+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-11-09T11:34:55+08:00 ] ::1 /think_blog/Home/Member/updateInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0045s ]
+SQL: SELECT `id` FROM `member` WHERE `id` = 29 AND `member_name` = 'username2'  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: upload D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 451 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 328 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 328 行.
+
+[ 2016-11-09T11:35:02+08:00 ] ::1 /think_blog/Home/Member/updateInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0044s ]
+SQL: SELECT `id` FROM `member` WHERE `id` = 29 AND `member_name` = 'username2'  [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\think_blog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `member` SET `member_name`='username2',`sex`='0',`email`='123456@qq.com',`tel`='12312341234',`address`='address road street',`question`='question one',`answer`='answer one',`head_pic`='head_pic/head_pic_1478662502.png',`last_ip`='0.0.0.0',`last_time`='2016-11-09 11:35:02' WHERE `id` = 29 [ RunTime:0.0883s ]
+
+[ 2016-11-09T11:35:12+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-11-09T11:43:33+08:00 ] ::1 /think_blog/Home/Member/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-11-09T11:43:38+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-11-09T11:43:42+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-09T11:43:43+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-11-09T11:43:43+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-11-09T11:43:48+08:00 ] ::1 /think_blog/Home/Member/forgetPasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-09T11:46:43+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0049s ]
+SQL: SELECT `question` FROM `member` WHERE `member_name` = 'username2'  [ RunTime:0.0004s ]
+
+[ 2016-11-09T11:46:48+08:00 ] ::1 /think_blog/Home/Member/forgetPasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-11-09T11:46:54+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT `question` FROM `member` WHERE `member_name` = 'username333'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T11:47:23+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0046s ]
+SQL: SELECT `question` FROM `member` WHERE `member_name` = 'username335'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T11:47:26+08:00 ] ::1 /think_blog/Home/Member/forgetPasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-11-09T11:47:34+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0040s ]
+SQL: SELECT `question` FROM `member` WHERE `member_name` = 'username336'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\think_blog\Application\Home\Model\MemberModel.class.php 第 374 行.
+
+[ 2016-11-09T11:49:53+08:00 ] ::1 /think_blog/Home/Member/forgetPasswd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-11-09T11:49:58+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0042s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'usernafdklasd'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T11:54:33+08:00 ] ::1 /think_blog/Home/Member/getQuestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0039s ]
+SQL: SELECT `id` FROM `member` WHERE `member_name` = 'username335'  [ RunTime:0.0003s ]
+SQL: SELECT `question` FROM `member` WHERE `member_name` = 'username335'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T13:06:07+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048222s ]
+
+[ 2016-11-09T13:06:13+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-09T13:06:34+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-09T13:06:35+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-11-09T13:06:46+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-09T13:06:47+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-11-09T13:19:08+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-11-09T13:19:08+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-09T13:19:28+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-09T13:19:28+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2016-11-09T13:19:56+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-09T13:19:56+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-11-09T13:20:42+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-11-09T13:20:42+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+
+[ 2016-11-09T13:21:47+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-11-09T13:21:47+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-11-09T13:24:02+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=10907
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-11-09T13:24:12+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-11-09T13:24:17+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-11-09T13:24:17+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-11-09T13:24:27+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-11-09T13:25:18+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-11-09T13:25:21+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-11-09T13:25:22+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T13:25:34+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=14433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-11-09T13:26:31+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-11-09T13:26:34+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2016-11-09T13:26:35+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-09T13:26:44+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-11-09T13:26:45+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-11-09T13:28:32+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-11-09T13:28:33+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-11-09T13:28:45+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-11-09T13:28:45+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-11-09T13:28:55+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-11-09T13:28:56+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-11-09T13:29:17+08:00 ] ::1 /think_blog/Home/Member/complain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-09T13:29:18+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-11-09T13:41:17+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-11-09T13:41:17+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-11-09T13:41:22+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-11-09T13:41:27+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-11-09T13:41:27+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-11-09T13:41:37+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-11-09T13:41:39+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-09T13:41:43+08:00 ] ::1 /think_blog/Home/Member/friends/member_id/29/f/focus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-11-09T13:47:27+08:00 ] ::1 /think_blog/Home/Member/friends/member_id/29/f/focus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-11-09T13:48:10+08:00 ] ::1 /think_blog/Home/Member/friends/member_id/29/f/focus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-11-09T13:52:54+08:00 ] ::1 /think_blog/Home/Member/friends/member_id/29/f/focus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-11-09T14:03:08+08:00 ] ::1 /think_blog/Home/Member/friends/member_id/29/f/focus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-09T14:03:12+08:00 ] ::1 /think_blog/Home/Member/friends/f/focus/member_id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0035s ]
+SQL: SELECT `id` FROM `member` WHERE `id` = 29  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `friends` [ RunTime:0.0033s ]
+SQL: SELECT DISTINCT member_id FROM `friends` WHERE `fans_id` = 29  [ RunTime:0.0004s ]
+SQL: SELECT m.id AS `member_id`,m.member_name AS `member_name`,m.sex AS `sex`,m.head_pic AS `head_pic`,m.hitnum AS `hitnum` FROM member m LEFT JOIN friends f ON m.id=f.fans_id AND f.member_id=29  WHERE m.id IN ('41','50','42','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(DISTINCT f.member_id) AS `focus_count` FROM member m LEFT JOIN friends f ON m.id=f.fans_id  WHERE m.id IN ('41','50','42','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(DISTINCT f.fans_id) AS `fans_count` FROM member m LEFT JOIN friends f ON m.id=f.member_id  WHERE m.id IN ('41','50','42','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2016-11-09T14:03:25+08:00 ] ::1 /think_blog/Home/Member/focusFriends
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `friends` [ RunTime:0.0036s ]
+SQL: DELETE FROM `friends` WHERE `member_id` = 42 AND `fans_id` = 29 [ RunTime:0.2823s ]
+
+[ 2016-11-09T14:03:26+08:00 ] ::1 /think_blog/Home/Member/friends/f/focus/member_id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0042s ]
+SQL: SELECT `id` FROM `member` WHERE `id` = 29  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `friends` [ RunTime:0.0039s ]
+SQL: SELECT DISTINCT member_id FROM `friends` WHERE `fans_id` = 29  [ RunTime:0.0004s ]
+SQL: SELECT m.id AS `member_id`,m.member_name AS `member_name`,m.sex AS `sex`,m.head_pic AS `head_pic`,m.hitnum AS `hitnum` FROM member m LEFT JOIN friends f ON m.id=f.fans_id AND f.member_id=29  WHERE m.id IN ('41','50','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(DISTINCT f.member_id) AS `focus_count` FROM member m LEFT JOIN friends f ON m.id=f.fans_id  WHERE m.id IN ('41','50','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(DISTINCT f.fans_id) AS `fans_count` FROM member m LEFT JOIN friends f ON m.id=f.member_id  WHERE m.id IN ('41','50','45','48') GROUP BY m.id LIMIT 0,20   [ RunTime:0.0004s ]
+
+[ 2016-11-09T14:26:04+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11722
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-11-09T14:26:49+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=13011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-11-09T15:05:50+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2016-11-09T15:05:50+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-11-09T15:05:52+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: Think\Controller:isLogin方法不存在！
+
+[ 2016-11-09T15:07:10+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-11-09T15:07:10+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2016-11-09T15:07:12+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 1066:Table/alias: 'a' non unique
+ [ SQL语句 ] : SELECT COUNT(a.id) as count FROM article a LEFT JOIN article a ON a.member_id=m.id LEFT JOIN article_type at ON a.article_type_id=at.id LEFT JOIN article_comment ac ON a.id=ac.article_id  WHERE a.member_id = '29' 
+
+[ 2016-11-09T15:09:39+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-11-09T15:09:39+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T15:09:42+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-11-09T15:11:31+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-11-09T15:11:34+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-11-09T15:11:35+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-11-09T15:11:36+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 1054:Champ 'a.id' inconnu dans field list
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM `member` `m` LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' GROUP BY a.id LIMIT 0,10  
+
+[ 2016-11-09T15:11:40+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=11540
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-11-09T15:13:29+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-11-09T15:13:34+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17760
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-11-09T15:14:49+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-11-09T15:14:54+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-11-09T15:14:55+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2016-11-09T15:14:57+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=17458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+
+[ 2016-11-09T15:15:27+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+ERR: 1054:Champ 'm.member_name' inconnu dans field list
+ [ SQL语句 ] : SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,m.member_name AS `member_name`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name`,COUNT(ac.id) AS `article_comment_count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 0,10  
+
+[ 2016-11-09T15:19:34+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-11-09T15:19:37+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-11-09T15:19:39+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-11-09T15:19:40+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-11-09T15:19:41+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-11-09T15:21:38+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-11-09T15:21:38+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-11-09T15:21:40+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-11-09T15:25:06+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-11-09T15:25:07+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-11-09T15:25:08+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-11-09T15:25:11+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0039s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T15:26:04+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-11-09T15:26:04+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-09T15:26:06+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-11-09T15:26:07+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T15:26:10+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-09T15:26:11+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-11-09T15:26:12+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-11-09T15:26:28+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-09T15:26:28+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-11-09T15:26:30+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-11-09T15:26:31+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0037s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T15:27:31+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T15:27:31+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
+[ 2016-11-09T15:27:32+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-11-09T15:27:33+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0063s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0006s ]
+
+[ 2016-11-09T15:43:48+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-11-09T15:43:48+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-09T15:43:50+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-09T15:43:56+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-09T15:44:02+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0037s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' AND a.member_id = '29' LIMIT 0,10   [ RunTime:0.0304s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%' AND a.member_id = '29'  [ RunTime:0.0004s ]
+
+[ 2016-11-09T15:44:09+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0045s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T15:44:12+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0047s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T15:44:55+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-11-09T15:44:55+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-11-09T15:44:56+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-09T15:44:59+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0039s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:45:17+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-11-09T15:45:17+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-11-09T15:45:19+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-09T15:45:27+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0038s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:45:43+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-11-09T15:45:43+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-09T15:45:44+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-11-09T15:45:45+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2016-11-09T15:45:50+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0036s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:46:14+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-11-09T15:46:15+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-09T15:46:17+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-11-09T15:46:22+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0046s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:47:13+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0035s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.id = '1' AND at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.id = '1' AND at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:47:21+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0031s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.article_type_name LIKE '%前%' AND at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.article_type_name LIKE '%%前%%' AND at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:47:36+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-11-09T15:47:37+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-11-09T15:47:38+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-11-09T15:47:43+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0105s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.article_type_name LIKE '%后%' AND at.member_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.article_type_name LIKE '%%后%%' AND at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T15:52:10+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-11-09T15:52:12+08:00 ] ::1 /think_blog/Home/ArticleComment/getArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2016-11-09T16:01:37+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-11-09T16:01:37+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-09T16:01:39+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-11-09T16:01:41+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-09T16:01:44+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0041s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29' LIMIT 10,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.member_id = '29'  [ RunTime:0.0331s ]
+
+[ 2016-11-09T16:01:45+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-11-09T16:01:46+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-09T16:01:49+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0035s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:01:50+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-11-09T16:03:07+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-11-09T16:03:07+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-11-09T16:03:09+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-11-09T16:03:12+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0040s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id  [ RunTime:0.0004s ]
+
+[ 2016-11-09T16:03:22+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-09T16:03:23+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-11-09T16:03:25+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-11-09T16:03:28+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0045s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:03:50+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-11-09T16:03:50+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-11-09T16:03:52+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-09T16:03:54+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0039s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:04:15+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+
+[ 2016-11-09T16:04:15+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-11-09T16:04:16+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-11-09T16:04:19+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0051s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:04:29+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-09T16:04:29+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-11-09T16:04:31+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-11-09T16:04:34+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0043s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.id = '2' AND p.member_id = '29' GROUP BY p.id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.id = '2' AND p.member_id = '29' GROUP BY p.id  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:04:38+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id  [ RunTime:0.0004s ]
+
+[ 2016-11-09T16:04:45+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0042s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.photo_title LIKE '%一%' AND p.member_id = '29' GROUP BY p.id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.photo_title LIKE '%%一%%' AND p.member_id = '29' GROUP BY p.id  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:04:51+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0042s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.photo_title LIKE '%无%' AND p.member_id = '29' GROUP BY p.id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.photo_title LIKE '%%无%%' AND p.member_id = '29' GROUP BY p.id  [ RunTime:0.0004s ]
+
+[ 2016-11-09T16:05:09+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2016-11-09T16:05:09+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+
+[ 2016-11-09T16:05:11+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-11-09T16:05:35+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-11-09T16:05:43+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0042s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.article_type_name LIKE '%后%' AND at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.article_type_name LIKE '%%后%%' AND at.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:05:45+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-09T16:05:50+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-11-09T16:05:54+08:00 ] ::1 /think_blog/Home/Member/personArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+SQL: SELECT a.id AS `article_id`,a.title AS `title`,a.content AS `content`,a.hitnum AS `hitnum`,a.create_time AS `create_time`,a.member_id AS `member_id`,a.article_type_id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%的%' AND a.member_id = '29' LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(a.id) AS `count` FROM article a LEFT JOIN article_type at ON a.article_type_id=at.id  WHERE a.title LIKE '%%的%%' AND a.member_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:05:56+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-11-09T16:18:33+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T16:18:33+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-09T16:18:35+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-11-09T16:21:06+08:00 ] ::1 /think_blog/Home/Member/personPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT p.id AS `photo_id`,p.photo_title AS `photo_title`,COUNT(pi.id) AS `photo_count` FROM `photo_img` `pi` RIGHT JOIN photo p ON p.id=pi.photo_id  WHERE p.member_id = '29' GROUP BY p.id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(p.id) AS `count` FROM photo p WHERE p.member_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:31:54+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-11-09T16:31:54+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-11-09T16:31:56+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-09T16:31:58+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-11-09T16:32:45+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-11-09T16:32:46+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-11-09T16:32:47+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-11-09T16:32:48+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2016-11-09T16:33:05+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-09T16:33:05+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-09T16:33:06+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-11-09T16:33:07+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-11-09T16:34:34+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-11-09T16:34:34+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-11-09T16:34:35+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-11-09T16:34:37+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-11-09T16:35:14+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-11-09T16:35:14+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2016-11-09T16:35:16+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-11-09T16:35:17+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-09T16:35:20+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0039s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = ''  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = ''  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:35:36+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-11-09T16:35:36+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-11-09T16:35:38+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-11-09T16:35:39+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-11-09T16:35:42+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0037s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = ''  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = ''  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:36:26+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-11-09T16:36:26+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-11-09T16:36:28+08:00 ] ::1 /think_blog/Home/Member/personPhoto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2016-11-09T16:36:30+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg/photo_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-11-09T16:36:31+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0040s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:36:34+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0041s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:36:39+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0035s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '1' AND pi.photo_id = '1'  [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '1' AND pi.photo_id = '1'  [ RunTime:0.0103s ]
+
+[ 2016-11-09T16:36:41+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0037s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '2' AND pi.photo_id = '1'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '2' AND pi.photo_id = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:36:44+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0045s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.photo_id = '1'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:36:48+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0051s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '一' AND pi.photo_id = '1'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '一' AND pi.photo_id = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:36:50+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0054s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.img_title LIKE '%一%' AND pi.photo_id = '1'  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.img_title LIKE '%%一%%' AND pi.photo_id = '1'  [ RunTime:0.0107s ]
+
+[ 2016-11-09T16:36:54+08:00 ] ::1 /think_blog/Home/Member/personPhotoImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0040s ]
+SQL: SELECT pi.id AS `id`,pi.img_title AS `img_title`,pi.img_src AS `img_src` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '一' AND pi.photo_id = '1'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rows D:\wamp\www\think_blog\Application\Home\Controller\CommonController.class.php 第 55 行.
+SQL: SELECT COUNT(pi.id) AS `count` FROM photo_img pi LEFT JOIN photo p ON pi.photo_id=p.id  WHERE pi.id = '一' AND pi.photo_id = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:40:49+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-11-09T16:40:49+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-11-09T16:40:51+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-11-09T16:40:52+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-09T16:40:53+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-11-09T16:41:51+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-09T16:41:51+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-11-09T16:41:53+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-11-09T16:41:56+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-11-09T16:41:56+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-11-09T16:42:20+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2016-11-09T16:42:20+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-11-09T16:42:22+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-09T16:43:35+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-11-09T16:43:35+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-11-09T16:43:37+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-11-09T16:43:39+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0052s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:43:47+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-09T16:43:47+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2016-11-09T16:43:49+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-09T16:43:50+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0034s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,30   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:44:59+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-09T16:44:59+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-11-09T16:45:00+08:00 ] ::1 /think_blog/Home/Member/personMess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-11-09T16:45:03+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0045s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:45:05+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0035s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,40   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:45:13+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0044s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messer_id = '41' AND ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.1390s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messer_id = '41' AND ms.messed_id = '29'  [ RunTime:0.1688s ]
+
+[ 2016-11-09T16:45:16+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0045s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:45:26+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0045s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE m.member_name LIKE '%1%' AND ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE m.member_name LIKE '%%1%%' AND ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:45:36+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0047s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.content LIKE '%的%' AND ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.content LIKE '%%的%%' AND ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:45:42+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0039s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.messed_id = '29'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T16:45:47+08:00 ] ::1 /think_blog/Home/Member/personMess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `mess` [ RunTime:0.0041s ]
+SQL: SELECT ms.id AS `mess_id`,ms.messer_id AS `messer_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ms.content AS `content`,ms.mess_time AS `mess_time` FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.content LIKE '%你%' AND ms.messed_id = '29' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ms.id) as count FROM mess ms INNER JOIN member m ON ms.messer_id=m.id  WHERE ms.content LIKE '%%你%%' AND ms.messed_id = '29'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T16:46:45+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-09T16:57:57+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-11-09T16:57:57+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-11-09T16:57:59+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-11-09T16:57:59+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-11-09T16:58:03+08:00 ] ::1 /think_blog/Home/ArticleComment/getArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-11-09T16:58:41+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-09T16:58:41+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-11-09T16:58:43+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-11-09T16:58:45+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 模板不存在:./Application/Home/View/Member/personArticleComment.html
+
+[ 2016-11-09T16:59:35+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-11-09T16:59:35+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-11-09T16:59:37+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-11-09T16:59:39+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-11-09T17:11:42+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-11-09T17:11:42+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-11-09T17:11:44+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-09T17:11:45+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-11-09T17:12:12+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-11-09T17:12:12+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-11-09T17:12:14+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-11-09T17:12:16+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-11-09T17:14:50+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=15931
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+
+[ 2016-11-09T17:14:55+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-11-09T17:15:15+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+
+[ 2016-11-09T17:15:20+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-11-09T17:15:20+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-11-09T17:15:24+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=16576
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+
+[ 2016-11-09T17:15:27+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-11-09T17:15:27+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-11-09T17:15:40+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+
+[ 2016-11-09T17:15:42+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=10485
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-11-09T17:15:45+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-11-09T17:15:45+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-11-09T17:16:18+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+
+[ 2016-11-09T17:16:23+08:00 ] ::1 /think_blog/?XDEBUG_SESSION_START=12958
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-11-09T17:16:29+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-11-09T17:16:29+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+
+[ 2016-11-09T17:16:31+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-11-09T17:20:02+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2016-11-09T17:21:14+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-11-09T17:21:15+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-09T17:21:17+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-11-09T17:21:19+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-11-09T17:22:50+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-09T17:22:50+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+
+[ 2016-11-09T17:22:52+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-09T17:22:53+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-11-09T17:31:42+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-09T17:31:42+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-11-09T17:31:45+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-11-09T17:31:46+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+ERR: Think\Controller:returnResult方法不存在！
+
+[ 2016-11-09T17:32:09+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-11-09T17:32:09+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-11-09T17:32:11+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-11-09T17:32:12+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2016-11-09T17:33:27+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-11-09T17:33:27+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-11-09T17:33:28+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-11-09T17:33:30+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-11-09T17:33:50+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-09T17:33:50+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-11-09T17:33:52+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-11-09T17:33:53+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-11-09T17:33:55+08:00 ] ::1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0033s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-11-09T17:34:34+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-11-09T17:34:34+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-11-09T17:34:36+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-09T17:34:37+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-11-09T17:34:39+08:00 ] ::1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0042s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0045s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-11-09T17:34:58+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-11-09T17:34:58+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-11-09T17:35:00+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-11-09T17:35:01+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-11-09T17:35:04+08:00 ] ::1 /think_blog/Home/ArticleComment/getArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0038s ]
+SQL: SELECT `id` FROM `article` WHERE `id` = 3  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0042s ]
+ERR: Think\Model:getArticleComment方法不存在！
+
+[ 2016-11-09T17:35:11+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+
+[ 2016-11-09T17:35:12+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-11-09T17:35:13+08:00 ] ::1 /think_blog/Home/Member/personArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-11-09T17:35:14+08:00 ] ::1 /think_blog/Home/Member/personArticleComment/article_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-11-09T17:35:17+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0038s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T17:35:19+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0039s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T17:35:20+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0038s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T17:35:23+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0046s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T17:35:25+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0056s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T17:35:26+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0036s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0002s ]
+
+[ 2016-11-09T17:35:26+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0037s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0002s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3' LIMIT 10,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.article_id = '3'  [ RunTime:0.0003s ]
+
+[ 2016-11-09T17:37:22+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0037s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.member_id = '29' AND ac.article_id = '3' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE ac.member_id = '29' AND ac.article_id = '3'  [ RunTime:0.0240s ]
+
+[ 2016-11-09T17:37:26+08:00 ] ::1 /think_blog/Home/Member/personArticleComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2048] Declaration of Home\Model\ArticleCommentModel::comment() should be compatible with Think\Model::comment($comment) D:\wamp\www\think_blog\Application\Home\Model\ArticleCommentModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `article_comment` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT `title` FROM `article` WHERE `id` = 3  [ RunTime:0.0003s ]
+SQL: SELECT ac.id AS `article_comment_id`,ac.member_id AS `member_id`,m.member_name AS `member_name`,m.head_pic AS `head_pic`,ac.comment_content AS `comment_content`,ac.comment_time AS `comment_time` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE m.member_name LIKE '%1%' AND ac.article_id = '3' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(ac.id) AS `count` FROM article_comment ac INNER JOIN member m ON ac.member_id=m.id  WHERE m.member_name LIKE '%%1%%' AND ac.article_id = '3'  [ RunTime:0.0003s ]
+

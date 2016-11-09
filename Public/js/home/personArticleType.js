@@ -151,16 +151,16 @@ function showList(page,page_size,keyItem,key,com){
         data:{"page":page,"page_size":page_size,"keyItem":keyItem,"key":key,"com":com},
         dataType:"json",
         success:function(data){
-            if(data.status==1 && data.articleType!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var articleType=data.articleType;
+                var articleType=data.rows;
                 if(articleType.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < articleType.length; i++) {
                         sHtml += '<tr class="tr_line">';
-                        sHtml += '<td width="50"><input type="checkbox" class="id" name="id[]" value="' + articleType[i]["id"] + '" /></td>';
-                        sHtml += '<td width="50">' + articleType[i]["id"] + '</td>';
-                        sHtml += '<td width="200"><a href="javascript:void(0);" class="info" value="'+  articleType[i]["id"]+'">' + articleType[i]["article_type_name"] + '</a></td>';
+                        sHtml += '<td width="50"><input type="checkbox" class="id" name="id[]" value="' + articleType[i]["article_type_id"] + '" /></td>';
+                        sHtml += '<td width="50">' + articleType[i]["article_type_id"] + '</td>';
+                        sHtml += '<td width="200"><a href="javascript:void(0);" class="info" value="'+  articleType[i]["article_type_id"]+'">' + articleType[i]["article_type_name"] + '</a></td>';
                         sHtml += '</tr>';
                     }
                     $('#list_table_tbody').html(sHtml);

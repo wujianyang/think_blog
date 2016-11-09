@@ -171,10 +171,9 @@ function showList(page,page_size,keyItem,key,com){
         data:{"page":page,"page_size":page_size,"keyItem":keyItem,"key":key,"com":com},
         dataType:"json",
         success:function(data){
-            console.log(data);
-            if(data.status==1 && data.article!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var article=data.article;
+                var article=data.rows;
                 if(article.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < article.length; i++) {

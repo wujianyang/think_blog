@@ -40,14 +40,14 @@ function showList(page,page_size,keyItem,key,com){
     var sHtml_loading='<div class="loading"><img src="'+host_dir+'Public/images/loading.gif" width="100px" /></div>';
     $('#list_table_tbody').html(sHtml_loading);
     $.ajax({
-        url:host_dir+"Home/ArticleComment/getArticleComment",
+        url:host_dir+"Home/Member/personArticleComment",
         type:"post",
         data:{"article_id":article_id,"page":page,"page_size":page_size,"keyItem":keyItem,"key":key,"com":com},
         dataType:"json",
         success:function(data){
-            if(data.status==1 && data.articleComment!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var articleComment=data.articleComment;
+                var articleComment=data.rows;
                 if(articleComment.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < articleComment.length; i++) {

@@ -15,7 +15,7 @@ class MessModel extends Model{
     public $keyItem='';
     public $com='eq';
 
-    public function getMessByMemberId(){
+    /*public function getMessByMemberId(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -57,10 +57,10 @@ class MessModel extends Model{
             $data['msg']='用户留言板获取失败';
         }
         return $data;
-    }
+    }*/
 
     //获取留言板总记录数
-    public function getCount(){
+    /*public function getCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -94,7 +94,7 @@ class MessModel extends Model{
             $data['msg']='用户留言板总记录数获取失败';
         }
         return $data;
-    }
+    }*/
 
     //用户留言
     public function mess(){
@@ -132,6 +132,87 @@ class MessModel extends Model{
             $data['msg']='删除成功';
         }else{
             $data['msg']='删除失败';
+        }
+        return $data;
+    }
+
+    public function personIndex(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $this->messed_id=I('session.MEMBER')['id'];
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='member_name'){
+                $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+        }
+        $arr_where["$this->table_alias.messed_id"]=$this->messed_id;
+        $arr_field=array();
+        $arr_field["$this->table_alias.id"]="mess_id";
+        $arr_field["$this->table_alias.messer_id"]="messer_id";
+        $arr_field["$this->foreign_table_alias.member_name"]="member_name";
+        $arr_field["$this->foreign_table_alias.head_pic"]="head_pic";
+        $arr_field["$this->table_alias.content"]="content";
+        $arr_field["$this->table_alias.mess_time"]="mess_time";
+        $arr_join=array();
+        $arr_join[]="INNER JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.messer_id=$this->foreign_table_alias.id";
+        $result=$this->alias("$this->table_alias")->field($arr_field)->join($arr_join)->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $result=html_decode($result,'content');
+                $data['status']=1;
+                $data['msg']='用户留言板获取成功';
+                $data['rows']=$result;
+            }else{
+                $data['status']=1;
+                $data['msg']='用户留言板没有数据';
+            }
+        }else{
+            $data['msg']='用户留言板获取失败';
+        }
+        return $data;
+    }
+
+    public function personIndexCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $this->messed_id=I('session.MEMBER')['id'];
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='member_name'){
+                $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+        }
+        $arr_where["$this->table_alias.messed_id"]=$this->messed_id;
+        $arr_join=array();
+        $arr_join[]="INNER JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.messer_id=$this->foreign_table_alias.id";
+        $result=$this->alias("$this->table_alias")->field("COUNT($this->table_alias.id) as count")->join($arr_join)->where($arr_where)->select();
+
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='用户留言板总记录数获取成功';
+                $data['count']=$result[0]['count'];
+            }else{
+                $data['status']=1;
+                $data['msg']='用户留言板总记录数没有数据';
+            }
+        }else{
+            $data['msg']='用户留言板总记录数获取失败';
         }
         return $data;
     }

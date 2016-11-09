@@ -6,32 +6,34 @@ class ArticleCommentController extends Controller{
     public function index(){
         if (isset($_GET['article_id']) && !empty($_GET['article_id'])) {
             $data = array();
-            $status = 0;
+            $data['status'] = 0;
+            $data['msg'] = '';
 
             $articleComment = D('ArticleComment');
+            if(IS_AJAX){
+                $articleComment->page=I('post.page');
+                $articleComment->pageSize=I('post.page_size');
+                $articleComment->key=trim(I('post.key'));
+                $articleComment->keyItem=I('post.keyItem');
+                $articleComment->com=I('post.com');
+            }
             $articleComment->article_id = I('get.article_id');
-            $articleComment->page = isset($_POST['page']) ? I('post.page') : 1;
-            $articleComment->pageSize = isset($_POST['page_size']) ? I('post.page_size') : 10;
-            $articleComment->key = isset($_POST['key']) ? trim(I('post.key')) : '';
-            $articleComment->keyItem = isset($_POST['keyItem']) ? I('post.keyItem') : 'id';
-            $articleComment->com = isset($_POST['com']) ? I('post.com') : 'eq';
 
             $result = $articleComment->index();
             $resultCount = $articleComment->getCount();
             $articleInfo = $articleComment->getArticleTitle();
             unset($articleComment);
 
-            if ($result !== false) {
-                $data['article_id'] = $articleInfo[0]['id'];
-                $data['article_title'] = $articleInfo[0]['title'];
-                $data['rows'] = $result;
-                $data['count'] = $resultCount[0]['count'];
-                $data['pageCount'] = ceil((int)$resultCount[0]['count'] / 10);
-                $status = 1;
+            $data['article_id'] = $articleInfo[0]['id'];
+            $data['article_title'] = $articleInfo[0]['title'];
+            if ($result['status'] == 1) {
+                $data['rows'] = $result['rows'];
+                $data['count'] = $resultCount['count'];
+                $data['pageCount'] = ceil((int)$resultCount['count'] / 10);
+                $data['status']=1;
             } else {
                 $data['rows'] = array();
             }
-            $data['status'] = $status;
             if (IS_AJAX) {
                 $this->ajaxReturn($data);
             } else {

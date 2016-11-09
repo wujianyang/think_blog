@@ -197,21 +197,12 @@ function showList(page,page_size,keyItem,key,com){
         data:{"photo_id":photo_id,"page":page,"page_size":page_size,"keyItem":keyItem,"key":key,"com":com},
         dataType:"json",
         success:function(data){
-            if(data.status==1 && data.photoImg!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var photoImg=data.photoImg;
+                var photoImg=data.rows;
                 if(photoImg.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < photoImg.length; i++) {
-                        /*
-                         <div class="photo_div">
-                         <input type="hidden"  class="id" name="id[]" value="{$photoImg.id}" />
-                         <div class="img_div">
-                         <img src="{$Think.config.UPLOAD}{$photoImg.img_src}" width="200" height="150" />
-                         </div>
-                         <p>ID：<a class="info" href="javascript:void(0);" value="{$photoImg.id}"><b>{$photoImg.id}</b> | {$photoImg.img_title}</a></p>
-                         </div>
-                         */
                         sHtml += '<div class="photo_div">';
                         sHtml += '<input type="hidden" class="id" name="id[]" value="'+photoImg[i]['id']+'" />';
                         sHtml += '<div class="img_div">';

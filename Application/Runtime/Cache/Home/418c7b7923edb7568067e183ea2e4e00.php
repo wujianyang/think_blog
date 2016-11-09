@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>个人文章评论</title>
+    <title>我的文章评论_<?php echo (C("TITLE")); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>admin.css" />
     <style type="text/css">
@@ -16,8 +16,11 @@
     <script src="<?php echo (C("JS")); ?>home/personComment.js"></script>
 </head>
 <body>
-<input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
 <div class="main_form">
+    <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
+    <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
+    <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
+    <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -29,7 +32,7 @@
                     <option value="member_id+eq">用户ID</option>
                     <option value="member_name+like">用户名</option>
                 </select>
-                <input name="key" id="key" value="" placeholder="请输入关键词" />
+                <input name="key" id="key" value="" placeholder="请输入关键词" required />
                 <input type="button" value="搜索" id="search" />
             </div>
         </div>

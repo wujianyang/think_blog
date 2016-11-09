@@ -15,7 +15,7 @@ class PhotoImgModel extends Model{
     public $keyItem='';
     public $com='eq';
 
-    public function getPhotoImg(){
+    /*public function getPhotoImg(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -51,9 +51,9 @@ class PhotoImgModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
-    public function getPhotoImgCount(){
+    /*public function getPhotoImgCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -86,7 +86,7 @@ class PhotoImgModel extends Model{
             $data['msg']='用户相册记录数获取失败';
         }
         return $data;
-    }
+    }*/
 
     //用户添加相册分类
     public function personAdd(){
@@ -174,6 +174,91 @@ class PhotoImgModel extends Model{
             $data['msg']='编辑失败';
         }
 
+        return $data;
+    }
+
+    //个人相片列表
+    public function personIndex(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(IS_AJAX){
+            $this->photo_id=I('post.photo_id');
+        }else{
+            $this->photo_id=I('get.photo_id');
+        }
+        //条件数组
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+        }
+        $arr_where["$this->table_alias.photo_id"]=$this->photo_id;
+        //多表查询条件数组
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.photo_id=$this->foreign_table_alias.id";
+        $arr_field=array();
+        $arr_field["$this->table_alias.id"]="id";
+        $arr_field["$this->table_alias.img_title"]="img_title";
+        $arr_field["$this->table_alias.img_src"]="img_src";
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='用户相册获取成功';
+                $data['rows']=$result;
+            }else{
+                $data['status']=1;
+                $data['msg']='用户相册没有数据';
+            }
+        }else{
+            $data['msg']='用户相册获取失败';
+        }
+
+        return $data;
+    }
+
+    //个人相片列表数量
+    public function personIndexCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(IS_AJAX){
+            $this->photo_id=I('post.photo_id');
+        }else{
+            $this->photo_id=I('get.photo_id');
+        }
+        //条件数组
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+        }
+        $arr_where["$this->table_alias.photo_id"]=$this->photo_id;
+        //多表查询条件数组
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.photo_id=$this->foreign_table_alias.id";
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]="count";
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='用户相册记录数获取成功';
+                $data['count']=$result[0]['count'];
+            }else{
+                $data['status']=1;
+                $data['msg']='用户相册记录数没有数据';
+            }
+        }else{
+            $data['msg']='用户相册记录数获取失败';
+        }
         return $data;
     }
 }

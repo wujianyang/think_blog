@@ -153,7 +153,7 @@ class ArticleModel extends Model{
         return $data;
     }
 
-    //获取用户文章列表
+    /*//获取用户文章列表
     public function getArticleByMemberId(){
         $data=array();
         $data['status']=0;
@@ -206,7 +206,7 @@ class ArticleModel extends Model{
         }
 
         return $data;
-    }
+    }*/
     //根据文章分类ID获取文章列表
     public function getArticleByArticleTypeId(){
         $data=array();
@@ -251,7 +251,7 @@ class ArticleModel extends Model{
         return $data;
     }
 
-    //根据用户ID获取记录条数
+    /*//根据用户ID获取记录条数
     public function getCountByMemberId(){
         $data=array();
         $data['status']=0;
@@ -292,7 +292,7 @@ class ArticleModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
     //获取用户文章分类信息
     public function getArticleTypeByMemberId(){
@@ -412,7 +412,6 @@ class ArticleModel extends Model{
         $arr_where['id']=$this->id;
         $arr_where['member_id']=$this->member_id;
         $result=$this->data($arr_add)->where($arr_where)->save();
-        $s=$this->getLastSql();
         if($result!==false){
             $data['status']=1;
             $data['msg']='编辑成功';
@@ -448,5 +447,102 @@ class ArticleModel extends Model{
         }else{
             return true;
         }
+    }
+
+    //个人文章列表
+    public function personIndex(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        //条件数组
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='article_type_name'){
+                $arr_where["$this->foreign_table2_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+
+        }
+        $arr_where["$this->table_alias.member_id"]=$this->member_id;
+        //字段数组
+        $arr_field=array();
+        $arr_field[$this->table_alias.'.id']='article_id';
+        $arr_field[$this->table_alias.'.title']='title';
+        $arr_field[$this->table_alias.'.content']='content';
+        $arr_field[$this->table_alias.'.hitnum']='hitnum';
+        $arr_field[$this->table_alias.'.create_time']='create_time';
+        $arr_field[$this->table_alias.'.member_id']='member_id';
+        $arr_field[$this->table_alias.'.article_type_id']='article_type_id';
+        $arr_field[$this->foreign_table2_alias.'.article_type_name']='article_type_name';
+        //多表查询条件数组
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.article_type_id=$this->foreign_table2_alias.id";
+
+
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='用户文章列表获取成功';
+                $data['rows']=$result;
+            }else{
+                $data['status']=1;
+                $data['msg']='用户文章列表没有数据';
+            }
+        }else{
+            $data['msg']='用户文章列表获取失败';
+        }
+
+        return $data;
+    }
+
+    //个人文章列表数量
+    public function personIndexCount(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            if($this->keyItem=='member_name'){
+                $arr_where["$this->foreign_table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }elseif($this->keyItem=='article_type_name'){
+                $arr_where["$this->foreign_table2_alias.$this->keyItem"]=array($this->com,$this->key);
+            }else{
+                $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+            }
+        }
+        $arr_where["$this->table_alias.member_id"]=$this->member_id;
+
+        $arr_field=array();
+        $arr_field["COUNT($this->table_alias.id)"]='count';
+        //多表查询条件数组
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.article_type_id=$this->foreign_table2_alias.id";
+
+
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='获取文章记录总数成功';
+                $data['count']=$result[0]['count'];
+            }else{
+                $data['status']=1;
+                $data['msg']='没有数据';
+            }
+        }else{
+            $data['msg']='获取文章记录总数失败';
+        }
+
+        return $data;
     }
 }
