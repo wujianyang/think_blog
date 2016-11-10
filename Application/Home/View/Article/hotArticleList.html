@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        <if condition="$member neq null">
+        <if condition="$data.member neq null">
             热门文章排行
             <else />
             文章列表
@@ -48,12 +48,14 @@
                 success:function(data){
                     if(data.status==1){
                         var sHtml='';
-                        var hotArticle=data.hotArticle;
+                        var hotArticle=data.rows;
                         if(hotArticle.length>0) {
                             //拼接数据列表
                             for (var i = 0; i < hotArticle.length; i++) {
                                 sHtml+='<p>';
-                                sHtml+='<a href="{$Think.config.HOST_DIR}Home/Member/index/member_id/'+hotArticle[i]['member_id']+'.{$Think.config.URL_HTML_SUFFIX}">['+hotArticle[i]['member_name']+']</a>';
+                                if(page_search=='search'){
+                                    sHtml+='<a href="{$Think.config.HOST_DIR}Home/Member/index/member_id/'+hotArticle[i]['member_id']+'.{$Think.config.URL_HTML_SUFFIX}">['+hotArticle[i]['member_name']+']</a>';
+                                }
                                 sHtml+='<a href="{$Think.config.HOST_DIR}Home/Article/index/article_id/'+hotArticle[i]['id']+'.{$Think.config.URL_HTML_SUFFIX}" title="'+hotArticle[i]['title']+'" target="_target">'+str_sub(hotArticle[i]['title'],60)+'</a>';
                                 sHtml+='<span>'+hotArticle[i]['create_time']+'</span>';
                                 sHtml+='</p>';
@@ -81,12 +83,12 @@
 </head>
 <body>
 <include file="./Application/Home/View/top.html" />
-<input type="hidden" value="{$member.id}" id="member_id" />
+<input type="hidden" value="{$data.member.id}" id="member_id" />
 <div class="hotArticle_div">
     <div class="article_list_title">
         <span>
-            <if condition="$member neq null">
-                <a href="{:U('Member/index',array('member_id'=>$member['id']))}">{$member.member_name}</a> >>热门文章排行
+            <if condition="$data.member neq null">
+                <a href="{:U('Member/index',array('member_id'=>$data['member']['id']))}">{$data.member.member_name}</a> >>热门文章排行
             <else />
                 文章列表
                 <input type="hidden" value="search" id="page_search" />
@@ -97,34 +99,35 @@
         </span>
     </div>
     <div class="article_list_div" id="article_list_div">
-        <volist name="hotArticle" id="hotArticle" offset="0" empty="$empty">
+        <volist name="data.rows" id="rows" offset="0" empty="$empty">
             <p>
-                <if condition="$hotArticle.member_id neq null">
-                    <a href="{:U('Member/index',array('member_id'=>$hotArticle['member_id']))}">[{$hotArticle.member_name}]</a>
+                <if condition="$rows.member_id neq null">
+                    <a href="{:U('Member/index',array('member_id'=>$rows['member_id']))}">[{$rows.member_name}]</a>
                 </if>
-                <a href="{:U('Article/index',array('article_id'=>$hotArticle['article_id']))}" title="{$hotArticle.title}" target="_blank">{$hotArticle.title|substr_mb=0,60,'utf-8'}</a>
-                <span>{$hotArticle.create_time}</span>
+                <a href="{:U('Article/index',array('article_id'=>$rows['article_id']))}" title="{$rows.title}" target="_blank">{$rows.title|substr_mb=0,60,'utf-8'}</a>
+                <span>{$rows.create_time}</span>
             </p>
             <if condition="$key%5 eq 4">
                 <p class="line"></p>
             </if>
         </volist>
     </div>
-    <if condition="$hotArticle neq null">
+    <if condition="$data.pageCount gt 0">
         <div class="page_div" id="page_div">
             <span class="page"><a href="javascript:void(0);">首页</a></span>
             <span class="page"><a href="javascript:void(0);">上一页</a></span>
             <label id="curpage">1</label> /
-            <label id="page_count">{$pageCount}</label>
-            <if condition="$pageCount gt 1">
-                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                <span class="page hov"><a href="javascript:void(0);" rel="{$pageCount}">末页</a></span>
-                <else />
+            <label id="page_count">{$data.pageCount}</label>
+            <if condition="$data.pageCount eq 1">
                 <span class="page"><a href="javascript:void(0);">下一页</a></span>
                 <span class="page"><a href="javascript:void(0);">末页</a></span>
+                <else />
+                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
+                <span class="page hov"><a href="javascript:void(0);" rel="{$data.pageCount}">末页</a></span>
             </if>
                 <span>
                     <select id="toPageSize">
+                        <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
@@ -135,7 +138,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-            <span>共{$count}条数据</span>
+            <span>共{$data.count}条数据</span>
         </div>
     </if>
 </div>

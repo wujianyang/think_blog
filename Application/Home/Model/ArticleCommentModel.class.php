@@ -17,8 +17,8 @@ class ArticleCommentModel extends Model{
     public $keyItem='id';
     public $com='eq';
 
-    //获取文章评论
-    /*public function getArticleComment(){
+    //获取文章详细页面的文章评论列表
+    public function getArticleComment(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -62,10 +62,10 @@ class ArticleCommentModel extends Model{
             $data['msg']='文章评论信息获取失败';
         }
         return $data;
-    }*/
+    }
 
-    //获取文章评论列表数量
-    /*public function getArticleCommentCount(){
+    //获取文章详细页面的文章评论列表数量
+    public function getArticleCommentCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -100,8 +100,7 @@ class ArticleCommentModel extends Model{
         }
 
         return $data;
-    }*/
-
+    }
 
     public function comment(){
         $data=array();

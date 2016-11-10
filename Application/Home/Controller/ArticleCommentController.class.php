@@ -3,7 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 
 class ArticleCommentController extends Controller{
-    //获取文章评论列表
+    /*
+     * 获取文章评论列表
+     * 文章细览页面点击分页
+     */
     public function getArticleComment(){
         $data = array();
         $data['status']=0;

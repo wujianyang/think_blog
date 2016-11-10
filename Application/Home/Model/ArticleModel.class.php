@@ -20,7 +20,7 @@ class ArticleModel extends Model{
     public $keyItem='id';
     public $com='eq';
 
-    //根据条件查找文章
+    //根据条件搜索文章列表
     public function getArticleByTitle(){
         $data=array();
         $data['status']=0;
@@ -29,6 +29,9 @@ class ArticleModel extends Model{
         //条件数组
         $arr_where=array();
         if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
             $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
         }
         //字段数组date_format(create_time,'%Y-%m-%d') as create_time
@@ -47,7 +50,7 @@ class ArticleModel extends Model{
             if(count($result)>0){
                 $data['status']=1;
                 $data['msg']='用户文章列表获取成功';
-                $data['hotArticle']=$result;
+                $data['rows']=$result;
             }else{
                 $data['status']=1;
                 $data['msg']='用户文章列表没有数据';
@@ -59,6 +62,7 @@ class ArticleModel extends Model{
         return $data;
     }
 
+    //根据条件搜索文章列表数量
     public function getArticleCountByTitle(){
         $data=array();
         $data['status']=0;
@@ -138,14 +142,14 @@ class ArticleModel extends Model{
 
         $result=$this->table(array("$this->foreign_table"=>$this->foreign_table_alias))->field($arr_field)->join($arr_join)->where(array("$this->table_alias.id"=>$this->id))->group("$this->table_alias.id")->select();
         if($result!==false){
+            $data['status']=1;
             if(count($result)>0){
-                $data['status']=1;
                 $data['msg']='文章信息获取成功';
+                //解析文章内容
                 $result=html_decode($result,'content');
                 $data['article']=$result[0];
             }else{
-                $data['status']=1;
-                $data['msg']='没有数据';
+                $data['msg']='该文章不存在';
             }
         }else{
             $data['msg']='文章信息获取失败';
@@ -153,7 +157,9 @@ class ArticleModel extends Model{
         return $data;
     }
 
-    /*//获取用户文章列表
+    /*
+     * 获取用户首页的文章列表信息
+     */
     public function getArticleByMemberId(){
         $data=array();
         $data['status']=0;
@@ -206,7 +212,7 @@ class ArticleModel extends Model{
         }
 
         return $data;
-    }*/
+    }
     //根据文章分类ID获取文章列表
     public function getArticleByArticleTypeId(){
         $data=array();
@@ -215,13 +221,12 @@ class ArticleModel extends Model{
 
         $result=$this->field("id,title,date_format(create_time,'%Y-%m-%d') as create_time")->where(array('article_type_id'=>$this->article_type_id))->limit($this->pageSize)->page($this->page)->select();
         if($result!==false){
+            $data['status']=1;
             if(count($result)>0){
-                $data['status']=1;
                 $data['msg']='获取文章列表成功';
                 $data['article']=$result;
             }else{
-                $data['status']=1;
-                $data['msg']='没有数据';
+                $data['msg']='文章列表没有数据';
             }
         }else{
             $data['msg']='获取文章列表失败';
@@ -339,7 +344,7 @@ class ArticleModel extends Model{
             if(count($result)>0){
                 $data['status']=1;
                 $data['msg']='获取用户热门文章成功';
-                $data['hotArticle']=$result;
+                $data['rows']=$result;
             }else{
                 $data['status']=1;
                 $data['msg']='没有数据';

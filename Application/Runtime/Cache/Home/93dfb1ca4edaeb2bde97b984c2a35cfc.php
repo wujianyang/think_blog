@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        <?php if($member != null): ?>热门文章排行
+        <?php if($data["member"] != null): ?>热门文章排行
             <?php else: ?>
             文章列表<?php endif; ?>
         _<?php echo (C("TITLE")); ?>
@@ -46,12 +46,14 @@
                 success:function(data){
                     if(data.status==1){
                         var sHtml='';
-                        var hotArticle=data.hotArticle;
+                        var hotArticle=data.rows;
                         if(hotArticle.length>0) {
                             //拼接数据列表
                             for (var i = 0; i < hotArticle.length; i++) {
                                 sHtml+='<p>';
-                                sHtml+='<a href="<?php echo (C("HOST_DIR")); ?>Home/Member/index/member_id/'+hotArticle[i]['member_id']+'.<?php echo (C("URL_HTML_SUFFIX")); ?>">['+hotArticle[i]['member_name']+']</a>';
+                                if(page_search=='search'){
+                                    sHtml+='<a href="<?php echo (C("HOST_DIR")); ?>Home/Member/index/member_id/'+hotArticle[i]['member_id']+'.<?php echo (C("URL_HTML_SUFFIX")); ?>">['+hotArticle[i]['member_name']+']</a>';
+                                }
                                 sHtml+='<a href="<?php echo (C("HOST_DIR")); ?>Home/Article/index/article_id/'+hotArticle[i]['id']+'.<?php echo (C("URL_HTML_SUFFIX")); ?>" title="'+hotArticle[i]['title']+'" target="_target">'+str_sub(hotArticle[i]['title'],60)+'</a>';
                                 sHtml+='<span>'+hotArticle[i]['create_time']+'</span>';
                                 sHtml+='</p>';
@@ -104,11 +106,11 @@
     <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
     <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
 </div>
-<input type="hidden" value="<?php echo ($member["id"]); ?>" id="member_id" />
+<input type="hidden" value="<?php echo ($data["member"]["id"]); ?>" id="member_id" />
 <div class="hotArticle_div">
     <div class="article_list_title">
         <span>
-            <?php if($member != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$member['id']));?>"><?php echo ($member["member_name"]); ?></a> >>热门文章排行
+            <?php if($data["member"] != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$data['member']['id']));?>"><?php echo ($data["member"]["member_name"]); ?></a> >>热门文章排行
             <?php else: ?>
                 文章列表
                 <input type="hidden" value="search" id="page_search" />
@@ -118,25 +120,26 @@
         </span>
     </div>
     <div class="article_list_div" id="article_list_div">
-        <?php if(is_array($hotArticle)): $i = 0; $__LIST__ = array_slice($hotArticle,0,null,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$hotArticle): $mod = ($i % 2 );++$i;?><p>
-                <?php if($hotArticle["member_id"] != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$hotArticle['member_id']));?>">[<?php echo ($hotArticle["member_name"]); ?>]</a><?php endif; ?>
-                <a href="<?php echo U('Article/index',array('article_id'=>$hotArticle['article_id']));?>" title="<?php echo ($hotArticle["title"]); ?>" target="_blank"><?php echo (substr_mb($hotArticle["title"],0,60,'utf-8')); ?></a>
-                <span><?php echo ($hotArticle["create_time"]); ?></span>
+        <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,null,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><p>
+                <?php if($rows["member_id"] != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$rows['member_id']));?>">[<?php echo ($rows["member_name"]); ?>]</a><?php endif; ?>
+                <a href="<?php echo U('Article/index',array('article_id'=>$rows['article_id']));?>" title="<?php echo ($rows["title"]); ?>" target="_blank"><?php echo (substr_mb($rows["title"],0,60,'utf-8')); ?></a>
+                <span><?php echo ($rows["create_time"]); ?></span>
             </p>
             <?php if($key%5 == 4): ?><p class="line"></p><?php endif; endforeach; endif; else: echo "$empty" ;endif; ?>
     </div>
-    <?php if($hotArticle != null): ?><div class="page_div" id="page_div">
+    <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
             <span class="page"><a href="javascript:void(0);">首页</a></span>
             <span class="page"><a href="javascript:void(0);">上一页</a></span>
             <label id="curpage">1</label> /
-            <label id="page_count"><?php echo ($pageCount); ?></label>
-            <?php if($pageCount > 1): ?><span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($pageCount); ?>">末页</a></span>
+            <label id="page_count"><?php echo ($data["pageCount"]); ?></label>
+            <?php if($data["pageCount"] == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
+                <span class="page"><a href="javascript:void(0);">末页</a></span>
                 <?php else: ?>
-                <span class="page"><a href="javascript:void(0);">下一页</a></span>
-                <span class="page"><a href="javascript:void(0);">末页</a></span><?php endif; ?>
+                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
+                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
+                        <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
@@ -147,7 +150,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-            <span>共<?php echo ($count); ?>条数据</span>
+            <span>共<?php echo ($data["count"]); ?>条数据</span>
         </div><?php endif; ?>
 </div>
 <div class="footer">

@@ -13,7 +13,7 @@ class ArticleTypeModel extends Model{
     public $page=1;
     public $pageSize=10;
 
-    //根据id获取用户ID
+    //根据文章类型ID获取用户ID
     public function getMemberIdById(){
         $data=array();
         $data['status']=0;
@@ -35,7 +35,8 @@ class ArticleTypeModel extends Model{
 
         return $data;
     }
-    /*//根据用户ID获取文章分类
+
+    //文章列表页面-根据用户ID获取文章分类
     public function getArticleTypeByMemberId(){
         $data=array();
         $data['status']=0;
@@ -56,19 +57,18 @@ class ArticleTypeModel extends Model{
             $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
         }
         if($result!==false){
+            $data['status']=1;
             if(count($result)>0){
-                $data['status']=1;
                 $data['msg']='获取文章分类成功';
                 $data['articleType']=$result;
             }else{
-                $data['status']=1;
-                $data['msg']='没有数据';
+                $data['msg']='文章分类没有数据';
             }
         }else{
             $data['msg']='获取文章分类失败';
         }
         return $data;
-    }*/
+    }
 
     /*public function getArticleTypeCountByMemberId(){
         $data=array();
@@ -100,6 +100,7 @@ class ArticleTypeModel extends Model{
         return $data;
     }*/
 
+    //根据文章分类ID获取当前文章分类信息
     public function getArticleType_op(){
         $result=$this->field('id,article_type_name')->where(array('id'=>$this->id))->select();
         return $result[0];

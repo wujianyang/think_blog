@@ -6,10 +6,10 @@ require_once C('ROOT').C('FUNC').'func.php';
 class MemberModel extends CommonModel{
     public $id;
     public $id_temp;
-    public $member_name;
+    /*public $member_name;
     public $question;
     public $answer;
-    public $vCode='';
+    public $vCode='';*/
     public $table='member';
     public $table_alias='m';
     public $foreign_table='friends';
@@ -20,11 +20,6 @@ class MemberModel extends CommonModel{
     public $key='';
     public $keyItem='';
     public $com='eq';
-
-    //个人博客主页
-    public function index(){
-
-    }
 
     //获取验证码
     public function getVerify(){
@@ -89,7 +84,10 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
-    //验证用户是否冻结,根据用户名
+    /*
+     * 根据用户名验证用户是否冻结
+     * 用于用户登录、申诉等验证
+     */
     public function isFreeze(){
         $data=array();
         $data['status']=0;
@@ -104,7 +102,8 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
-    public function getIndexInfo(){
+    //这个方法好像暂时没用
+    /*public function getIndexInfo(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -112,9 +111,9 @@ class MemberModel extends CommonModel{
         $result=$this->data('id')->where(array('member_name'=>$this->member_name))->select();
 
         return $data;
-    }
+    }*/
 
-    //根据ID获取用户资料
+    //根据ID获取用户个人资料
     public function getInfo(){
         $data=array();
         $data['status']=0;
@@ -132,7 +131,10 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
-    //获取用户头像
+    /*
+     * 获取当前用户基本信息
+     * 包括用户ID、用户名、头像、访问量
+     */
     public function getInfoHeader(){
         $data=array();
         $data['status']=0;
@@ -342,7 +344,6 @@ class MemberModel extends CommonModel{
         if($newPasswd!=''){
             //验证旧密码是否正确
             $result=$this->field('id')->where(array('id'=>$this->id,'passwd'=>md5($this->passwd)))->select();
-
             if(count($result)>0){
                 $result=$this->data(array('passwd'=>md5($newPasswd)))->where(array('id'=>$this->id))->save();
                 if($result!==false){
@@ -361,7 +362,10 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
-    //获取用户的密码问题
+    /*
+     * 获取用户密码问题
+     * 忘记密码页面
+     */
     public function getQuestion(){
         $data=array();
         $data['status']=0;
@@ -396,7 +400,10 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
-    //校验提交数据
+    /*
+     * 为添加和编辑方法
+     * 校验提交数据
+     */
     public function setValidata($f=''){
         if(empty($this->member_name) && !preg_match("/^[\w]{8,}$/",$this->member_name)){
             return '用户名验证失败';
@@ -466,7 +473,10 @@ class MemberModel extends CommonModel{
         return true;
     }
 
-    //创建提交数据数组
+    /*
+     * 为添加和编辑方法
+     * 创建提交数据数组
+     */
     public function create_Data($f=''){
         $arr=array();
         $arr['member_name']=$this->member_name;
@@ -512,7 +522,9 @@ class MemberModel extends CommonModel{
         }
     }
 
-    //判断编辑用户名是否为自己
+    /*
+     * 用户编辑校验数据时判断用户名是否为本身
+     */
     public function isSelfMemberName(){
         $result=$this->field('id')->where(array('id'=>$this->id,'member_name'=>$this->member_name))->select();
         if(count($result) == 0){

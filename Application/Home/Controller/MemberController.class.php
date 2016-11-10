@@ -96,6 +96,8 @@ class MemberController extends Controller{
                                 setcookie("member_name",I('post.member_name'),time()+3600*24*7);
                                 setcookie("passwd",md5(I('post.passwd')),time()+3600*24*7);
                             }
+                            unset($result);
+                            unset($member);
                             $this->redirect('Index');
                         }else{  //用户名和密码验证失败
                             $this->assign('msg',$result['msg']);
@@ -111,6 +113,8 @@ class MemberController extends Controller{
                 $this->assign('data',array('status'=>0,'msg'=>'请求参数为空'));
             }
         }
+        unset($result);
+        unset($member);
         $this->display();
     }
 
@@ -148,6 +152,8 @@ class MemberController extends Controller{
                 unset($member);
                 $this->ajaxReturn($result);
             }else{
+                unset($result);
+                unset($member);
                 $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
             }
         }else{
@@ -165,8 +171,10 @@ class MemberController extends Controller{
             unset($member);
             if($result['status']==1){
                 $this->assign('member',$result['member']);
+                unset($result);
                 $this->display();
             }else{
+                unset($result);
                 $this->redirect('login');
             }
         }else{
@@ -212,6 +220,7 @@ class MemberController extends Controller{
                     //密码修改成功需重新登录
                     if($result['status']==1){
                         session('MEMBER',null);
+                        unset($result);
                         $this->redirect('login');
                     }
                     $this->assign('msg',$result['msg']);
@@ -219,6 +228,7 @@ class MemberController extends Controller{
                     $this->assign('msg','新密码不一致');
                 }
             }
+            unset($result);
             $this->display();
         }
     }
@@ -257,12 +267,18 @@ class MemberController extends Controller{
                     unset($member);
                     $this->ajaxReturn($result);
                 }else{
+                    unset($result);
+                    unset($member);
                     $this->ajaxReturn(array('status'=>0,'msg'=>'用户名不存在'));
                 }
             }else{
+                unset($result);
+                unset($member);
                 $this->ajaxReturn(array('status'=>0,'msg'=>'新密码不一致'));
             }
         }else{
+            unset($result);
+            unset($member);
             $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));
         }
     }
@@ -284,7 +300,7 @@ class MemberController extends Controller{
                         $complaint->member_name=I('post.member_name');
                         $complaint->complain_content=I('post.complain_content');
                         $result=$complaint->complain();
-                        unset($complaint);
+
                         $this->assign('msg',$result['msg']);
                     }else{
                         $this->assign('msg','用户未冻结，可以正常登录');
@@ -296,6 +312,8 @@ class MemberController extends Controller{
                 $this->assign('msg','验证码错误');
             }
         }
+        unset($result);
+        unset($complaint);
         $this->display();
     }
 
@@ -574,7 +592,7 @@ class MemberController extends Controller{
         }*/
     }
 
-    //访问文章评论
+    //访问文章评论，除了获取评论列表还需获取文章标题
     public function personArticleComment(){
         $data = array();
         $data['status']=0;
@@ -778,7 +796,7 @@ class MemberController extends Controller{
     }
 
     //处理返回结果，使用引用传递参数
-    public function result($result=array(),$name='data',$pageSize=10,&$data){
+    /*public function result($result=array(),$name='data',$pageSize=10,&$data){
         if(!IS_AJAX){
             if($result['status']==1){
                 $this->assign($name,$result[$name]);
@@ -797,8 +815,9 @@ class MemberController extends Controller{
                 $this->ajaxReturn($data);
             }
         }
-    }
+    }*/
 
+    //处理返回结果，使用引用传递参数
     public function returnResult($arr=array(),&$data=array(),$field='result'){
         if($arr['status']==1){
             $data['status']=1;

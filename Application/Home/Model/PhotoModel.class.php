@@ -18,8 +18,10 @@ class PhotoModel extends Model{
     public $keyItem='';
     public $com='eq';
 
-    //获取用户的相册分类
-   /*public function getPhotoByMemberId(){
+    /*
+     * 获取用户首页的相册分类列表
+     */
+   public function getPhotoByMemberId(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -54,7 +56,7 @@ class PhotoModel extends Model{
         }
 
         return $data;
-    }*/
+    }
 
     /*public function getCountByMemberId(){
         $data=array();
