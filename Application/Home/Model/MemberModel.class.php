@@ -247,6 +247,15 @@ class MemberModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
+
+        //条件数组
+        $arr_where=array();
+        if($this->key!=''){
+            if($this->com=='like'){
+                $this->key="%$this->key%";
+            }
+            $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
+        }
         $arr_field=array();
         $arr_field["$this->table_alias.id"]="member_id";
         $arr_field["$this->table_alias.member_name"]="member_name";
@@ -263,9 +272,6 @@ class MemberModel extends CommonModel{
         }else{
             $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.id=$this->foreign_table_alias.member_id";
         }
-
-        $arr_where=array();
-        $arr_where["$this->keyItem"]=array($this->com,$this->key);
 
         $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->group("$this->table_alias.id")->page($this->page)->limit($this->pageSize)->select();
         if($result!==false){

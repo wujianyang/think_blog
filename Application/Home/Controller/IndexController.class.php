@@ -13,7 +13,7 @@ class IndexController extends Controller {
         $data['msg']='';
 
         if($_POST['keyItem']=='member'){    //搜索用户
-            $member=D('Member');
+            /*$member=D('Member');
             $member->key='%'.trim(I('post.key')).'%';
             $member->keyItem='member_name';
             $member->com='like';
@@ -42,11 +42,67 @@ class IndexController extends Controller {
                 $this->display('./Member/friends');
             }else{
                 $this->ajaxReturn($data);
-            }
+            }*/
+            $this->searchFriends();
         }elseif($_POST['keyItem']=='article'){  //搜索文章
             $this->searchArticle();
         }else{
             $this->error('参数错误');
+        }
+    }
+
+    //条件搜索用户列表
+    public function searchFriends(){
+        $data=array();
+        $data['status']=1;
+        $data['msg']='';
+
+        $member=D('Member');
+        $member->key=trim(I('post.key'));
+        $member->keyItem='member_name';
+        $member->com='like';
+        //初次访问初始化每页20条数据
+        $member->pageSize=20;
+        if(IS_AJAX){
+            $member->page=I('post.page');
+            $member->pageSize=I('post.page_size');
+        }
+        //传递当前登录用户ID是为了判断搜索用户是否已关注
+        $result=$member->searchFriends(I('session.MEMBER')['id']);
+        if($result['status']==1){
+            $resultCount=$member->searchFriendsCount(I('session.MEMBER')['id']);
+            //获取查找到的用户ID
+            if(count($result['friends'])>0){
+                $member->id=array_column($result['friends'],'member_id');
+            }else{
+                $member->id='';
+            }
+            //再根据用户ID获取该用户的关注数量 和 粉丝数量
+            $resultFocusCount=$member->getFriendsFocusCount();
+            $resultFansCount=$member->getFriendsFansCount();
+            //最后组合成新的结果集
+            foreach($result['friends'] as $k=>$res){
+                $result['friends'][$k]['focus_count']=$resultFocusCount['focus_count'][$k];
+                $result['friends'][$k]['fans_count']=$resultFansCount['fans_count'][$k];
+            }
+            $data['rows']=$result['friends'];
+            $data['count']=$resultCount['count'];
+            $data['pageCount']=ceil($resultCount['count']/$member->pageSize);
+        }else{
+            $data['msg']=$result['msg'];
+        }
+        unset($result);
+        unset($resultCount);
+        unset($resultFocusCount);
+        unset($resultFansCount);
+        unset($member);
+        //根据提交类型返回数据
+        if(IS_AJAX){
+            $this->ajaxReturn($data);
+        }else{
+            $this->assign('data',$data);
+            $this->assign('empty',C('NODATA'));
+            $this->display('Member/friends');
         }
     }
 
@@ -60,6 +116,7 @@ class IndexController extends Controller {
         $article->key=trim(I('post.key'));
         $article->keyItem='title';
         $article->com='like';
+        //初次访问初始化每页20条数据
         $article->pageSize=20;
         if(IS_AJAX){
             $article->page=I('post.page');
@@ -71,10 +128,6 @@ class IndexController extends Controller {
             $data['rows']=$result['rows'];
         }else{
             $data['msg']=$result['msg'];
-            unset($result);
-            unset($resultCount);
-            unset($article);
-            $this->ajaxReturn($data);
         }
         $resultCount=$article->getArticleCountByTitle();
         if($resultCount['status']==1){
@@ -83,42 +136,17 @@ class IndexController extends Controller {
             $data['pageCount']=ceil($resultCount['count']/$article->pageSize);
         }else{
             $data['msg']=$resultCount['msg'];
-            unset($result);
-            unset($resultCount);
-            unset($article);
-            $this->ajaxReturn($data);
         }
         unset($result);
         unset($resultCount);
         unset($article);
+        //根据提交类型返回数据
         if(IS_AJAX){
             $this->ajaxReturn($data);
         }else{
             $this->assign('data',$data);
             $this->assign('empty',C('NODATA'));
             $this->display('Article/hotArticleList');
-        }
-    }
-
-    //结果处理
-    public function result($result=array(),$name='data',$pageSize=10,&$data){
-        if(!IS_AJAX){
-            if($result['status']==1){
-                $this->assign($name,$result[$name]);
-                if($name=='count'){
-                    $this->assign('pageCount',ceil($result[$name]/$pageSize));
-                }
-            }else{
-                $this->error($result['msg']);
-            }
-        }else{
-            if($result['status']==1){
-                $data['status']=1;
-                $data[$name]=$result[$name];
-            }else{
-                $data['msg']=$result['msg'];
-                $this->ajaxReturn($data);
-            }
         }
     }
 }

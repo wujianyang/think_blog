@@ -28,7 +28,7 @@
                 success:function(data){
                     if(data.status==1){
                         var sHtml='';
-                        var mess=data.mess;
+                        var mess=data.rows;
                         if(mess.length>0) {
                             //拼接数据列表
                             for (var i = 0; i < mess.length; i++) {
@@ -105,38 +105,38 @@
 </head>
 <body>
 <include file="./Application/Home/View/top.html" />
-<input type="hidden" value="{$member.id}" id="member_id" />
+<input type="hidden" value="{$data.member.id}" id="member_id" />
 <div class="mess_div">
    <div class="mess_title">
-       <span><a href="{:U('Member/index',array('member_id'=>$member['id']))}">{$member.member_name}</a></span>
+       <span><a href="{:U('Member/index',array('member_id'=>$data['member']['id']))}">{$data['member'].member_name}</a></span>
        >>
        <span>留言板</span>
    </div>
     <div class="mess_list_div" id="mess_list_div">
-        <volist name="mess" id="mess" offset="0" empty="$empty">
+        <volist name="data.rows" id="rows" offset="0" empty="$empty">
             <div class="mess_list_d">
                 <p>
-                    <img src="{$Think.config.UPLOAD}{$mess.head_pic}" width="24px" height="24px" />
-                    <span><a href="{:U('Member/index',array('member_id'=>$mess['messer_id']))}">{$mess.member_name}</a></span>
-                    <span class="mess_time">{$mess.mess_time}</span>
+                    <img src="{$Think.config.UPLOAD}{$rows.head_pic}" width="24px" height="24px" />
+                    <span><a href="{:U('Member/index',array('member_id'=>$rows['messer_id']))}">{$rows.member_name}</a></span>
+                    <span class="mess_time">{$rows.mess_time}</span>
                 </p>
-                <p class="mess_content">{$mess.content}</p>
+                <p class="mess_content">{$rows.content}</p>
             </div>
         </volist>
     </div>
     <!--分页条-->
-    <if condition="$mess neq null">
+    <if condition="$data.pageCount gt 0">
         <div class="page_div" id="page_div">
             <span class="page"><a href="javascript:void(0);">首页</a></span>
             <span class="page"><a href="javascript:void(0);">上一页</a></span>
             <label id="curpage">1</label> /
-            <label id="page_count">{$pageCount}</label>
-            <if condition="$pageCount gt 1">
-                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                <span class="page hov"><a href="javascript:void(0);" rel="{$pageCount}">末页</a></span>
-                <else />
+            <label id="page_count">{$data.pageCount}</label>
+            <if condition="$data.pageCount eq 1">
                 <span class="page"><a href="javascript:void(0);">下一页</a></span>
                 <span class="page"><a href="javascript:void(0);">末页</a></span>
+                <else />
+                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
+                <span class="page hov"><a href="javascript:void(0);" rel="{$data.pageCount}">末页</a></span>
             </if>
                 <span>
                     <select id="toPageSize">
@@ -151,7 +151,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-            <span>共{$count}条数据</span>
+            <span>共{$data.count}条数据</span>
         </div>
     </if>
 </div>

@@ -16,7 +16,8 @@ class MessModel extends Model{
     public $com='eq';
 
     /*
-     * 获取用户首页的留言板列表
+     * 获取用户的留言板列表
+     *
      */
     public function getMessByMemberId(){
         $data=array();
@@ -63,7 +64,7 @@ class MessModel extends Model{
     }
 
     //获取留言板总记录数
-    /*public function getCount(){
+    public function getMessCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -97,7 +98,7 @@ class MessModel extends Model{
             $data['msg']='用户留言板总记录数获取失败';
         }
         return $data;
-    }*/
+    }
 
     //用户留言
     public function mess(){

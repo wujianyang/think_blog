@@ -340,91 +340,79 @@ class MemberController extends Controller{
 
         $member=D('Member');
         $member->id=I('get.member_id');
+        $member->pageSize=20;
         if($member->isExistsMemberId()){
-            if(!IS_AJAX){   //访问页面获取用户信息，ajax分页只更新列表
-                $member_result=$member->getInfoHeader();
-                if($member_result['status']==1){
-                    $this->assign('member',$member_result['member']);
+            if(!IS_AJAX){   //获取当前登录用户信息
+                $memberResult=$member->getInfoHeader();
+                if($memberResult['status']==1){
+                    $data['member']=$memberResult['member'];
                 }else{
-                    $this->error($member_result['msg']);
+                    $data['msg']=$memberResult['msg'];
                 }
-            }
-            if(IS_AJAX){
-                $member->page=I('post.page');
-                $member->pageSize=I('post.page_size');
             }
             //获取关注用户ID数组
             $friends=D('Friends');
             $friends->pageSize=20;
+            if(IS_AJAX){
+                $friends->page=I('post.page');
+                $friends->pageSize=I('post.page_size');
+            }
             $friends->fans_id=I('get.member_id');
             $friends->member_id=I('get.member_id');
+            //获取关注用户或粉丝用户的用户ID
             $resultFriendsId=$friends->getFriendsId($f);
+            $resultFriendsIdCount=$friends->getFriendsIdCount($f);
             if($resultFriendsId['status']==1){
                 //获取关注用户信息
-                $member->pageSize=20;
-                $member->id_temp=$member->id;
+                //$member->pageSize=20;
+                //$member->id_temp=$member->id;
+                $member->id_temp=I('session.MEMBER')['id'];
                 if(count($resultFriendsId['friends_id'])>0){
                     $member->id=$resultFriendsId['friends_id'];
                 }else{
                     $member->id='';
                 }
 
+                //获取关注用户或粉丝用户的用户信息
                 $result=$member->getFriends($f);
-                //获取关注用户的关注数量
+                //再根据用户ID获取该用户的关注数量 和 粉丝数量
                 $resultFocusCount=$member->getFriendsFocusCount();
-                //获取关注用户的粉丝数量
                 $resultFansCount=$member->getFriendsFansCount();
                 if($result['status']==1 && $resultFocusCount['status']==1 && $resultFansCount['status']==1){
-                    //组合好友的关注数量和粉丝数量
-                    $memberResult=$result['member'];
-                    foreach($memberResult as $k => $m){
-                        $memberResult[$k]['focus_count']=$resultFocusCount['focus_count'][$k];
-                        $memberResult[$k]['fans_count']=$resultFansCount['fans_count'][$k];
+                    //最后组合成新的结果集
+                    $friendsResult=$result['member'];
+                    foreach($friendsResult as $k => $m){
+                        $friendsResult[$k]['focus_count']=$resultFocusCount['focus_count'][$k];
+                        $friendsResult[$k]['fans_count']=$resultFansCount['fans_count'][$k];
                     }
-                    //返回列表数据
-                    if(!IS_AJAX){   //访问
-                        $this->assign('friends',$memberResult);
-                        $this->assign('empty',C('NODATA'));
-                    }else{  //ajax提交
-                        $data['status']=1;
-                        $data['friends']=$memberResult;
-                    }
-                    //返回分页数据
-                    if(!IS_AJAX){
-                        $this->assign('count',count($resultFriendsId['friends_id']));
-                        $this->assign('pageCount',ceil(count($resultFriendsId['friends_id'])/$member->pageSize));
-                    }else{
-                        $data['count']=count($resultFriendsId['friends_id']);
-                        $this->ajaxReturn($data);
-                    }
-                    unset($member);
-                    $this->display();
+
+                    $data['rows']=$friendsResult;
+                    $data['count']=$resultFriendsIdCount['count'];
+                    $data['pageCount']=ceil($resultFriendsIdCount['count']/$friends->pageSize);
+
                 }else{  //请求失败
-                    unset($member);
-                    if(!IS_AJAX){
-                        $this->error('请求失败');
-                    }else{
-                        $data['msg']='请求失败';
-                        $this->ajaxReturn($data);
-                    }
+                    $data['msg']='请求失败';
                 }
             }else{
-                unset($member);
-                if(!IS_AJAX){
-                    $this->error($resultFriendsId['msg']);
-                }else{
-                    $data['msg']=$resultFriendsId['msg'];
-                    $this->ajaxReturn($data);
-                }
+                $data['msg']=$resultFriendsId['msg'];
             }
         }else{
-            unset($member);
-            if(!IS_AJAX){
-                $this->error('用户不存在');
-            }else{
-                $data['msg']='用户不存在';
-                $this->ajaxReturn($data);
-            }
+            $data['msg']='用户不存在';
+        }
+        unset($friends);
+        unset($member);
+        unset($result);
+        unset($resultFansCount);
+        unset($resultFocusCount);
+        unset($resultFriendsId);
+        unset($resultFriendsIdCount);
+        //根据提交类型返回数据
+        if(IS_AJAX){
+            $this->ajaxReturn($data);
+        }else{
+            $this->assign('data',$data);
+            $this->assign('empty',$data['msg']);
+            $this->display('Member/friends');
         }
     }
 

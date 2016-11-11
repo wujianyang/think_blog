@@ -74,10 +74,31 @@ class FriendsModel extends Model{
                 $data['friends_id']=array_column($result,'fans_id');
             }
 
-            $data['msg']='获取关注用户ID成功';
+            $data['msg']='获取好友用户ID成功';
             $data['status']=1;
         }else{
-            $data['msg']='获取关注用户ID失败';
+            $data['msg']='获取好友用户ID失败';
+        }
+
+        return $data;
+    }
+
+    public function getFriendsIdCount($f='focus'){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if($f=='focus'){
+            $result=$this->field("COUNT(DISTINCT member_id) AS count")->where(array("fans_id"=>$this->fans_id))->select();
+        }else{
+            $result=$this->field("COUNT(DISTINCT fans_id) AS count")->where(array("member_id"=>$this->member_id))->select();
+        }
+        if($result!==false){
+            $data['count']=$result[0]['count'];
+            $data['msg']='获取好友用户数量成功';
+            $data['status']=1;
+        }else{
+            $data['msg']='获取好友用户数量失败';
         }
 
         return $data;

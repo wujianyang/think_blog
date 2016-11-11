@@ -3,8 +3,9 @@ namespace Home\Controller;
 use Think\Controller;
 
 class ArticleTypeController extends Controller{
+    //好像没用
     //获取个人文章类型
-    public function getPersonArticleType(){
+    /*public function getPersonArticleType(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -24,7 +25,7 @@ class ArticleTypeController extends Controller{
             $data['msg']='登录超时';
         }
         $this->ajaxReturn($data);
-    }
+    }*/
 
     //个人添加文章分类
     public function personAdd(){

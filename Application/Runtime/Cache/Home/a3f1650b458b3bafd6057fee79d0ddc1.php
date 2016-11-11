@@ -28,7 +28,7 @@
                 success:function(data){
                     if(data.status==1){
                         var sHtml='';
-                        var mess=data.mess;
+                        var mess=data.rows;
                         if(mess.length>0) {
                             //拼接数据列表
                             for (var i = 0; i < mess.length; i++) {
@@ -130,34 +130,34 @@
     <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
     <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
 </div>
-<input type="hidden" value="<?php echo ($member["id"]); ?>" id="member_id" />
+<input type="hidden" value="<?php echo ($data["member"]["id"]); ?>" id="member_id" />
 <div class="mess_div">
    <div class="mess_title">
-       <span><a href="<?php echo U('Member/index',array('member_id'=>$member['id']));?>"><?php echo ($member["member_name"]); ?></a></span>
+       <span><a href="<?php echo U('Member/index',array('member_id'=>$data['member']['id']));?>"><?php echo ($data['member']["member_name"]); ?></a></span>
        >>
        <span>留言板</span>
    </div>
     <div class="mess_list_div" id="mess_list_div">
-        <?php if(is_array($mess)): $i = 0; $__LIST__ = array_slice($mess,0,null,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$mess): $mod = ($i % 2 );++$i;?><div class="mess_list_d">
+        <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,null,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><div class="mess_list_d">
                 <p>
-                    <img src="<?php echo (C("UPLOAD")); echo ($mess["head_pic"]); ?>" width="24px" height="24px" />
-                    <span><a href="<?php echo U('Member/index',array('member_id'=>$mess['messer_id']));?>"><?php echo ($mess["member_name"]); ?></a></span>
-                    <span class="mess_time"><?php echo ($mess["mess_time"]); ?></span>
+                    <img src="<?php echo (C("UPLOAD")); echo ($rows["head_pic"]); ?>" width="24px" height="24px" />
+                    <span><a href="<?php echo U('Member/index',array('member_id'=>$rows['messer_id']));?>"><?php echo ($rows["member_name"]); ?></a></span>
+                    <span class="mess_time"><?php echo ($rows["mess_time"]); ?></span>
                 </p>
-                <p class="mess_content"><?php echo ($mess["content"]); ?></p>
+                <p class="mess_content"><?php echo ($rows["content"]); ?></p>
             </div><?php endforeach; endif; else: echo "$empty" ;endif; ?>
     </div>
     <!--分页条-->
-    <?php if($mess != null): ?><div class="page_div" id="page_div">
+    <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
             <span class="page"><a href="javascript:void(0);">首页</a></span>
             <span class="page"><a href="javascript:void(0);">上一页</a></span>
             <label id="curpage">1</label> /
-            <label id="page_count"><?php echo ($pageCount); ?></label>
-            <?php if($pageCount > 1): ?><span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($pageCount); ?>">末页</a></span>
+            <label id="page_count"><?php echo ($data["pageCount"]); ?></label>
+            <?php if($data["pageCount"] == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
+                <span class="page"><a href="javascript:void(0);">末页</a></span>
                 <?php else: ?>
-                <span class="page"><a href="javascript:void(0);">下一页</a></span>
-                <span class="page"><a href="javascript:void(0);">末页</a></span><?php endif; ?>
+                <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
+                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
                         <option value="10">10</option>
@@ -171,7 +171,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-            <span>共<?php echo ($count); ?>条数据</span>
+            <span>共<?php echo ($data["count"]); ?>条数据</span>
         </div><?php endif; ?>
 </div>
 <div class="footer">

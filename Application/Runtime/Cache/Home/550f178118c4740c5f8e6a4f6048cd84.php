@@ -45,6 +45,7 @@
 </div>
 <input type="hidden" value="<?php echo ($_GET['f']); ?>" id="f" />
 <input type="hidden" value="<?php echo ($_GET['member_id']); ?>" id="member_id" />
+<?php echo (dump($data)); ?>
 <div class="friends_div">
     <div class="friends_title">
         <?php if($member != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$member['id']));?>"><?php echo ($member["member_name"]); ?></a> >><?php endif; ?>
@@ -58,47 +59,46 @@
             <input type="hidden" value="<?php echo ($_POST['keyItem']); ?>" id="keyItem_search" /><?php endif; ?>
     </div>
     <ul id="list">
-        <?php if(is_array($friends)): $i = 0; $__LIST__ = array_slice($friends,0,20,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$friends): $mod = ($i % 2 );++$i;?><li>
+        <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,20,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><li>
                 <p>
-                    <img src="<?php echo (C("UPLOAD")); echo ($friends["head_pic"]); ?>" width="30" height="30" />
-                    <span><a href="<?php echo U('Member/index',array('member_id'=>$friends['member_id']));?>"><?php echo ($friends["member_name"]); ?></a></span>
+                    <img src="<?php echo (C("UPLOAD")); echo ($rows["head_pic"]); ?>" width="30" height="30" />
+                    <span><a href="<?php echo U('Member/index',array('member_id'=>$rows['member_id']));?>"><?php echo ($rows["member_name"]); ?></a></span>
                 </p>
                 <p>
-                    <?php if($friends["sex"] == 1): ?><label>性别：<span>男</span></label>
-                        <?php elseif($friends["sex"] == 0): ?>
+                    <?php if($rows["sex"] == 1): ?><label>性别：<span>男</span></label>
+                        <?php elseif($rows["sex"] == 0): ?>
                         <label>性别：<span>女</span></label><?php endif; ?>
-                    <label>访问量：<span><?php echo ($friends["hitnum"]); ?></span></label>
+                    <label>访问量：<span><?php echo ($rows["hitnum"]); ?></span></label>
                 </p>
                 <p>
-                    <span><a href="<?php echo U('Member/friends',array('member_id'=>$friends['member_id'],'f'=>'focus'));?>">关注(<?php echo ($friends["focus_count"]); ?>)</a></span>
-                    <span><a href="<?php echo U('Member/friends',array('member_id'=>$friends['member_id'],'f'=>'fans'));?>">粉丝(<?php echo ($friends["fans_count"]); ?>)</a></span>
+                    <span><a href="<?php echo U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'focus'));?>">关注(<?php echo ($rows["focus_count"]); ?>)</a></span>
+                    <span><a href="<?php echo U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'fans'));?>">粉丝(<?php echo ($rows["fans_count"]); ?>)</a></span>
                 </p>
-                <?php if($_GET['f']== fans): if($friends["iseach"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($friends["member_id"]); ?>">取消关注</div>
+                <?php if($_SESSION['MEMBER']!= null): if($_GET['f']== fans): if($rows["iseach"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($rows["member_id"]); ?>">取消关注</div>
+                            <?php else: ?>
+                            <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; ?>
                         <?php else: ?>
-                        <div class="btn focus" rel="<?php echo ($friends["member_id"]); ?>">关注</div><?php endif; ?>
-                <?php elseif($_GET['f']== focus): ?>
-                    <div class="btn cencelFocus" rel="<?php echo ($friends["member_id"]); ?>">取消关注</div>
-                <?php else: ?>
-                    <?php if($friends["isfocus"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($friends["member_id"]); ?>">取消关注</div>
-                        <?php else: ?>
-                        <div class="btn focus" rel="<?php echo ($friends["member_id"]); ?>">关注</div><?php endif; endif; ?>
-
-
+                        <?php if($rows["isfocus"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($rows["member_id"]); ?>">取消关注</div>
+                            <?php else: ?>
+                            <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; endif; ?>
+                    <?php else: ?>
+                    <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; ?>
             </li><?php endforeach; endif; else: echo "$empty" ;endif; ?>
         <div class="clear"></div>
     </ul>
-    <?php if($pageCount > 0): ?><div class="page_div" id="page_div">
+    <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
             <span class="page"><a href="javascript:void(0);">首页</a></span>
             <span class="page"><a href="javascript:void(0);">上一页</a></span>
             <label id="curpage">1</label> /
-            <label id="page_count"><?php echo ($pageCount); ?></label>
-            <?php if($pageCount == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
+            <label id="page_count"><?php echo ($data["pageCount"]); ?></label>
+            <?php if($data["pageCount"] == 1): ?><span class="page"><a href="javascript:void(0);">下一页</a></span>
                 <span class="page"><a href="javascript:void(0);">末页</a></span>
                 <?php else: ?>
                 <span class="page hov"><a href="javascript:void(0);" rel="2">下一页</a></span>
-                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($pageCount); ?>">末页</a></span><?php endif; ?>
+                <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
+                        <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
@@ -109,7 +109,7 @@
                     <input type="text" id="page_text" class="page_text" />
                     <input type="button" value="跳转" id="toPage" />
                 </span>
-            <span>共<?php echo ($count); ?>条数据</span>
+            <span>共<?php echo ($data["count"]); ?>条数据</span>
         </div><?php endif; ?>
 </div>
 <div class="footer">

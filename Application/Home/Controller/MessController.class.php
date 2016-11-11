@@ -4,68 +4,61 @@ use Think\Controller;
 
 class MessController extends Controller{
     public function index(){
-        if(isset($_GET['member_id']) && !empty($_GET['member_id'])){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(!empty($_GET['member_id']) || !empty($_POST['member_id'])){
             $member=D('Member');
-            $member->id=I('get.member_id');
+            if(IS_AJAX){
+                $member->id=I('post.member_id');
+            }else{
+                $member->id=I('get.member_id');
+            }
+            //判断用户ID是否存在
             if($member->isExistsMemberId()){
                 //获取用户信息
-                $member_result=$member->getInfoHeader();
-                if($member_result['status']==1){
-                    $this->assign('member',$member_result['member']);
+                $memberResult=$member->getInfoHeader();
+                if($memberResult['status']==1){
+                    $data['status']=1;
+                    $data['member']=$memberResult['member'];
+                    //获取用户留言板信息
+                    $mess=D('Mess');
+                    $mess->messed_id=$member->id;
+                    $messResult=$mess->getMessByMemberId();
+                    if($messResult['status']==1){
+                        $data['status']=1;
+                        $data['rows']=$messResult['mess'];
+                        //获取留言板列表数量
+                        $countCesult=$mess->getMessCount();
+                        if($countCesult['status']==1){
+                            $data['status']=1;
+                            $data['count']=$countCesult['count'];
+                            $data['pageCount']=ceil($countCesult['count']/$mess->pageSize);
+                        }else{
+                            $data['status']=0;
+                            $data['msg']=$countCesult['msg'];
+                        }
+                    }else{
+                        $data['status']=0;
+                        $data['msg']=$messResult['msg'];
+                    }
                 }else{
-                    $this->error($member_result['msg']);
-                }
-                //获取留言板信息
-                $mess=D('Mess');
-                $mess->messed_id=I('get.member_id');
-                $mess_result=$mess->getMessByMemberId();
-                if($mess_result['status']==1){
-                    $this->assign('mess',$mess_result['mess']);
-                }else{
-                    $this->error($mess_result['msg']);
-                }
-                //获取留言板分页信息
-                $count_result=$mess->getCount();
-                if($count_result['status']==1){
-                    $count=$count_result['count'];
-                    $pageCount=ceil($count/$mess->pageSize);
-                    $this->assign('count',$count);
-                    $this->assign('pageCount',$pageCount);
-                }else{
-                    $this->error($count_result['msg']);
+                    $data['status']=0;
+                    $data['msg']='用户信息获取失败';
                 }
             }else{
-                $this->error('该用户不存在');
+                $data['msg']='该用户不存在';
             }
-            $this->assign('empty','<p class="noData">没有数据</p>');
-            $this->display();
-        }elseif(IS_AJAX && !empty($_POST['member_id'])){
-            $data=array();
-            $data['status']=0;
-            $data['msg']='';
-
-            $mess=D('Mess');
-            $mess->messed_id=I('post.member_id');
-            $mess->pageSize=I('post.page_size');
-            $mess->page=I('post.page');
-            $mess_result=$mess->getMessByMemberId();
-            if($mess_result['status']==1){
-                $data['status']=1;
-                $data['mess']=$mess_result['mess'];
-            }else{
-                $data['msg']=$mess_result['msg'];
-            }
-            //获取留言板分页信息
-            $count_result=$mess->getCount();
-            if($count_result['status']==1){
-                $data['status']=1;
-                $data['count']=$count_result['count'];
-            }else{
-                $data['msg']=$count_result['msg'];
-            }
+        }else{
+            $data['msg']='请求参数为空';
+        }
+        if(IS_AJAX){
             $this->ajaxReturn($data);
         }else{
-            $this->error('请求参数为空');
+            $this->assign('data',$data);
+            $this->assign('msg',$data['msg']);
+            $this->display();
         }
     }
 
@@ -94,7 +87,6 @@ class MessController extends Controller{
             }else{
                 $data['msg']='用户不存在';
             }
-
         }else{
             $data['msg']='请先登录再留言';
         }
