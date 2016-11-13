@@ -125,13 +125,15 @@ class CommonModel extends Model{
         return $data;
     }
 
-    //批量删除信息
+    /*
+     * 通过ID批量删除数据
+     */
     public function delData(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
 
-        $result=$this->where(array('id'=>array('in',$this->id)))->delete();
+        $result=$this->where(array('id'=>array('IN',$this->id)))->delete();
         if($result!==false){
             $data['msg']='删除成功';
             $data['status']=1;
@@ -176,18 +178,26 @@ class CommonModel extends Model{
     }
 
 
-    //验证信息数据
+    /*
+     * 验证信息数据
+     * $f用来判断是添加还是编辑
+    */
     public function setValidata($f=''){
         /*
          * 子类重写
          */
+        return false;
     }
 
-    //创建提交信息数据数组
+    /*
+     * 创建添加或编辑的数据
+     * $f用来判断是添加还是编辑
+    */
     public function create_Data($f=''){
         /*
          * 子类重写
          */
+        return array();
     }
 
     /*

@@ -109,7 +109,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(data){
                     if(data.status==1){
-                        var photo=data.photo;
+                        var photo=data.rows;
                         if(photo.length!=0){
                             for(var i in photo){
                                 $("#"+i+"_edit").val(photo[i]);

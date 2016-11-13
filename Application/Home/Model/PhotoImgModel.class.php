@@ -1,8 +1,8 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 
-class PhotoImgModel extends Model{
+class PhotoImgModel extends CommonModel{
     public $id;
     public $table='photo_img';
     public $table_alias='pi';
@@ -15,7 +15,8 @@ class PhotoImgModel extends Model{
     public $keyItem='';
     public $com='eq';
 
-    /*public function getPhotoImg(){
+    //根据相册ID获取相片列表
+    public function getPhotoImg(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -51,9 +52,10 @@ class PhotoImgModel extends Model{
         }
 
         return $data;
-    }*/
+    }
 
-    /*public function getPhotoImgCount(){
+    //根据相册ID获取相片数量
+    public function getPhotoImgCount(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -86,10 +88,10 @@ class PhotoImgModel extends Model{
             $data['msg']='用户相册记录数获取失败';
         }
         return $data;
-    }*/
+    }
 
     //用户添加相册分类
-    public function personAdd(){
+    /*public function personAdd(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -108,7 +110,7 @@ class PhotoImgModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
     //个人删除相片
     public function personDel(){
@@ -116,14 +118,22 @@ class PhotoImgModel extends Model{
         $data['status']=0;
         $data['msg']='';
 
+        //获取相片本地路径信息
+        $imgSrcResult=$this->field('img_src')->where(array('id'=>array('IN',$this->id)))->select();
         $arr_where=array();
         $arr_where['id']=array('IN',$this->id);
         $arr_where['member_id']=$this->member_id;
         $result=$this->where($arr_where)->delete();
-        $s=$this->getLastSql();
         if($result!==false){
             $data['status']=1;
             $data['msg']='删除成功';
+            foreach($imgSrcResult as $imgSrc){  //在空间中删除相片
+                if(file_exists(C('ROOT').C('UPLOAD').$imgSrc['img_src'])){
+                    if(!stristr($imgSrc['img_src'],'default')){
+                        unlink(C('ROOT').C('UPLOAD').$imgSrc['img_src']);
+                    }
+                }
+            }
         }else{
             $data['msg']='删除失败';
         }
@@ -131,29 +141,9 @@ class PhotoImgModel extends Model{
         return $data;
     }
 
-    //个人查看相册分类
-    public function personInfo(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->field('id,img_title,img_src')->where($arr_where)->select();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='查询成功';
-            $data['photoImg']=$result[0];
-        }else{
-            $data['msg']='查询失败';
-        }
-
-        return $data;
-    }
 
     //个人编辑相册分类
-    public function personEdit(){
+    /*public function personEdit(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -175,7 +165,7 @@ class PhotoImgModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
     //个人相片列表
     public function personIndex(){
@@ -204,7 +194,7 @@ class PhotoImgModel extends Model{
         $arr_field["$this->table_alias.id"]="id";
         $arr_field["$this->table_alias.img_title"]="img_title";
         $arr_field["$this->table_alias.img_src"]="img_src";
-        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->select();
+        $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
@@ -260,5 +250,43 @@ class PhotoImgModel extends Model{
             $data['msg']='用户相册记录数获取失败';
         }
         return $data;
+    }
+
+    //验证数据
+    public function setValidata($f=''){
+        if(empty($this->img_title) && !preg_match("/^[\w]{4,}$/",$this->img_title)){
+            return '相片名称验证失败';
+        }
+
+        if(isset($this->img_src) && !empty($this->img_src)) {
+            $uploadConfig=array('name' => 'img_src',
+                'maxSize'   =>  1000000,
+                'exts'      =>  array('png','jpg','jpeg','gif'),
+                'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
+                'savePath'  =>  'photo_img/',
+                'saveName'  =>  'photo_img_'.time(),
+                'autoSub'   =>  false);
+            $resultUpload=$this->upload($uploadConfig);
+            if($resultUpload['status']==1 && $resultUpload['upload']['img_src']['savename']!=''){
+                $this->img_src=$uploadConfig['savePath'].$resultUpload['upload']['img_src']['savename'];
+            }else{
+                return $resultUpload['msg'];
+            }
+        }elseif($f!='edit'){    //编辑时验证
+            return "相片验证失败";
+        }
+
+        return true;
+    }
+
+    //创建提交数据数组
+    public function create_Data($f=''){
+        $arr=array();
+        $arr['img_title']=$this->img_title;
+        if(!empty($this->img_src)){
+            $arr['img_src']=$this->img_src;
+        }
+
+        return $arr;
     }
 }

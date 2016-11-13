@@ -1,8 +1,8 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 
-class PhotoModel extends Model{
+class PhotoModel extends CommonModel{
     public $id;
     public $table='photo';
     public $table_alias='p';
@@ -105,7 +105,6 @@ class PhotoModel extends Model{
                 $data['msg']='用户相册分类获取成功';
                 $data['photo']=$result;
             }else{
-                $data['status']=1;
                 $data['msg']='用户相册分类没有数据';
             }
         }else{
@@ -127,7 +126,6 @@ class PhotoModel extends Model{
                 $data['msg']='用户ID获取成功';
                 $data['member_id']=$result[0]['member_id'];
             }else{
-                $data['status']=1;
                 $data['msg']='该用户ID没有相册';
             }
         }else{
@@ -160,7 +158,7 @@ class PhotoModel extends Model{
     }
 
     //用户添加相册分类
-    public function personAdd(){
+    /*public function personAdd(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -240,7 +238,7 @@ class PhotoModel extends Model{
         }
 
         return $data;
-    }
+    }*/
 
     //个人相册列表
     public function personIndex(){
@@ -313,5 +311,26 @@ class PhotoModel extends Model{
         }
 
         return $data;
+    }
+
+    public function setValidata($f=''){
+        if(empty($this->photo_title) && !preg_match("/^.{4,}$/",$this->photo_title)){
+            return "相册名称验证失败";
+        }
+        if(empty($this->member_id) && !preg_match("/^[\d]{1,}$/",$this->member_id)){
+            return "用户名验证失败";
+        }else{
+            if(!$this->isExistsMemberId($this->member_id)){
+                return "用户名不存在";
+            }
+        }
+        return true;
+    }
+
+    public function create_Data($f=''){
+        $arr=array();
+        $arr['photo_title']=$this->photo_title;
+        $arr['member_id']=$this->member_id;
+        return $arr;
     }
 }

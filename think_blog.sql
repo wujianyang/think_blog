@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-11-09 17:45:03
+Date: 2016-11-13 22:38:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -52,7 +52,7 @@ CREATE TABLE `article` (
   KEY `article_type_id` (`article_type_id`),
   CONSTRAINT `article_ibfk_1` FOREIGN KEY (`member_id`) REFERENCES `member` (`id`),
   CONSTRAINT `article_ibfk_2` FOREIGN KEY (`article_type_id`) REFERENCES `article_type` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of article
@@ -65,7 +65,7 @@ INSERT INTO `article` VALUES ('8', '哀悼:39岁青千赵永芳离去，剖析�
 INSERT INTO `article` VALUES ('9', '新鲜出炉：2016年国家自然科学基金项目大数据分析', '<p><br></p><p>由表可见，一方面，国家正加大力度提升较不发达地区科研机构完成项目的能力和动力，因此增加了地区科学基金项目的数量；另一方面，国家对青年科学项目的水平和要求已经提高。结合历史数据，基金总项数和基金总金额依然呈正相关。地区科研基金项目多分布在甘肃、广西、贵州、广西、云南等地区，其原因来自制度保护；其他种类基金都分布在高等院校和科研单位比较多的地区，比如北京、上海、广东等经济较发达的城市。</p><p><img src=\"http://image.sciencenet.cn/album/201608/20/1248477dbib4efgu1dipdi.jpg\" class=\"fr-fin\"></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;图1&nbsp;&nbsp;省市项目金额分配（单位：万元）</p><p>2016年的国家自然科学基金项目评审结果已经出炉。科学网在已有结果的基础上，结合历史数据，对基金在不同空间尺度的分布情况进行全面考察，多角度探索科学基金分布特征。</p><p><br></p><p>（一）按项目类别统计2015-2016年项目数量变化趋势</p><p>根据国家自然科学基金委8月17日通告显示，共接收项目申请172843项，经初步审查受理169832项，决定资助其中的37409项，约占总数的22%。和2015年相比，增加202项。</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 表1 &nbsp;2015-2016年资助项目数量变化表</p><table>\r\n  <tbody>\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n        <p>项目类型</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"122\">\r\n        <p>项目数（项）</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"126\">\r\n        <p>趋势（项）</p>\r\n      </td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n        <p>面上项目</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"122\">\r\n        <p>16934</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"126\">\r\n        <p>↑225</p>\r\n      </td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n        <p>重点项目</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"122\">\r\n        <p>612</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"126\">\r\n        <p>↓12</p>\r\n      </td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n        <p>创新研究群体项目</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"122\">\r\n        <p>38</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"126\">\r\n        <p>-</p>\r\n      </td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n        <p>优秀青年科学基金项目</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"122\">\r\n        <p>400</p>\r\n      </td>\r\n\r\n      <td valign=\"top\" width=\"126\">\r\n        <p>-</p>\r\n      </td>\r\n    </tr>\r\n\r\n    <tr>\r\n      <td valign=\"top\" width=\"271\">\r\n     ', '29', '1', '99', '2016-10-14 14:24:27');
 INSERT INTO `article` VALUES ('10', '别扯了！他是把全世界骗了100多年的“大骗子”？', '<p>\r\n\r\n&nbsp;梅契尼柯夫是俄国著名科学家，1908年的诺贝尔奖获得者之一，因其在免疫系统方面开创性的研究享誉世界。主要有三方面成就：1，胚胎学研究，为进化学说提供了证据；2，系统地论述了白细胞吞噬微生物的现象，提出噬菌细胞免疫学说（Phagory-tentheorie）借此与Paul Ehrlich同获1908诺贝尔医学与生理学奖；3，进行了人肠道菌群的研究，认为衰老是肠道菌产毒影响健康，减少肠道菌的毒可以健康长寿，为了抑制肠道菌的增殖，他建议人们喝含有乳杆菌的酸奶。\r\n\r\n<br></p>', '29', '1', '0', '2016-09-14 03:20:18');
 INSERT INTO `article` VALUES ('12', '“论文大神”董鹏真是可惜了', '<p>\r\n\r\n今天看到的这个报道还是蛮有意思的：“论文大神”5年发表800篇文章。报道称，2011年起，这位叫董鹏的人，在一些行业报刊和学报学刊发表约800篇文章，大多数为论文。这些文章涵盖现代物流、产业经济学、美学理论、古代文学、心理学、电影戏剧等诸多领域，可谓“论文大神”。 他还伪造各种高大上的身份，虚构、篡改国家级科研项目，再弄上一些显赫的论文合作者，还一稿多投。有意思的是，他还接受了记者的采访，承认自己的抄袭行并道歉。他坦承自己没上过大学，更无博士学历，诸多合作者也是他乱写上去的。\r\n\r\n<br></p>', '29', '1', '0', '2016-09-14 03:21:11');
-INSERT INTO `article` VALUES ('14', '自发讣告', '<p>李荫远&nbsp;&nbsp;&nbsp;1919年公历6月23日生于成都。&nbsp;1943年在西南联合大学物理系毕业，曾留校任助教。&nbsp;1947年赴美国游学，在獲得博士學位后因美方禁令不克歸國。直至1956年初始得啟程回京，同年4月到中国科学院物理研究所參加工作。&nbsp;1980年当选为中国科学院学部委员。&nbsp;70岁后逐渐退出科研工作和學報编辑等任務，晚年以文史自娱。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;2016&nbsp;年8月22日辞世。本人不愿有遗体告别之类的事，死后不换新衣，不入殡仪馆，由太平间直运火化场所。骨灰由大女保存，日后扬弃入海。</p>', '29', '1', '0', '2016-09-14 03:21:56');
+INSERT INTO `article` VALUES ('14', '自发讣告1113', '&lt;p&gt;李荫远&amp;nbsp;&amp;nbsp;&amp;nbsp;1919年公历6月23日生于成都。&amp;nbsp;1943年在西南联合大学物理系毕业，曾留校任助教。&amp;nbsp;1947年赴美国游学，在獲得博士學位后因美方禁令不克歸國。直至1956年初始得啟程回京，同年4月到中国科学院物理研究所參加工作。&amp;nbsp;1980年当选为中国科学院学部委员。&amp;nbsp;70岁后逐渐退出科研工作和學報编辑等任務，晚年以文史自娱。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2016&amp;nbsp;年8月22日辞世。本人不愿有遗体告别之类的事，死后不换新衣，不入殡仪馆，由太平间直运火化场所。骨灰由大女保存，日后扬弃入海。&lt;/p&gt;', '29', '25', '0', '2016-11-13 17:05:44');
 INSERT INTO `article` VALUES ('15', '一流+二流+三流=几流 ？', '<p>985、211工程尚未结束，很多高校就又吹起了向双一流高校迈进的冲锋号。新学期刚一开学，很多高校就开始付诸行动了：绩效考核标准提升、评聘分离试点、教学方式改革、研究导师淘汰制度改革，各项措施此起彼伏，令人目不暇接。说句实在话，也许是待在学校太久了，身患审丑疲劳症的缘故，对这些改革自己总是懒得搭理：都是些针对普通教师的单边政策，都是些只触及皮毛、换汤不换药的东西，不值得浪费生命去关注。</p><p>&nbsp; &nbsp;科学网有关双一流建设的博文已经很多，对这些博文本人很少评论。问题的关键在于，如果单就世界一流的产出而言，在权力通吃的行政化管理体制不发生根本触动、绩效考核大棒约束下师资精神面貌不发生根本改变前提下，我们国家具备建设双一流高校的条件吗？</p>', '29', '1', '30', '2016-10-14 14:22:50');
 INSERT INTO `article` VALUES ('16', '雇员制还是雇工制：取消编制后的高校管理体制预测', '<p>2016年，一则高等院校和公立医院取消编制的消息搅动了神州大地知识分子本就浮躁的心。对于这一重大举措，知识阶层是仁者见仁，智者见智，但较少见到较为理性的对未来走向的预测与理性分析。作为一所普通院校的一线教师，在此就班门弄斧，谈一点个人的意见，欢迎科学网各位专家补充。</p><p>一、高等院校教职员工的身份构成分析</p><p>&nbsp; &nbsp;目前的高等院校教职员工实际上采用的是五类不同人群构成的混合管理体制：引进的杰出人才、非升即走人员、终身雇佣老职工、编制外聘用人员、企业工人身份的员工。院士、杰青、江河湖海人员属于第一类人员，其特点是数量极少，但待遇高、保障好，属于终身制高薪人员。近年引进的海归身份的普通教学科研人员属于第二类，待遇高，压力大，稳定性差，属于合同聘用制人员，人数呈不断增加趋势。扩招以前的教职员工，属于待遇低、保障较好的铁饭碗人员，这部分人的比例最大。编制外聘用人员，身份更为复杂，又分为校聘、院聘、项目聘多种形式，数量不少，在有的院校高达数百人，多在辅导员、教学管理、行政管理岗工作，其特点是稳定性较好、但待遇低、保障水平低。至于高等院校中企业工人身份的员工，则是计划经济、高校办社会的产物，多在学校后勤、产业部门工作，人数通常不多，并且呈迅速减少趋势。</p>', '29', '1', '35', '2016-10-14 14:22:57');
 INSERT INTO `article` VALUES ('17', '中国人迫切需要自救自赎', '&lt;p style=&quot;box-sizing: border-box; margin: 0px 0px 20px; white-space: normal; word-break: break-all; word-wrap: break-word; text-align: justify; color: rgb(85, 85, 85); letter-spacing: 0.01rem; font-weight: normal; line-height: 1.5; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-style: normal; font-variant: normal; orphans: auto; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span data-fr-verified=&quot;true&quot; style=&quot;font-size: 13px;&quot;&gt;中国人的救赎跟基督徒的救赎不一样，基督徒的救赎前提是原罪，每个人都通过自己艰苦的努力劳作，不避艰险的行善，无私无畏的奉献精神，以期赎换自己的原罪，从而得救，死后升入天堂，要救的是灵魂，目的在于来世，因其人人救赎也就人人得利，因自利而利他，因利人而利世，社会得以和谐共生。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 0px 0px 20px; white-space: normal; word-break: break-all; word-wrap: break-word; text-align: justify; color: rgb(85, 85, 85); letter-spacing: 0.01rem; font-weight: normal; line-height: 1.5; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-style: normal; font-variant: normal; orphans: auto; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span data-fr-verified=&quot;true&quot; style=&quot;font-size: 13px;&quot;&gt;中国人的救赎不一样，强调的是救而不是赎，要救的就是现实的苦难，是现实生活和肉体。如果说有赎的话，那就是要认识到自救是无力的，只有我为人人才能人人为我，从而建立一种互惠互利精神，实现济世救人，社会和谐共生。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 0px 0px 20px; white-space: normal; word-break: break-all; word-wrap: break-word; text-align: justify; color: rgb(85, 85, 85); letter-spacing: 0.01rem; font-weight: normal; line-height: 1.5; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-style: normal; font-variant: normal; orphans: auto; text-indent: 0px; text-transform: none; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span data-fr-verified=&quot;true&quot; style=&quot;font-size: 1', '43', '10', '0', '2016-09-27 02:26:21');
@@ -130,7 +130,7 @@ CREATE TABLE `article_type` (
   `article_type_name` varchar(100) NOT NULL,
   `member_id` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of article_type
@@ -148,6 +148,7 @@ INSERT INTO `article_type` VALUES ('17', '博饼状元', '47');
 INSERT INTO `article_type` VALUES ('23', '平常琐事', '42');
 INSERT INTO `article_type` VALUES ('24', '奋斗故事', '41');
 INSERT INTO `article_type` VALUES ('25', '后端技术', '29');
+INSERT INTO `article_type` VALUES ('30', '测试分类一1113', '29');
 
 -- ----------------------------
 -- Table structure for complaint
@@ -155,20 +156,22 @@ INSERT INTO `article_type` VALUES ('25', '后端技术', '29');
 DROP TABLE IF EXISTS `complaint`;
 CREATE TABLE `complaint` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `member_name` varchar(255) NOT NULL,
+  `member_id` int(10) NOT NULL,
   `complain_content` varchar(255) NOT NULL,
   `admin_id` int(10) DEFAULT NULL,
   `complain_time` datetime NOT NULL,
   `isPass` int(11) NOT NULL,
   `pass_time` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `member_id` (`member_id`),
+  CONSTRAINT `complaint_ibfk_1` FOREIGN KEY (`member_id`) REFERENCES `member` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of complaint
 -- ----------------------------
-INSERT INTO `complaint` VALUES ('2', 'username3', '申请激活账号', null, '0000-00-00 00:00:00', '0', null);
-INSERT INTO `complaint` VALUES ('4', 'username4', 'sdfgf', null, '2016-11-09 01:28:54', '0', null);
+INSERT INTO `complaint` VALUES ('2', '41', '申请激活账号', null, '0000-00-00 00:00:00', '0', null);
+INSERT INTO `complaint` VALUES ('6', '83', '请求激活', '4', '2016-11-13 05:34:32', '1', '2016-11-13 05:43:00');
 
 -- ----------------------------
 -- Table structure for friends
@@ -272,7 +275,7 @@ INSERT INTO `member` VALUES ('78', 'username114', 'e10adc3949ba59abbe56e057f20f8
 INSERT INTO `member` VALUES ('80', 'username333', 'e10adc3949ba59abbe56e057f20f883e', '1', '123456@qq.com', '12312341234', 'address road', 'head_pic/', null, 'question one', 'answer one', '0', '0', '0.0.0.0', '2016-11-09 10:53:03');
 INSERT INTO `member` VALUES ('81', 'username331', 'e10adc3949ba59abbe56e057f20f883e', '1', '123456@qq.com', '12312341234', 'address road', 'head_pic/', null, 'question one', 'answer one', '0', '0', '0.0.0.0', '2016-11-09 10:58:04');
 INSERT INTO `member` VALUES ('82', 'username332', 'e10adc3949ba59abbe56e057f20f883e', '1', '123456@qq.com', '12312341234', 'address road', 'head_pic/head_pic_1478660441.png', null, 'question one', 'answer one', '0', '0', '0.0.0.0', '2016-11-09 11:00:41');
-INSERT INTO `member` VALUES ('83', 'username335', 'e10adc3949ba59abbe56e057f20f883e', '1', '123456@qq.com', '12312341234', 'address road', 'head_pic/head_pic_1478660899.png', null, 'question one1', 'answer one', '0', '0', '0.0.0.0', '2016-11-09 11:08:19');
+INSERT INTO `member` VALUES ('83', 'username335', 'e10adc3949ba59abbe56e057f20f883e', '1', '123456@qq.com', '12312341234', 'address road', 'head_pic/head_pic_1478660899.png', null, 'question one1', 'answer one', '0', '1', '0.0.0.0', '2016-11-09 11:08:19');
 
 -- ----------------------------
 -- Table structure for mess
@@ -304,7 +307,6 @@ INSERT INTO `mess` VALUES ('7', '29', '感谢生活，感谢生命，感谢你',
 INSERT INTO `mess` VALUES ('8', '43', '有你做我的朋友，我会无比珍惜!', '41', '2016-10-14 10:51:04');
 INSERT INTO `mess` VALUES ('9', '58', '你的每一份关怀都如阳光般温暖', '41', '2016-10-14 10:51:29');
 INSERT INTO `mess` VALUES ('14', '44', '字字句句都是幸福快乐', '29', '2016-10-19 16:45:32');
-INSERT INTO `mess` VALUES ('15', '48', '把愉快的心情带给你', '29', '2016-10-19 16:45:50');
 INSERT INTO `mess` VALUES ('16', '45', '送一串深深的祝福，分分秒秒都是平安吉祥', '29', '2016-10-19 16:46:08');
 INSERT INTO `mess` VALUES ('17', '29', '&lt;p&gt;进来留言&lt;/p&gt;', '41', '2016-10-20 03:47:18');
 INSERT INTO `mess` VALUES ('18', '29', '&lt;p&gt;又来留言&lt;/p&gt;', '41', '2016-10-20 03:48:14');
@@ -322,13 +324,12 @@ CREATE TABLE `photo` (
   PRIMARY KEY (`id`),
   KEY `member_id` (`member_id`),
   CONSTRAINT `photo_ibfk_1` FOREIGN KEY (`member_id`) REFERENCES `member` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of photo
 -- ----------------------------
 INSERT INTO `photo` VALUES ('1', '无与伦比', '29');
-INSERT INTO `photo` VALUES ('2', '一笑而过', '29');
 INSERT INTO `photo` VALUES ('3', '笑颜如花', '41');
 INSERT INTO `photo` VALUES ('4', '幸福不过', '41');
 INSERT INTO `photo` VALUES ('5', '一分安定', '43');
@@ -340,6 +341,8 @@ INSERT INTO `photo` VALUES ('10', '暮然回首', '45');
 INSERT INTO `photo` VALUES ('13', '涂鸦、心情', '46');
 INSERT INTO `photo` VALUES ('14', '青春记忆', '41');
 INSERT INTO `photo` VALUES ('15', '楼市崩塌', '48');
+INSERT INTO `photo` VALUES ('22', '个人生活', '29');
+INSERT INTO `photo` VALUES ('23', '日常生活', '29');
 
 -- ----------------------------
 -- Table structure for photo_img
@@ -355,12 +358,12 @@ CREATE TABLE `photo_img` (
   PRIMARY KEY (`id`),
   KEY `photo_id` (`photo_id`),
   CONSTRAINT `photo_img_ibfk_1` FOREIGN KEY (`photo_id`) REFERENCES `photo` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of photo_img
 -- ----------------------------
-INSERT INTO `photo_img` VALUES ('2', '1', '29', '无与伦比二', 'photo_img/photo_img_1475131157.png', null);
+INSERT INTO `photo_img` VALUES ('2', '1', '29', '无与伦比二1113', 'photo_img/photo_img_1479042371.gif', null);
 INSERT INTO `photo_img` VALUES ('3', '3', '41', '颜笑如花一', 'photo_img/photo_img_1475119005.png', null);
 INSERT INTO `photo_img` VALUES ('4', '1', '29', '无与伦比一', 'photo_img/photo_img_1475129202.png', null);
 INSERT INTO `photo_img` VALUES ('5', '3', '41', '颜笑如花二', 'photo_img/photo_img_1475129274.png', null);
@@ -368,7 +371,17 @@ INSERT INTO `photo_img` VALUES ('6', '4', '41', '幸福。。。', 'photo_img/ph
 INSERT INTO `photo_img` VALUES ('7', '1', '29', '无与伦比san', 'photo_img/photo_img_1475131849.png', null);
 INSERT INTO `photo_img` VALUES ('8', '8', '43', '青春年华一', 'photo_img/photo_img_1475131998.png', null);
 INSERT INTO `photo_img` VALUES ('12', '6', '44', '了了了了三', 'photo_img/photo_img_1475132090.png', null);
-INSERT INTO `photo_img` VALUES ('17', '1', '29', '测试相片一', 'photo_img/photo_img_1477620514.png', null);
 INSERT INTO `photo_img` VALUES ('20', '1', '29', '测试相片二', 'photo_img/photo_img_1477620967.png', null);
 INSERT INTO `photo_img` VALUES ('21', '1', '29', '测试相片一', 'photo_img/photo_img_1477624210.png', null);
 INSERT INTO `photo_img` VALUES ('30', '1', '29', '测试测试', 'photo_img/photo_img_1478661547.png', null);
+INSERT INTO `photo_img` VALUES ('31', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('33', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('34', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('35', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('36', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('37', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('38', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('39', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('40', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('41', '1', '29', '测试相片一', '', null);
+INSERT INTO `photo_img` VALUES ('42', '1', '29', '测试相片一', 'photo_img/photo_img_1479030873.gif', null);

@@ -44,10 +44,10 @@ class ArticleController extends Controller{
     }
 
     public function articleList(){
-        if($_GET['article_type_id'] || $_GET['member_id']){
+        if(!empty($_GET['article_type_id']) || !empty($_GET['member_id'])){
             $member=D('Member');
             $articleType=D('ArticleType');
-            if($_GET['article_type_id']){
+            if(!empty($_GET['article_type_id'])){
                 $articleType->id=I('get.article_type_id');
                 //根据文章类型ID获取用户ID
                 $memberIdResult=$articleType->getMemberIdById();
@@ -57,8 +57,8 @@ class ArticleController extends Controller{
                 }else{
                     $this->error($memberIdResult['msg']);
                 }
-            }elseif($_GET['member_id']){
-                $member->id=I('member_id');
+            }elseif(!empty($_GET['member_id'])){
+                $member->id=I('get.member_id');
             }
             //获取用户基本信息
             $memberResult=$member->getInfoHeader();
@@ -73,9 +73,9 @@ class ArticleController extends Controller{
             }
 
             $articleType=D('ArticleType');
-            if($_GET['article_type_id']){
-                $articleType->id=I('article_type_id');
-            }elseif($_GET['member_id']){
+            if(!empty($_GET['article_type_id'])){
+                $articleType->id=I('get.article_type_id');
+            }elseif(!empty($_GET['member_id'])){
                 //默认选中第一个文章分类
                 $articleType->id=$articleTypeResult['articleType'][0]['id'];
             }
@@ -292,67 +292,6 @@ class ArticleController extends Controller{
             $this->assign('empty',C('NODATA'));
             $this->display();
         }
-
-
-        /*if(IS_AJAX && !empty($_POST['member_id'])){
-            $data=array();
-            $data['status']=0;
-            $data['msg']='';
-
-            //通过ajax分页获取列表数据
-            $article=D('Article');
-            $article->member_id=I('post.member_id');
-            $article->page=I('post.page');
-            $article->pageSize=I('post.page_size');
-            $hotArticle_result=$article->getHotArticle();
-            if($hotArticle_result['status']==1){
-                $data['status']=1;
-                $data['hotArticle']=$hotArticle_result['hotArticle'];
-            }else{
-                $this->error($hotArticle_result['msg']);
-            }
-            //获取热门文章排行分页条信息
-            $count_result=$article->getHotArticleCount();
-            if($count_result['status']==1){
-                $data['count']=$count_result['count'];
-            }else{
-                $this->error($count_result['msg']);
-            }
-            $this->ajaxReturn($data);
-        }elseif(isset($_GET['member_id']) && !empty($_GET['member_id'])){
-            $member=D('Member');
-            $member->id=I('get.member_id');
-            $member_result=$member->getInfoHeader();
-            if($member_result['status']==1){
-                $this->assign('member',$member_result['member']);
-            }else{
-                $this->error($member_result['msg']);
-            }
-            //访问热门文章列表，获取首页列表数据
-            $article=D('Article');
-            $article->member_id=I('get.member_id');
-            $article->pageSize=20;
-            $hotArticle_result=$article->getHotArticle();
-            if($hotArticle_result['status']==1){
-                $this->assign('hotArticle',$hotArticle_result['hotArticle']);
-            }else{
-                $this->error($hotArticle_result['msg']);
-            }
-            //获取热门文章排行分页条信息
-            $count_result=$article->getHotArticleCount();
-            if($count_result['status']==1){
-                $count=$count_result['count'];
-                $pageCount=ceil($count/$article->pageSize);
-                $this->assign('count',$count);
-                $this->assign('pageCount',$pageCount);
-            }else{
-                $this->error($count_result['msg']);
-            }
-            $this->assign('empty','<p class="noData">没有数据</p>');
-            $this->display();
-        }else{
-            $this->error('请求参数为空');
-        }*/
     }
 
     //个人添加文章
@@ -363,9 +302,8 @@ class ArticleController extends Controller{
 
         if(I('session.MEMBER')!=null){
             if($_POST['article']!=null){
-                $member_id=I('session.MEMBER')['id'];
                 $article=D('Article');
-                $article->member_id=$member_id;
+                $article->member_id=I('session.MEMBER')['id'];
                 $article->title=I('post.article')['title'];
                 $article->article_type_id=I('post.article')['article_type_id'];
                 $article->content=I('post.article')['content'];
@@ -383,7 +321,7 @@ class ArticleController extends Controller{
     }
 
     //查看个人文章信息
-    public function personArticleInfo(){
+    public function personInfo(){
         $data=array();
         $data['status']=0;
         $data['msg']='';
@@ -436,24 +374,8 @@ class ArticleController extends Controller{
 
     //用户文章删除
     public function personDel(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        if(IS_AJAX && isset($_POST['id']) && !empty($_POST['id'])){
-            $id=I('post.id');
-            $article=D('Article');
-            $article->id=$id;
-            $result=$article->personDel();
-            if($result['status']==1){
-                $data['status']=1;
-            }
-            $data['msg']=$result['msg'];
-        }else{
-            $data['msg']='提交参数错误';
-        }
-
-        $this->ajaxReturn($data);
+        $common=A('Common');
+        $common->personDel('Article');
     }
 
 }

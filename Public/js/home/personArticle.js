@@ -118,7 +118,7 @@ $(document).ready(function(){
         if(/\d/.test(id)){
             var host_dir=$('#host_dir').val();
             $.ajax({
-                url:host_dir+"Home/Article/personArticleInfo",
+                url:host_dir+"Home/Article/personInfo",
                 type:"post",
                 data:{"id":id},
                 dataType:"json",

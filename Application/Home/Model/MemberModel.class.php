@@ -150,6 +150,24 @@ class MemberModel extends CommonModel{
         return $data;
     }
 
+    /*
+     * 根据用户名获取用户ID
+     */
+    public function getMemberId(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+        $result=$this->field(array('id'))->where(array('member_name'=>$this->member_name))->select();
+        if($result!==false && count($result)>0){
+            $data['status']=1;
+            $data['msg']='获取用户ID信息成功';
+            $data['id']=$result[0]['id'];
+        }else{
+            $data['msg']='获取用户ID信息失败';
+        }
+        return $data;
+    }
+
     //获取好友列表
     public function getFriends($f='focus'){
         $data=array();

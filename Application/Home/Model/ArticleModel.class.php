@@ -1,8 +1,8 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 require_once C('ROOT').C('FUNC').'func.php';
-class ArticleModel extends Model{
+class ArticleModel extends CommonModel{
     public $id;
     public $table='article';
     public $table_alias='a';
@@ -379,71 +379,6 @@ class ArticleModel extends Model{
         return $data;
     }
 
-    //个人添加文章
-    public function personAdd(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_add=array();
-        $arr_add['title']=$this->title;
-        $arr_add['member_id']=$this->member_id;
-        $arr_add['article_type_id']=$this->article_type_id;
-        $arr_add['content']=$this->content;
-        $arr_add['hitnum']=0;
-        $arr_add['create_time']=date("Y-m-d h:i:s",time());
-        $result=$this->data($arr_add)->add();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='添加成功';
-        }else{
-            $data['msg']='添加失败';
-        }
-        return $data;
-    }
-
-    //个人编辑文章
-    public function personEdit(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_add=array();
-        $arr_add['title']=$this->title;
-        $arr_add['article_type_id']=$this->article_type_id;
-        $arr_add['content']=$this->content;
-
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->data($arr_add)->where($arr_where)->save();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='编辑成功';
-        }else{
-            $data['msg']='编辑失败';
-        }
-        return $data;
-    }
-
-    //用户删除文章
-    public function personDel(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where["id"]=array("IN",$this->id);
-        $result=$this->where($arr_where)->delete();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='删除成功';
-        }else{
-            $data['msg']='删除失败';
-        }
-        return $data;
-    }
-
     //判断文章ID是否存在
     public function isExistsArticleId(){
         $result=$this->field('id')->where(array('id'=>$this->id))->select();
@@ -549,5 +484,54 @@ class ArticleModel extends Model{
         }
 
         return $data;
+    }
+
+    //验证信息数据
+    public function setValidata($f=''){
+        if(empty($this->title) && !preg_match("/^.{6,}$/",$this->title)){
+            return '文章标题验证失败';
+        }
+
+        if(empty($this->member_id) && !preg_match("/^[\d]{1,}$/",$this->member_id)){
+            return '文章作者验证失败';
+        }else{
+            if(!$this->isExistsMemberId($this->member_id)){
+                return '该作者不存在';
+            }
+        }
+
+        if(empty($this->article_type_id) && !preg_match("/^[\d]{1,}$/",$this->article_type_id)){
+            return '文章类型验证失败';
+        }else{
+            if(!$this->isExistsArticleTypeId($this->article_type_id)){
+                return '该文章类型不存在';
+            }
+        }
+
+        if(strlen($this->content)<10){
+            return '文章内容验证失败';
+        }
+
+        if($f!='edit'){
+            $this->hitnum=0;
+            $this->create_time=date("Y-m-d h:i:s",time());
+        }
+
+        return true;
+    }
+
+    //创建提交信息数据数组
+    public function create_Data($f=''){
+        $arr=array();
+        $arr['title']=$this->title;
+        $arr['member_id']=$this->member_id;
+        $arr['article_type_id']=$this->article_type_id;
+        $arr['content']=$this->content;
+        if($f!='edit'){
+            $arr['hitnum']=$this->hitnum;
+            $arr['create_time']=$this->create_time;
+        }
+
+        return $arr;
     }
 }

@@ -109,7 +109,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(data){
                     if(data.status==1){
-                        var articleType=data.articleType;
+                        var articleType=data.rows;
                         if(articleType.length!=0){
                             for(var i in articleType){
                                 $("#"+i+"_edit").val(articleType[i]);

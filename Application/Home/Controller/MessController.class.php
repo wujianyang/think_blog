@@ -96,23 +96,7 @@ class MessController extends Controller{
 
     //用户删除留言
     public function personDel(){
-        $data=array();
-        $data['status']=1;
-        $data['msg']='';
-
-        //验证用户是否登录
-        if(I('session.MEMBER')!=null){
-            $member_id=I('session.MEMBER')['id'];
-            $mess=D('Mess');
-            $mess->messed_id=$member_id;
-            $mess->id=I('post.id');
-            $result=$mess->personDel();
-            if($result['status']==1){
-                $data['status']=1;
-            }
-            $data['msg']=$result['msg'];
-        }
-
-        $this->ajaxReturn($data);
+        $common=A('Common');
+        $common->personDel('Mess');
     }
 }

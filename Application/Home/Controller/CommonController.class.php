@@ -46,6 +46,47 @@ class CommonController extends Controller{
         }
     }
 
+    public function personInfo($modelClass){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(I('session.MEMBER')!=null){
+            $model=D($modelClass);
+            $model->id=I('post.id');
+            $result=$model->personInfo();
+            if($result['status']==1){
+                $data['status']=1;
+                $data['rows']=$result['rows'];
+            }
+            $data['msg']=$result['msg'];
+        }else{
+            $data['msg']='登录超时';
+        }
+
+        $this->ajaxReturn($data);
+    }
+
+    public function personDel($modelClass){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        if(I('session.MEMBER')!=null){
+            $model=D($modelClass);
+            $model->id=I('post.id');
+            $result=$model->personDel();
+            if($result['status']==1){
+                $data['status']=1;
+            }
+            $data['msg']=$result['msg'];
+        }else{
+            $data['msg']='登录超时';
+        }
+
+        $this->ajaxReturn($data);
+    }
+
 
     //处理返回数据结果
     public function returnResult($arr=array(),&$data=array(),$field='result'){

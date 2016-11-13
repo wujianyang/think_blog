@@ -1,0 +1,323 @@
+[ 2016-11-13T17:37:57+08:00 ] ::1 /think_blog/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 非法操作:login
+
+[ 2016-11-13T17:38:04+08:00 ] ::1 /think_blog/Admin/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-11-13T17:38:05+08:00 ] ::1 /think_blog/Admin/Admin/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-11-13T17:38:32+08:00 ] ::1 /think_blog/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2016-11-13T17:38:32+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2016-11-13T17:38:32+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-11-13T17:38:36+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-11-13T17:39:54+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-11-13T17:39:55+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-11-13T17:39:57+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-11-13T17:41:06+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2016-11-13T17:41:06+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+
+[ 2016-11-13T17:41:08+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 1054:Unknown column 'c.member_name' in 'field list'
+ [ SQL语句 ] : SELECT c.id AS `id`,m.id AS `member_id`,c.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10  
+
+[ 2016-11-13T17:41:19+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-11-13T17:41:19+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-11-13T17:41:21+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-11-13T17:42:29+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-11-13T17:42:29+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-11-13T17:42:31+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-11-13T17:42:32+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-11-13T17:42:32+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2016-11-13T17:43:00+08:00 ] ::1 /think_blog/Admin/Complaint/pass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0055s ]
+SQL: UPDATE `complaint` SET `admin_id`='4',`pass_time`='2016-11-13 05:43:00',`isPass`='1' WHERE `id` IN ('6') [ RunTime:0.1008s ]
+
+[ 2016-11-13T17:43:02+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0037s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0002s ]
+
+[ 2016-11-13T17:43:08+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0043s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-13T17:43:18+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0044s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0003s ]
+
+[ 2016-11-13T17:43:30+08:00 ] ::1 /think_blog/Admin/Complaint/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0067s ]
+SQL: DELETE FROM `complaint` WHERE `id` IN ('4') [ RunTime:0.1499s ]
+
+[ 2016-11-13T17:43:31+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0041s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0002s ]
+
+[ 2016-11-13T17:43:35+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0042s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '1'  [ RunTime:0.0002s ]
+
+[ 2016-11-13T17:59:25+08:00 ] ::1 /think_blog/Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-11-13T17:59:26+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+
+[ 2016-11-13T17:59:33+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-11-13T17:59:34+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-11-13T17:59:40+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-11-13T17:59:42+08:00 ] ::1 /think_blog/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0005s ]
+
+[ 2016-11-13T17:59:42+08:00 ] ::1 /think_blog/Admin/PhotoImg/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `photo_img` WHERE `id` = '4'  [ RunTime:0.0003s ]
+
+[ 2016-11-13T17:59:42+08:00 ] ::1 /think_blog/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:01:43+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-11-13T18:01:43+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-11-13T18:02:02+08:00 ] ::1 /think_blog/Admin/PhotoImg/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-11-13T18:02:05+08:00 ] ::1 /think_blog/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:02:05+08:00 ] ::1 /think_blog/Admin/PhotoImg/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `photo_img` WHERE `id` = '4'  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:02:05+08:00 ] ::1 /think_blog/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:02:29+08:00 ] ::1 /think_blog/Admin/Member/getMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`member_name` FROM `member`  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:02:29+08:00 ] ::1 /think_blog/Admin/PhotoImg/info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `photo_img` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `photo_img` WHERE `id` = '20'  [ RunTime:0.0003s ]
+
+[ 2016-11-13T18:02:29+08:00 ] ::1 /think_blog/Admin/Photo/getPhoto
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`photo_title` FROM `photo` WHERE `member_id` = 29  [ RunTime:0.0003s ]
+
+[ 2016-11-13T21:02:04+08:00 ] ::1 /think_blog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-11-13T21:02:04+08:00 ] ::1 /think_blog/index.php/admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+

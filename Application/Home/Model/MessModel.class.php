@@ -1,8 +1,8 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 require_once C('ROOT').C('FUNC').'func.php';
-class MessModel extends Model{
+class MessModel extends CommonModel{
     public $id;
     public $table='mess';
     public $table_alias='ms';
@@ -117,25 +117,6 @@ class MessModel extends Model{
             $data['msg']='留言成功';
         }else{
             $data['msg']='留言失败';
-        }
-        return $data;
-    }
-
-    //用户删除留言
-    public function personDel(){
-        $data=array();
-        $data['status']=1;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where["id"]=array('IN',$this->id);
-        $arr_where["messed_id"]=$this->messed_id;
-        $result=$this->where($arr_where)->delete();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='删除成功';
-        }else{
-            $data['msg']='删除失败';
         }
         return $data;
     }

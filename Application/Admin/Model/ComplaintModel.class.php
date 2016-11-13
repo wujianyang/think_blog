@@ -42,13 +42,13 @@ class ComplaintModel extends CommonModel{
         }
 
         $arr_join=array();
-        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name";
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
         $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id";
 
         $arr_field=array();
         $arr_field[$this->table_alias.'.id']='id';
         $arr_field[$this->foreign_table_alias.'.id']='member_id';
-        $arr_field[$this->table_alias.'.member_name']='member_name';
+        $arr_field[$this->foreign_table_alias.'.member_name']='member_name';
         $arr_field[$this->table_alias.'.complain_content']='complain_content';
         $arr_field[$this->table_alias.'.complain_time']='complain_time';
         $arr_field[$this->table_alias.'.admin_id']='admin_id';
@@ -93,7 +93,7 @@ class ComplaintModel extends CommonModel{
         }
 
         $arr_join=array();
-        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_name=$this->foreign_table_alias.member_name";
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
         $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.admin_id=$this->foreign_table2_alias.id";
 
         $arr_field=array();

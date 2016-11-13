@@ -1,8 +1,8 @@
 <?php
 namespace Home\Model;
-use Think\Model;
+use Home\Model;
 
-class ArticleTypeModel extends Model{
+class ArticleTypeModel extends CommonModel{
     public $id;
     public $table='article_type';
     public $table_alias='at';
@@ -106,88 +106,6 @@ class ArticleTypeModel extends Model{
         return $result[0];
     }
 
-    public function personAdd(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_add=array();
-        $arr_add['article_type_name']=$this->article_type_name;
-        $arr_add['member_id']=$this->member_id;
-        $result=$this->data($arr_add)->add();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='添加成功';
-        }else{
-            $data['msg']='添加失败';
-        }
-
-        return $data;
-    }
-
-    //个人删除文章分类
-    public function personDel(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where['id']=array('IN',$this->id);
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->where($arr_where)->delete();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='删除成功';
-        }else{
-            $data['msg']='删除失败';
-        }
-
-        return $data;
-    }
-
-    //个人查看文章分类
-    public function personInfo(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->field('id,article_type_name')->where($arr_where)->select();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='查询成功';
-            $data['articleType']=$result[0];
-        }else{
-            $data['msg']='查询失败';
-        }
-
-        return $data;
-    }
-
-    //个人编辑文章分类
-    public function personEdit(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_edit=array();
-        $arr_edit['article_type_name']=$this->article_type_name;
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->data($arr_edit)->where($arr_where)->save();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='编辑成功';
-        }else{
-            $data['msg']='编辑失败';
-        }
-
-        return $data;
-    }
-
     //个人文章分类列表
     public function personIndex(){
         $data=array();
@@ -258,5 +176,27 @@ class ArticleTypeModel extends Model{
         }
 
         return $data;
+    }
+
+    public function setValidata($f=''){
+        if(empty($this->article_type_name) && !preg_match("/^.{4,}$/",$this->article_type_name)){
+            return "文章类别名称验证失败";
+        }
+        if(empty($this->member_id) && !preg_match("/^[\d]{1,}$/",$this->member_id)){
+            return "用户名验证失败";
+        }else{
+            if(!$this->isExistsMemberId($this->member_id)){
+                return "用户名不存在";
+            }
+        }
+        return true;
+    }
+
+    public function create_Data($f=''){
+        $arr=array();
+        $arr['article_type_name']=$this->article_type_name;
+        $arr['member_id']=$this->member_id;
+
+        return $arr;
     }
 }

@@ -73,6 +73,7 @@ $(document).ready(function(){
                 data:{"photo_id":photo_id},
                 dataType:"json",
                 success:function(data){
+                    console.log(data);
                     alert(data.msg);
                     if(data.status=='1'){
                         showList(1,10,'','','eq');
@@ -136,7 +137,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(data){
                     if(data.status==1){
-                        var photoImg=data.photoImg;
+                        var photoImg=data.rows;
                         if(photoImg.length!=0){
                             for(var i in photoImg){
                                 if(i!='img_src'){
@@ -166,8 +167,8 @@ $(document).ready(function(){
         }
     });
     //查看相片大图
-    $('body').on('click','.photo_div',function(){
-        var img_src=$(this).find('.img_div img').attr('src');
+    $('body').on('click','.img_div img',function(){
+        var img_src=$(this).attr('src');
         $('#pic_div img').attr('src',img_src);
         $('#list_div').hide();
         $('#pic_div').show();

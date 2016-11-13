@@ -24,7 +24,7 @@ class ComplaintModel extends Model{
     //创建提交数据数组
     public function create_Data(){
         $arr=array();
-        $arr['member_name']=$this->member_name;
+        $arr['member_id']=$this->member_id;
         $arr['complain_content']=$this->complain_content;
         $arr['complain_time']=date("Y-m-d h:i:s",time());
         $arr['isPass']=0;

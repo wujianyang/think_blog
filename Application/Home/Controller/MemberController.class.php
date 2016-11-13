@@ -294,10 +294,10 @@ class MemberController extends Controller{
             if($member->checkVerify(I('post.vCode'))!==false){
                 if($member->isExistsMemberName()){
                     $isFreeze=$member->isFreeze();
-                    unset($member);
                     if($isFreeze['status']==1){
+                        $member_id=$member->getMemberId()['id'];
                         $complaint=D('Complaint');
-                        $complaint->member_name=I('post.member_name');
+                        $complaint->member_id=$member_id;
                         $complaint->complain_content=I('post.complain_content');
                         $result=$complaint->complain();
 
@@ -314,6 +314,7 @@ class MemberController extends Controller{
         }
         unset($result);
         unset($complaint);
+        unset($member);
         $this->display();
     }
 
