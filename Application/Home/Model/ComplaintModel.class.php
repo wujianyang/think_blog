@@ -18,6 +18,8 @@ class ComplaintModel extends Model{
             $data['msg']='申诉提交失败，请重新申诉';
             $data['status']=0;
         }
+        unset($add_data);
+        unset($result);
         return $data;
     }
 

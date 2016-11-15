@@ -22,7 +22,6 @@ class ArticleCommentController extends Controller{
             $result = $articleComment->index();
             $resultCount = $articleComment->getCount();
             $articleInfo = $articleComment->getArticleTitle();
-            unset($articleComment);
 
             $data['article_id'] = $articleInfo[0]['id'];
             $data['article_title'] = $articleInfo[0]['title'];
@@ -34,6 +33,10 @@ class ArticleCommentController extends Controller{
             } else {
                 $data['rows'] = array();
             }
+            unset($articleInfo);
+            unset($result);
+            unset($resultCount);
+            unset($articleComment);
             if (IS_AJAX) {
                 $this->ajaxReturn($data);
             } else {

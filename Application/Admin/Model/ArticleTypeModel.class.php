@@ -42,6 +42,9 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='数据获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
         unset($result);
         return $data;
     }
@@ -78,6 +81,9 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
         unset($result);
         return $data;
     }
@@ -101,7 +107,7 @@ class ArticleTypeModel extends CommonModel{
             $this->rollback();
             $data['msg']='删除失败';
         }
-
+        unset($result);
         return $data;
     }
 

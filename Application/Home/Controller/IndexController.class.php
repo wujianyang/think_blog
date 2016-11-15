@@ -8,41 +8,7 @@ class IndexController extends Controller {
 
     //顶部搜索框搜索
     public function search(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
         if($_POST['keyItem']=='member'){    //搜索用户
-            /*$member=D('Member');
-            $member->key='%'.trim(I('post.key')).'%';
-            $member->keyItem='member_name';
-            $member->com='like';
-            $member->pageSize=20;
-            if(IS_AJAX){
-                $member->page=I('post.page');
-                $member->pageSize=I('post.page_size');
-            }
-            $result=$member->searchFriends(I('session.MEMBER')['id']);
-            $resultCount=$member->searchFriendsCount(I('session.MEMBER')['id']);
-            if(count($result['friends'])>0){
-                $member->id=array_column($result['friends'],'member_id');
-            }else{
-                $member->id='';
-            }
-            $resultFocusCount=$member->getFriendsFocusCount();
-            $resultFansCount=$member->getFriendsFansCount();
-            foreach($result['friends'] as $k=>$res){
-                $result['friends'][$k]['focus_count']=$resultFocusCount['focus_count'][$k];
-                $result['friends'][$k]['fans_count']=$resultFansCount['fans_count'][$k];
-            }
-            $this->result($result,'friends',$member->pageSize,$data);
-            $this->result($resultCount,'count',$member->pageSize,$data);
-            if(!IS_AJAX){
-                $this->assign('empty',C('NODATA'));
-                $this->display('./Member/friends');
-            }else{
-                $this->ajaxReturn($data);
-            }*/
             $this->searchFriends();
         }elseif($_POST['keyItem']=='article'){  //搜索文章
             $this->searchArticle();

@@ -50,6 +50,9 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='数据获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
         unset($result);
         return $data;
     }
@@ -88,6 +91,9 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
         unset($result);
         return $data;
     }
@@ -114,6 +120,8 @@ class PhotoImgModel extends CommonModel{
                 unlink(C('ROOT').C('UPLOAD_PATH').$this->img_src);
             }
         }
+        unset($add_data);
+        unset($result);
         return $data;
     }
 
@@ -139,6 +147,8 @@ class PhotoImgModel extends CommonModel{
                 unlink(C('ROOT').C('UPLOAD_PATH').$this->img_src);
             }
         }
+        unset($edit_data);
+        unset($result);
         return $data;
     }
 
@@ -165,7 +175,7 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg'] = '相片信息获取失败';
         }
-
+        unset($result);
         return $data;
     }
 

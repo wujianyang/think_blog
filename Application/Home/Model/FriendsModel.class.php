@@ -32,7 +32,8 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='关注失败';
         }
-
+        unset($arr_data);
+        unset($result);
         return $data;
     }
 
@@ -52,7 +53,8 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='取消关注失败';
         }
-
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -79,7 +81,7 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='获取好友用户ID失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -100,7 +102,7 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='获取好友用户数量失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -120,6 +122,8 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='获取用户关注信息失败';
         }
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 
@@ -139,6 +143,8 @@ class FriendsModel extends Model{
         }else{
             $data['msg']='获取用户粉丝信息失败';
         }
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 

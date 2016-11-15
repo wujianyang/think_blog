@@ -42,6 +42,8 @@ class MemberModel extends CommonModel{
                 unlink($this->head_pic);
             }
         }
+        unset($add_data);
+        unset($result);
         return $data;
     }
 
@@ -68,6 +70,8 @@ class MemberModel extends CommonModel{
                 unlink($this->head_pic);
             }
         }
+        unset($edit_data);
+        unset($result);
         return $data;
     }
 
@@ -120,7 +124,15 @@ class MemberModel extends CommonModel{
                 $this->rollback();
                 $data['msg'] = '删除失败';
             }
-
+        unset($head_pic);
+        unset($img_src);
+        unset($result7);
+        unset($result6);
+        unset($result5);
+        unset($result4);
+        unset($result3);
+        unset($result2);
+        unset($result);
         return $data;
     }
 
@@ -148,8 +160,7 @@ class MemberModel extends CommonModel{
                 $data['msg']='激活失败';
             }
         }
-
-
+        unset($result);
         return $data;
     }
 
@@ -166,7 +177,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='重置失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -186,8 +197,6 @@ class MemberModel extends CommonModel{
                     }
                 }
             }
-
-
         }
         if($f!='edit'){
             if(empty($this->passwd) || !preg_match("/^.{6,}$/",$this->passwd)){
@@ -293,6 +302,7 @@ class MemberModel extends CommonModel{
         $data=array();
         $result=$this->field(array('id','member_name'))->select();
         $data['rows']=$result;
+        unset($result);
         return $data;
     }
 }

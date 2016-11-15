@@ -125,6 +125,7 @@ $(document).ready(function(){
 
     //查看信息
     $('body').on('click','.info',function(){
+        var photo_div=$(this).parents('.photo_div');
         var id= $(this).attr('value');
         if(/\d/.test(id)){
             var host_dir=$('#host_dir').val();
@@ -136,6 +137,8 @@ $(document).ready(function(){
                 data:{"id":id},
                 dataType:"json",
                 success:function(data){
+                    //取消当前行选中
+                    photo_div.removeClass('op');
                     if(data.status==1){
                         var photoImg=data.rows;
                         if(photoImg.length!=0){
@@ -145,7 +148,6 @@ $(document).ready(function(){
                                 }else{
                                     $("#photo_src").attr('src',upload+photoImg[i]);
                                 }
-
                             }
                             $('#edit_div').show();
                             $('#list_div').hide();

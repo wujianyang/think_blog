@@ -43,6 +43,9 @@ class ArticleController extends Controller{
 
     }
 
+    /*
+     * 根据用户ID或者文章分类ID查询文章列表
+     */
     public function articleList(){
         if(!empty($_GET['article_type_id']) || !empty($_GET['member_id'])){
             $member=D('Member');
@@ -98,94 +101,6 @@ class ArticleController extends Controller{
             $pageCount=ceil($countResult['count']/$article->pageSize);
             $this->assign('count',$countResult['count']);
             $this->assign('pageCount',$pageCount);
-
-
-
-
-
-        /*
-        //点击文章类型，查看文章列表
-        if($_GET['article_type_id']){
-            $articleType=D('ArticleType');
-            $articleType->id=I('get.article_type_id');
-            //根据文章类型ID获取用户ID
-            $memberIdResult=$articleType->getMemberIdById();
-            if($memberIdResult['status']==1){
-                $member_id=$memberIdResult['member_id'];
-                $member=D('Member');
-                $member->id=$member_id;
-                //获取用户基本信息
-                $memberResult=$member->getInfoHeader();
-                $this->assign('member',$memberResult['member']);
-            }else{
-                $this->error($memberIdResult['msg']);
-            }
-            //获取当前文章分类信息
-            $articleTypeOpResult=$articleType->getArticleType_op();
-            $this->assign('article_type_op',$articleTypeOpResult);
-            //根据用户ID获取文章分类列表
-            $articleType->member_id=$member_id;
-            $articleTypeResult=$articleType->getArticleTypeByMemberId();
-            if($articleTypeResult['status']==1){
-                $this->assign('articleType',$articleTypeResult['articleType']);
-            }else{
-                $this->error($articleTypeResult['msg']);
-            }
-            //根据传递到后台的文章分类获取文章列表
-            $article=D('Article');
-            $article->pageSize=20;
-            $article->article_type_id=I('get.article_type_id');
-            $articleResult=$article->getArticleByArticleTypeId();
-            if($articleResult['status']==1){
-                $this->assign('article',$articleResult['article']);
-            }else{
-                $this->error($articleResult['msg']);
-            }
-            //获取文章列表分页信息
-            $countResult=$article->getCountByArticleId();
-            $pageCount=ceil($countResult['count']/$article->pageSize);
-            $this->assign('count',$countResult['count']);
-            $this->assign('pageCount',$pageCount);
-        }elseif($_GET['member_id']){    //查看某用户的文章列表
-            $member_id=I('get.member_id');
-            $member=D('Member');
-            $member->id=$member_id;
-            //验证用户ID是否存在
-            if($member->isExistsMemberId()){
-                //获取用户基本信息
-                $memberResult=$member->getInfoHeader();
-                $this->assign('member',$memberResult['member']);
-                //根据用户ID获取文章分类
-                $articleType=D('ArticleType');
-                $articleType->member_id=$member_id;
-                $articleTypeResult=$articleType->getArticleTypeByMemberId();
-                if($articleTypeResult['status']==1){
-                    $this->assign('articleType',$articleTypeResult['articleType']);
-                }else{
-                    $this->error($articleTypeResult['msg']);
-                }
-                //默认选中第一个文章分类
-                $articleType->id=$articleTypeResult['articleType'][0]['id'];
-                $articleTypeOpResult=$articleType->getArticleType_op();
-                $this->assign('article_type_op',$articleTypeOpResult);
-                //获取文章列表
-                $article=D('Article');
-                $article->pageSize=20;
-                $article->article_type_id=$articleType->id;
-                $articleResult=$article->getArticleByArticleTypeId();
-                if($articleResult['status']==1){
-                    $this->assign('article',$articleResult['article']);
-                }else{
-                    $this->error($articleResult['msg']);
-                }
-                //获取文章列表分页信息
-                $countResult=$article->getCountByArticleId();
-                $pageCount=ceil($countResult['count']/$article->pageSize);
-                $this->assign('count',$countResult['count']);
-                $this->assign('pageCount',$pageCount);
-            }else{
-                $this->error('用户ID错误');
-            }*/
         }else{
             $this->error('请求参数为空');
         }
@@ -316,7 +231,8 @@ class ArticleController extends Controller{
                 $data['msg']='提交参数为空';
             }
         }
-
+        unset($result);
+        unset($article);
         $this->ajaxReturn($data);
     }
 
@@ -341,7 +257,8 @@ class ArticleController extends Controller{
                 $data['msg']='提交参数为空';
             }
         }
-
+        unset($result);
+        unset($article);
         $this->ajaxReturn($data);
     }
     //用户文章编辑
@@ -368,7 +285,8 @@ class ArticleController extends Controller{
                 $data['msg']='提交参数为空';
             }
         }
-
+        unset($result);
+        unset($article);
         $this->ajaxReturn($data);
     }
 

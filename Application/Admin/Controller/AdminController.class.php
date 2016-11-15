@@ -73,6 +73,7 @@ class AdminController extends Controller{
                 $this->assign('msg',$result['msg']);
             }
         }
+        unset($result);
         $this->display();
     }
 
@@ -112,6 +113,7 @@ class AdminController extends Controller{
                 $this->assign('data',array('status'=>0,'msg'=>'请求参数为空'));
             }
         }
+        unset($result);
         $this->display('./login');
     }
 

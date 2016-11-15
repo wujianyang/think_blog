@@ -255,6 +255,7 @@ $(document).ready(function(){
 
     //查看用户信息
     $('.info').live('click', function(){
+        var tr=$(this).parents('tr');
         var host_dir=$('#host_dir').val();
         var id= $(this).attr('value');
         if(/\d/.test(id)){
@@ -264,6 +265,9 @@ $(document).ready(function(){
                 data:{"id":id},
                 dataType:"json",
                 success:function(result){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     if(result.status==1){
                         var data=result.rows;
                         if(data.length!=0){
@@ -284,6 +288,9 @@ $(document).ready(function(){
                     }
                 },
                 error:function(data){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     alert('请求失败');
                     console.log(data.responseText);
                     console.log('info>error');

@@ -28,6 +28,7 @@ class AdminModel extends CommonModel{
     public function checkVerify($vCode,$id=''){
         $verify = new \Think\Verify();
         $res = $verify->check($vCode, $id);
+        unset($verify);
         return $res;
     }
 
@@ -50,7 +51,7 @@ class AdminModel extends CommonModel{
         }elseif(count($result) == 0){
             $data['msg']='用户名不存在';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -79,6 +80,7 @@ class AdminModel extends CommonModel{
                 $data['msg']='激活失败';
             }
         }
+        unset($result);
         return $data;
     }
 
@@ -95,7 +97,7 @@ class AdminModel extends CommonModel{
         }else{
             $data['msg']='重置失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -123,7 +125,7 @@ class AdminModel extends CommonModel{
         }else{
             $data['msg']='新密码不能为空';
         }
-
+        unset($result);
         return $data;
     }
 

@@ -433,7 +433,6 @@ class MemberController extends Controller{
             }else{  //关注好友
                 $result=$friends->focus();
             }
-            unset($friends);
             if($result['status']==1){
                 $data['status']=1;
             }
@@ -441,6 +440,7 @@ class MemberController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
+        unset($result);
         unset($friends);
         $this->ajaxReturn($data);
     }
@@ -459,126 +459,12 @@ class MemberController extends Controller{
     public function personArticle(){
         $article=A('Common');
         $article->personIndex('Article');
-        /*
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-        if($this->isLogin()){
-            $member_id=I('session.MEMBER')['id'];
-            $article=D('Article');
-            if(IS_AJAX){
-                $article->page=I('post.page');
-                $article->pageSize=I('post.page_size');
-                $article->key=trim(I('post.key'));
-                $article->keyItem=I('post.keyItem');
-                $article->com=I('post.com');
-            }
-            $article->member_id=$member_id;
-            $result=$article->getArticleByMemberId();
-            $count_result=$article->getCountByMemberId();
-            if(!IS_AJAX){
-                if($result['status']==1){
-                    $this->assign('article',$result['article']);
-                }else{
-                    $this->error($result['msg']);
-                }
-
-                if($count_result['status']==1){
-                    $this->assign('count',$count_result['count']);
-                    $this->assign('pageCount',ceil($count_result['count']/$article->pageSize));
-                }else{
-                    $this->error($count_result['msg']);
-                }
-            }else{
-                if($result['status']==1){
-                    $data['status']=1;
-                    $data['article']=$result['article'];
-                }else{
-                    $data['msg']=$result['msg'];
-                    $this->ajaxReturn($data);
-                }
-                if($count_result['status']==1){
-                    $data['status']=1;
-                    $data['count']=$count_result['count'];
-                }else{
-                    $data['msg']=$count_result['msg'];
-                    $this->ajaxReturn($data);
-                }
-                $this->ajaxReturn($data);
-            }
-
-            $this->assign('empty','<p class="noData">没有数据</p>');
-            $this->display();
-        }else{
-            if(!IS_AJAX){
-                $this->redirect('Member/login');
-            }else{
-                $data['msg']='登录超时';
-                $this->ajaxReturn($data);
-            }
-        }*/
     }
 
     //访问个人文章类型
     public function personArticleType(){
         $articleType=A('Common');
         $articleType->personIndex('ArticleType');
-        /*
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-        if(I('session.MEMBER')!=null){
-            $member_id=I('session.MEMBER')['id'];
-            $articleType=D('ArticleType');
-            $articleType->member_id=$member_id;
-            if(IS_AJAX){
-                $articleType->page=I('post.page');
-                $articleType->pageSize=I('post.page_size');
-                $articleType->key=trim(I('post.key'));
-                $articleType->keyItem=I('post.keyItem');
-                $articleType->com=I('post.com');
-            }
-            $result=$articleType->getArticleTypeByMemberId();
-            $resultCount=$articleType->getArticleTypeCountByMemberId();
-            if(!IS_AJAX){
-                if($result['status']==1){
-                    $this->assign('articleType',$result['articleType']);
-                }else{
-                    $this->error($result['msg']);
-                }
-                if($resultCount['status']==1){
-                    $this->assign('count',$resultCount['count']);
-                    $this->assign('pageCount',ceil($resultCount['count']/$articleType->pageSize));
-                }else{
-                    $this->error($resultCount['msg']);
-                }
-                $this->assign('empty','<p class="noData">没有数据</p>');
-                $this->display();
-            }else{
-                if($result['status']==1){
-                    $data['status']=1;
-                    $data['articleType']=$result['articleType'];
-                }else{
-                    $data['msg']=$result['msg'];
-                    $this->ajaxReturn($data);
-                }
-                if($resultCount['status']==1){
-                    $data['status']=1;
-                    $data['count']=$resultCount['count'];
-                }else{
-                    $data['msg']=$resultCount['msg'];
-                    $this->ajaxReturn($data);
-                }
-                $this->ajaxReturn($data);
-            }
-        }else{
-            if(!IS_AJAX){
-                $this->error('Member/login');
-            }else{
-                $data['msg']='登录超时';
-                $this->ajaxReturn($data);
-            }
-        }*/
     }
 
     //访问文章评论，除了获取评论列表还需获取文章标题
@@ -612,8 +498,12 @@ class MemberController extends Controller{
             $resultCount = $articleComment->personIndexCount();
             $this->returnResult($resultCount,$data,'count');
             $data['pageCount'] = ceil($resultCount['count'] / $articleComment->pageSize);
-            unset($articleComment);
 
+            unset($resultArticle);
+            unset($resultCount);
+            unset($result);
+            unset($article);
+            unset($articleComment);
             if (IS_AJAX) {
                 $this->ajaxReturn($data);
             }else{
@@ -635,144 +525,18 @@ class MemberController extends Controller{
     public function personPhoto(){
         $photo=A('Common');
         $photo->personIndex('Photo');
-
-        /*$data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        if(I('session.MEMBER')!=null){
-            $member_id=I('session.MEMBER')['id'];
-            $photo=D('Photo');
-            $photo->member_id=$member_id;
-            if(IS_AJAX){
-                $photo->page=I('post.page');
-                $photo->pageSize=I('post.page_size');
-                $photo->key=trim(I('post.key'));
-                $photo->keyItem=I('post.keyItem');
-                $photo->com=I('post.com');
-            }
-            $result=$photo->getPhotoByMemberId();
-            $resultCount=$photo->getCountByMemberId();
-            $this->result($result,'photo',$photo->pageSize,$data);
-            $this->result($resultCount,'count',$photo->pageSize,$data);
-            if(!IS_AJAX){
-                $this->assign('empty',C('NODATA'));
-                $this->display();
-            }else{
-                $this->ajaxReturn($data);
-            }
-        }else{
-            if(!IS_AJAX){
-                $this->error('Member/login');
-            }else{
-                $data['msg']='登录超时';
-                $this->ajaxReturn($data);
-            }
-        }*/
     }
 
     //访问用户相片
     public function personPhotoImg(){
         $photoImg=A('Common');
         $photoImg->personIndex('PhotoImg');
-
-        /*$data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        if(I('session.MEMBER')!=null){
-            $photoImg=D('PhotoImg');
-            if(IS_AJAX){
-                $photoImg->page=I('post.page');
-                $photoImg->pageSize=I('post.page_size');
-                $photoImg->key=trim(I('post.key'));
-                $photoImg->keyItem=I('post.keyItem');
-                $photoImg->com=I('post.com');
-                $photoImg->photo_id=I('post.photo_id');
-            }else{
-                $photoImg->photo_id=I('get.photo_id');
-            }
-            $result=$photoImg->getPhotoImg();
-            $resultCount=$photoImg->getPhotoImgCount();
-            $this->result($result,'photoImg',$photoImg->pageSize,$data);
-            $this->result($resultCount,'count',$photoImg->pageSize,$data);
-            if(!IS_AJAX){
-                $this->assign('empty',C('NODATA'));
-                $this->display();
-            }else{
-                $this->ajaxReturn($data);
-            }
-        }else{  //未登入跳转到登录页面
-            if(!IS_AJAX){
-                $this->error('Member/login');
-            }else{
-                $data['msg']='登录超时';
-                $this->ajaxReturn($data);
-            }
-        }*/
     }
 
     //访问个人留言板
     public function personMess(){
         $photoImg=A('Common');
         $photoImg->personIndex('Mess');
-
-        /*$data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        if(I('session.MEMBER')!=null){
-            $member_id=I('session.MEMBER')['id'];
-            $mess=D('Mess');
-            if(IS_AJAX){
-                $mess->page=I('post.page');
-                $mess->pageSize=I('post.page_size');
-                $mess->key=I('post.key');
-                $mess->keyItem=I('post.keyItem');
-                $mess->com=I('post.com');
-            }
-            $mess->messed_id=$member_id;
-            $result=$mess->getMessByMemberId();
-            $resultCount=$mess->getCount();
-            if(!IS_AJAX){
-                if($result['status']==1){
-                    $this->assign('mess',$result['mess']);
-                }else{
-                    $this->error($result['msg']);
-                }
-                if($resultCount['status']==1){
-                    $this->assign('count',$resultCount['count']);
-                    $this->assign('pageCount',ceil($resultCount['count']/$mess->pageSize));
-                }else{
-                    $this->error($resultCount['msg']);
-                }
-                $this->assign('empty','<p class="noData">没有数据</p>');
-                $this->display();
-            }else{
-                if($result['status']==1){
-                    $data['status']=1;
-                    $data['mess']=$result['mess'];
-                }else{
-                    $data['msg']=$result['msg'];
-                    $this->ajaxReturn($data);
-                }
-                if($resultCount['status']==1){
-                    $data['status']=1;
-                    $data['count']=$resultCount['count'];
-                }else{
-                    $data['msg']=$resultCount['msg'];
-                    $this->ajaxReturn($data);
-                }
-                $this->ajaxReturn($data);
-            }
-        }else{  //登录超时
-            if(!IS_AJAX){
-                $this->error('Member/login');
-            }else{
-                $data['msg']='登录超时';
-                $this->ajaxReturn($data);
-            }
-        }*/
     }
 
     //判断是否登录
@@ -783,28 +547,6 @@ class MemberController extends Controller{
             $this->redirect('Member/login');
         }
     }
-
-    //处理返回结果，使用引用传递参数
-    /*public function result($result=array(),$name='data',$pageSize=10,&$data){
-        if(!IS_AJAX){
-            if($result['status']==1){
-                $this->assign($name,$result[$name]);
-                if($name=='count'){
-                    $this->assign('pageCount',ceil($result[$name]/$pageSize));
-                }
-            }else{
-                $this->error($result['msg']);
-            }
-        }else{
-            if($result['status']==1){
-                $data['status']=1;
-                $data[$name]=$result[$name];
-            }else{
-                $data['msg']=$result['msg'];
-                $this->ajaxReturn($data);
-            }
-        }
-    }*/
 
     //处理返回结果，使用引用传递参数
     public function returnResult($arr=array(),&$data=array(),$field='result'){

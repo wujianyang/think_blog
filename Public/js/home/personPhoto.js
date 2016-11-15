@@ -99,6 +99,7 @@ $(document).ready(function(){
 
     //查看信息
     $('body').on('click','.info',function(){
+        var tr=$(this).parents('tr');
         var id= $(this).attr('value');
         if(/\d/.test(id)){
             var host_dir=$('#host_dir').val();
@@ -108,6 +109,9 @@ $(document).ready(function(){
                 data:{"id":id},
                 dataType:"json",
                 success:function(data){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     if(data.status==1){
                         var photo=data.rows;
                         if(photo.length!=0){
@@ -124,6 +128,9 @@ $(document).ready(function(){
                     }
                 },
                 error:function(data){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     alert('请求失败');
                     console.log(data.responseText);
                     console.log('info>error');

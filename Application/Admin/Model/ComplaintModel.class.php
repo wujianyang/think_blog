@@ -64,6 +64,9 @@ class ComplaintModel extends CommonModel{
         }else{
             $data['msg']='数据获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
         unset($result);
         return $data;
     }
@@ -107,6 +110,9 @@ class ComplaintModel extends CommonModel{
         }else{
             $data['msg']='记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
         unset($result);
         return $data;
     }
@@ -126,6 +132,8 @@ class ComplaintModel extends CommonModel{
         }else{
             $data['msg']='审核通过失败';
         }
+        unset($arr_data);
+        unset($result);
         return $data;
     }
 }

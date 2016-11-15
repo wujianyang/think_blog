@@ -26,6 +26,8 @@ class ArticleTypeController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
+        unset($result);
+        unset($articleType);
         $this->ajaxReturn($data);
     }
 
@@ -47,7 +49,8 @@ class ArticleTypeController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
-
+        unset($result);
+        unset($articleType);
         $this->ajaxReturn($data);
     }
 
@@ -81,7 +84,8 @@ class ArticleTypeController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
-
+        unset($result);
+        unset($articleType);
         $this->ajaxReturn($data);
     }
 }

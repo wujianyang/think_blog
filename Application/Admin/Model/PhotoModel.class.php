@@ -43,6 +43,9 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='数据获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
         unset($result);
         return $data;
     }
@@ -78,6 +81,9 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
         unset($result);
         return $data;
     }
@@ -108,7 +114,8 @@ class PhotoModel extends CommonModel{
             $this->rollback();
             $data['msg']='删除失败';
         }
-
+        unset($result2);
+        unset($result);
         return $data;
     }
 
@@ -140,6 +147,7 @@ class PhotoModel extends CommonModel{
         $data=array();
         $result=$this->field(array('id','photo_title'))->where(array('member_id'=>$this->member_id))->select();
         $data['rows']=$result;
+        unset($result);
         return $data;
     }
 

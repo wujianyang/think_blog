@@ -6,10 +6,6 @@ require_once C('ROOT').C('FUNC').'func.php';
 class MemberModel extends CommonModel{
     public $id;
     public $id_temp;
-    /*public $member_name;
-    public $question;
-    public $answer;
-    public $vCode='';*/
     public $table='member';
     public $table_alias='m';
     public $foreign_table='friends';
@@ -23,7 +19,7 @@ class MemberModel extends CommonModel{
 
     //获取验证码
     public function getVerify(){
-        //验证码长度4,5分钟过期,使用杂点
+        //验证码长度4个字符、5分钟过期、使用杂点
         $verifyConfig=array('fontSize'=>36,'length'=>4,'expire'=>600,useNoise=>true);
         $verify=new Verify($verifyConfig);
         $verify->entry();
@@ -33,6 +29,7 @@ class MemberModel extends CommonModel{
     public function checkVerify($vCode,$id=''){
         $verify = new \Think\Verify();
         $res = $verify->check($vCode, $id);
+        unset($verify);
         return $res;
     }
 
@@ -58,6 +55,8 @@ class MemberModel extends CommonModel{
                 unlink($this->head_pic);
             }
         }
+        unset($add_data);
+        unset($result);
         return $data;
     }
 
@@ -80,7 +79,7 @@ class MemberModel extends CommonModel{
         }elseif(count($result) == 0){
             $data['msg']='用户名不存在';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -99,6 +98,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='验证冻结失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -128,6 +128,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取用户资料失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -147,6 +148,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取用户信息失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -165,6 +167,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取用户ID信息失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -204,6 +207,10 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取关注用户信息失败';
         }
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -229,7 +236,10 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取关注用户的关注数量失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -255,7 +265,10 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取关注用户的粉丝数量失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -299,7 +312,10 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取条件搜索用户信息失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -329,7 +345,10 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取条件搜索用户信息数量失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -355,7 +374,8 @@ class MemberModel extends CommonModel{
                 unlink($this->head_pic);
             }
         }
-
+        unset($update_data);
+        unset($result);
         return $data;
     }
 
@@ -382,7 +402,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='新密码不能为空';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -403,7 +423,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='获取用户密码问题失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -420,7 +440,7 @@ class MemberModel extends CommonModel{
         }else{
             $data['msg']='密码修改失败';
         }
-
+        unset($result);
         return $data;
     }
 

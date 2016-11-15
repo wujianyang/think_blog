@@ -58,7 +58,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='用户文章列表获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -93,7 +96,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='用户文章列表数量获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -113,6 +119,8 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取文章标题失败';
         }
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -135,12 +143,15 @@ class ArticleModel extends CommonModel{
         $arr_field[$this->foreign_table2_alias.'.article_type_name']='article_type_name';
         $arr_field["COUNT($this->foreign_table3_alias.id)"]='article_comment_count';
 
+        $arr_where=array();
+        $arr_where["$this->table_alias.id"]=$this->id;
+
         $arr_join=array();
         $arr_join[]="LEFT JOIN $this->table $this->table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
         $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.article_type_id=$this->foreign_table2_alias.id";
         $arr_join[]="LEFT JOIN $this->foreign_table3 $this->foreign_table3_alias ON $this->table_alias.id=$this->foreign_table3_alias.article_id";
 
-        $result=$this->table(array("$this->foreign_table"=>$this->foreign_table_alias))->field($arr_field)->join($arr_join)->where(array("$this->table_alias.id"=>$this->id))->group("$this->table_alias.id")->select();
+        $result=$this->table(array("$this->foreign_table"=>$this->foreign_table_alias))->field($arr_field)->join($arr_join)->where($arr_where)->group("$this->table_alias.id")->select();
         if($result!==false){
             $data['status']=1;
             if(count($result)>0){
@@ -154,6 +165,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='文章信息获取失败';
         }
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -210,7 +225,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='用户文章列表获取失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
     //根据文章分类ID获取文章列表
@@ -231,6 +249,7 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取文章列表失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -252,7 +271,7 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取文章记录总数失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -309,10 +328,14 @@ class ArticleModel extends CommonModel{
         $arr_field["$this->foreign_table2_alias.id"]='article_type_id';
         $arr_field["$this->foreign_table2_alias.article_type_name"]='article_type_name';
         $arr_field["COUNT($this->table_alias.id)"]='article_count';
+
+        $arr_where=array();
+        $arr_where["$this->foreign_table2_alias.member_id"]=$this->member_id;
+
         $arr_join=array();
         $arr_join[]="RIGHT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->foreign_table2_alias.id=$this->table_alias.article_type_id";
 
-        $result=$this->alias($this->table_alias)->field($arr_field)->join($arr_join)->where(array("$this->foreign_table2_alias.member_id"=>$this->member_id))->group("$this->foreign_table2_alias.id")->limit($this->pageSize)->select();
+        $result=$this->alias($this->table_alias)->field($arr_field)->join($arr_join)->where($arr_where)->group("$this->foreign_table2_alias.id")->limit($this->pageSize)->select();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
@@ -325,6 +348,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取用户文章分类失败';
         }
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -339,7 +366,10 @@ class ArticleModel extends CommonModel{
         $arr_field["title"]="title";
         $arr_field["hitnum"]="hitnum";
         $arr_field["date_format(create_time,'%Y-%m-%d')"]="create_time";
-        $result=$this->field($arr_field)->where(array("member_id"=>$this->member_id,'hitnum'=>array('gt','0')))->order(array("hitnum"=>"desc"))->limit($this->pageSize)->page($this->page)->select();
+        $arr_where=array();
+        $arr_where["member_id"]=$this->member_id;
+        $arr_where["hitnum"]=array('gt','0');
+        $result=$this->field($arr_field)->where($arr_where)->order(array("hitnum"=>"desc"))->limit($this->pageSize)->page($this->page)->select();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
@@ -352,7 +382,9 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取用户热门文章失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -362,7 +394,9 @@ class ArticleModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
-        $result=$this->field('count(id) as count')->where(array('member_id'=>$this->member_id,'hitnum'=>array('gt',0)))->select();
+        $arr_where["member_id"]=$this->member_id;
+        $arr_where["hitnum"]=array('gt','0');
+        $result=$this->field('count(id) as count')->where($arr_where)->select();
         if($result!==false){
             if(count($result)>0){
                 $data['status']=1;
@@ -375,7 +409,8 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取用户热门文章记录数失败';
         }
-
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -437,7 +472,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='用户文章列表获取失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -482,7 +520,10 @@ class ArticleModel extends CommonModel{
         }else{
             $data['msg']='获取文章记录总数失败';
         }
-
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 

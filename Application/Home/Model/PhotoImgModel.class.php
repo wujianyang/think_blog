@@ -50,7 +50,10 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='用户相册获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -87,30 +90,12 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='用户相册记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
-
-    //用户添加相册分类
-    /*public function personAdd(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_add=array();
-        $arr_add['photo_id']=$this->photo_id;
-        $arr_add['member_id']=$this->member_id;
-        $arr_add['img_title']=$this->img_title;
-        $arr_add['img_src']=$this->img_src;
-        $result=$this->data($arr_add)->add();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='添加成功';
-        }else{
-            $data['msg']='添加失败';
-        }
-
-        return $data;
-    }*/
 
     //个人删除相片
     public function personDel(){
@@ -137,35 +122,11 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='删除失败';
         }
-
+        unset($arr_where);
+        unset($imgSrcResult);
+        unset($result);
         return $data;
     }
-
-
-    //个人编辑相册分类
-    /*public function personEdit(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_edit=array();
-        $arr_edit['img_title']=$this->img_title;
-        if(!empty($this->img_src)){
-            $arr_edit['img_src']=$this->img_src;
-        }
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->data($arr_edit)->where($arr_where)->save();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='编辑成功';
-        }else{
-            $data['msg']='编辑失败';
-        }
-
-        return $data;
-    }*/
 
     //个人相片列表
     public function personIndex(){
@@ -207,7 +168,10 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='用户相册获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 
@@ -249,6 +213,10 @@ class PhotoImgModel extends CommonModel{
         }else{
             $data['msg']='用户相册记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 

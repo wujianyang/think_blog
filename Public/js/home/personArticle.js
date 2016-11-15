@@ -114,6 +114,7 @@ $(document).ready(function(){
 
     //查看信息
     $('body').on('click','.info',function(){
+        var tr=$(this).parents('tr');
         var id= $(this).attr('value');
         if(/\d/.test(id)){
             var host_dir=$('#host_dir').val();
@@ -123,6 +124,9 @@ $(document).ready(function(){
                 data:{"id":id},
                 dataType:"json",
                 success:function(data){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     getArticleType('edit');
                     if(data.status==1){
                         var article=data.article;
@@ -144,6 +148,9 @@ $(document).ready(function(){
                     }
                 },
                 error:function(data){
+                    //取消当前行选中
+                    tr.removeClass('sel');
+                    tr.find('.id').attr('checked',false);
                     alert('请求失败');
                     console.log(data.responseText);
                     console.log('info>error');
@@ -184,7 +191,7 @@ function showList(page,page_size,keyItem,key,com){
                         sHtml += '<td width="150">' + article[i]["article_type_name"] + '</td>';
                         sHtml += '<td width="50">' + article[i]["hitnum"] + '</td>';
                         sHtml += '<td width="150">' + article[i]["create_time"] + '</td>';
-                        sHtml += '<td width="100"><a href="'+host_dir+'Home/ArticleComment/getArticleComment/article_id/'+article[i]['article_id']+'.html">查看评论</a></td>';
+                        sHtml += '<td width="100"><a href="'+host_dir+'Home/Member/personArticleComment/article_id/'+article[i]['article_id']+'.html">查看评论</a></td>';
                         sHtml += '</tr>';
                     }
                     $('#list_table_tbody').html(sHtml);

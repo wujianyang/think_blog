@@ -32,7 +32,7 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='获取用户ID失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -67,6 +67,8 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='获取文章分类失败';
         }
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -141,6 +143,8 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='获取文章分类失败';
         }
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -174,7 +178,8 @@ class ArticleTypeModel extends CommonModel{
         }else{
             $data['msg']='获取文章分类总记录数失败';
         }
-
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 

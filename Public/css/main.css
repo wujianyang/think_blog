@@ -21,9 +21,9 @@ a{text-decoration:none;color:#999;}
 /*字体大小*/
 .fontBar span{cursor: pointer;}
 .fontBar .hov{font-size: 16px;font-weight: bold;}
-.font0{font-size:12px;}
-.font1{font-size:16px;}
-.font2{font-size:20px;}
+.font0,.font0 div,.font0 p,.font0 a,.font0 li{font-size:12px;}
+.font1,.font1 div,.font1 p,.font1 a,.font1 li{font-size:16px;}
+.font2,.font2 div,.font2 p,.font2 a,.font2 li{font-size:20px;}
 
 /*列表分割线*/
 .line{border-top:dashed #999 1px;}

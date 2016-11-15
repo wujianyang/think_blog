@@ -30,14 +30,14 @@ class MessController extends Controller{
                         $data['status']=1;
                         $data['rows']=$messResult['mess'];
                         //获取留言板列表数量
-                        $countCesult=$mess->getMessCount();
-                        if($countCesult['status']==1){
+                        $countResult=$mess->getMessCount();
+                        if($countResult['status']==1){
                             $data['status']=1;
-                            $data['count']=$countCesult['count'];
-                            $data['pageCount']=ceil($countCesult['count']/$mess->pageSize);
+                            $data['count']=$countResult['count'];
+                            $data['pageCount']=ceil($countResult['count']/$mess->pageSize);
                         }else{
                             $data['status']=0;
-                            $data['msg']=$countCesult['msg'];
+                            $data['msg']=$countResult['msg'];
                         }
                     }else{
                         $data['status']=0;
@@ -53,6 +53,11 @@ class MessController extends Controller{
         }else{
             $data['msg']='请求参数为空';
         }
+        unset($memberResult);
+        unset($messResult);
+        unset($countResult);
+        unset($member);
+        unset($mess);
         if(IS_AJAX){
             $this->ajaxReturn($data);
         }else{
@@ -70,27 +75,23 @@ class MessController extends Controller{
 
         //验证用户是否登录
         if(I('session.MEMBER')!=null){
-            $member=D('Member');
-            $member->id=I('post.member_id');
-            if($member->isExistsMemberId()){
-                $mess=D('Mess');
-                $mess->messer_id=I('session.MEMBER')['id'];
-                $mess->messed_id=I('post.member_id');
-                $mess->content=I('post.content');
-                $result=$mess->mess();
-                if($result['status']==1){
-                    $data['status']=1;
-                    $data['msg']=$result['msg'];
-                }else{
-                    $data['msg']=$result['msg'];
-                }
+            $mess=D('Mess');
+            $mess->messer_id=I('session.MEMBER')['id'];
+            $mess->messed_id=I('post.member_id');
+            $mess->content=I('post.content');
+            $result=$mess->mess();
+            if($result['status']==1){
+                $data['status']=1;
+                $data['msg']=$result['msg'];
             }else{
-                $data['msg']='用户不存在';
+                $data['msg']=$result['msg'];
             }
         }else{
             $data['msg']='请先登录再留言';
         }
 
+        unset($result);
+        unset($mess);
         $this->ajaxReturn($data);
     }
 

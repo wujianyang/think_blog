@@ -26,8 +26,10 @@ class CommonController extends Controller{
                 $resultCount = $modelClass->personIndexCount();
                 $this->returnResult($resultCount,$data,'count');
                 $data['pageCount'] = ceil($resultCount['count'] / $modelClass->pageSize);
-                unset($modelClass);
 
+                unset($result);
+                unset($resultCount);
+                unset($modelClass);
                 if (IS_AJAX) {
                     $this->ajaxReturn($data);
                 }else{
@@ -64,6 +66,8 @@ class CommonController extends Controller{
             $data['msg']='登录超时';
         }
 
+        unset($result);
+        unset($model);
         $this->ajaxReturn($data);
     }
 
@@ -83,7 +87,8 @@ class CommonController extends Controller{
         }else{
             $data['msg']='登录超时';
         }
-
+        unset($result);
+        unset($model);
         $this->ajaxReturn($data);
     }
 

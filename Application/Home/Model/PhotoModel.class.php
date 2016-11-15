@@ -54,7 +54,10 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='用户相册分类获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 
@@ -110,7 +113,7 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='用户相册分类获取失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -131,7 +134,7 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='用户ID获取失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -153,92 +156,9 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='当前相册分类获取失败';
         }
-
+        unset($result);
         return $data;
     }
-
-    //用户添加相册分类
-    /*public function personAdd(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_add=array();
-        $arr_add['photo_title']=$this->photo_title;
-        $arr_add['member_id']=$this->member_id;
-        $result=$this->data($arr_add)->add();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='添加成功';
-        }else{
-            $data['msg']='添加失败';
-        }
-
-        return $data;
-    }
-
-    //个人删除相册分类
-    public function personDel(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where['id']=array('IN',$this->id);
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->where($arr_where)->delete();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='删除成功';
-        }else{
-            $data['msg']='删除失败';
-        }
-
-        return $data;
-    }
-
-    //个人查看相册分类
-    public function personInfo(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->field('id,photo_title')->where($arr_where)->select();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='查询成功';
-            $data['photo']=$result[0];
-        }else{
-            $data['msg']='查询失败';
-        }
-
-        return $data;
-    }
-
-    //个人编辑相册分类
-    public function personEdit(){
-        $data=array();
-        $data['status']=0;
-        $data['msg']='';
-
-        $arr_edit=array();
-        $arr_edit['photo_title']=$this->photo_title;
-        $arr_where=array();
-        $arr_where['id']=$this->id;
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->data($arr_edit)->where($arr_where)->save();
-        if($result!==false){
-            $data['status']=1;
-            $data['msg']='编辑成功';
-        }else{
-            $data['msg']='编辑失败';
-        }
-
-        return $data;
-    }*/
 
     //个人相册列表
     public function personIndex(){
@@ -274,7 +194,10 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='用户相册分类获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 
@@ -309,7 +232,10 @@ class PhotoModel extends CommonModel{
         }else{
             $data['msg']='用户相册分类数量获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_join);
+        unset($arr_field);
+        unset($result);
         return $data;
     }
 

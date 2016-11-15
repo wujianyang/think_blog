@@ -23,8 +23,10 @@ class CommonController extends Controller{
             $resultCount = $modelClass->getCount();
             $this->returnResult($resultCount,$data,'count');
             $data['pageCount'] = ceil($resultCount['count'] / $modelClass->pageSize);
-            unset($modelClass);
 
+            unset($result);
+            unset($resultCount);
+            unset($modelClass);
             if (IS_AJAX) {
                 $this->ajaxReturn($data);
             } else {

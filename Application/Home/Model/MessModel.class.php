@@ -60,6 +60,10 @@ class MessModel extends CommonModel{
         }else{
             $data['msg']='用户留言板获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -97,6 +101,9 @@ class MessModel extends CommonModel{
         }else{
             $data['msg']='用户留言板总记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -118,6 +125,8 @@ class MessModel extends CommonModel{
         }else{
             $data['msg']='留言失败';
         }
+        unset($arr_add);
+        unset($result);
         return $data;
     }
 
@@ -162,6 +171,10 @@ class MessModel extends CommonModel{
         }else{
             $data['msg']='用户留言板获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -199,6 +212,9 @@ class MessModel extends CommonModel{
         }else{
             $data['msg']='用户留言板总记录数获取失败';
         }
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 }

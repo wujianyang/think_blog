@@ -4,7 +4,7 @@ use Think\Controller;
 
 class ArticleCommentController extends Controller{
     /*
-     * 获取文章评论列表
+     * 获取个人文章评论列表
      * 文章细览页面点击分页
      */
     public function getArticleComment(){
@@ -35,34 +35,10 @@ class ArticleCommentController extends Controller{
             }else{
                 $data['msg']='文章ID不存在';
             }
+            unset($result);
+            unset($resultCount);
+            unset($articleComment);
             $this->ajaxReturn($data);
-        }elseif(isset($_GET['article_id']) && !empty($_GET['article_id'])){
-            $article=D('Article');
-            $article->id=I('get.article_id');
-            if($article->isExistsArticleId()){
-                $articleResult=$article->getTitleByArticleId();
-                $title=$articleResult['title'];
-                $this->assign('article',array('article_id'=>$article->id,'title'=>$title));
-                $articleComment=D('ArticleComment');
-                $articleComment->article_id=I('get.article_id');
-                $result=$articleComment->getArticleComment();
-                $resultCount=$articleComment->getArticleCommentCount();
-                if($result['status']==1){
-                    $this->assign('articleComment',$result['articleComment']);
-                }else{
-                    $this->error($result['msg']);
-                }
-                if($resultCount['status']==1){
-                    $this->assign('count',$resultCount['comment_count']);
-                    $this->assign('pageCount',ceil($resultCount['comment_count']/$articleComment->pageSize));
-                }else{
-                    $this->error($resultCount['msg']);
-                }
-            }else{
-                $this->error('文章ID不存在');
-            }
-            $this->assign('empty','<p class="noData">没有数据</p>');
-            $this->display('./Member/personComment');
         }else{
             $data['msg']='请求参数为空';
             $this->ajaxReturn($data);
@@ -86,8 +62,8 @@ class ArticleCommentController extends Controller{
                 $articleComment->member_id=$member_id;
                 $articleComment->article_id=I('post.article_id');
                 $articleComment->comment_content=I('post.content');
-                $articleComment_result=$articleComment->comment();
-                if($articleComment_result['status']==1){
+                $articleCommentResult=$articleComment->comment();
+                if($articleCommentResult['status']==1){
                     $data['status']=1;
                     $data['msg']='评论成功';
                 }else{
@@ -99,7 +75,8 @@ class ArticleCommentController extends Controller{
         }else{
             $data['msg']='请先登录再评论';
         }
-
+        unset($articleCommentResult);
+        unset($articleComment);
         $this->ajaxReturn($data);
     }
 
@@ -120,7 +97,8 @@ class ArticleCommentController extends Controller{
         }else{
             $data['msg']='提交参数错误';
         }
-
+        unset($result);
+        unset($articleComment);
         $this->ajaxReturn($data);
     }
 }

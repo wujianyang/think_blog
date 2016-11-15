@@ -33,7 +33,7 @@ class PhotoController extends Controller{
             $photo->photo_title=I('post.photo')['photo_title'];
             $photo->member_id=I('post.photo')['member_id'];
             $result=$photo->editData();
-            unset($articleType);
+            unset($photo);
             $this->ajaxReturn($result);
         }else{
             $this->ajaxReturn(array('status'=>0,'msg'=>'请求参数为空'));

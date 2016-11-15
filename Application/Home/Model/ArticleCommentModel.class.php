@@ -61,6 +61,7 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='文章评论信息获取失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -98,7 +99,7 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='文章评论数量获取失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -119,6 +120,8 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='评论失败';
         }
+        unset($arr_data);
+        unset($result);
         return $data;
     }
 
@@ -137,6 +140,7 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='删除失败';
         }
+        unset($result);
         return $data;
     }
 
@@ -194,6 +198,10 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='文章评论信息获取失败';
         }
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 
@@ -236,7 +244,10 @@ class ArticleCommentModel extends Model{
         }else{
             $data['msg']='文章评论数量获取失败';
         }
-
+        unset($arr_where);
+        unset($arr_field);
+        unset($arr_join);
+        unset($result);
         return $data;
     }
 }

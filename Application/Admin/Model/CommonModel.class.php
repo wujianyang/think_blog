@@ -32,7 +32,8 @@ class CommonModel extends Model{
         }else{
             $data['msg']='数据获取失败';
         }
-
+        unset($arr_where);
+        unset($result);
         return $data;
     }
 
@@ -57,6 +58,7 @@ class CommonModel extends Model{
         }else{
             $data['msg']='记录数获取失败';
         }
+        unset($arr_where);
         unset($result);
         return $data;
     }
@@ -81,6 +83,8 @@ class CommonModel extends Model{
         }else{
             $data['msg']=$vali_result;
         }
+        unset($add_data);
+        unset($result);
         return $data;
     }
 
@@ -98,7 +102,7 @@ class CommonModel extends Model{
         }else{
             $data['msg']='获取数据失败';
         }
-
+        unset($result);
         return $data;
     }
 
@@ -122,6 +126,8 @@ class CommonModel extends Model{
         }else{
             $data['msg']=$vali_result;
         }
+        unset($edit_data);
+        unset($result);
         return $data;
     }
 
@@ -140,7 +146,7 @@ class CommonModel extends Model{
         }else{
             $data['msg']='删除失败';
         }
-
+        unset($result);
         return $data;
     }
 
