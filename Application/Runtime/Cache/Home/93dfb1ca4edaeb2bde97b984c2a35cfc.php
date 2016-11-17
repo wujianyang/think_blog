@@ -28,9 +28,11 @@
             var ajax_data='{';
             ajax_data+='page:"'+page+'",page_size:"'+page_size+'"';
             if(page_search=='search'){
+                var type='get';
                 var url=host_dir+"Home/Index/search";
                 ajax_data+=',key:"'+key_search+'",keyItem:"article"';
             }else{
+                var type='post';
                 var url=host_dir+"Home/Article/hotArticleList";
                 ajax_data+=',member_id:"'+member_id+'"';
             }
@@ -40,7 +42,7 @@
             $('#article_list_div').html(sHtml_loading);
             $.ajax({
                 url:url,
-                type:"post",
+                type:type,
                 data:eval('(' + ajax_data + ')'),
                 dataType:"json",
                 success:function(data){
@@ -91,7 +93,7 @@
             <a href="<?php echo U('Member/logout');?>">退出</a><?php endif; ?>
     </div>
     <div class="search_top">
-        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="post">
+        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="get">
         <select name="keyItem" id="keyItem_search">
             <option value="member">用户</option>
             <option value="article">文章</option>
@@ -114,7 +116,7 @@
             <?php else: ?>
                 文章列表
                 <input type="hidden" value="search" id="page_search" />
-                <input type="hidden" value="<?php echo ($_POST['key']); ?>" id="keys_search" />
+                <input type="hidden" value="<?php echo ($_GET['key']); ?>" id="keys_search" />
                 <input type="hidden" value="article" id="keyItem_search" /><?php endif; ?>
 
         </span>
@@ -143,7 +145,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>

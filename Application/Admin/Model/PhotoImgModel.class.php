@@ -158,23 +158,21 @@ class PhotoImgModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
-        $img_src=D('PhotoImg')->field('img_src')->where(array('id'=>array('in',$this->id)))->select();   //获取相片数据
-        if(count($img_src)>0){
-            $result=$this->where(array('id'=>array('in',$this->id)))->delete();
-            if($result!==false){
-                foreach($img_src as $img_src_arr){  //在空间中删除相片
-                    if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
-                        unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
-                    }
+        $img_src=$this->field('img_src')->where(array('id'=>array('in',$this->id)))->select();   //获取相片数据
+        $result=$this->where(array('id'=>array('in',$this->id)))->delete();
+        if($result!==false){
+            foreach($img_src as $img_src_arr){  //在空间中删除相片
+                if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
+                    unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
                 }
-                $data['msg']='删除成功';
-                $data['status']=1;
-            }else{
-                $data['msg']='删除失败';
             }
+            $data['msg']='删除成功';
+            $data['status']=1;
         }else{
-            $data['msg'] = '相片信息获取失败';
+            $data['msg']='删除失败';
         }
+
+        unset($img_src);
         unset($result);
         return $data;
     }

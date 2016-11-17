@@ -1,6 +1,6 @@
 <div class="top">
     <div class="person_top">
-        <a href="{:U(Index/index)}">网站首页</a>
+        <a href="{:C('HOST_DIR')}">网站首页</a>
         <if condition="$Think.session.MEMBER eq null">
             <a href="{:U('Member/login')}">登录</a>
             <a href="{:U('Member/register')}">注册</a>
@@ -11,7 +11,7 @@
         </if>
     </div>
     <div class="search_top">
-        <form action="{$Think.config.HOST_DIR}Home/Index/search" name="search_form" method="post">
+        <form action="{$Think.config.HOST_DIR}Home/Index/search" name="search_form" method="get">
         <select name="keyItem" id="keyItem_search">
             <option value="member">用户</option>
             <option value="article">文章</option>

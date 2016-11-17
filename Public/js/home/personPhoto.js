@@ -110,8 +110,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(data){
                     //取消当前行选中
-                    tr.removeClass('sel');
-                    tr.find('.id').attr('checked',false);
+                    cencelSelected(tr,'tr');
                     if(data.status==1){
                         var photo=data.rows;
                         if(photo.length!=0){

@@ -125,11 +125,6 @@ class ArticleTypeModel extends CommonModel{
             $arr_where["$this->table_alias.$this->keyItem"]=array($this->com,$this->key);
         }
         $arr_where["$this->table_alias.member_id"]=$this->member_id;
-        /*if($this->page==0){
-            $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->select();
-        }else{
-            $result=$this->alias($this->table_alias)->field('id,article_type_name')->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
-        }*/
         $result=$this->alias($this->table_alias)->field($arr_field)->where($arr_where)->limit($this->pageSize)->page($this->page)->select();
         if($result!==false){
             if(count($result)>0){
@@ -180,6 +175,38 @@ class ArticleTypeModel extends CommonModel{
         }
         unset($arr_where);
         unset($result);
+        return $data;
+    }
+
+    public function personDel(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $article=D('Article');
+        $articleComment = D('ArticleComment');
+        $articleId=$article->field('id')->where(array('article_type_id'=>array('in',$this->id)))->select();
+        $articleId=array_column($articleId,'id');
+
+        $this->startTrans();
+        //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
+        $result=$articleComment->where(array('article_id'=>array('in',$articleId)))->delete();
+        $result2=$article->where(array('article_type_id'=>array('in',$this->id)))->delete();
+        $result3=$this->where(array('id'=>array('in',$this->id)))->delete();
+        if ($result!==false && $result2!==false && $result3!==false){
+            $this->commit();
+            $data['msg']='删除成功';
+            $data['status']=1;
+        }else{
+            $this->rollback();
+            $data['msg']='删除失败';
+        }
+        unset($article);
+        unset($articleComment);
+        unset($articleId);
+        unset($result);
+        unset($result2);
+        unset($result3);
         return $data;
     }
 

@@ -148,8 +148,9 @@ $(document).ready(function(){
         }
     });
 
-    //查看用户信息
-    $('.info').live('click', function(){
+    //查看信息
+    $('body').on('click','.info',function(){
+        var photo_div=$(this).parents('.photo_div');
         var id= $(this).attr('value');
         if(/\d/.test(id)){
             getMember('edit');
@@ -160,6 +161,8 @@ $(document).ready(function(){
                 data:{"id":id},
                 dataType:"json",
                 success:function(result){
+                    //取消当前行选中
+                    cencelSelected(photo_div,'div');
                     if(result.status==1){
                         var data=result.rows;
                         if(data.length!=0){

@@ -68,23 +68,25 @@ function showList(page,page_size,keyItem,key,com){
     var member_id=$('#member_id').val();
     var sHtml_loading='<div class="loading"><img src="'+host_dir+'Public/images/loading.gif" width="100px" /></div>';
     var url=host_dir+"Home/Member/friends/f/"+f+"/member_id/"+member_id;
+    var type='post';
     $('#list').html(sHtml_loading);
     var ajax_data='{';
     ajax_data+='page:"'+page+'",page_size:"'+page_size+'"';
     if(page_search=='search'){
         url=host_dir+'Home/Index/search';
         ajax_data+=',key:"'+key_search+'",keyItem:"'+keyItem_search+'"';
+        type='get';
     }
     ajax_data+='}';
     $.ajax({
         url:url,
-        type:"post",
+        type:type,
         data:eval('(' + ajax_data + ')'),
         dataType:"json",
         success:function(data){
-            if(data.status==1 && data.friends!=null){
+            if(data.status==1 && data.rows!=null){
                 var sHtml='';
-                var friends=data.friends;
+                var friends=data.rows;
                 if(friends.length>0) {
                     //拼接数据列表
                     for (var i = 0; i < friends.length; i++) {
@@ -96,22 +98,11 @@ function showList(page,page_size,keyItem,key,com){
                             sHtml += '<p><label>性别：<span></span>女</label></p>';
                         }
                         sHtml += '<p><span><a href="'+host_dir+'Home/Member/index/f/focus/member_id/'+friends[i]['member_id']+'">关注('+friends[i]['focus_count']+')</a></span><span><a href="'+host_dir+'Home/Member/index/f/fans/member_id/'+friends[i]['member_id']+'">粉丝('+friends[i]['fans_count']+')</a></span></p>';
-                        if(typeof(friends[i]['iseach'])!='undefined'){  //粉丝列表
-                            if(friends[i]['iseach']==1){
-                                sHtml += '<div class="btn cencelFocus" rel="'+friends[i]['member_id']+'">取消关注</div>';
-                            }else if(friends[i]['iseach']==0){
-                                sHtml += '<div class="btn focus" rel="'+friends[i]['member_id']+'">关注</div>';
-                            }
-                        }else if(typeof(friends[i]['isfocus'])!='undefined'){   //好友搜索
-                            if(friends[i]['isfocus']==1){
-                                sHtml += '<div class="btn cencelFocus" rel="'+friends[i]['member_id']+'">取消关注</div>';
-                            }else if(friends[i]['isfocus']==0){
-                                sHtml += '<div class="btn focus" rel="'+friends[i]['member_id']+'">关注</div>';
-                            }
-                        }else{  //关注列表
+                        if(friends[i]['isfocus']==1){
                             sHtml += '<div class="btn cencelFocus" rel="'+friends[i]['member_id']+'">取消关注</div>';
+                        }else{
+                            sHtml += '<div class="btn focus" rel="'+friends[i]['member_id']+'">关注</div>';
                         }
-
                         sHtml += '</li>';
                     }
                     sHtml += '<div class="clear"></div>';

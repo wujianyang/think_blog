@@ -18,6 +18,7 @@
     <script type="text/javascript">
         $(function(){
             UE.getEditor('editor');
+            UE.getEditor('editor_edit');
         });
     </script>
     <style type="text/css">
@@ -28,12 +29,14 @@
     </style>
 </head>
 <body>
-
-<div class="main_form">
+<div class="info_title">
+    <span>文章管理</span>
     <input type="hidden" value="{$Think.config.HOST_DIR}" id="host_dir" />
     <input type="hidden" value="{$Think.config.UPLOAD}" id="upload" />
     <input type="hidden" value="{$Think.config.UPLOAD_PATH}" id="upload_path" />
     <input type="hidden" value="{$Think.config.URL_HTML_SUFFIX}" id="suffix" />
+</div>
+<div class="main_form">
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -98,7 +101,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>
@@ -119,12 +122,12 @@
                 <tr>
                     <th>撰写作者：</th>
                     <td>
-                        <select name='article[member_id]' id="member_id" required>
+                        <select name='article[member_id]' id="member_id" class="selecter" required>
                         </select>
                     </td>
                     <th width="100">文章类别：</th>
                     <td>
-                        <select name='article[article_type_id]' id="article_type_id" required>
+                        <select name='article[article_type_id]' id="article_type_id" class="selecter" required>
                         </select>
                     </td>
                 </tr>
@@ -156,23 +159,19 @@
                 <tr>
                     <th>撰写作者：</th>
                     <td>
-                        <select name='article[member_id]' id="member_id_edit" required>
+                        <select name='article[member_id]' id="member_id_edit" class="selecter" required>
                         </select>
                     </td>
                     <th width="100">文章类别：</th>
                     <td>
-                        <select name='article[article_type_id]' id="article_type_id_edit" required>
+                        <select name='article[article_type_id]' id="article_type_id_edit" class="selecter" required>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <th>文章内容：</th>
                     <td colspan="3">
-                        <section id="editor_edit">
-                            <div id='edit_edit' style="margin-top: 30px;">
-
-                            </div>
-                        </section>
+                        <script id="editor_edit" type="text/plain" style="width:800px;height:200px;"></script>
                     </td>
                 </tr>
                 <tr>

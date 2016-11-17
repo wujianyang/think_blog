@@ -42,7 +42,7 @@ $(document).ready(function(){
                 success:function(data){
                     alert(data.msg);
                     if(data.status=='1'){
-                        location=location;
+                        location.reload();
                     }
                 },
                 error:function(data){

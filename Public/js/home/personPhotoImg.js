@@ -16,7 +16,7 @@ $(document).ready(function(){
         }
     });
     //单击选中相片
-    $('.photo_div').click(function(){
+    $('body').on('click','.photo_div',function(){
         if($(this).attr('class').indexOf('op')!=-1){
             $(this).removeClass('op');
         }else{
@@ -138,7 +138,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(data){
                     //取消当前行选中
-                    photo_div.removeClass('op');
+                    cencelSelected(photo_div,'div');
                     if(data.status==1){
                         var photoImg=data.rows;
                         if(photoImg.length!=0){

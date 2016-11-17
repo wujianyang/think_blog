@@ -1,0 +1,46 @@
+[ 2016-11-14T14:17:26+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.052744s ]
+
+[ 2016-11-14T14:17:28+08:00 ] ::1 /think_blog/Home/Member/getVerify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-11-14T14:17:34+08:00 ] ::1 /think_blog/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-11-14T14:17:35+08:00 ] ::1 /think_blog/Home/Member/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-14T14:45:26+08:00 ] ::1 /think_blog/Home/Member/personCenter.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-11-14T14:45:26+08:00 ] ::1 /think_blog/Home/Member/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-11-14T14:45:27+08:00 ] ::1 /think_blog/Home/Member/personArticleType.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-11-14T14:45:31+08:00 ] ::1 /think_blog/Home/Member/personArticleType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `article_type` [ RunTime:0.0034s ]
+SQL: SELECT at.id AS `article_type_id`,at.article_type_name AS `article_type_name` FROM article_type at WHERE at.member_id = '29' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(at.id) AS `count` FROM article_type at WHERE at.member_id = '29'  [ RunTime:0.0002s ]
+

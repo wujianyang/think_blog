@@ -24,41 +24,54 @@ class MemberController extends Controller{
         $member->id=$member_id;
         //判断用户ID是否存在
         if($member->isExistsMemberId()){
-            $member_result=$member->getInfoHeader();
-            $this->assign('member',$member_result['member']);
+            $memberResult=$member->getInfoHeader();
+            $this->assign('member',$memberResult['member']);
             //获取用户关注信息
             $friends=D('Friends');
             $friends->member_id=$member_id;
-            $focus_result=$friends->getFocusCount();
-            $fans_result=$friends->getFansCount();
-            $this->assign('focus_count',$focus_result['focus_count']);
-            $this->assign('fans_count',$fans_result['fans_count']);
+            $focusResult=$friends->getFocusCount();
+            $fansResult=$friends->getFansCount();
+            $this->assign('focus_count',$focusResult['focus_count']);
+            $this->assign('fans_count',$fansResult['fans_count']);
             //获取用户文章信息
             $article=D('Article');
             $article->member_id=$member_id;
             $article->pageSize=5;
-            $article_result=$article->getArticleByMemberId();
-            $this->assign('article',$article_result['article']);
+            $articleResult=$article->getArticleByMemberId();
+            $this->assign('article',$articleResult['article']);
             //获取热门文章排行
-            $hotArticle_result=$article->getHotArticle();
-            $this->assign('hotArticle',$hotArticle_result['hotArticle']);
+            $hotArticleResult=$article->getHotArticle();
+            $this->assign('hotArticle',$hotArticleResult['hotArticle']);
             //获取用户文章分类信息
             $article->pageSize=10;
-            $articleType_result=$article->getArticleTypeByMemberId();
-            $this->assign('articleType',$articleType_result['article_type']);
+            $articleTypeResult=$article->getArticleTypeByMemberId();
+            $this->assign('articleType',$articleTypeResult['article_type']);
             //获取用户相册分类信息
             $photo=D('Photo');
             $photo->member_id=$member_id;
             $photo->pageSize=10;
-            $photo_result=$photo->getPhotoByMemberId();
-            $this->assign('photo',$photo_result['photo']);
+            $photoResult=$photo->getPhotoByMemberId();
+            $this->assign('photo',$photoResult['photo']);
             //获取用户留言板信息
             $mess=D('Mess');
             $mess->messed_id=$member_id;
             $mess->pageSize=5;
-            $mess_result=$mess->getMessByMemberId();
-            $this->assign('mess',$mess_result['mess']);
-
+            $messResult=$mess->getMessByMemberId();
+            $this->assign('mess',$messResult['mess']);
+            //获取天气信息
+            $common=A('Common');
+            $weatherResult=$common->getWeather();
+            $this->assign('weather',$weatherResult);
+            unset($memberResult);
+            unset($focusResult);
+            unset($fansResult);
+            unset($articleResult);
+            unset($hotArticleResult);
+            unset($articleTypeResult);
+            unset($photoResult);
+            unset($messResult);
+            unset($weatherResult);
+            unset($common);
             unset($member);
             unset($friends);
             unset($article);
@@ -365,8 +378,6 @@ class MemberController extends Controller{
             $resultFriendsIdCount=$friends->getFriendsIdCount($f);
             if($resultFriendsId['status']==1){
                 //获取关注用户信息
-                //$member->pageSize=20;
-                //$member->id_temp=$member->id;
                 $member->id_temp=I('session.MEMBER')['id'];
                 if(count($resultFriendsId['friends_id'])>0){
                     $member->id=$resultFriendsId['friends_id'];
@@ -376,6 +387,14 @@ class MemberController extends Controller{
 
                 //获取关注用户或粉丝用户的用户信息
                 $result=$member->getFriends($f);
+                //获取当前登录用户的关注ID
+                if(I('session.MEMBER')!=null){
+                    $friends->fans_id=I('session.MEMBER')['id'];
+                }else{
+                    $friends->fans_id=0;
+                }
+                $resultFocusID=$friends->getFocusIDBySelf();
+                $arr_focusID=array_column($resultFocusID['member_id'],'member_id'); //提取用户ID
                 //再根据用户ID获取该用户的关注数量 和 粉丝数量
                 $resultFocusCount=$member->getFriendsFocusCount();
                 $resultFansCount=$member->getFriendsFansCount();
@@ -383,6 +402,12 @@ class MemberController extends Controller{
                     //最后组合成新的结果集
                     $friendsResult=$result['member'];
                     foreach($friendsResult as $k => $m){
+                        //判断当前用户是否已关注
+                        if(in_array($friendsResult[$k]['member_id'],$arr_focusID)){
+                            $friendsResult[$k]['isfocus']=1;
+                        }else{
+                            $friendsResult[$k]['isfocus']=0;
+                        }
                         $friendsResult[$k]['focus_count']=$resultFocusCount['focus_count'][$k];
                         $friendsResult[$k]['fans_count']=$resultFansCount['fans_count'][$k];
                     }
@@ -390,7 +415,7 @@ class MemberController extends Controller{
                     $data['rows']=$friendsResult;
                     $data['count']=$resultFriendsIdCount['count'];
                     $data['pageCount']=ceil($resultFriendsIdCount['count']/$friends->pageSize);
-
+                    $data['status']=1;
                 }else{  //请求失败
                     $data['msg']='请求失败';
                 }

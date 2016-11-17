@@ -103,27 +103,21 @@ class PhotoImgModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
-        //获取相片本地路径信息
-        $imgSrcResult=$this->field('img_src')->where(array('id'=>array('IN',$this->id)))->select();
-        $arr_where=array();
-        $arr_where['id']=array('IN',$this->id);
-        $arr_where['member_id']=$this->member_id;
-        $result=$this->where($arr_where)->delete();
+        $img_src=$this->field('img_src')->where(array('id'=>array('in',$this->id)))->select();   //获取相片数据
+        $result=$this->where(array('id'=>array('in',$this->id)))->delete();
         if($result!==false){
-            $data['status']=1;
-            $data['msg']='删除成功';
-            foreach($imgSrcResult as $imgSrc){  //在空间中删除相片
-                if(file_exists(C('ROOT').C('UPLOAD').$imgSrc['img_src'])){
-                    if(!stristr($imgSrc['img_src'],'default')){
-                        unlink(C('ROOT').C('UPLOAD').$imgSrc['img_src']);
-                    }
+            foreach($img_src as $img_src_arr){  //在空间中删除相片
+                if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
+                    unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
                 }
             }
+            $data['msg']='删除成功';
+            $data['status']=1;
         }else{
             $data['msg']='删除失败';
         }
-        unset($arr_where);
-        unset($imgSrcResult);
+
+        unset($img_src);
         unset($result);
         return $data;
     }

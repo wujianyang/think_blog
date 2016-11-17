@@ -1,0 +1,4 @@
+定位城市
+http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js
+天气接口
+http://api.map.baidu.com/telematics/v3/weather?location=厦门&output=json&ak=EqrP5ARI0cGoGqXWrPQCweiM

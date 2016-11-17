@@ -3,7 +3,6 @@ namespace Home\Model;
 use Think\Model;
 
 class CommonModel extends Model{
-
     /*
      * 上传配置参考
      * array(
@@ -22,6 +21,13 @@ class CommonModel extends Model{
         $data['status']=1;
         $data['msg']='';
 
+        //若存在相同文件，删除(用户更新头像)
+        $file=$config['rootPath'].$config['savePath'].$config['saveName'];
+        foreach($config['exts'] as $ext){
+            if(file_exists($file.'.'.$ext)){
+                unlink($file.'.'.$ext);
+            }
+        }
         $upload=new \Think\Upload($config);
         $info=$upload->upload();
         if(!$info){ //长传失败

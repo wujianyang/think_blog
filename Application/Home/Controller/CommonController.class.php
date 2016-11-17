@@ -4,6 +4,16 @@ use Think\Controller;
 
 class CommonController extends Controller{
 
+    //获取天气信息
+    public function getWeather(){
+        //获取当前城市以及天气信息
+        $remoteIpResult=json_decode(curlRequest(C('REMOTE_IP_URL')),true);
+        $url=C('WEATHER_URL')."?location=".$remoteIpResult['city']."&output=json&ak=".C('AK');
+        $weatherResult=json_decode(curlRequest($url),true);
+        $weatherResult=returnWeatherArr($weatherResult);
+
+        return $weatherResult;
+    }
     //用户模块列表
     public function personIndex($className){
         if ($className != '') {

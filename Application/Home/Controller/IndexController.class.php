@@ -2,15 +2,36 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+    //访问网站首页
     public function index(){
+        $article=D('Article');
+        $member=D('Member');
+        $articleResult=$article->indexArticle();
+        $member->pageSize=20;
+        $memberResult=$member->indexMember();
+        //获取天气信息
+        $common=A('Common');
+        $weatherResult=$common->getWeather();
+
+        $this->assign('article',$articleResult['article']);
+        $this->assign('member',$memberResult['member']);
+        $this->assign('weather',$weatherResult);
+        unset($articleResult);
+        unset($remoteIpResult);
+        unset($weatherResult);
+        unset($memberResult);
+        unset($article);
+        unset($articleType);
+        unset($photo);
+        $this->assign('empty',C('NODATA'));
         $this->display('./index');
     }
 
     //顶部搜索框搜索
     public function search(){
-        if($_POST['keyItem']=='member'){    //搜索用户
+        if($_GET['keyItem']=='member'){    //搜索用户
             $this->searchFriends();
-        }elseif($_POST['keyItem']=='article'){  //搜索文章
+        }elseif($_GET['keyItem']=='article'){  //搜索文章
             $this->searchArticle();
         }else{
             $this->error('参数错误');
@@ -24,14 +45,14 @@ class IndexController extends Controller {
         $data['msg']='';
 
         $member=D('Member');
-        $member->key=trim(I('post.key'));
+        $member->key=trim(I('get.key'));
         $member->keyItem='member_name';
         $member->com='like';
         //初次访问初始化每页20条数据
         $member->pageSize=20;
         if(IS_AJAX){
-            $member->page=I('post.page');
-            $member->pageSize=I('post.page_size');
+            $member->page=I('get.page');
+            $member->pageSize=I('get.page_size');
         }
         //传递当前登录用户ID是为了判断搜索用户是否已关注
         $result=$member->searchFriends(I('session.MEMBER')['id']);
@@ -43,11 +64,27 @@ class IndexController extends Controller {
             }else{
                 $member->id='';
             }
+            //获取当前登录用户的关注ID
+            $friends=D('Friends');
+            if(I('session.MEMBER')!=null){
+                $friends->fans_id=I('session.MEMBER')['id'];
+            }else{
+                $friends->fans_id=0;
+            }
+            $resultFocusID=$friends->getFocusIDBySelf();
+            $arr_focusID=array_column($resultFocusID['member_id'],'member_id'); //提取用户ID
+
             //再根据用户ID获取该用户的关注数量 和 粉丝数量
             $resultFocusCount=$member->getFriendsFocusCount();
             $resultFansCount=$member->getFriendsFansCount();
             //最后组合成新的结果集
             foreach($result['friends'] as $k=>$res){
+                //判断当前用户是否已关注
+                if(in_array($res['member_id'],$arr_focusID)){
+                    $result['friends'][$k]['isfocus']=1;
+                }else{
+                    $result['friends'][$k]['isfocus']=0;
+                }
                 $result['friends'][$k]['focus_count']=$resultFocusCount['focus_count'][$k];
                 $result['friends'][$k]['fans_count']=$resultFansCount['fans_count'][$k];
             }
@@ -59,9 +96,12 @@ class IndexController extends Controller {
         }
         unset($result);
         unset($resultCount);
+        unset($resultFocusID);
+        unset($arr_focusID);
         unset($resultFocusCount);
         unset($resultFansCount);
         unset($member);
+        unset($friends);
         //根据提交类型返回数据
         if(IS_AJAX){
             $this->ajaxReturn($data);
@@ -79,14 +119,14 @@ class IndexController extends Controller {
         $data['msg']='';
 
         $article=D('Article');
-        $article->key=trim(I('post.key'));
+        $article->key=trim(I('get.key'));
         $article->keyItem='title';
         $article->com='like';
         //初次访问初始化每页20条数据
         $article->pageSize=20;
         if(IS_AJAX){
-            $article->page=I('post.page');
-            $article->pageSize=I('post.page_size');
+            $article->page=I('get.page');
+            $article->pageSize=I('get.page_size');
         }
         $result=$article->getArticleByTitle();
         if($result['status']==1){

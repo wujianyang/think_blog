@@ -22,7 +22,6 @@
 <include file="./Application/Home/View/top.html" />
 <input type="hidden" value="{$Think.get.f}" id="f" />
 <input type="hidden" value="{$Think.get.member_id}" id="member_id" />
-{$data|dump}
 <div class="friends_div">
     <div class="friends_title">
         <if condition="$member neq null">
@@ -35,8 +34,8 @@
             <else />
             <span>用户列表</span>
             <input type="hidden" value="search" id="page_search" />
-            <input type="hidden" value="{$Think.post.key}" id="keys_search" />
-            <input type="hidden" value="{$Think.post.keyItem}" id="keyItem_search" />
+            <input type="hidden" value="{$Think.get.key}" id="keys_search" />
+            <input type="hidden" value="{$Think.get.keyItem}" id="keyItem_search" />
         </if>
     </div>
     <ul id="list">
@@ -58,20 +57,8 @@
                     <span><a href="{:U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'focus'))}">关注({$rows.focus_count})</a></span>
                     <span><a href="{:U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'fans'))}">粉丝({$rows.fans_count})</a></span>
                 </p>
-                <if condition="$Think.session.MEMBER neq null">
-                    <if condition="$Think.get.f eq fans">
-                        <if condition="$rows.iseach eq 1">
-                            <div class="btn cencelFocus" rel="{$rows.member_id}">取消关注</div>
-                            <else />
-                            <div class="btn focus" rel="{$rows.member_id}">关注</div>
-                        </if>
-                        <else />
-                        <if condition="$rows.isfocus eq 1">
-                            <div class="btn cencelFocus" rel="{$rows.member_id}">取消关注</div>
-                            <else />
-                            <div class="btn focus" rel="{$rows.member_id}">关注</div>
-                        </if>
-                    </if>
+                <if condition="$rows.isfocus eq 1">
+                    <div class="btn cencelFocus" rel="{$rows.member_id}">取消关注</div>
                     <else />
                     <div class="btn focus" rel="{$rows.member_id}">关注</div>
                 </if>
@@ -94,11 +81,10 @@
             </if>
                 <span>
                     <select id="toPageSize">
-                        <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>

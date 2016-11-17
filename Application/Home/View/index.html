@@ -6,14 +6,11 @@
     <link rel="stylesheet" type="text/css" href="{$Think.config.CSS}main.css" />
     <link rel="stylesheet" type="text/css" href="{$Think.config.CSS}index.css" />
     <script src="{$Think.config.JS}jquery-1.8.3.min.js"></script>
+    <script src="{$Think.config.JS}ajax.js"></script>
     <script src="{$Think.config.PLUGINS}ueditor/ueditor.config.js" charset="utf-8"></script>
     <script src="{$Think.config.PLUGINS}ueditor/ueditor.all.min.js" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8" src="{$Think.config.PLUGINS}ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            UE.getEditor('editor');
-        });
-    </script>
+    <script src="{$Think.config.REMOTE_IP_URL}"></script>
 </head>
 <body>
 <include file="./Application/Home/View/top.html" />
@@ -22,119 +19,36 @@
     <div class="show_area">
         <div class="left_area">
             <div class="left_title">
-                <span>文章列表</span>
-                <a class="more" href="#" target="_blank">更多>></a>
+                <span>文章排行</span>
             </div>
-            <div class="article_area">
-                <p class="article_title"><a href="#" target="_blank">做博客必须要学会坚持</a></p>
-                <p class="article_content">世界知名的美国学者、《第三次浪潮》作者阿尔文·托夫勒在上个世纪90年代就说过这样的话，他说：“未来的文盲不再是不识字的人，而是没有学会学习的人。”在他一系列具有广泛影响的未来学著作当中，阐述的核心理念就是，面对着以几何级速度不断翻新的信息洪流，一个希望获得成功的人，应该具备的素质不再是他已经掌握了多少知识，而是他是否具有用最短的时间、最高的效率，学习并掌握最新知识的能力。</p>
-                <div class="article_info">
-                    <div class="article_author">作者：username</div>
-                    <div class="article_type">文章类型：生活日志</div>
-                    <div class="article_time">撰写时间：2016-09-08 20:48:05</div>
-                    <div class="article_comment">评论(100)</div>
-                    <div class="article_hitnum">访问量：100</div>
-                    <div class="clear"></div>
+            <volist name="article" id="article" offset="0" length="5" empty="$empty">
+                <div class="article_area">
+                    <p class="article_title"><a href="{:U('Article/index',array('article_id'=>$article['article_id']),'html')}" title="{$article.title}" target="_blank">{$article.title|substr_mb=0,40,'utf-8'}</a></p>
+
+                    <p class="article_content">{$article.content|substr_mb=0,100,'utf-8'}</p>
+                    <div class="article_info">
+                        <div class="article_author">作者：<a href="{:U('Member/index',array('member_id'=>$article['member_id']))}">{$article.member_name}</a></div>
+                        <div class="article_type">文章类型：<a href="{:U('Article/articleList',array('article_type_id'=>$article['article_type_id']))}">{$article.article_type_name}</a></div>
+                        <div class="article_time">撰写时间：{$article.create_time}</div>
+                        <div class="article_hitnum">访问量：{$article.hitnum}</div>
+                        <div class="article_comment"><a href="{:U('Article/index#comment',array('article_id'=>$article['article_id']))}" target="_blank">评论({$article.article_comment_count})</a></div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="article_area">
-                <p class="article_title"><a href="#" target="_blank">做博客必须要学会坚持</a></p>
-                <p class="article_content">世界知名的美国学者、《第三次浪潮》作者阿尔文·托夫勒在上个世纪90年代就说过这样的话，他说：“未来的文盲不再是不识字的人，而是没有学会学习的人。”在他一系列具有广泛影响的未来学著作当中，阐述的核心理念就是，面对着以几何级速度不断翻新的信息洪流，一个希望获得成功的人，应该具备的素质不再是他已经掌握了多少知识，而是他是否具有用最短的时间、最高的效率，学习并掌握最新知识的能力。</p>
-                <div class="article_info">
-                    <div class="article_author">作者：username</div>
-                    <div class="article_type">文章类型：生活日志</div>
-                    <div class="article_time">撰写时间：2016-09-08 20:48:05</div>
-                    <div class="article_comment">评论(100)</div>
-                    <div class="article_hitnum">访问量：100</div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="article_area">
-                <p class="article_title"><a href="#" target="_blank">做博客必须要学会坚持</a></p>
-                <p class="article_content">世界知名的美国学者、《第三次浪潮》作者阿尔文·托夫勒在上个世纪90年代就说过这样的话，他说：“未来的文盲不再是不识字的人，而是没有学会学习的人。”在他一系列具有广泛影响的未来学著作当中，阐述的核心理念就是，面对着以几何级速度不断翻新的信息洪流，一个希望获得成功的人，应该具备的素质不再是他已经掌握了多少知识，而是他是否具有用最短的时间、最高的效率，学习并掌握最新知识的能力。</p>
-                <div class="article_info">
-                    <div class="article_author">作者：username</div>
-                    <div class="article_type">文章类型：生活日志</div>
-                    <div class="article_time">撰写时间：2016-09-08 20:48:05</div>
-                    <div class="article_comment">评论(100)</div>
-                    <div class="article_hitnum">访问量：100</div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="article_area">
-                <p class="article_title"><a href="#" target="_blank">做博客必须要学会坚持</a></p>
-                <p class="article_content">世界知名的美国学者、《第三次浪潮》作者阿尔文·托夫勒在上个世纪90年代就说过这样的话，他说：“未来的文盲不再是不识字的人，而是没有学会学习的人。”在他一系列具有广泛影响的未来学著作当中，阐述的核心理念就是，面对着以几何级速度不断翻新的信息洪流，一个希望获得成功的人，应该具备的素质不再是他已经掌握了多少知识，而是他是否具有用最短的时间、最高的效率，学习并掌握最新知识的能力。</p>
-                <div class="article_info">
-                    <div class="article_author">作者：username</div>
-                    <div class="article_type">文章类型：生活日志</div>
-                    <div class="article_time">撰写时间：2016-09-08 20:48:05</div>
-                    <div class="article_comment">评论(100)</div>
-                    <div class="article_hitnum">访问量：100</div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="article_area">
-                <p class="article_title"><a href="#" target="_blank">做博客必须要学会坚持</a></p>
-                <p class="article_content">世界知名的美国学者、《第三次浪潮》作者阿尔文·托夫勒在上个世纪90年代就说过这样的话，他说：“未来的文盲不再是不识字的人，而是没有学会学习的人。”在他一系列具有广泛影响的未来学著作当中，阐述的核心理念就是，面对着以几何级速度不断翻新的信息洪流，一个希望获得成功的人，应该具备的素质不再是他已经掌握了多少知识，而是他是否具有用最短的时间、最高的效率，学习并掌握最新知识的能力。</p>
-                <div class="article_info">
-                    <div class="article_author">作者：username</div>
-                    <div class="article_type">文章类型：生活日志</div>
-                    <div class="article_time">撰写时间：2016-09-08 20:48:05</div>
-                    <div class="article_comment">评论(100)</div>
-                    <div class="article_hitnum">访问量：100</div>
-                    <div class="clear"></div>
-                </div>
-            </div>
+            </volist>
         </div>
         <div class="right_area">
-            <div class="article_hot">
-                <div class="article_hot_title">
-                    <span>热门文章排行</span>
-                    <a class="more" href="#" target="_blank">更多>></a>
+            <div class="member_div">
+                <div class="member_title">
+                    <span>用户排行</span>
                 </div>
-                <div class="article_hot_list">
-                        <p><a href="">做博客必须要学会坚持</a><span>100</span></p>
-                        <p><a href="">做博客必须要学会坚持</a><span>100</span></p>
-                        <p><a href="">做博客必须要学会坚持</a><span>100</span></p>
-                        <p><a href="">做博客必须要学会坚持</a><span>100</span></p>
-                        <p><a href="">做博客必须要学会坚持</a><span>100</span></p>
-                </div>
-            </div>
-            <div class="article_type_div">
-                <div class="article_type_title">
-                    <span>文章分类</span>
-                    <a class="more" href="#" target="_blank">更多>></a>
-                </div>
-                <div class="article_type_list">
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="article_type_d"><a href="#">生活日志(<span>10</span>)</a></div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="photo_div">
-                <div class="photo_title">
-                    <span>相册分类</span>
-                    <a class="more" href="#" target="_blank">更多>></a>
-                </div>
-                <div class="photo_list">
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
-                    <div class="photo_d"><a href="#">日常生活(<span>10</span>)</a></div>
+                <div class="member_list">
+                    <volist name="member" id="member" offset="0" length="30" empty="$empty">
+                        <div class="member_d"><a href="{:U('Member/index',array('member_id'=>$member['id']))}" title="{$member.member_name}">
+                            <img src="{$Think.config.UPLOAD}{$member.head_pic}" width="30" height="30" />
+                            {$member.member_name|substr_mb=0,15,'utf-8'}(<span>{$member.hitnum}</span>)
+                        </a></div>
+                    </volist>
                     <div class="clear"></div>
                 </div>
             </div>

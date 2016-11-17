@@ -148,4 +148,26 @@ class FriendsModel extends Model{
         return $data;
     }
 
+    /*
+     * 获取当前登录用户的关注好友ID
+     * 用于用户列表中判断当前用户是否已关注
+     */
+    public function getFocusIDBySelf(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $arr_where=array();
+        $arr_where["fans_id"]=$this->fans_id;
+        $result=$this->field('member_id')->where($arr_where)->select();
+        if($result!==false && count($result)>0){
+            $data['status']=1;
+            $data['msg']='获取当前用户关注用户ID成功';
+            $data['member_id']=$result;
+        }else{
+            $data['msg']='获取当前用户关注用户ID失败';
+        }
+        return $data;
+    }
+
 }

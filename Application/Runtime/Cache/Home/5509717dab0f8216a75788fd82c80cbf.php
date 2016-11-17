@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>admin.css" />
     <style type="text/css">
-        .info_title{border-bottom: solid #999 1px;font-weight: bold;padding:5px 0;}
         .list_table{width:1100px;margin:0 auto;}
         .info_table #title,.info_table #title_edit{width:800px;font-size: 18px;}
     </style>
@@ -93,7 +92,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>
@@ -113,7 +112,7 @@
                 <tr>
                     <th width="100">文章类别：</th>
                     <td colspan="3">
-                        <select name='article[article_type_id]' id="article_type_id" required>
+                        <select name='article[article_type_id]' id="article_type_id" class="selecter" required>
                         </select>
                     </td>
                 </tr>
@@ -140,21 +139,20 @@
             <table class="info_table" cellspacing="1" cellpadding="0">
                 <tr>
                     <th width="100">文章标题：</th>
-                    <td colspan="3" width="750"><input type="text" name='article[title]' id="title_edit" required width="1000px" /></td>
+                    <td colspan="3" width="750"><input type="text" name='article[title]' id="title_edit" required width="750px" /></td>
                 </tr>
                 <tr>
                     <th width="100">文章类别：</th>
                     <td colspan="3">
-                        <select name='article[article_type_id]' id="article_type_id_edit" required>
+                        <select name='article[article_type_id]' id="article_type_id_edit" class="selecter" required>
                         </select>
                     </td>
                 </tr>
                 <tr>
-                    <th>文章内容：</th>
+                    <th width="100">文章内容：</th>
                     <td colspan="3">
-                        <section id="editor_edit">
-                            <div id='edit_edit' style="margin-top: 30px;">
-
+                        <section id="editor_edit" style="width:1000px;">
+                            <div id='edit_edit'>
                             </div>
                         </section>
                     </td>

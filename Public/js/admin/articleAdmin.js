@@ -66,7 +66,7 @@ $(document).ready(function(){
             }
         },
         submitHandler:function(form){
-            var content=$('#content').html();   //获取文章内容
+            var content=UE.getEditor('editor').getContent();   //获取文章内容
             var host_dir=$('#host_dir').val();
             $(form).ajaxSubmit({
                 url:host_dir+"Admin/Article/add",
@@ -110,7 +110,7 @@ $(document).ready(function(){
             }
         },
         submitHandler:function(form){
-            var content=$('#content_edit').html();   //获取文章内容
+            var content=UE.getEditor('editor_edit').getContent();   //获取文章内容
             var host_dir=$('#host_dir').val();
             $(form).ajaxSubmit({
                 url:host_dir+"Admin/Article/edit",
@@ -148,8 +148,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(result){
                     //取消当前行选中
-                    tr.removeClass('sel');
-                    tr.find('.id').attr('checked',false);
+                    cencelSelected(tr,'tr');
                     if(result.status==1){
                         var data=result.rows;
                         if(data.length!=0){
@@ -159,7 +158,7 @@ $(document).ready(function(){
                                 if(i!='content'){
                                     $("#"+i+"_edit").val(data[i]);
                                 }else{
-                                    $("#"+i+"_edit").html(data[i]);
+                                    UE.getEditor('editor_edit').setContent(data[i]);
                                 }
 
                             }

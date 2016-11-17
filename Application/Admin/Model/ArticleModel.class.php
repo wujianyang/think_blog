@@ -44,6 +44,7 @@ class ArticleModel extends CommonModel{
 
         $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->page($this->page)->limit($this->pageSize)->select();
         if($result!==false){
+            $result=html_decode($result,'content');
             $data['status']=1;
             $data['msg']='数据获取成功';
             $data['rows']=$result;
@@ -98,6 +99,32 @@ class ArticleModel extends CommonModel{
         return $data;
     }
 
+    //批量删除信息
+    public function delData(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $articleComment = D('ArticleComment');
+
+        //删除本表数据放在最后，顺序不能改变，否则因外键约束而导致删除失败
+        $result = $articleComment->where(array('article_id' => array('in', $this->id)))->delete();
+        $result2 = $this->where(array('id' => array('in', $this->id)))->delete();
+        if ($result!==false && $result2!==false){
+            $this->commit();
+            $data['status'] = 1;
+            $data['msg'] = '删除成功';
+        }else{
+            $this->rollback();
+            $data['msg'] = '删除失败';
+        }
+
+        unset($articleComment);
+        unset($result);
+        unset($result2);
+        return $data;
+    }
+
     //获取文章标题信息
     public function getArticleTitle(){
         $arr_where["id"]=array('eq',$this->id);
@@ -127,7 +154,7 @@ class ArticleModel extends CommonModel{
             }
         }
 
-        if(strlen($this->content)<10){
+        if(strlen($this->content)<4){
             return '文章内容验证失败';
         }
 

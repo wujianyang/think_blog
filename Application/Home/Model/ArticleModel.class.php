@@ -20,6 +20,53 @@ class ArticleModel extends CommonModel{
     public $keyItem='id';
     public $com='eq';
 
+    //获取首页文章列表(获取访问量前10的文章)
+    public function indexArticle(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        //条件数组
+        $arr_where=array();
+        $arr_where["$this->table_alias.hitnum"]=array('gt','0');
+        //字段数组
+        $arr_field=array();
+        $arr_field[$this->table_alias.'.id']='article_id';
+        $arr_field[$this->table_alias.'.title']='title';
+        $arr_field[$this->table_alias.'.content']='content';
+        $arr_field[$this->table_alias.'.hitnum']='hitnum';
+        $arr_field[$this->table_alias.'.create_time']='create_time';
+        $arr_field[$this->table_alias.'.member_id']='member_id';
+        $arr_field[$this->foreign_table_alias.'.member_name']='member_name';
+        $arr_field[$this->table_alias.'.article_type_id']='article_type_id';
+        $arr_field[$this->foreign_table2_alias.'.article_type_name']='article_type_name';
+        $arr_field["COUNT($this->foreign_table3_alias.id)"]='article_comment_count';
+        //多表查询条件数组
+        $arr_join=array();
+        $arr_join[]="LEFT JOIN $this->table $this->table_alias ON $this->table_alias.member_id=$this->foreign_table_alias.id";
+        $arr_join[]="LEFT JOIN $this->foreign_table2 $this->foreign_table2_alias ON $this->table_alias.article_type_id=$this->foreign_table2_alias.id";
+        $arr_join[]="LEFT JOIN $this->foreign_table3 $this->foreign_table3_alias ON $this->table_alias.id=$this->foreign_table3_alias.article_id";
+
+        $result=$this->table(array("$this->foreign_table"=>$this->foreign_table_alias))->field($arr_field)->join($arr_join)->where($arr_where)->group("$this->table_alias.id")->order("$this->table_alias.hitnum")->limit($this->pageSize)->page($this->page)->select();
+        if($result!==false){
+            if(count($result)>0){
+                $data['status']=1;
+                $data['msg']='文章列表获取成功';
+                $data['article']=$result;
+            }else{
+                $data['status']=1;
+                $data['msg']='文章列表没有数据';
+            }
+        }else{
+            $data['msg']='文章列表获取失败';
+        }
+        unset($arr_field);
+        unset($arr_where);
+        unset($arr_join);
+        unset($result);
+        return $data;
+    }
+
     //根据条件搜索文章列表
     public function getArticleByTitle(){
         $data=array();
@@ -524,6 +571,31 @@ class ArticleModel extends CommonModel{
         unset($arr_where);
         unset($arr_join);
         unset($result);
+        return $data;
+    }
+
+    public function personDel(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $articleComment = D('ArticleComment');
+
+        //删除本表数据放在最后，顺序不能改变，否则因外键约束而导致删除失败
+        $result = $articleComment->where(array('article_id' => array('in', $this->id)))->delete();
+        $result2 = $this->where(array('id' => array('in', $this->id)))->delete();
+        if ($result!==false && $result2!==false){
+            $this->commit();
+            $data['status'] = 1;
+            $data['msg'] = '删除成功';
+        }else{
+            $this->rollback();
+            $data['msg'] = '删除失败';
+        }
+
+        unset($articleComment);
+        unset($result);
+        unset($result2);
         return $data;
     }
 

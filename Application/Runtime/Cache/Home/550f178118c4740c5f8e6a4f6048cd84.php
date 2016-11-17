@@ -28,7 +28,7 @@
             <a href="<?php echo U('Member/logout');?>">退出</a><?php endif; ?>
     </div>
     <div class="search_top">
-        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="post">
+        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="get">
         <select name="keyItem" id="keyItem_search">
             <option value="member">用户</option>
             <option value="article">文章</option>
@@ -45,7 +45,6 @@
 </div>
 <input type="hidden" value="<?php echo ($_GET['f']); ?>" id="f" />
 <input type="hidden" value="<?php echo ($_GET['member_id']); ?>" id="member_id" />
-<?php echo (dump($data)); ?>
 <div class="friends_div">
     <div class="friends_title">
         <?php if($member != null): ?><a href="<?php echo U('Member/index',array('member_id'=>$member['id']));?>"><?php echo ($member["member_name"]); ?></a> >><?php endif; ?>
@@ -55,8 +54,8 @@
             <?php else: ?>
             <span>用户列表</span>
             <input type="hidden" value="search" id="page_search" />
-            <input type="hidden" value="<?php echo ($_POST['key']); ?>" id="keys_search" />
-            <input type="hidden" value="<?php echo ($_POST['keyItem']); ?>" id="keyItem_search" /><?php endif; ?>
+            <input type="hidden" value="<?php echo ($_GET['key']); ?>" id="keys_search" />
+            <input type="hidden" value="<?php echo ($_GET['keyItem']); ?>" id="keyItem_search" /><?php endif; ?>
     </div>
     <ul id="list">
         <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,20,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><li>
@@ -74,13 +73,7 @@
                     <span><a href="<?php echo U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'focus'));?>">关注(<?php echo ($rows["focus_count"]); ?>)</a></span>
                     <span><a href="<?php echo U('Member/friends',array('member_id'=>$rows['member_id'],'f'=>'fans'));?>">粉丝(<?php echo ($rows["fans_count"]); ?>)</a></span>
                 </p>
-                <?php if($_SESSION['MEMBER']!= null): if($_GET['f']== fans): if($rows["iseach"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($rows["member_id"]); ?>">取消关注</div>
-                            <?php else: ?>
-                            <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; ?>
-                        <?php else: ?>
-                        <?php if($rows["isfocus"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($rows["member_id"]); ?>">取消关注</div>
-                            <?php else: ?>
-                            <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; endif; ?>
+                <?php if($rows["isfocus"] == 1): ?><div class="btn cencelFocus" rel="<?php echo ($rows["member_id"]); ?>">取消关注</div>
                     <?php else: ?>
                     <div class="btn focus" rel="<?php echo ($rows["member_id"]); ?>">关注</div><?php endif; ?>
             </li><?php endforeach; endif; else: echo "$empty" ;endif; ?>
@@ -102,7 +95,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>

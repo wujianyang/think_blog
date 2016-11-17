@@ -266,8 +266,7 @@ $(document).ready(function(){
                 dataType:"json",
                 success:function(result){
                     //取消当前行选中
-                    tr.removeClass('sel');
-                    tr.find('.id').attr('checked',false);
+                    cencelSelected(tr,'tr');
                     if(result.status==1){
                         var data=result.rows;
                         if(data.length!=0){

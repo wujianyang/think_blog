@@ -41,6 +41,25 @@ $(document).ready(function(){
         }
     });
 });
+function cencelSelected(e,f){
+    //e为选中元素,f为判断是tr行还是div块
+    var c='sel';
+    if(f=='div'){
+        c='op';
+    }
+    if(e.attr('class').indexOf(c)>-1){  //被选中状态
+        e.removeClass(c);  //取消选中状态
+        if(f=='tr'){
+            e.find('.id').attr('checked',false);
+        }
+    }else{  //被取消选中状态
+        e.addClass(c);  //选中状态
+        if(f=='tr'){
+            e.find('.id').attr('checked',true);
+        }
+    }
+
+}
 
 //获取用户信息
 function getMember(flag) {

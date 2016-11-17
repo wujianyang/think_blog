@@ -81,51 +81,75 @@ class MemberModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
+        $article = D('Article');
+        $articleType = D('ArticleType');
+        $articleComment = D('ArticleComment');
+        $photo = D('Photo');
+        $photoImg = D('PhotoImg');
+        $mess = D('Mess');
+        $friends = D('Friends');
+        $complaint = D('Complaint');
 
         //获取用户头像，删除用户同时删除头像
-        $head_pic=D('Member')->field('head_pic')->where(array('id'=>array('in',$this->id)))->select();
+        $head_pic=$this->field('head_pic')->where(array('id'=>array('in',$this->id)))->select();
         //获取相片数据，删除用户同时删除相片
-        $img_src=D('PhotoImg')->field('img_src')->where(array('member_id'=>array('in',$this->id)))->select();
-        /*if(!empty(C('ROOT').C('UPLOAD').$this->head_pic) && file_exists(C('ROOT').C('UPLOAD').$this->head_pic)) {*/
+        $img_src=$photoImg->field('img_src')->where(array('member_id'=>array('in',$this->id)))->select();
+        $articleId=$article->field('id')->where(array('member_id'=>array('in',$this->id)))->select();
+        $articleId=array_column($articleId,'id');
+        $this->startTrans();
 
-            $this->startTrans();
-            $article = D('Article');
-            $articleType = D('ArticleType');
-            $photo = D('Photo');
-            $photoImg = D('PhotoImg');
-            $mess = D('Mess');
-            $complaint = D('Complaint');
-            //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
-            $result = $article->where(array('member_id' => array('in', $this->id)))->delete();
-            $result2 = $articleType->where(array('member_id' => array('in', $this->id)))->delete();
-            $result3 = $photoImg->where(array('member_id' => array('in', $this->id)))->delete();
-            $result4 = $photo->where(array('member_id' => array('in', $this->id)))->delete();
-            $result5 = $mess->where(array('messer_id' => array('in', $this->id)))->delete();
-            $result6 = $mess->where(array('messed_id' => array('in', $this->id)))->delete();
-            $result7 = $this->where(array('id' => array('in', $this->id)))->delete();
-            if ($result!==false && $result2!==false && $result3!==false && $result4!==false && $result5!==false && $result6!==false && $result7!==false) {
-                $this->commit();
+        //删除本表数据放在最后，顺序不能改变，否则因外键约束而导致删除失败
+        $result = $articleComment->where(array('member_id' => array('in', $this->id)))->delete();
+        $result2 = $articleComment->where(array('article_id' => array('in', $articleId)))->delete();
+        $result3 = $article->where(array('member_id' => array('in', $this->id)))->delete();
+        $result4 = $articleType->where(array('member_id' => array('in', $this->id)))->delete();
+        $result5 = $photoImg->where(array('member_id' => array('in', $this->id)))->delete();
+        $result6 = $photo->where(array('member_id' => array('in', $this->id)))->delete();
+        $result7 = $mess->where(array('messer_id' => array('in', $this->id)))->delete();
+        $result8 = $mess->where(array('messed_id' => array('in', $this->id)))->delete();
+        $result9 = $friends->where(array('member_id' => array('in', $this->id)))->delete();
+        $result10 = $friends->where(array('fans_id' => array('in', $this->id)))->delete();
+        $result11 = $complaint->where(array('member_id' => array('in', $this->id)))->delete();
+        $result12 = $this->where(array('id' => array('in', $this->id)))->delete();
+        if ($result!==false && $result2!==false && $result3!==false && $result4!==false && $result5!==false && $result6!==false && $result7!==false && $result8!==false && $result9!==false && $result10!==false && $result11!==false && $result12!==false) {
+            $this->commit();
 
-                foreach($head_pic as $head_pic_arr){  //在空间中删除头像
-                    if(file_exists(C('ROOT').C('UPLOAD').$head_pic_arr['head_pic'])){
-                        if(!stristr($head_pic_arr['head_pic'],'default')){
-                            unlink(C('ROOT').C('UPLOAD').$head_pic_arr['head_pic']);
-                        }
+            foreach($head_pic as $head_pic_arr){  //在空间中删除头像
+                if(file_exists(C('ROOT').C('UPLOAD').$head_pic_arr['head_pic'])){
+                    if(!stristr($head_pic_arr['head_pic'],'default')){
+                        unlink(C('ROOT').C('UPLOAD').$head_pic_arr['head_pic']);
                     }
                 }
-                foreach($img_src as $img_src_arr){
-                    if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
-                        unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
-                    }
-                }
-                $data['status'] = 1;
-                $data['msg'] = '删除成功';
-            } else {
-                $this->rollback();
-                $data['msg'] = '删除失败';
             }
+            foreach($img_src as $img_src_arr){
+                if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
+                    unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
+                }
+            }
+            $data['status'] = 1;
+            $data['msg'] = '删除成功';
+        } else {
+            $this->rollback();
+            $data['msg'] = '删除失败';
+        }
         unset($head_pic);
         unset($img_src);
+        unset($articleId);
+
+        unset($article);
+        unset($articleType);
+        unset($articleComment);
+        unset($photo);
+        unset($photoImg);
+        unset($mess);
+        unset($friends);
+        unset($complaint);
+
+        unset($result12);
+        unset($result11);
+        unset($result10);
+        unset($result9);
+        unset($result8);
         unset($result7);
         unset($result6);
         unset($result5);
@@ -226,11 +250,11 @@ class MemberModel extends CommonModel{
         }
         if(isset($this->head_pic) && !empty($this->head_pic)) {
             $uploadConfig=array('name' => 'head_pic',
-                'maxSize'   =>  1000000,
+                'maxSize'   =>  10000000,
                 'exts'      =>  array('png','jpg','jpeg','gif'),
                 'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
                 'savePath'  =>  'head_pic/',
-                'saveName'  =>  'head_pic_'.time(),
+                'saveName'  =>  'head_pic_'.$this->member_name,
                 'autoSub'   =>  false);
             $resultUpload=$this->upload($uploadConfig);
             if($resultUpload['status']==1 && $resultUpload['upload']['head_pic']['savename']!=''){

@@ -34,7 +34,7 @@
 <body>
 <div class="top">
     <div class="person_top">
-        <a href="<?php echo U(Index/index);?>">网站首页</a>
+        <a href="<?php echo C('HOST_DIR');?>">网站首页</a>
         <?php if($_SESSION['MEMBER']== null): ?><a href="<?php echo U('Member/login');?>">登录</a>
             <a href="<?php echo U('Member/register');?>">注册</a>
         <?php else: ?>
@@ -43,7 +43,7 @@
             <a href="<?php echo U('Member/logout');?>">退出</a><?php endif; ?>
     </div>
     <div class="search_top">
-        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="post">
+        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="get">
         <select name="keyItem" id="keyItem_search">
             <option value="member">用户</option>
             <option value="article">文章</option>
@@ -73,7 +73,19 @@
         <p><a href="#">访问量 <?php echo ($member["hitnum"]); ?></a></p>
     </div>
     <div class="weather_area">
-
+        <table style="width:300px;height:100px;margin: 0 auto;text-align: center;color:#666;font-family:微软雅黑;font-size:16px;">
+            <tr>
+                <td colspan="2"><?php echo ($weather["city"]); ?>&nbsp;<?php echo ($weather["dateT"]); ?></td>
+            </tr>
+            <tr>
+                <td>天气：<?php echo ($weather["weather"]); ?></td>
+                <td>温度：<?php echo ($weather["temperature"]); ?></td>
+            </tr>
+            <tr>
+                <td>风速：<?php echo ($weather["wind"]); ?></td>
+                <td>PM2.5：<?php echo ($weather["pm25"]); ?></td>
+            </tr>
+        </table>
     </div>
     <div class="clear"></div>
 </div>

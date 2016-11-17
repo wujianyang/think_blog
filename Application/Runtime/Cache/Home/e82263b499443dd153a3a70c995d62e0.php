@@ -16,11 +16,14 @@
     <script src="<?php echo (C("JS")); ?>home/personComment.js"></script>
 </head>
 <body>
-<div class="main_form">
+<div class="info_title">
+    <span>我的文章评论</span>
     <input type="hidden" value="<?php echo (C("HOST_DIR")); ?>" id="host_dir" />
     <input type="hidden" value="<?php echo (C("UPLOAD")); ?>" id="upload" />
     <input type="hidden" value="<?php echo (C("UPLOAD_PATH")); ?>" id="upload_path" />
     <input type="hidden" value="<?php echo (C("URL_HTML_SUFFIX")); ?>" id="suffix" />
+</div>
+<div class="main_form">
     <div id="list_div">
         <div class="toolbar">
             <div class="lfloat">
@@ -79,7 +82,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>

@@ -17,6 +17,25 @@ class MemberModel extends CommonModel{
     public $keyItem='';
     public $com='eq';
 
+    //获取网站首页用户列表
+    public function indexMember(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $arr_where=array();
+        //$arr_where["hitnum"]=array('gt',0);
+        $result=$this->field("id,member_name,hitnum,head_pic")->where($arr_where)->order("hitnum")->page($this->page)->limit($this->pageSize)->select();
+        if($result!==false){
+            $data['status']=1;
+            $data['msg']='用户列表获取成功';
+            $data['member']=$result;
+        }else{
+            $data['msg']='用户列表获取失败';
+        }
+        return $data;
+    }
+
     //获取验证码
     public function getVerify(){
         //验证码长度4个字符、5分钟过期、使用杂点
@@ -184,10 +203,9 @@ class MemberModel extends CommonModel{
         $arr_field["$this->table_alias.head_pic"]="head_pic";
         $arr_field["$this->table_alias.hitnum"]="hitnum";
         //获取粉丝用户是否已关注，关注用户不需要判断
-        if($f=='fans'){
+        /*if($f=='fans'){
             $arr_field["COUNT(DISTINCT $this->foreign_table_alias.fans_id)"]="isEach";
-        }
-        //$arr_field["COUNT($this->foreign_table_alias.id)"]="isEach";
+        }*/
 
         $arr_join=array();
         if($f=='focus'){
@@ -293,16 +311,14 @@ class MemberModel extends CommonModel{
         $arr_field["$this->table_alias.sex"]="sex";
         $arr_field["$this->table_alias.head_pic"]="head_pic";
         $arr_field["$this->table_alias.hitnum"]="hitnum";
-        if($member_id!=''){
-            $arr_field["COUNT(DISTINCT $this->foreign_table_alias.id)"]="isFocus";
-        }
 
         $arr_join=array();
-        if($member_id!=''){
+        $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.id=$this->foreign_table_alias.member_id";
+        /*if($member_id!=''){
             $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.id=$this->foreign_table_alias.member_id AND $this->foreign_table_alias.fans_id=$member_id";
         }else{
             $arr_join[]="LEFT JOIN $this->foreign_table $this->foreign_table_alias ON $this->table_alias.id=$this->foreign_table_alias.member_id";
-        }
+        }*/
 
         $result=$this->alias($this->table_alias)->join($arr_join)->field($arr_field)->where($arr_where)->group("$this->table_alias.id")->page($this->page)->limit($this->pageSize)->select();
         if($result!==false){
@@ -492,11 +508,11 @@ class MemberModel extends CommonModel{
         }
         if(isset($this->head_pic) && !empty($this->head_pic)) {
             $uploadConfig=array('name' => 'head_pic',
-                'maxSize'   =>  1000000,
+                'maxSize'   =>  10000000,
                 'exts'      =>  array('png','jpg','jpeg','gif'),
                 'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
                 'savePath'  =>  'head_pic/',
-                'saveName'  =>  'head_pic_'.time(),
+                'saveName'  =>  'head_pic_'.$this->member_name,
                 'autoSub'   =>  false);
             $resultUpload=$this->upload($uploadConfig);
             if($resultUpload['status']==1 && $resultUpload['upload']['head_pic']['savename']!=''){

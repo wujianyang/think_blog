@@ -239,6 +239,38 @@ class PhotoModel extends CommonModel{
         return $data;
     }
 
+    public function personDel(){
+        $data=array();
+        $data['status']=0;
+        $data['msg']='';
+
+        $photoImg=D('photoImg');
+        //获取相片数据
+        $img_src=$photoImg->field('img_src')->where(array('photo_id'=>array('in',$this->id)))->select();
+        $this->startTrans();
+        //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
+        $result=$photoImg->where(array('photo_id'=>array('in',$this->id)))->delete();
+        $result2=$this->where(array('id'=>array('in',$this->id)))->delete();
+        if($result!==false && $result2!==false){
+            $this->commit();
+            foreach($img_src as $img_src_arr){  //在空间中删除相片
+                if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
+                    unlink(C('ROOT').C('UPLOAD').$img_src_arr['img_src']);
+                }
+            }
+            $data['msg']='删除成功';
+            $data['status']=1;
+        }else{
+            $this->rollback();
+            $data['msg']='删除失败';
+        }
+        unset($photoImg);
+        unset($img_src);
+        unset($result2);
+        unset($result);
+        return $data;
+    }
+
     public function setValidata($f=''){
         if(empty($this->photo_title) && !preg_match("/^.{4,}$/",$this->photo_title)){
             return "相册名称验证失败";

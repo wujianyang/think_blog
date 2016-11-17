@@ -94,12 +94,17 @@ class ArticleTypeModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
-        $this->startTrans();
         $article=D('Article');
+        $articleComment = D('ArticleComment');
+        $articleId=$article->field('id')->where(array('article_type_id'=>array('in',$this->id)))->select();
+        $articleId=array_column($articleId,'id');
+
+        $this->startTrans();
         //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
-        $result=$article->where(array('article_type_id'=>array('in',$this->id)))->delete();
-        $result2=$this->where(array('id'=>array('in',$this->id)))->delete();
-        if($result && $result2){
+        $result=$articleComment->where(array('article_id'=>array('in',$articleId)))->delete();
+        $result2=$article->where(array('article_type_id'=>array('in',$this->id)))->delete();
+        $result3=$this->where(array('id'=>array('in',$this->id)))->delete();
+        if ($result!==false && $result2!==false && $result3!==false){
             $this->commit();
             $data['msg']='删除成功';
             $data['status']=1;
@@ -107,7 +112,12 @@ class ArticleTypeModel extends CommonModel{
             $this->rollback();
             $data['msg']='删除失败';
         }
+        unset($article);
+        unset($articleComment);
+        unset($articleId);
         unset($result);
+        unset($result2);
+        unset($result3);
         return $data;
     }
 

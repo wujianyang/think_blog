@@ -94,14 +94,14 @@ class PhotoModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
 
+        $photoImg=D('photoImg');
         //获取相片数据
-        $img_src=D('PhotoImg')->field('img_src')->where(array('photo_id'=>array('in',$this->id)))->select();
+        $img_src=$photoImg->field('img_src')->where(array('photo_id'=>array('in',$this->id)))->select();
         $this->startTrans();
-        $photoImg=D('PhotoImg');
         //删除本表数据放在最后，$result和$result2顺序不能改变，否则因外键约束而导致删除失败
         $result=$photoImg->where(array('photo_id'=>array('in',$this->id)))->delete();
         $result2=$this->where(array('id'=>array('in',$this->id)))->delete();
-        if($result && $result2){
+        if($result!==false && $result2!==false){
             $this->commit();
             foreach($img_src as $img_src_arr){  //在空间中删除相片
                 if(file_exists(C('ROOT').C('UPLOAD').$img_src_arr['img_src'])){
@@ -114,6 +114,8 @@ class PhotoModel extends CommonModel{
             $this->rollback();
             $data['msg']='删除失败';
         }
+        unset($photoImg);
+        unset($img_src);
         unset($result2);
         unset($result);
         return $data;
