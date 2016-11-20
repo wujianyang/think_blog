@@ -63,7 +63,7 @@
                     <div class="img_div">
                         <img src="{$Think.config.UPLOAD}{$rows.img_src}" width="200" height="150" />
                     </div>
-                    <p>ID：<a class="info" href="javascript:void(0);" value="{$rows.id}">{$rows.id} | {$rows.img_title}</a></p>
+                    <p>ID：<a class="info" href="javascript:void(0);" title="{$rows.img_title}" value="{$rows.id}">{$rows.id} | {$rows.img_title|substr_mb=0,8,'utf-8'}</a></p>
                 </div>
             </volist>
         </div>

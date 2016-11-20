@@ -222,7 +222,7 @@ class PhotoImgModel extends CommonModel{
 
         if(isset($this->img_src) && !empty($this->img_src)) {
             $uploadConfig=array('name' => 'img_src',
-                'maxSize'   =>  1000000,
+                'maxSize'   =>  10000000,
                 'exts'      =>  array('png','jpg','jpeg','gif'),
                 'rootPath'  =>  C('ROOT').C('UPLOAD_PATH'),
                 'savePath'  =>  'photo_img/',
@@ -244,6 +244,8 @@ class PhotoImgModel extends CommonModel{
     //创建提交数据数组
     public function create_Data($f=''){
         $arr=array();
+        $arr['photo_id']=$this->photo_id;
+        $arr['member_id']=$this->member_id;
         $arr['img_title']=$this->img_title;
         if(!empty($this->img_src)){
             $arr['img_src']=$this->img_src;

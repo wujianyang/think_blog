@@ -10,7 +10,6 @@
     <script src="<?php echo (C("PLUGINS")); ?>ueditor/ueditor.config.js" charset="utf-8"></script>
     <script src="<?php echo (C("PLUGINS")); ?>ueditor/ueditor.all.min.js" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8" src="<?php echo (C("PLUGINS")); ?>ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script src="<?php echo (C("REMOTE_IP_URL")); ?>"></script>
 </head>
 <body>
 <div class="top">

@@ -115,7 +115,7 @@ class MessModel extends CommonModel{
 
         $arr_add=array();
         $arr_add["messer_id"]=$this->messer_id;
-        $arr_add["content"]=$this->content;
+        $arr_add["content"]=htmlspecialchars_decode($this->content);
         $arr_add["messed_id"]=$this->messed_id;
         $arr_add["mess_time"]=date("Y-m-d h:i:s",time());
         $result=$this->data($arr_add)->add();

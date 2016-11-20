@@ -61,6 +61,7 @@ class MessController extends Controller{
         if(IS_AJAX){
             $this->ajaxReturn($data);
         }else{
+            $this->assign('empty',C('NODATA'));
             $this->assign('data',$data);
             $this->assign('msg',$data['msg']);
             $this->display();

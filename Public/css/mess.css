@@ -1,4 +1,4 @@
-.mess_div{width:990px;margin:10px auto;padding:5px;border:solid #ddd 1px;}
+.mess_div{width:990px;margin:10px auto;padding:5px;border:solid #ddd 1px;min-height:500px;}
 .mess_title{padding:5px 0;border-bottom:solid #ccc 1px;font-weight:bold;}
 .mess_title a{color:#000;}
 .mess_title a:hover{text-decoration: underline;}

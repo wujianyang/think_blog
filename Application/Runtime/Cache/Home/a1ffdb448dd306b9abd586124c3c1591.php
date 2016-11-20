@@ -52,14 +52,15 @@
                     <th width="100">相片数量</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
+                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
                         <td width="50"><input type="checkbox" class="id" name="id[]" value="<?php echo ($rows["photo_id"]); ?>" /></td>
                         <td width="50"><?php echo ($rows["photo_id"]); ?></td>
-                        <td width="200"><a class="info" href="javascript:void(0);" value="<?php echo ($rows["photo_id"]); ?>"><?php echo ($rows["photo_title"]); ?></a></td>
+                        <td width="200"><a class="info" href="javascript:void(0);" title="<?php echo ($rows["photo_title"]); ?>" value="<?php echo ($rows["photo_id"]); ?>"><?php echo (substr_mb($rows["photo_title"],0,10,'utf-8')); ?></a></td>
                         <td width="100"><a href="<?php echo U('Member/personPhotoImg',array('photo_id'=>$rows['photo_id']));?>"><?php echo ($rows["photo_count"]); ?></a></td>
-                    </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                 </tbody>
             </table>
+            <?php if($data['rows'] == null): echo ($empty); endif; ?>
         </div>
         <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>

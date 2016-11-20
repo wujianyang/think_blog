@@ -437,7 +437,7 @@ class MemberController extends Controller{
             $this->ajaxReturn($data);
         }else{
             $this->assign('data',$data);
-            $this->assign('empty',$data['msg']);
+            $this->assign('empty',C('NODATA'));
             $this->display('Member/friends');
         }
     }

@@ -186,7 +186,7 @@ function showList(page,page_size,keyItem,key,com){
                         sHtml += '<tr class="tr_line">';
                         sHtml += '<td><input type="checkbox" class="id" name="id[]" value="' + article[i]["article_id"] + '" /></td>';
                         sHtml += '<td width="50">' + article[i]["article_id"] + '</td>';
-                        sHtml += '<td width="200"><a class="info" href="javascript:void(0);" value="' + article[i]["article_id"] + '">' + str_sub(article[i]["title"],32) + '</a></td>';
+                        sHtml += '<td width="200"><a class="info" href="javascript:void(0);" value="' + article[i]["article_id"] + '">' + str_sub(article[i]["title"],40) + '</a></td>';
                         sHtml += '<td width="150">' + article[i]["article_type_name"] + '</td>';
                         sHtml += '<td width="50">' + article[i]["hitnum"] + '</td>';
                         sHtml += '<td width="150">' + article[i]["create_time"] + '</td>';
@@ -196,6 +196,7 @@ function showList(page,page_size,keyItem,key,com){
                     $('#list_table_tbody').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
+                    $('.noData').remove();
                 }else{
                     $('#list_table_tbody').html('<tr><td colspan="7" align="center">没有数据</td></tr>');
                 }
@@ -227,7 +228,7 @@ function getArticleType(flag){
                     $('#article_type_id_edit').html('');
                 }
                 var articleType = data.articleType;
-                if (articleType.length > 0) {
+                if (articleType != null) {
                     for (var i = 0; i < articleType.length; i++) {
                         if(flag!='edit'){
                             $('#article_type_id').append('<option value="' + articleType[i]['id'] + '">' + articleType[i]['article_type_name'] + '</option>');
@@ -236,6 +237,7 @@ function getArticleType(flag){
                         }
                     }
                 } else {
+                    alert('请先添加文章类别');
                     if(flag!='edit'){
                         $('#article_type_id').html('<option>没有数据</option>');
                     }else{
@@ -244,7 +246,7 @@ function getArticleType(flag){
                 }
             },
             error: function (data) {
-                console.log('clickAdd>error');
+                console.log('getArticleType>error');
                 console.log(data.responseText);
                 showList(1,10,'','','eq');
             }

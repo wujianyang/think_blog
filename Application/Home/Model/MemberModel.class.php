@@ -160,7 +160,7 @@ class MemberModel extends CommonModel{
         $data['status']=0;
         $data['msg']='';
         $result=$this->field(array('id,member_name,head_pic,hitnum'))->where(array('id'=>$this->id))->select();
-        if($result!==false && count($result)>0){
+        if($result!==false){
             $data['status']=1;
             $data['msg']='获取用户信息成功';
             $data['member']=$result[0];

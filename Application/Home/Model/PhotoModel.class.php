@@ -103,13 +103,9 @@ class PhotoModel extends CommonModel{
 
         $result=$this->field('id,photo_title')->where(array('member_id'=>$this->member_id))->select();
         if($result!==false){
-            if(count($result)>0){
-                $data['status']=1;
-                $data['msg']='用户相册分类获取成功';
-                $data['photo']=$result;
-            }else{
-                $data['msg']='用户相册分类没有数据';
-            }
+            $data['status']=1;
+            $data['msg']='用户相册分类获取成功';
+            $data['photo']=$result;
         }else{
             $data['msg']='用户相册分类获取失败';
         }

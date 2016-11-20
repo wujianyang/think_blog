@@ -5,7 +5,9 @@
     <title>
         <?php if($_GET['f']== focus): ?>关注列表
             <?php elseif($_GET['f']== fans): ?>
-            粉丝列表<?php endif; ?>
+            粉丝列表
+            <?php else: ?>
+            用户列表<?php endif; ?>
         _<?php echo (C("TITLE")); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo (C("CSS")); ?>page.css" />
@@ -19,7 +21,7 @@
 <body>
 <div class="top">
     <div class="person_top">
-        <a href="<?php echo U(Index/index);?>">网站首页</a>
+        <a href="<?php echo C('HOST_DIR');?>">网站首页</a>
         <?php if($_SESSION['MEMBER']== null): ?><a href="<?php echo U('Member/login');?>">登录</a>
             <a href="<?php echo U('Member/register');?>">注册</a>
         <?php else: ?>
@@ -91,7 +93,6 @@
                 <span class="page hov"><a href="javascript:void(0);" rel="<?php echo ($data["pageCount"]); ?>">末页</a></span><?php endif; ?>
                 <span>
                     <select id="toPageSize">
-                        <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>

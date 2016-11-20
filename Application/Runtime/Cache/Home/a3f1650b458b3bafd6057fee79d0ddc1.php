@@ -106,7 +106,7 @@
 <body>
 <div class="top">
     <div class="person_top">
-        <a href="<?php echo U(Index/index);?>">网站首页</a>
+        <a href="<?php echo C('HOST_DIR');?>">网站首页</a>
         <?php if($_SESSION['MEMBER']== null): ?><a href="<?php echo U('Member/login');?>">登录</a>
             <a href="<?php echo U('Member/register');?>">注册</a>
         <?php else: ?>
@@ -115,7 +115,7 @@
             <a href="<?php echo U('Member/logout');?>">退出</a><?php endif; ?>
     </div>
     <div class="search_top">
-        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="post">
+        <form action="<?php echo (C("HOST_DIR")); ?>Home/Index/search" name="search_form" method="get">
         <select name="keyItem" id="keyItem_search">
             <option value="member">用户</option>
             <option value="article">文章</option>
@@ -164,7 +164,7 @@
                         <option value="20">20</option>
                         <option value="30">30</option>
                         <option value="40">40</option>
-                        <option value="50">60</option>
+                        <option value="50">50</option>
                     </select>
                 </span>
                 <span>

@@ -1,0 +1,23 @@
+[ 2016-11-20T08:20:55+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0053s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0002s ]
+
+[ 2016-11-20T08:21:02+08:00 ] ::1 /think_blog/Admin/Complaint/del
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0063s ]
+SQL: DELETE FROM `complaint` WHERE `id` IN ('2') [ RunTime:0.1507s ]
+
+[ 2016-11-20T08:21:03+08:00 ] ::1 /think_blog/Admin/Complaint/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `complaint` [ RunTime:0.0037s ]
+SQL: SELECT c.id AS `id`,m.id AS `member_id`,m.member_name AS `member_name`,c.complain_content AS `complain_content`,c.complain_time AS `complain_time`,c.admin_id AS `admin_id`,a.admin_name AS `admin_name`,c.pass_time AS `pass_time`,c.isPass AS `isPass` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0' LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(c.id) AS `count` FROM complaint c LEFT JOIN member m ON c.member_id=m.id LEFT JOIN admin a ON c.admin_id=a.id  WHERE c.isPass = '0'  [ RunTime:0.0002s ]
+

@@ -49,6 +49,8 @@ class PhotoImgController extends Controller{
 
         if(I('session.MEMBER')!=null){
             $photoImg=D('PhotoImg');
+            $photoImg->member_id=I('session.MEMBER')['id'];
+            $photoImg->photo_id=I('post.photo_id');
             $photoImg->id=I('post.photoImg')['id'];
             $photoImg->img_title=I('post.photoImg')['img_title'];
             if (isset($_FILES['img_src']) && !empty($_FILES['img_src'])) {

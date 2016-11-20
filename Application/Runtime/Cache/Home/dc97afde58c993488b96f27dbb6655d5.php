@@ -62,7 +62,7 @@
                     <div class="img_div">
                         <img src="<?php echo (C("UPLOAD")); echo ($rows["img_src"]); ?>" width="200" height="150" />
                     </div>
-                    <p>ID：<a class="info" href="javascript:void(0);" value="<?php echo ($rows["id"]); ?>"><?php echo ($rows["id"]); ?> | <?php echo ($rows["img_title"]); ?></a></p>
+                    <p>ID：<a class="info" href="javascript:void(0);" title="<?php echo ($rows["img_title"]); ?>" value="<?php echo ($rows["id"]); ?>"><?php echo ($rows["id"]); ?> | <?php echo (substr_mb($rows["img_title"],0,8,'utf-8')); ?></a></p>
                 </div><?php endforeach; endif; else: echo "$empty" ;endif; ?>
         </div>
         <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">

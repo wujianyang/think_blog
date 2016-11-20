@@ -54,7 +54,7 @@
                     <th width="150">评论时间</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <volist name="data.rows" id="rows" offset="0" length="10" empty="$empty">
+                <volist name="data.rows" id="rows" offset="0" length="10">
                     <tr class="tr_line">
                         <td><input type="checkbox" class="id" name="id[]" value="{$rows.article_comment_id}" /></td>
                         <td width="50">{$rows.article_comment_id}</td>
@@ -64,9 +64,11 @@
                         <td width="150">{$rows.comment_time}</td>
                     </tr>
                 </volist>
-
                 </tbody>
             </table>
+            <if condition="$data['rows'] eq null">
+                {$empty}
+            </if>
         </div>
         <if condition="$data.pageCount gt 0">
             <div class="page_div" id="page_div">

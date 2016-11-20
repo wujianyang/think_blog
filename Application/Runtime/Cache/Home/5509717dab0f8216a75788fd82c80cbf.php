@@ -64,17 +64,18 @@
                     <th width="100">查看评论</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
+                <?php if(is_array($data["rows"])): $i = 0; $__LIST__ = array_slice($data["rows"],0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rows): $mod = ($i % 2 );++$i;?><tr class="tr_line">
                         <td><input type="checkbox" class="id" name="id[]" value="<?php echo ($rows["article_id"]); ?>" /></td>
                         <td width="50"><?php echo ($rows["article_id"]); ?></td>
-                        <td width="200"><a class="info" href="javascript:void(0);" title="<?php echo ($rows["title"]); ?>" value="<?php echo ($rows["article_id"]); ?>"><?php echo ($rows["title"]); ?></a></td>
+                        <td width="200"><a class="info" href="javascript:void(0);" title="<?php echo ($rows["title"]); ?>" value="<?php echo ($rows["article_id"]); ?>"><?php echo (substr_mb($rows["title"],0,40,'utf-8')); ?></a></td>
                         <td width="150"><?php echo ($rows["article_type_name"]); ?></td>
                         <td width="50"><?php echo ($rows["hitnum"]); ?></td>
                         <td width="150"><?php echo ($rows["create_time"]); ?></td>
                         <td width="100"><a href="<?php echo (C("HOST_DIR")); ?>Home/Member/personArticleComment/article_id/<?php echo ($rows["article_id"]); ?>.<?php echo (C("URL_HTML_SUFFIX")); ?>">查看评论</a></td>
-                    </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                 </tbody>
             </table>
+            <?php if($data['rows'] == null): echo ($empty); endif; ?>
         </div>
         <?php if($data["pageCount"] > 0): ?><div class="page_div" id="page_div">
                 <span class="page"><a href="javascript:void(0);">首页</a></span>

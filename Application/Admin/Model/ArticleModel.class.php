@@ -156,6 +156,8 @@ class ArticleModel extends CommonModel{
 
         if(strlen($this->content)<4){
             return '文章内容验证失败';
+        }else{
+            $this->content=htmlspecialchars_decode($this->content);
         }
 
         if($f!='edit'){

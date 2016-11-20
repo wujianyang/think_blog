@@ -173,6 +173,7 @@ function showList(page,page_size,keyItem,key,com){
                     $('#list_table_tbody').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
+                    $('.noData').remove();
                 }else{
                     $('#list_table_tbody').html('<tr><td colspan="4" align="center">没有数据</td></tr>');
                 }

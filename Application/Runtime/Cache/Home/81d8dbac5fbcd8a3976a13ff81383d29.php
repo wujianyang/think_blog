@@ -34,7 +34,7 @@
 <body>
 <div class="top">
     <div class="person_top">
-        <a href="<?php echo U(Index/index);?>">网站首页</a>
+        <a href="<?php echo C('HOST_DIR');?>">网站首页</a>
         <?php if($_SESSION['MEMBER']== null): ?><a href="<?php echo U('Member/login');?>">登录</a>
             <a href="<?php echo U('Member/register');?>">注册</a>
         <?php else: ?>
@@ -97,7 +97,6 @@
             </div>
             <?php if(is_array($article)): $i = 0; $__LIST__ = array_slice($article,0,5,true);if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="article_area">
                     <p class="article_title"><a href="<?php echo U('Article/index',array('article_id'=>$article['article_id']),'html');?>" title="<?php echo ($article["title"]); ?>" target="_blank"><?php echo (substr_mb($article["title"],0,80,'utf-8')); ?></a></p>
-
                     <p class="article_content"><?php echo (substr_mb($article["content"],0,105,'utf-8')); ?></p>
                     <div class="article_info">
                         <div class="article_author">作者：<a href="<?php echo U('Member/index',array('member_id'=>$article['member_id']));?>"><?php echo ($article["member_name"]); ?></a></div>

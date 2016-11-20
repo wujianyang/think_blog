@@ -102,10 +102,12 @@ $(document).ready(function(){
         },
         submitHandler:function(form){
             var host_dir=$('#host_dir').val();
+            var photo_id=$('#photo_id').val();
             $(form).ajaxSubmit({
                 url:host_dir+"Home/PhotoImg/personEdit",
                 type:"post",
                 dataType:"json",
+                data:{"photo_id":photo_id},
                 success:function(data){
                     alert(data.msg);
                     if(data.status=='1'){
@@ -217,6 +219,7 @@ function showList(page,page_size,keyItem,key,com){
                     $('#list_table_div').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
+                    $('.noData').remove();
                 }else{
                     $('#list_table_div').html('<p class="nodata">没有数据</p>');
                 }

@@ -64,11 +64,11 @@
                     <th width="100">查看评论</th>
                 </tr>
                 <tbody id="list_table_tbody">
-                <volist name="data.rows" id="rows" offset="0" length="10" empty="$empty">
+                <volist name="data.rows" id="rows" offset="0" length="10">
                     <tr class="tr_line">
                         <td><input type="checkbox" class="id" name="id[]" value="{$rows.article_id}" /></td>
                         <td width="50">{$rows.article_id}</td>
-                        <td width="200"><a class="info" href="javascript:void(0);" title="{$rows.title}" value="{$rows.article_id}">{$rows.title}</a></td>
+                        <td width="200"><a class="info" href="javascript:void(0);" title="{$rows.title}" value="{$rows.article_id}">{$rows.title|substr_mb=0,40,'utf-8'}</a></td>
                         <td width="150">{$rows.article_type_name}</td>
                         <td width="50">{$rows.hitnum}</td>
                         <td width="150">{$rows.create_time}</td>
@@ -77,6 +77,9 @@
                 </volist>
                 </tbody>
             </table>
+            <if condition="$data['rows'] eq null">
+                {$empty}
+            </if>
         </div>
         <if condition="$data.pageCount gt 0">
             <div class="page_div" id="page_div">

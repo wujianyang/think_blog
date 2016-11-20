@@ -11,6 +11,7 @@ $(document).ready(function(){
         if(arr.length==0){
             alert('请选择要删除的数据');
         }else{
+            console.log(arr);
             if(confirm('确定删除？')){
                 $.ajax({
                     url:host_dir+"Home/ArticleType/personDel",
@@ -24,7 +25,8 @@ $(document).ready(function(){
                         }
                     },
                     error:function(data){
-                        alert('error');
+                        alert('操作失败');
+                        console.log(data.responseText);
                         showList(1,10,'','','eq');
                     }
                 });
@@ -172,6 +174,7 @@ function showList(page,page_size,keyItem,key,com){
                     $('#list_table_tbody').html(sHtml);
                     //生成分页条
                     getPageBar(page,Math.ceil(data.count/page_size),data.count,page_size);
+                    $('.noData').remove();
                 }else{
                     $('#list_table_tbody').html('<tr><td colspan="3" align="center">没有数据</td></tr>');
                 }
